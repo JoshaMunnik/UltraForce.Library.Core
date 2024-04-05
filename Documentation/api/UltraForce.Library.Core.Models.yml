@@ -1,0 +1,74 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Models
+  commentId: N:UltraForce.Library.Core.Models
+  id: UltraForce.Library.Core.Models
+  children:
+  - UltraForce.Library.Core.Models.IUFDataServiceModel`1
+  - UltraForce.Library.Core.Models.UFDataServiceModel`2
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.Core.Models
+  nameWithType: UltraForce.Library.Core.Models
+  fullName: UltraForce.Library.Core.Models
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.Core
+references:
+- uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1
+  commentId: T:UltraForce.Library.Core.Models.IUFDataServiceModel`1
+  href: UltraForce.Library.Core.Models.IUFDataServiceModel-1.html
+  name: IUFDataServiceModel<TEntity>
+  nameWithType: IUFDataServiceModel<TEntity>
+  fullName: UltraForce.Library.Core.Models.IUFDataServiceModel<TEntity>
+  nameWithType.vb: IUFDataServiceModel(Of TEntity)
+  fullName.vb: UltraForce.Library.Core.Models.IUFDataServiceModel(Of TEntity)
+  name.vb: IUFDataServiceModel(Of TEntity)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1
+    name: IUFDataServiceModel
+    href: UltraForce.Library.Core.Models.IUFDataServiceModel-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1
+    name: IUFDataServiceModel
+    href: UltraForce.Library.Core.Models.IUFDataServiceModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: UltraForce.Library.Core.Models.UFDataServiceModel`2
+  commentId: T:UltraForce.Library.Core.Models.UFDataServiceModel`2
+  href: UltraForce.Library.Core.Models.UFDataServiceModel-2.html
+  name: UFDataServiceModel<TServiceModel, TEntity>
+  nameWithType: UFDataServiceModel<TServiceModel, TEntity>
+  fullName: UltraForce.Library.Core.Models.UFDataServiceModel<TServiceModel, TEntity>
+  nameWithType.vb: UFDataServiceModel(Of TServiceModel, TEntity)
+  fullName.vb: UltraForce.Library.Core.Models.UFDataServiceModel(Of TServiceModel, TEntity)
+  name.vb: UFDataServiceModel(Of TServiceModel, TEntity)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Models.UFDataServiceModel`2
+    name: UFDataServiceModel
+    href: UltraForce.Library.Core.Models.UFDataServiceModel-2.html
+  - name: <
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.Core.Models.UFDataServiceModel`2
+    name: UFDataServiceModel
+    href: UltraForce.Library.Core.Models.UFDataServiceModel-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )

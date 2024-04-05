@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Types.Enums
+  commentId: N:UltraForce.Library.Core.Types.Enums
+  id: UltraForce.Library.Core.Types.Enums
+  children:
+  - UltraForce.Library.Core.Types.Enums.UFEntityAction
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.Core.Types.Enums
+  nameWithType: UltraForce.Library.Core.Types.Enums
+  fullName: UltraForce.Library.Core.Types.Enums
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.Core
+references:
+- uid: UltraForce.Library.Core.Types.Enums.UFEntityAction
+  commentId: T:UltraForce.Library.Core.Types.Enums.UFEntityAction
+  parent: UltraForce.Library.Core.Types.Enums
+  href: UltraForce.Library.Core.Types.Enums.UFEntityAction.html
+  name: UFEntityAction
+  nameWithType: UFEntityAction
+  fullName: UltraForce.Library.Core.Types.Enums.UFEntityAction
+- uid: UltraForce.Library.Core.Types.Enums
+  commentId: N:UltraForce.Library.Core.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Types.Enums
+  nameWithType: UltraForce.Library.Core.Types.Enums
+  fullName: UltraForce.Library.Core.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Types
+    name: Types
+    href: UltraForce.Library.Core.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Types
+    name: Types
+    href: UltraForce.Library.Core.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Types.Enums.html

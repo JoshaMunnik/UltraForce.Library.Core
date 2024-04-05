@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Tools
+  commentId: N:UltraForce.Library.Core.Tools
+  id: UltraForce.Library.Core.Tools
+  children:
+  - UltraForce.Library.Core.Tools.UFCoreFileTools
+  - UltraForce.Library.Core.Tools.UFDataServiceTools
+  - UltraForce.Library.Core.Tools.UFTestTools
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.Core.Tools
+  nameWithType: UltraForce.Library.Core.Tools
+  fullName: UltraForce.Library.Core.Tools
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.Core
+references:
+- uid: UltraForce.Library.Core.Tools.UFCoreFileTools
+  commentId: T:UltraForce.Library.Core.Tools.UFCoreFileTools
+  href: UltraForce.Library.Core.Tools.UFCoreFileTools.html
+  name: UFCoreFileTools
+  nameWithType: UFCoreFileTools
+  fullName: UltraForce.Library.Core.Tools.UFCoreFileTools
+- uid: UltraForce.Library.Core.Tools.UFDataServiceTools
+  commentId: T:UltraForce.Library.Core.Tools.UFDataServiceTools
+  href: UltraForce.Library.Core.Tools.UFDataServiceTools.html
+  name: UFDataServiceTools
+  nameWithType: UFDataServiceTools
+  fullName: UltraForce.Library.Core.Tools.UFDataServiceTools
+- uid: UltraForce.Library.Core.Tools.UFTestTools
+  commentId: T:UltraForce.Library.Core.Tools.UFTestTools
+  href: UltraForce.Library.Core.Tools.UFTestTools.html
+  name: UFTestTools
+  nameWithType: UFTestTools
+  fullName: UltraForce.Library.Core.Tools.UFTestTools

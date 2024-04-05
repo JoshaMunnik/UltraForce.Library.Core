@@ -1,0 +1,288 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Types.Enums.UFEntityAction
+  commentId: T:UltraForce.Library.Core.Types.Enums.UFEntityAction
+  id: UFEntityAction
+  parent: UltraForce.Library.Core.Types.Enums
+  children:
+  - UltraForce.Library.Core.Types.Enums.UFEntityAction.Add
+  - UltraForce.Library.Core.Types.Enums.UFEntityAction.Update
+  langs:
+  - csharp
+  - vb
+  name: UFEntityAction
+  nameWithType: UFEntityAction
+  fullName: UltraForce.Library.Core.Types.Enums.UFEntityAction
+  type: Enum
+  source:
+    id: UFEntityAction
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Types\Enums\UFEntityAction.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Types.Enums
+  summary: Actions on the entity.
+  example: []
+  syntax:
+    content: public enum UFEntityAction
+    content.vb: Public Enum UFEntityAction
+  extensionMethods:
+  - System.Enum.UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription
+  - System.Enum.UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName
+- uid: UltraForce.Library.Core.Types.Enums.UFEntityAction.Add
+  commentId: F:UltraForce.Library.Core.Types.Enums.UFEntityAction.Add
+  id: Add
+  parent: UltraForce.Library.Core.Types.Enums.UFEntityAction
+  langs:
+  - csharp
+  - vb
+  name: Add
+  nameWithType: UFEntityAction.Add
+  fullName: UltraForce.Library.Core.Types.Enums.UFEntityAction.Add
+  type: Field
+  source:
+    id: Add
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Types\Enums\UFEntityAction.cs
+    startLine: 39
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Types.Enums
+  summary: Entity is about to be added
+  example: []
+  syntax:
+    content: Add = 0
+    return:
+      type: UltraForce.Library.Core.Types.Enums.UFEntityAction
+- uid: UltraForce.Library.Core.Types.Enums.UFEntityAction.Update
+  commentId: F:UltraForce.Library.Core.Types.Enums.UFEntityAction.Update
+  id: Update
+  parent: UltraForce.Library.Core.Types.Enums.UFEntityAction
+  langs:
+  - csharp
+  - vb
+  name: Update
+  nameWithType: UFEntityAction.Update
+  fullName: UltraForce.Library.Core.Types.Enums.UFEntityAction.Update
+  type: Field
+  source:
+    id: Update
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Types\Enums\UFEntityAction.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Types.Enums
+  summary: Entity is about to be updated
+  example: []
+  syntax:
+    content: Update = 1
+    return:
+      type: UltraForce.Library.Core.Types.Enums.UFEntityAction
+references:
+- uid: UltraForce.Library.Core.Types.Enums
+  commentId: N:UltraForce.Library.Core.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Types.Enums
+  nameWithType: UltraForce.Library.Core.Types.Enums
+  fullName: UltraForce.Library.Core.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Types
+    name: Types
+    href: UltraForce.Library.Core.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Types
+    name: Types
+    href: UltraForce.Library.Core.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Types.Enums.html
+- uid: System.Enum.UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription
+  commentId: M:UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+  parent: UltraForce.Library.Core.Extensions.UFEnumExtensions
+  definition: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+  href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayDescription_System_Enum_
+  name: GetDisplayDescription(Enum)
+  nameWithType: UFEnumExtensions.GetDisplayDescription(Enum)
+  fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+    name: GetDisplayDescription
+    href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+    name: GetDisplayDescription
+    href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: System.Enum.UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName
+  commentId: M:UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+  parent: UltraForce.Library.Core.Extensions.UFEnumExtensions
+  definition: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+  href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayName_System_Enum_
+  name: GetDisplayName(Enum)
+  nameWithType: UFEnumExtensions.GetDisplayName(Enum)
+  fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+    name: GetDisplayName
+    href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+    name: GetDisplayName
+    href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+  commentId: M:UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+  isExternal: true
+  href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayDescription_System_Enum_
+  name: GetDisplayDescription(Enum)
+  nameWithType: UFEnumExtensions.GetDisplayDescription(Enum)
+  fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+    name: GetDisplayDescription
+    href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+    name: GetDisplayDescription
+    href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: UltraForce.Library.Core.Extensions.UFEnumExtensions
+  commentId: T:UltraForce.Library.Core.Extensions.UFEnumExtensions
+  parent: UltraForce.Library.Core.Extensions
+  href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html
+  name: UFEnumExtensions
+  nameWithType: UFEnumExtensions
+  fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions
+- uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+  commentId: M:UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+  isExternal: true
+  href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayName_System_Enum_
+  name: GetDisplayName(Enum)
+  nameWithType: UFEnumExtensions.GetDisplayName(Enum)
+  fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+    name: GetDisplayName
+    href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+    name: GetDisplayName
+    href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: UltraForce.Library.Core.Extensions
+  commentId: N:UltraForce.Library.Core.Extensions
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Extensions
+  nameWithType: UltraForce.Library.Core.Extensions
+  fullName: UltraForce.Library.Core.Extensions
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Extensions
+    name: Extensions
+    href: UltraForce.Library.Core.Extensions.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Extensions
+    name: Extensions
+    href: UltraForce.Library.Core.Extensions.html
+- uid: UltraForce.Library.Core.Types.Enums.UFEntityAction
+  commentId: T:UltraForce.Library.Core.Types.Enums.UFEntityAction
+  parent: UltraForce.Library.Core.Types.Enums
+  href: UltraForce.Library.Core.Types.Enums.UFEntityAction.html
+  name: UFEntityAction
+  nameWithType: UFEntityAction
+  fullName: UltraForce.Library.Core.Types.Enums.UFEntityAction

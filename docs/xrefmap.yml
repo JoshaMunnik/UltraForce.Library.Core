@@ -1,0 +1,2136 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: UltraForce.Library.Core.Annotations
+  name: UltraForce.Library.Core.Annotations
+  href: api/UltraForce.Library.Core.Annotations.html
+  commentId: N:UltraForce.Library.Core.Annotations
+  fullName: UltraForce.Library.Core.Annotations
+  nameWithType: UltraForce.Library.Core.Annotations
+- uid: UltraForce.Library.Core.Annotations.UFEntityAttribute
+  name: UFEntityAttribute
+  href: api/UltraForce.Library.Core.Annotations.UFEntityAttribute.html
+  commentId: T:UltraForce.Library.Core.Annotations.UFEntityAttribute
+  fullName: UltraForce.Library.Core.Annotations.UFEntityAttribute
+  nameWithType: UFEntityAttribute
+- uid: UltraForce.Library.Core.Annotations.UFEntityAttribute.#ctor
+  name: UFEntityAttribute()
+  href: api/UltraForce.Library.Core.Annotations.UFEntityAttribute.html#UltraForce_Library_Core_Annotations_UFEntityAttribute__ctor
+  commentId: M:UltraForce.Library.Core.Annotations.UFEntityAttribute.#ctor
+  name.vb: New()
+  fullName: UltraForce.Library.Core.Annotations.UFEntityAttribute.UFEntityAttribute()
+  fullName.vb: UltraForce.Library.Core.Annotations.UFEntityAttribute.New()
+  nameWithType: UFEntityAttribute.UFEntityAttribute()
+  nameWithType.vb: UFEntityAttribute.New()
+- uid: UltraForce.Library.Core.Annotations.UFEntityAttribute.#ctor(System.Boolean)
+  name: UFEntityAttribute(bool)
+  href: api/UltraForce.Library.Core.Annotations.UFEntityAttribute.html#UltraForce_Library_Core_Annotations_UFEntityAttribute__ctor_System_Boolean_
+  commentId: M:UltraForce.Library.Core.Annotations.UFEntityAttribute.#ctor(System.Boolean)
+  name.vb: New(Boolean)
+  fullName: UltraForce.Library.Core.Annotations.UFEntityAttribute.UFEntityAttribute(bool)
+  fullName.vb: UltraForce.Library.Core.Annotations.UFEntityAttribute.New(Boolean)
+  nameWithType: UFEntityAttribute.UFEntityAttribute(bool)
+  nameWithType.vb: UFEntityAttribute.New(Boolean)
+- uid: UltraForce.Library.Core.Annotations.UFEntityAttribute.#ctor(System.String)
+  name: UFEntityAttribute(string)
+  href: api/UltraForce.Library.Core.Annotations.UFEntityAttribute.html#UltraForce_Library_Core_Annotations_UFEntityAttribute__ctor_System_String_
+  commentId: M:UltraForce.Library.Core.Annotations.UFEntityAttribute.#ctor(System.String)
+  name.vb: New(String)
+  fullName: UltraForce.Library.Core.Annotations.UFEntityAttribute.UFEntityAttribute(string)
+  fullName.vb: UltraForce.Library.Core.Annotations.UFEntityAttribute.New(String)
+  nameWithType: UFEntityAttribute.UFEntityAttribute(string)
+  nameWithType.vb: UFEntityAttribute.New(String)
+- uid: UltraForce.Library.Core.Annotations.UFEntityAttribute.#ctor(System.String,System.Boolean)
+  name: UFEntityAttribute(string, bool)
+  href: api/UltraForce.Library.Core.Annotations.UFEntityAttribute.html#UltraForce_Library_Core_Annotations_UFEntityAttribute__ctor_System_String_System_Boolean_
+  commentId: M:UltraForce.Library.Core.Annotations.UFEntityAttribute.#ctor(System.String,System.Boolean)
+  name.vb: New(String, Boolean)
+  fullName: UltraForce.Library.Core.Annotations.UFEntityAttribute.UFEntityAttribute(string, bool)
+  fullName.vb: UltraForce.Library.Core.Annotations.UFEntityAttribute.New(String, Boolean)
+  nameWithType: UFEntityAttribute.UFEntityAttribute(string, bool)
+  nameWithType.vb: UFEntityAttribute.New(String, Boolean)
+- uid: UltraForce.Library.Core.Annotations.UFEntityAttribute.#ctor*
+  name: UFEntityAttribute
+  href: api/UltraForce.Library.Core.Annotations.UFEntityAttribute.html#UltraForce_Library_Core_Annotations_UFEntityAttribute__ctor_
+  commentId: Overload:UltraForce.Library.Core.Annotations.UFEntityAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: UltraForce.Library.Core.Annotations.UFEntityAttribute.UFEntityAttribute
+  fullName.vb: UltraForce.Library.Core.Annotations.UFEntityAttribute.New
+  nameWithType: UFEntityAttribute.UFEntityAttribute
+  nameWithType.vb: UFEntityAttribute.New
+- uid: UltraForce.Library.Core.Annotations.UFEntityAttribute.Name
+  name: Name
+  href: api/UltraForce.Library.Core.Annotations.UFEntityAttribute.html#UltraForce_Library_Core_Annotations_UFEntityAttribute_Name
+  commentId: P:UltraForce.Library.Core.Annotations.UFEntityAttribute.Name
+  fullName: UltraForce.Library.Core.Annotations.UFEntityAttribute.Name
+  nameWithType: UFEntityAttribute.Name
+- uid: UltraForce.Library.Core.Annotations.UFEntityAttribute.Name*
+  name: Name
+  href: api/UltraForce.Library.Core.Annotations.UFEntityAttribute.html#UltraForce_Library_Core_Annotations_UFEntityAttribute_Name_
+  commentId: Overload:UltraForce.Library.Core.Annotations.UFEntityAttribute.Name
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Annotations.UFEntityAttribute.Name
+  nameWithType: UFEntityAttribute.Name
+- uid: UltraForce.Library.Core.Annotations.UFEntityAttribute.ReadOnly
+  name: ReadOnly
+  href: api/UltraForce.Library.Core.Annotations.UFEntityAttribute.html#UltraForce_Library_Core_Annotations_UFEntityAttribute_ReadOnly
+  commentId: P:UltraForce.Library.Core.Annotations.UFEntityAttribute.ReadOnly
+  fullName: UltraForce.Library.Core.Annotations.UFEntityAttribute.ReadOnly
+  nameWithType: UFEntityAttribute.ReadOnly
+- uid: UltraForce.Library.Core.Annotations.UFEntityAttribute.ReadOnly*
+  name: ReadOnly
+  href: api/UltraForce.Library.Core.Annotations.UFEntityAttribute.html#UltraForce_Library_Core_Annotations_UFEntityAttribute_ReadOnly_
+  commentId: Overload:UltraForce.Library.Core.Annotations.UFEntityAttribute.ReadOnly
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Annotations.UFEntityAttribute.ReadOnly
+  nameWithType: UFEntityAttribute.ReadOnly
+- uid: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute
+  name: UFRequiredIfAttribute
+  href: api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html
+  commentId: T:UltraForce.Library.Core.Annotations.UFRequiredIfAttribute
+  fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute
+  nameWithType: UFRequiredIfAttribute
+- uid: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.#ctor(System.String,System.Object)
+  name: UFRequiredIfAttribute(string, object)
+  href: api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html#UltraForce_Library_Core_Annotations_UFRequiredIfAttribute__ctor_System_String_System_Object_
+  commentId: M:UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.#ctor(System.String,System.Object)
+  name.vb: New(String, Object)
+  fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.UFRequiredIfAttribute(string, object)
+  fullName.vb: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.New(String, Object)
+  nameWithType: UFRequiredIfAttribute.UFRequiredIfAttribute(string, object)
+  nameWithType.vb: UFRequiredIfAttribute.New(String, Object)
+- uid: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.#ctor*
+  name: UFRequiredIfAttribute
+  href: api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html#UltraForce_Library_Core_Annotations_UFRequiredIfAttribute__ctor_
+  commentId: Overload:UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.UFRequiredIfAttribute
+  fullName.vb: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.New
+  nameWithType: UFRequiredIfAttribute.UFRequiredIfAttribute
+  nameWithType.vb: UFRequiredIfAttribute.New
+- uid: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.FormatErrorMessage(System.String)
+  name: FormatErrorMessage(string)
+  href: api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html#UltraForce_Library_Core_Annotations_UFRequiredIfAttribute_FormatErrorMessage_System_String_
+  commentId: M:UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.FormatErrorMessage(System.String)
+  name.vb: FormatErrorMessage(String)
+  fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.FormatErrorMessage(string)
+  fullName.vb: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.FormatErrorMessage(String)
+  nameWithType: UFRequiredIfAttribute.FormatErrorMessage(string)
+  nameWithType.vb: UFRequiredIfAttribute.FormatErrorMessage(String)
+- uid: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.FormatErrorMessage*
+  name: FormatErrorMessage
+  href: api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html#UltraForce_Library_Core_Annotations_UFRequiredIfAttribute_FormatErrorMessage_
+  commentId: Overload:UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.FormatErrorMessage
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.FormatErrorMessage
+  nameWithType: UFRequiredIfAttribute.FormatErrorMessage
+- uid: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.IsInverted
+  name: IsInverted
+  href: api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html#UltraForce_Library_Core_Annotations_UFRequiredIfAttribute_IsInverted
+  commentId: P:UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.IsInverted
+  fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.IsInverted
+  nameWithType: UFRequiredIfAttribute.IsInverted
+- uid: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.IsInverted*
+  name: IsInverted
+  href: api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html#UltraForce_Library_Core_Annotations_UFRequiredIfAttribute_IsInverted_
+  commentId: Overload:UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.IsInverted
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.IsInverted
+  nameWithType: UFRequiredIfAttribute.IsInverted
+- uid: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)
+  name: IsValid(object?, ValidationContext?)
+  href: api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html#UltraForce_Library_Core_Annotations_UFRequiredIfAttribute_IsValid_System_Object_System_ComponentModel_DataAnnotations_ValidationContext_
+  commentId: M:UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)
+  name.vb: IsValid(Object, ValidationContext)
+  fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.IsValid(object?, System.ComponentModel.DataAnnotations.ValidationContext?)
+  fullName.vb: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.IsValid(Object, System.ComponentModel.DataAnnotations.ValidationContext)
+  nameWithType: UFRequiredIfAttribute.IsValid(object?, ValidationContext?)
+  nameWithType.vb: UFRequiredIfAttribute.IsValid(Object, ValidationContext)
+- uid: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.IsValid*
+  name: IsValid
+  href: api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html#UltraForce_Library_Core_Annotations_UFRequiredIfAttribute_IsValid_
+  commentId: Overload:UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.IsValid
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.IsValid
+  nameWithType: UFRequiredIfAttribute.IsValid
+- uid: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherProperty
+  name: OtherProperty
+  href: api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html#UltraForce_Library_Core_Annotations_UFRequiredIfAttribute_OtherProperty
+  commentId: P:UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherProperty
+  fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherProperty
+  nameWithType: UFRequiredIfAttribute.OtherProperty
+- uid: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherProperty*
+  name: OtherProperty
+  href: api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html#UltraForce_Library_Core_Annotations_UFRequiredIfAttribute_OtherProperty_
+  commentId: Overload:UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherProperty
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherProperty
+  nameWithType: UFRequiredIfAttribute.OtherProperty
+- uid: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherPropertyDisplayName
+  name: OtherPropertyDisplayName
+  href: api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html#UltraForce_Library_Core_Annotations_UFRequiredIfAttribute_OtherPropertyDisplayName
+  commentId: P:UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherPropertyDisplayName
+  fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherPropertyDisplayName
+  nameWithType: UFRequiredIfAttribute.OtherPropertyDisplayName
+- uid: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherPropertyDisplayName*
+  name: OtherPropertyDisplayName
+  href: api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html#UltraForce_Library_Core_Annotations_UFRequiredIfAttribute_OtherPropertyDisplayName_
+  commentId: Overload:UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherPropertyDisplayName
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherPropertyDisplayName
+  nameWithType: UFRequiredIfAttribute.OtherPropertyDisplayName
+- uid: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherPropertyValue
+  name: OtherPropertyValue
+  href: api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html#UltraForce_Library_Core_Annotations_UFRequiredIfAttribute_OtherPropertyValue
+  commentId: P:UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherPropertyValue
+  fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherPropertyValue
+  nameWithType: UFRequiredIfAttribute.OtherPropertyValue
+- uid: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherPropertyValue*
+  name: OtherPropertyValue
+  href: api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html#UltraForce_Library_Core_Annotations_UFRequiredIfAttribute_OtherPropertyValue_
+  commentId: Overload:UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherPropertyValue
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherPropertyValue
+  nameWithType: UFRequiredIfAttribute.OtherPropertyValue
+- uid: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.RequiresValidationContext
+  name: RequiresValidationContext
+  href: api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html#UltraForce_Library_Core_Annotations_UFRequiredIfAttribute_RequiresValidationContext
+  commentId: P:UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.RequiresValidationContext
+  fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.RequiresValidationContext
+  nameWithType: UFRequiredIfAttribute.RequiresValidationContext
+- uid: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.RequiresValidationContext*
+  name: RequiresValidationContext
+  href: api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html#UltraForce_Library_Core_Annotations_UFRequiredIfAttribute_RequiresValidationContext_
+  commentId: Overload:UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.RequiresValidationContext
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.RequiresValidationContext
+  nameWithType: UFRequiredIfAttribute.RequiresValidationContext
+- uid: UltraForce.Library.Core.Converters
+  name: UltraForce.Library.Core.Converters
+  href: api/UltraForce.Library.Core.Converters.html
+  commentId: N:UltraForce.Library.Core.Converters
+  fullName: UltraForce.Library.Core.Converters
+  nameWithType: UltraForce.Library.Core.Converters
+- uid: UltraForce.Library.Core.Converters.UFBoolJsonConverter
+  name: UFBoolJsonConverter
+  href: api/UltraForce.Library.Core.Converters.UFBoolJsonConverter.html
+  commentId: T:UltraForce.Library.Core.Converters.UFBoolJsonConverter
+  fullName: UltraForce.Library.Core.Converters.UFBoolJsonConverter
+  nameWithType: UFBoolJsonConverter
+- uid: UltraForce.Library.Core.Converters.UFBoolJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  name: Read(ref Utf8JsonReader, Type, JsonSerializerOptions)
+  href: api/UltraForce.Library.Core.Converters.UFBoolJsonConverter.html#UltraForce_Library_Core_Converters_UFBoolJsonConverter_Read_System_Text_Json_Utf8JsonReader__System_Type_System_Text_Json_JsonSerializerOptions_
+  commentId: M:UltraForce.Library.Core.Converters.UFBoolJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  name.vb: Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  fullName: UltraForce.Library.Core.Converters.UFBoolJsonConverter.Read(ref System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)
+  fullName.vb: UltraForce.Library.Core.Converters.UFBoolJsonConverter.Read(System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)
+  nameWithType: UFBoolJsonConverter.Read(ref Utf8JsonReader, Type, JsonSerializerOptions)
+  nameWithType.vb: UFBoolJsonConverter.Read(Utf8JsonReader, Type, JsonSerializerOptions)
+- uid: UltraForce.Library.Core.Converters.UFBoolJsonConverter.Read*
+  name: Read
+  href: api/UltraForce.Library.Core.Converters.UFBoolJsonConverter.html#UltraForce_Library_Core_Converters_UFBoolJsonConverter_Read_
+  commentId: Overload:UltraForce.Library.Core.Converters.UFBoolJsonConverter.Read
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Converters.UFBoolJsonConverter.Read
+  nameWithType: UFBoolJsonConverter.Read
+- uid: UltraForce.Library.Core.Converters.UFBoolJsonConverter.Write(System.Text.Json.Utf8JsonWriter,System.Boolean,System.Text.Json.JsonSerializerOptions)
+  name: Write(Utf8JsonWriter, bool, JsonSerializerOptions)
+  href: api/UltraForce.Library.Core.Converters.UFBoolJsonConverter.html#UltraForce_Library_Core_Converters_UFBoolJsonConverter_Write_System_Text_Json_Utf8JsonWriter_System_Boolean_System_Text_Json_JsonSerializerOptions_
+  commentId: M:UltraForce.Library.Core.Converters.UFBoolJsonConverter.Write(System.Text.Json.Utf8JsonWriter,System.Boolean,System.Text.Json.JsonSerializerOptions)
+  name.vb: Write(Utf8JsonWriter, Boolean, JsonSerializerOptions)
+  fullName: UltraForce.Library.Core.Converters.UFBoolJsonConverter.Write(System.Text.Json.Utf8JsonWriter, bool, System.Text.Json.JsonSerializerOptions)
+  fullName.vb: UltraForce.Library.Core.Converters.UFBoolJsonConverter.Write(System.Text.Json.Utf8JsonWriter, Boolean, System.Text.Json.JsonSerializerOptions)
+  nameWithType: UFBoolJsonConverter.Write(Utf8JsonWriter, bool, JsonSerializerOptions)
+  nameWithType.vb: UFBoolJsonConverter.Write(Utf8JsonWriter, Boolean, JsonSerializerOptions)
+- uid: UltraForce.Library.Core.Converters.UFBoolJsonConverter.Write*
+  name: Write
+  href: api/UltraForce.Library.Core.Converters.UFBoolJsonConverter.html#UltraForce_Library_Core_Converters_UFBoolJsonConverter_Write_
+  commentId: Overload:UltraForce.Library.Core.Converters.UFBoolJsonConverter.Write
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Converters.UFBoolJsonConverter.Write
+  nameWithType: UFBoolJsonConverter.Write
+- uid: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter
+  name: UFDateOnlyJsonConverter
+  href: api/UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.html
+  commentId: T:UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter
+  fullName: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter
+  nameWithType: UFDateOnlyJsonConverter
+- uid: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  name: Read(ref Utf8JsonReader, Type, JsonSerializerOptions)
+  href: api/UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.html#UltraForce_Library_Core_Converters_UFDateOnlyJsonConverter_Read_System_Text_Json_Utf8JsonReader__System_Type_System_Text_Json_JsonSerializerOptions_
+  commentId: M:UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  name.vb: Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  fullName: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.Read(ref System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)
+  fullName.vb: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.Read(System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)
+  nameWithType: UFDateOnlyJsonConverter.Read(ref Utf8JsonReader, Type, JsonSerializerOptions)
+  nameWithType.vb: UFDateOnlyJsonConverter.Read(Utf8JsonReader, Type, JsonSerializerOptions)
+- uid: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.Read*
+  name: Read
+  href: api/UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.html#UltraForce_Library_Core_Converters_UFDateOnlyJsonConverter_Read_
+  commentId: Overload:UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.Read
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.Read
+  nameWithType: UFDateOnlyJsonConverter.Read
+- uid: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.Write(System.Text.Json.Utf8JsonWriter,System.DateOnly,System.Text.Json.JsonSerializerOptions)
+  name: Write(Utf8JsonWriter, DateOnly, JsonSerializerOptions)
+  href: api/UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.html#UltraForce_Library_Core_Converters_UFDateOnlyJsonConverter_Write_System_Text_Json_Utf8JsonWriter_System_DateOnly_System_Text_Json_JsonSerializerOptions_
+  commentId: M:UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.Write(System.Text.Json.Utf8JsonWriter,System.DateOnly,System.Text.Json.JsonSerializerOptions)
+  fullName: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.Write(System.Text.Json.Utf8JsonWriter, System.DateOnly, System.Text.Json.JsonSerializerOptions)
+  nameWithType: UFDateOnlyJsonConverter.Write(Utf8JsonWriter, DateOnly, JsonSerializerOptions)
+- uid: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.Write*
+  name: Write
+  href: api/UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.html#UltraForce_Library_Core_Converters_UFDateOnlyJsonConverter_Write_
+  commentId: Overload:UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.Write
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.Write
+  nameWithType: UFDateOnlyJsonConverter.Write
+- uid: UltraForce.Library.Core.Data
+  name: UltraForce.Library.Core.Data
+  href: api/UltraForce.Library.Core.Data.html
+  commentId: N:UltraForce.Library.Core.Data
+  fullName: UltraForce.Library.Core.Data
+  nameWithType: UltraForce.Library.Core.Data
+- uid: UltraForce.Library.Core.Data.IUFRepository
+  name: IUFRepository
+  href: api/UltraForce.Library.Core.Data.IUFRepository.html
+  commentId: T:UltraForce.Library.Core.Data.IUFRepository
+  fullName: UltraForce.Library.Core.Data.IUFRepository
+  nameWithType: IUFRepository
+- uid: UltraForce.Library.Core.Data.IUFRepository.LockAsync
+  name: LockAsync()
+  href: api/UltraForce.Library.Core.Data.IUFRepository.html#UltraForce_Library_Core_Data_IUFRepository_LockAsync
+  commentId: M:UltraForce.Library.Core.Data.IUFRepository.LockAsync
+  fullName: UltraForce.Library.Core.Data.IUFRepository.LockAsync()
+  nameWithType: IUFRepository.LockAsync()
+- uid: UltraForce.Library.Core.Data.IUFRepository.LockAsync*
+  name: LockAsync
+  href: api/UltraForce.Library.Core.Data.IUFRepository.html#UltraForce_Library_Core_Data_IUFRepository_LockAsync_
+  commentId: Overload:UltraForce.Library.Core.Data.IUFRepository.LockAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Data.IUFRepository.LockAsync
+  nameWithType: IUFRepository.LockAsync
+- uid: UltraForce.Library.Core.Data.IUFRepository.UnlockAsync
+  name: UnlockAsync()
+  href: api/UltraForce.Library.Core.Data.IUFRepository.html#UltraForce_Library_Core_Data_IUFRepository_UnlockAsync
+  commentId: M:UltraForce.Library.Core.Data.IUFRepository.UnlockAsync
+  fullName: UltraForce.Library.Core.Data.IUFRepository.UnlockAsync()
+  nameWithType: IUFRepository.UnlockAsync()
+- uid: UltraForce.Library.Core.Data.IUFRepository.UnlockAsync*
+  name: UnlockAsync
+  href: api/UltraForce.Library.Core.Data.IUFRepository.html#UltraForce_Library_Core_Data_IUFRepository_UnlockAsync_
+  commentId: Overload:UltraForce.Library.Core.Data.IUFRepository.UnlockAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Data.IUFRepository.UnlockAsync
+  nameWithType: IUFRepository.UnlockAsync
+- uid: UltraForce.Library.Core.Data.UFRepository`1
+  name: UFRepository<TContext>
+  href: api/UltraForce.Library.Core.Data.UFRepository-1.html
+  commentId: T:UltraForce.Library.Core.Data.UFRepository`1
+  name.vb: UFRepository(Of TContext)
+  fullName: UltraForce.Library.Core.Data.UFRepository<TContext>
+  fullName.vb: UltraForce.Library.Core.Data.UFRepository(Of TContext)
+  nameWithType: UFRepository<TContext>
+  nameWithType.vb: UFRepository(Of TContext)
+- uid: UltraForce.Library.Core.Data.UFRepository`1.#ctor(`0,System.Boolean)
+  name: UFRepository(TContext, bool)
+  href: api/UltraForce.Library.Core.Data.UFRepository-1.html#UltraForce_Library_Core_Data_UFRepository_1__ctor__0_System_Boolean_
+  commentId: M:UltraForce.Library.Core.Data.UFRepository`1.#ctor(`0,System.Boolean)
+  name.vb: New(TContext, Boolean)
+  fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.UFRepository(TContext, bool)
+  fullName.vb: UltraForce.Library.Core.Data.UFRepository(Of TContext).New(TContext, Boolean)
+  nameWithType: UFRepository<TContext>.UFRepository(TContext, bool)
+  nameWithType.vb: UFRepository(Of TContext).New(TContext, Boolean)
+- uid: UltraForce.Library.Core.Data.UFRepository`1.#ctor*
+  name: UFRepository
+  href: api/UltraForce.Library.Core.Data.UFRepository-1.html#UltraForce_Library_Core_Data_UFRepository_1__ctor_
+  commentId: Overload:UltraForce.Library.Core.Data.UFRepository`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.UFRepository
+  fullName.vb: UltraForce.Library.Core.Data.UFRepository(Of TContext).New
+  nameWithType: UFRepository<TContext>.UFRepository
+  nameWithType.vb: UFRepository(Of TContext).New
+- uid: UltraForce.Library.Core.Data.UFRepository`1.Changed
+  name: Changed
+  href: api/UltraForce.Library.Core.Data.UFRepository-1.html#UltraForce_Library_Core_Data_UFRepository_1_Changed
+  commentId: P:UltraForce.Library.Core.Data.UFRepository`1.Changed
+  fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.Changed
+  fullName.vb: UltraForce.Library.Core.Data.UFRepository(Of TContext).Changed
+  nameWithType: UFRepository<TContext>.Changed
+  nameWithType.vb: UFRepository(Of TContext).Changed
+- uid: UltraForce.Library.Core.Data.UFRepository`1.Changed*
+  name: Changed
+  href: api/UltraForce.Library.Core.Data.UFRepository-1.html#UltraForce_Library_Core_Data_UFRepository_1_Changed_
+  commentId: Overload:UltraForce.Library.Core.Data.UFRepository`1.Changed
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.Changed
+  fullName.vb: UltraForce.Library.Core.Data.UFRepository(Of TContext).Changed
+  nameWithType: UFRepository<TContext>.Changed
+  nameWithType.vb: UFRepository(Of TContext).Changed
+- uid: UltraForce.Library.Core.Data.UFRepository`1.Context
+  name: Context
+  href: api/UltraForce.Library.Core.Data.UFRepository-1.html#UltraForce_Library_Core_Data_UFRepository_1_Context
+  commentId: P:UltraForce.Library.Core.Data.UFRepository`1.Context
+  fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.Context
+  fullName.vb: UltraForce.Library.Core.Data.UFRepository(Of TContext).Context
+  nameWithType: UFRepository<TContext>.Context
+  nameWithType.vb: UFRepository(Of TContext).Context
+- uid: UltraForce.Library.Core.Data.UFRepository`1.Context*
+  name: Context
+  href: api/UltraForce.Library.Core.Data.UFRepository-1.html#UltraForce_Library_Core_Data_UFRepository_1_Context_
+  commentId: Overload:UltraForce.Library.Core.Data.UFRepository`1.Context
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.Context
+  fullName.vb: UltraForce.Library.Core.Data.UFRepository(Of TContext).Context
+  nameWithType: UFRepository<TContext>.Context
+  nameWithType.vb: UFRepository(Of TContext).Context
+- uid: UltraForce.Library.Core.Data.UFRepository`1.DetachTrackedEntries
+  name: DetachTrackedEntries()
+  href: api/UltraForce.Library.Core.Data.UFRepository-1.html#UltraForce_Library_Core_Data_UFRepository_1_DetachTrackedEntries
+  commentId: M:UltraForce.Library.Core.Data.UFRepository`1.DetachTrackedEntries
+  fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.DetachTrackedEntries()
+  fullName.vb: UltraForce.Library.Core.Data.UFRepository(Of TContext).DetachTrackedEntries()
+  nameWithType: UFRepository<TContext>.DetachTrackedEntries()
+  nameWithType.vb: UFRepository(Of TContext).DetachTrackedEntries()
+- uid: UltraForce.Library.Core.Data.UFRepository`1.DetachTrackedEntries*
+  name: DetachTrackedEntries
+  href: api/UltraForce.Library.Core.Data.UFRepository-1.html#UltraForce_Library_Core_Data_UFRepository_1_DetachTrackedEntries_
+  commentId: Overload:UltraForce.Library.Core.Data.UFRepository`1.DetachTrackedEntries
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.DetachTrackedEntries
+  fullName.vb: UltraForce.Library.Core.Data.UFRepository(Of TContext).DetachTrackedEntries
+  nameWithType: UFRepository<TContext>.DetachTrackedEntries
+  nameWithType.vb: UFRepository(Of TContext).DetachTrackedEntries
+- uid: UltraForce.Library.Core.Data.UFRepository`1.LockAsync
+  name: LockAsync()
+  href: api/UltraForce.Library.Core.Data.UFRepository-1.html#UltraForce_Library_Core_Data_UFRepository_1_LockAsync
+  commentId: M:UltraForce.Library.Core.Data.UFRepository`1.LockAsync
+  fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.LockAsync()
+  fullName.vb: UltraForce.Library.Core.Data.UFRepository(Of TContext).LockAsync()
+  nameWithType: UFRepository<TContext>.LockAsync()
+  nameWithType.vb: UFRepository(Of TContext).LockAsync()
+- uid: UltraForce.Library.Core.Data.UFRepository`1.LockAsync*
+  name: LockAsync
+  href: api/UltraForce.Library.Core.Data.UFRepository-1.html#UltraForce_Library_Core_Data_UFRepository_1_LockAsync_
+  commentId: Overload:UltraForce.Library.Core.Data.UFRepository`1.LockAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.LockAsync
+  fullName.vb: UltraForce.Library.Core.Data.UFRepository(Of TContext).LockAsync
+  nameWithType: UFRepository<TContext>.LockAsync
+  nameWithType.vb: UFRepository(Of TContext).LockAsync
+- uid: UltraForce.Library.Core.Data.UFRepository`1.SaveChangesAsync
+  name: SaveChangesAsync()
+  href: api/UltraForce.Library.Core.Data.UFRepository-1.html#UltraForce_Library_Core_Data_UFRepository_1_SaveChangesAsync
+  commentId: M:UltraForce.Library.Core.Data.UFRepository`1.SaveChangesAsync
+  fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.SaveChangesAsync()
+  fullName.vb: UltraForce.Library.Core.Data.UFRepository(Of TContext).SaveChangesAsync()
+  nameWithType: UFRepository<TContext>.SaveChangesAsync()
+  nameWithType.vb: UFRepository(Of TContext).SaveChangesAsync()
+- uid: UltraForce.Library.Core.Data.UFRepository`1.SaveChangesAsync*
+  name: SaveChangesAsync
+  href: api/UltraForce.Library.Core.Data.UFRepository-1.html#UltraForce_Library_Core_Data_UFRepository_1_SaveChangesAsync_
+  commentId: Overload:UltraForce.Library.Core.Data.UFRepository`1.SaveChangesAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.SaveChangesAsync
+  fullName.vb: UltraForce.Library.Core.Data.UFRepository(Of TContext).SaveChangesAsync
+  nameWithType: UFRepository<TContext>.SaveChangesAsync
+  nameWithType.vb: UFRepository(Of TContext).SaveChangesAsync
+- uid: UltraForce.Library.Core.Data.UFRepository`1.UnlockAsync
+  name: UnlockAsync()
+  href: api/UltraForce.Library.Core.Data.UFRepository-1.html#UltraForce_Library_Core_Data_UFRepository_1_UnlockAsync
+  commentId: M:UltraForce.Library.Core.Data.UFRepository`1.UnlockAsync
+  fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.UnlockAsync()
+  fullName.vb: UltraForce.Library.Core.Data.UFRepository(Of TContext).UnlockAsync()
+  nameWithType: UFRepository<TContext>.UnlockAsync()
+  nameWithType.vb: UFRepository(Of TContext).UnlockAsync()
+- uid: UltraForce.Library.Core.Data.UFRepository`1.UnlockAsync*
+  name: UnlockAsync
+  href: api/UltraForce.Library.Core.Data.UFRepository-1.html#UltraForce_Library_Core_Data_UFRepository_1_UnlockAsync_
+  commentId: Overload:UltraForce.Library.Core.Data.UFRepository`1.UnlockAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.UnlockAsync
+  fullName.vb: UltraForce.Library.Core.Data.UFRepository(Of TContext).UnlockAsync
+  nameWithType: UFRepository<TContext>.UnlockAsync
+  nameWithType.vb: UFRepository(Of TContext).UnlockAsync
+- uid: UltraForce.Library.Core.Extensions
+  name: UltraForce.Library.Core.Extensions
+  href: api/UltraForce.Library.Core.Extensions.html
+  commentId: N:UltraForce.Library.Core.Extensions
+  fullName: UltraForce.Library.Core.Extensions
+  nameWithType: UltraForce.Library.Core.Extensions
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  name: UFDataServiceExtensions
+  href: api/UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html
+  commentId: T:UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  nameWithType: UFDataServiceExtensions
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync*
+  name: AsModelAsync
+  href: api/UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync_
+  commentId: Overload:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync
+  nameWithType: UFDataServiceExtensions.AsModelAsync
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(System.Collections.Generic.IEnumerable{``1})
+  name: AsModelAsync<TServiceModel, TEntity>(IEnumerable<TEntity>)
+  href: api/UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2_System_Collections_Generic_IEnumerable___1__
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(System.Collections.Generic.IEnumerable{``1})
+  name.vb: AsModelAsync(Of TServiceModel, TEntity)(IEnumerable(Of TEntity))
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(System.Collections.Generic.IEnumerable<TEntity>)
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(System.Collections.Generic.IEnumerable(Of TEntity))
+  nameWithType: UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(IEnumerable<TEntity>)
+  nameWithType.vb: UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(IEnumerable(Of TEntity))
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(System.Threading.Tasks.Task{``1})
+  name: AsModelAsync<TServiceModel, TEntity>(Task<TEntity>)
+  href: api/UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2_System_Threading_Tasks_Task___1__
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(System.Threading.Tasks.Task{``1})
+  name.vb: AsModelAsync(Of TServiceModel, TEntity)(Task(Of TEntity))
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(System.Threading.Tasks.Task<TEntity>)
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(System.Threading.Tasks.Task(Of TEntity))
+  nameWithType: UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(Task<TEntity>)
+  nameWithType.vb: UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(Task(Of TEntity))
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+  name: AsModelAsync<TServiceModel, TEntity>(TEntity)
+  href: api/UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+  name.vb: AsModelAsync(Of TServiceModel, TEntity)(TEntity)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(TEntity)
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(TEntity)
+  nameWithType: UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType.vb: UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(TEntity)
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync*
+  name: AsNullableModelAsync
+  href: api/UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync_
+  commentId: Overload:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync
+  nameWithType: UFDataServiceExtensions.AsNullableModelAsync
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(System.Threading.Tasks.Task{``1})
+  name: AsNullableModelAsync<TServiceModel, TEntity>(Task<TEntity?>)
+  href: api/UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2_System_Threading_Tasks_Task___1__
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(System.Threading.Tasks.Task{``1})
+  name.vb: AsNullableModelAsync(Of TServiceModel, TEntity)(Task(Of TEntity))
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(System.Threading.Tasks.Task<TEntity?>)
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(System.Threading.Tasks.Task(Of TEntity))
+  nameWithType: UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(Task<TEntity?>)
+  nameWithType.vb: UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(Task(Of TEntity))
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(System.Threading.Tasks.ValueTask{``1})
+  name: AsNullableModelAsync<TServiceModel, TEntity>(ValueTask<TEntity?>)
+  href: api/UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2_System_Threading_Tasks_ValueTask___1__
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(System.Threading.Tasks.ValueTask{``1})
+  name.vb: AsNullableModelAsync(Of TServiceModel, TEntity)(ValueTask(Of TEntity))
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(System.Threading.Tasks.ValueTask<TEntity?>)
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(System.Threading.Tasks.ValueTask(Of TEntity))
+  nameWithType: UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(ValueTask<TEntity?>)
+  nameWithType.vb: UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(ValueTask(Of TEntity))
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+  name: AsNullableModelAsync<TServiceModel, TEntity>(TEntity?)
+  href: api/UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+  name.vb: AsNullableModelAsync(Of TServiceModel, TEntity)(TEntity)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(TEntity?)
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(TEntity)
+  nameWithType: UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(TEntity?)
+  nameWithType.vb: UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(TEntity)
+- uid: UltraForce.Library.Core.Extensions.UFEnumExtensions
+  name: UFEnumExtensions
+  href: api/UltraForce.Library.Core.Extensions.UFEnumExtensions.html
+  commentId: T:UltraForce.Library.Core.Extensions.UFEnumExtensions
+  fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions
+  nameWithType: UFEnumExtensions
+- uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+  name: GetDisplayDescription(Enum)
+  href: api/UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayDescription_System_Enum_
+  commentId: M:UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+  fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+  nameWithType: UFEnumExtensions.GetDisplayDescription(Enum)
+- uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription*
+  name: GetDisplayDescription
+  href: api/UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayDescription_
+  commentId: Overload:UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription
+  nameWithType: UFEnumExtensions.GetDisplayDescription
+- uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+  name: GetDisplayName(Enum)
+  href: api/UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayName_System_Enum_
+  commentId: M:UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+  fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+  nameWithType: UFEnumExtensions.GetDisplayName(Enum)
+- uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName*
+  name: GetDisplayName
+  href: api/UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayName_
+  commentId: Overload:UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName
+  nameWithType: UFEnumExtensions.GetDisplayName
+- uid: UltraForce.Library.Core.Models
+  name: UltraForce.Library.Core.Models
+  href: api/UltraForce.Library.Core.Models.html
+  commentId: N:UltraForce.Library.Core.Models
+  fullName: UltraForce.Library.Core.Models
+  nameWithType: UltraForce.Library.Core.Models
+- uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1
+  name: IUFDataServiceModel<TEntity>
+  href: api/UltraForce.Library.Core.Models.IUFDataServiceModel-1.html
+  commentId: T:UltraForce.Library.Core.Models.IUFDataServiceModel`1
+  name.vb: IUFDataServiceModel(Of TEntity)
+  fullName: UltraForce.Library.Core.Models.IUFDataServiceModel<TEntity>
+  fullName.vb: UltraForce.Library.Core.Models.IUFDataServiceModel(Of TEntity)
+  nameWithType: IUFDataServiceModel<TEntity>
+  nameWithType.vb: IUFDataServiceModel(Of TEntity)
+- uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyFromEntityAsync(`0)
+  name: CopyFromEntityAsync(TEntity)
+  href: api/UltraForce.Library.Core.Models.IUFDataServiceModel-1.html#UltraForce_Library_Core_Models_IUFDataServiceModel_1_CopyFromEntityAsync__0_
+  commentId: M:UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyFromEntityAsync(`0)
+  fullName: UltraForce.Library.Core.Models.IUFDataServiceModel<TEntity>.CopyFromEntityAsync(TEntity)
+  fullName.vb: UltraForce.Library.Core.Models.IUFDataServiceModel(Of TEntity).CopyFromEntityAsync(TEntity)
+  nameWithType: IUFDataServiceModel<TEntity>.CopyFromEntityAsync(TEntity)
+  nameWithType.vb: IUFDataServiceModel(Of TEntity).CopyFromEntityAsync(TEntity)
+- uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyFromEntityAsync*
+  name: CopyFromEntityAsync
+  href: api/UltraForce.Library.Core.Models.IUFDataServiceModel-1.html#UltraForce_Library_Core_Models_IUFDataServiceModel_1_CopyFromEntityAsync_
+  commentId: Overload:UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyFromEntityAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Models.IUFDataServiceModel<TEntity>.CopyFromEntityAsync
+  fullName.vb: UltraForce.Library.Core.Models.IUFDataServiceModel(Of TEntity).CopyFromEntityAsync
+  nameWithType: IUFDataServiceModel<TEntity>.CopyFromEntityAsync
+  nameWithType.vb: IUFDataServiceModel(Of TEntity).CopyFromEntityAsync
+- uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyToEntityAsync(`0,UltraForce.Library.Core.Types.Enums.UFEntityAction)
+  name: CopyToEntityAsync(TEntity, UFEntityAction)
+  href: api/UltraForce.Library.Core.Models.IUFDataServiceModel-1.html#UltraForce_Library_Core_Models_IUFDataServiceModel_1_CopyToEntityAsync__0_UltraForce_Library_Core_Types_Enums_UFEntityAction_
+  commentId: M:UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyToEntityAsync(`0,UltraForce.Library.Core.Types.Enums.UFEntityAction)
+  fullName: UltraForce.Library.Core.Models.IUFDataServiceModel<TEntity>.CopyToEntityAsync(TEntity, UltraForce.Library.Core.Types.Enums.UFEntityAction)
+  fullName.vb: UltraForce.Library.Core.Models.IUFDataServiceModel(Of TEntity).CopyToEntityAsync(TEntity, UltraForce.Library.Core.Types.Enums.UFEntityAction)
+  nameWithType: IUFDataServiceModel<TEntity>.CopyToEntityAsync(TEntity, UFEntityAction)
+  nameWithType.vb: IUFDataServiceModel(Of TEntity).CopyToEntityAsync(TEntity, UFEntityAction)
+- uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyToEntityAsync*
+  name: CopyToEntityAsync
+  href: api/UltraForce.Library.Core.Models.IUFDataServiceModel-1.html#UltraForce_Library_Core_Models_IUFDataServiceModel_1_CopyToEntityAsync_
+  commentId: Overload:UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyToEntityAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Models.IUFDataServiceModel<TEntity>.CopyToEntityAsync
+  fullName.vb: UltraForce.Library.Core.Models.IUFDataServiceModel(Of TEntity).CopyToEntityAsync
+  nameWithType: IUFDataServiceModel<TEntity>.CopyToEntityAsync
+  nameWithType.vb: IUFDataServiceModel(Of TEntity).CopyToEntityAsync
+- uid: UltraForce.Library.Core.Models.UFDataServiceModel`2
+  name: UFDataServiceModel<TServiceModel, TEntity>
+  href: api/UltraForce.Library.Core.Models.UFDataServiceModel-2.html
+  commentId: T:UltraForce.Library.Core.Models.UFDataServiceModel`2
+  name.vb: UFDataServiceModel(Of TServiceModel, TEntity)
+  fullName: UltraForce.Library.Core.Models.UFDataServiceModel<TServiceModel, TEntity>
+  fullName.vb: UltraForce.Library.Core.Models.UFDataServiceModel(Of TServiceModel, TEntity)
+  nameWithType: UFDataServiceModel<TServiceModel, TEntity>
+  nameWithType.vb: UFDataServiceModel(Of TServiceModel, TEntity)
+- uid: UltraForce.Library.Core.Models.UFDataServiceModel`2.CopyFromEntityAsync(`1)
+  name: CopyFromEntityAsync(TEntity)
+  href: api/UltraForce.Library.Core.Models.UFDataServiceModel-2.html#UltraForce_Library_Core_Models_UFDataServiceModel_2_CopyFromEntityAsync__1_
+  commentId: M:UltraForce.Library.Core.Models.UFDataServiceModel`2.CopyFromEntityAsync(`1)
+  fullName: UltraForce.Library.Core.Models.UFDataServiceModel<TServiceModel, TEntity>.CopyFromEntityAsync(TEntity)
+  fullName.vb: UltraForce.Library.Core.Models.UFDataServiceModel(Of TServiceModel, TEntity).CopyFromEntityAsync(TEntity)
+  nameWithType: UFDataServiceModel<TServiceModel, TEntity>.CopyFromEntityAsync(TEntity)
+  nameWithType.vb: UFDataServiceModel(Of TServiceModel, TEntity).CopyFromEntityAsync(TEntity)
+- uid: UltraForce.Library.Core.Models.UFDataServiceModel`2.CopyFromEntityAsync*
+  name: CopyFromEntityAsync
+  href: api/UltraForce.Library.Core.Models.UFDataServiceModel-2.html#UltraForce_Library_Core_Models_UFDataServiceModel_2_CopyFromEntityAsync_
+  commentId: Overload:UltraForce.Library.Core.Models.UFDataServiceModel`2.CopyFromEntityAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Models.UFDataServiceModel<TServiceModel, TEntity>.CopyFromEntityAsync
+  fullName.vb: UltraForce.Library.Core.Models.UFDataServiceModel(Of TServiceModel, TEntity).CopyFromEntityAsync
+  nameWithType: UFDataServiceModel<TServiceModel, TEntity>.CopyFromEntityAsync
+  nameWithType.vb: UFDataServiceModel(Of TServiceModel, TEntity).CopyFromEntityAsync
+- uid: UltraForce.Library.Core.Models.UFDataServiceModel`2.CopyToEntityAsync(`1,UltraForce.Library.Core.Types.Enums.UFEntityAction)
+  name: CopyToEntityAsync(TEntity, UFEntityAction)
+  href: api/UltraForce.Library.Core.Models.UFDataServiceModel-2.html#UltraForce_Library_Core_Models_UFDataServiceModel_2_CopyToEntityAsync__1_UltraForce_Library_Core_Types_Enums_UFEntityAction_
+  commentId: M:UltraForce.Library.Core.Models.UFDataServiceModel`2.CopyToEntityAsync(`1,UltraForce.Library.Core.Types.Enums.UFEntityAction)
+  fullName: UltraForce.Library.Core.Models.UFDataServiceModel<TServiceModel, TEntity>.CopyToEntityAsync(TEntity, UltraForce.Library.Core.Types.Enums.UFEntityAction)
+  fullName.vb: UltraForce.Library.Core.Models.UFDataServiceModel(Of TServiceModel, TEntity).CopyToEntityAsync(TEntity, UltraForce.Library.Core.Types.Enums.UFEntityAction)
+  nameWithType: UFDataServiceModel<TServiceModel, TEntity>.CopyToEntityAsync(TEntity, UFEntityAction)
+  nameWithType.vb: UFDataServiceModel(Of TServiceModel, TEntity).CopyToEntityAsync(TEntity, UFEntityAction)
+- uid: UltraForce.Library.Core.Models.UFDataServiceModel`2.CopyToEntityAsync*
+  name: CopyToEntityAsync
+  href: api/UltraForce.Library.Core.Models.UFDataServiceModel-2.html#UltraForce_Library_Core_Models_UFDataServiceModel_2_CopyToEntityAsync_
+  commentId: Overload:UltraForce.Library.Core.Models.UFDataServiceModel`2.CopyToEntityAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Models.UFDataServiceModel<TServiceModel, TEntity>.CopyToEntityAsync
+  fullName.vb: UltraForce.Library.Core.Models.UFDataServiceModel(Of TServiceModel, TEntity).CopyToEntityAsync
+  nameWithType: UFDataServiceModel<TServiceModel, TEntity>.CopyToEntityAsync
+  nameWithType.vb: UFDataServiceModel(Of TServiceModel, TEntity).CopyToEntityAsync
+- uid: UltraForce.Library.Core.Services
+  name: UltraForce.Library.Core.Services
+  href: api/UltraForce.Library.Core.Services.html
+  commentId: N:UltraForce.Library.Core.Services
+  fullName: UltraForce.Library.Core.Services
+  nameWithType: UltraForce.Library.Core.Services
+- uid: UltraForce.Library.Core.Services.IUFDataService
+  name: IUFDataService
+  href: api/UltraForce.Library.Core.Services.IUFDataService.html
+  commentId: T:UltraForce.Library.Core.Services.IUFDataService
+  fullName: UltraForce.Library.Core.Services.IUFDataService
+  nameWithType: IUFDataService
+- uid: UltraForce.Library.Core.Services.IUFDataService.LockAsync
+  name: LockAsync()
+  href: api/UltraForce.Library.Core.Services.IUFDataService.html#UltraForce_Library_Core_Services_IUFDataService_LockAsync
+  commentId: M:UltraForce.Library.Core.Services.IUFDataService.LockAsync
+  fullName: UltraForce.Library.Core.Services.IUFDataService.LockAsync()
+  nameWithType: IUFDataService.LockAsync()
+- uid: UltraForce.Library.Core.Services.IUFDataService.LockAsync*
+  name: LockAsync
+  href: api/UltraForce.Library.Core.Services.IUFDataService.html#UltraForce_Library_Core_Services_IUFDataService_LockAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFDataService.LockAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFDataService.LockAsync
+  nameWithType: IUFDataService.LockAsync
+- uid: UltraForce.Library.Core.Services.IUFDataService.UnlockAsync
+  name: UnlockAsync()
+  href: api/UltraForce.Library.Core.Services.IUFDataService.html#UltraForce_Library_Core_Services_IUFDataService_UnlockAsync
+  commentId: M:UltraForce.Library.Core.Services.IUFDataService.UnlockAsync
+  fullName: UltraForce.Library.Core.Services.IUFDataService.UnlockAsync()
+  nameWithType: IUFDataService.UnlockAsync()
+- uid: UltraForce.Library.Core.Services.IUFDataService.UnlockAsync*
+  name: UnlockAsync
+  href: api/UltraForce.Library.Core.Services.IUFDataService.html#UltraForce_Library_Core_Services_IUFDataService_UnlockAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFDataService.UnlockAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFDataService.UnlockAsync
+  nameWithType: IUFDataService.UnlockAsync
+- uid: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3
+  name: IUFDataServiceCRUD<TServiceModel, TKey, TEntity>
+  href: api/UltraForce.Library.Core.Services.IUFDataServiceCRUD-3.html
+  commentId: T:UltraForce.Library.Core.Services.IUFDataServiceCRUD`3
+  name.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity)
+  fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>
+  fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity)
+  nameWithType: IUFDataServiceCRUD<TServiceModel, TKey, TEntity>
+  nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity)
+- uid: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.AddAsync(`0)
+  name: AddAsync(TServiceModel)
+  href: api/UltraForce.Library.Core.Services.IUFDataServiceCRUD-3.html#UltraForce_Library_Core_Services_IUFDataServiceCRUD_3_AddAsync__0_
+  commentId: M:UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.AddAsync(`0)
+  fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.AddAsync(TServiceModel)
+  fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).AddAsync(TServiceModel)
+  nameWithType: IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.AddAsync(TServiceModel)
+  nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).AddAsync(TServiceModel)
+- uid: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.AddAsync*
+  name: AddAsync
+  href: api/UltraForce.Library.Core.Services.IUFDataServiceCRUD-3.html#UltraForce_Library_Core_Services_IUFDataServiceCRUD_3_AddAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.AddAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.AddAsync
+  fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).AddAsync
+  nameWithType: IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.AddAsync
+  nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).AddAsync
+- uid: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.FindAllAsync
+  name: FindAllAsync()
+  href: api/UltraForce.Library.Core.Services.IUFDataServiceCRUD-3.html#UltraForce_Library_Core_Services_IUFDataServiceCRUD_3_FindAllAsync
+  commentId: M:UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.FindAllAsync
+  fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.FindAllAsync()
+  fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).FindAllAsync()
+  nameWithType: IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.FindAllAsync()
+  nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).FindAllAsync()
+- uid: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.FindAllAsync*
+  name: FindAllAsync
+  href: api/UltraForce.Library.Core.Services.IUFDataServiceCRUD-3.html#UltraForce_Library_Core_Services_IUFDataServiceCRUD_3_FindAllAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.FindAllAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.FindAllAsync
+  fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).FindAllAsync
+  nameWithType: IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.FindAllAsync
+  nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).FindAllAsync
+- uid: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.FindForIdAsync(`1)
+  name: FindForIdAsync(TKey)
+  href: api/UltraForce.Library.Core.Services.IUFDataServiceCRUD-3.html#UltraForce_Library_Core_Services_IUFDataServiceCRUD_3_FindForIdAsync__1_
+  commentId: M:UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.FindForIdAsync(`1)
+  fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.FindForIdAsync(TKey)
+  fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).FindForIdAsync(TKey)
+  nameWithType: IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.FindForIdAsync(TKey)
+  nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).FindForIdAsync(TKey)
+- uid: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.FindForIdAsync*
+  name: FindForIdAsync
+  href: api/UltraForce.Library.Core.Services.IUFDataServiceCRUD-3.html#UltraForce_Library_Core_Services_IUFDataServiceCRUD_3_FindForIdAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.FindForIdAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.FindForIdAsync
+  fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).FindForIdAsync
+  nameWithType: IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.FindForIdAsync
+  nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).FindForIdAsync
+- uid: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.RemoveAsync(`0)
+  name: RemoveAsync(TServiceModel)
+  href: api/UltraForce.Library.Core.Services.IUFDataServiceCRUD-3.html#UltraForce_Library_Core_Services_IUFDataServiceCRUD_3_RemoveAsync__0_
+  commentId: M:UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.RemoveAsync(`0)
+  fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.RemoveAsync(TServiceModel)
+  fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).RemoveAsync(TServiceModel)
+  nameWithType: IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.RemoveAsync(TServiceModel)
+  nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).RemoveAsync(TServiceModel)
+- uid: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.RemoveAsync*
+  name: RemoveAsync
+  href: api/UltraForce.Library.Core.Services.IUFDataServiceCRUD-3.html#UltraForce_Library_Core_Services_IUFDataServiceCRUD_3_RemoveAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.RemoveAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.RemoveAsync
+  fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).RemoveAsync
+  nameWithType: IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.RemoveAsync
+  nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).RemoveAsync
+- uid: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.UpdateAsync(`0)
+  name: UpdateAsync(TServiceModel)
+  href: api/UltraForce.Library.Core.Services.IUFDataServiceCRUD-3.html#UltraForce_Library_Core_Services_IUFDataServiceCRUD_3_UpdateAsync__0_
+  commentId: M:UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.UpdateAsync(`0)
+  fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.UpdateAsync(TServiceModel)
+  fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).UpdateAsync(TServiceModel)
+  nameWithType: IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.UpdateAsync(TServiceModel)
+  nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).UpdateAsync(TServiceModel)
+- uid: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.UpdateAsync*
+  name: UpdateAsync
+  href: api/UltraForce.Library.Core.Services.IUFDataServiceCRUD-3.html#UltraForce_Library_Core_Services_IUFDataServiceCRUD_3_UpdateAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.UpdateAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.UpdateAsync
+  fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).UpdateAsync
+  nameWithType: IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.UpdateAsync
+  nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).UpdateAsync
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  name: IUFEmailBuilderService
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html
+  commentId: T:UltraForce.Library.Core.Services.IUFEmailBuilderService
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  nameWithType: IUFEmailBuilderService
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachment(System.String,System.String,System.BinaryData)
+  name: Attachment(string, string, BinaryData)
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Attachment_System_String_System_String_System_BinaryData_
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachment(System.String,System.String,System.BinaryData)
+  name.vb: Attachment(String, String, BinaryData)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachment(string, string, System.BinaryData)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachment(String, String, System.BinaryData)
+  nameWithType: IUFEmailBuilderService.Attachment(string, string, BinaryData)
+  nameWithType.vb: IUFEmailBuilderService.Attachment(String, String, BinaryData)
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachment*
+  name: Attachment
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Attachment_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachment
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachment
+  nameWithType: IUFEmailBuilderService.Attachment
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachments(System.String,System.Collections.Generic.IDictionary{System.String,System.BinaryData})
+  name: Attachments(string, IDictionary<string, BinaryData>)
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Attachments_System_String_System_Collections_Generic_IDictionary_System_String_System_BinaryData__
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachments(System.String,System.Collections.Generic.IDictionary{System.String,System.BinaryData})
+  name.vb: Attachments(String, IDictionary(Of String, BinaryData))
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachments(string, System.Collections.Generic.IDictionary<string, System.BinaryData>)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachments(String, System.Collections.Generic.IDictionary(Of String, System.BinaryData))
+  nameWithType: IUFEmailBuilderService.Attachments(string, IDictionary<string, BinaryData>)
+  nameWithType.vb: IUFEmailBuilderService.Attachments(String, IDictionary(Of String, BinaryData))
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachments*
+  name: Attachments
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Attachments_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachments
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachments
+  nameWithType: IUFEmailBuilderService.Attachments
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(System.Collections.Generic.IDictionary{System.String,System.String})
+  name: Bcc(IDictionary<string, string?>)
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Bcc_System_Collections_Generic_IDictionary_System_String_System_String__
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(System.Collections.Generic.IDictionary{System.String,System.String})
+  name.vb: Bcc(IDictionary(Of String, String))
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(System.Collections.Generic.IDictionary<string, string?>)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(System.Collections.Generic.IDictionary(Of String, String))
+  nameWithType: IUFEmailBuilderService.Bcc(IDictionary<string, string?>)
+  nameWithType.vb: IUFEmailBuilderService.Bcc(IDictionary(Of String, String))
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(System.String,System.String)
+  name: Bcc(string, string?)
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Bcc_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(System.String,System.String)
+  name.vb: Bcc(String, String)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(String, String)
+  nameWithType: IUFEmailBuilderService.Bcc(string, string?)
+  nameWithType.vb: IUFEmailBuilderService.Bcc(String, String)
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc*
+  name: Bcc
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Bcc_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc
+  nameWithType: IUFEmailBuilderService.Bcc
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(System.Collections.Generic.IDictionary{System.String,System.String})
+  name: Cc(IDictionary<string, string?>)
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Cc_System_Collections_Generic_IDictionary_System_String_System_String__
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(System.Collections.Generic.IDictionary{System.String,System.String})
+  name.vb: Cc(IDictionary(Of String, String))
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(System.Collections.Generic.IDictionary<string, string?>)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(System.Collections.Generic.IDictionary(Of String, String))
+  nameWithType: IUFEmailBuilderService.Cc(IDictionary<string, string?>)
+  nameWithType.vb: IUFEmailBuilderService.Cc(IDictionary(Of String, String))
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(System.String,System.String)
+  name: Cc(string, string?)
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Cc_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(System.String,System.String)
+  name.vb: Cc(String, String)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(String, String)
+  nameWithType: IUFEmailBuilderService.Cc(string, string?)
+  nameWithType.vb: IUFEmailBuilderService.Cc(String, String)
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc*
+  name: Cc
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Cc_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc
+  nameWithType: IUFEmailBuilderService.Cc
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.From(System.String,System.String)
+  name: From(string, string?)
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_From_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.From(System.String,System.String)
+  name.vb: From(String, String)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.From(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.From(String, String)
+  nameWithType: IUFEmailBuilderService.From(string, string?)
+  nameWithType.vb: IUFEmailBuilderService.From(String, String)
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.From*
+  name: From
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_From_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.From
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.From
+  nameWithType: IUFEmailBuilderService.From
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Html(System.String)
+  name: Html(string)
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Html_System_String_
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Html(System.String)
+  name.vb: Html(String)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Html(string)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Html(String)
+  nameWithType: IUFEmailBuilderService.Html(string)
+  nameWithType.vb: IUFEmailBuilderService.Html(String)
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Html*
+  name: Html
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Html_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.Html
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Html
+  nameWithType: IUFEmailBuilderService.Html
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo(System.String,System.String)
+  name: ReplyTo(string, string?)
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_ReplyTo_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo(System.String,System.String)
+  name.vb: ReplyTo(String, String)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo(String, String)
+  nameWithType: IUFEmailBuilderService.ReplyTo(string, string?)
+  nameWithType.vb: IUFEmailBuilderService.ReplyTo(String, String)
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo*
+  name: ReplyTo
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_ReplyTo_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo
+  nameWithType: IUFEmailBuilderService.ReplyTo
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync
+  name: SendAsync()
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_SendAsync
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync()
+  nameWithType: IUFEmailBuilderService.SendAsync()
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync*
+  name: SendAsync
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_SendAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync
+  nameWithType: IUFEmailBuilderService.SendAsync
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Start
+  name: Start()
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Start
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Start
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Start()
+  nameWithType: IUFEmailBuilderService.Start()
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Start*
+  name: Start
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Start_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.Start
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Start
+  nameWithType: IUFEmailBuilderService.Start
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Subject(System.String)
+  name: Subject(string)
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Subject_System_String_
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Subject(System.String)
+  name.vb: Subject(String)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Subject(string)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Subject(String)
+  nameWithType: IUFEmailBuilderService.Subject(string)
+  nameWithType.vb: IUFEmailBuilderService.Subject(String)
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Subject*
+  name: Subject
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Subject_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.Subject
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Subject
+  nameWithType: IUFEmailBuilderService.Subject
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Text(System.String)
+  name: Text(string)
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Text_System_String_
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Text(System.String)
+  name.vb: Text(String)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Text(string)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Text(String)
+  nameWithType: IUFEmailBuilderService.Text(string)
+  nameWithType.vb: IUFEmailBuilderService.Text(String)
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Text*
+  name: Text
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Text_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.Text
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Text
+  nameWithType: IUFEmailBuilderService.Text
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.To(System.Collections.Generic.IDictionary{System.String,System.String})
+  name: To(IDictionary<string, string?>)
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_To_System_Collections_Generic_IDictionary_System_String_System_String__
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.To(System.Collections.Generic.IDictionary{System.String,System.String})
+  name.vb: To(IDictionary(Of String, String))
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.To(System.Collections.Generic.IDictionary<string, string?>)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.To(System.Collections.Generic.IDictionary(Of String, String))
+  nameWithType: IUFEmailBuilderService.To(IDictionary<string, string?>)
+  nameWithType.vb: IUFEmailBuilderService.To(IDictionary(Of String, String))
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.To(System.String,System.String)
+  name: To(string, string?)
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_To_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.To(System.String,System.String)
+  name.vb: To(String, String)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.To(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.To(String, String)
+  nameWithType: IUFEmailBuilderService.To(string, string?)
+  nameWithType.vb: IUFEmailBuilderService.To(String, String)
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.To*
+  name: To
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_To_
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.To
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.To
+  nameWithType: IUFEmailBuilderService.To
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService
+  name: UFAzureEmailBuilderService
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html
+  commentId: T:UltraForce.Library.Core.Services.UFAzureEmailBuilderService
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService
+  nameWithType: UFAzureEmailBuilderService
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Attachment(System.String,System.String,System.BinaryData)
+  name: Attachment(string, string, BinaryData)
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Attachment_System_String_System_String_System_BinaryData_
+  commentId: M:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Attachment(System.String,System.String,System.BinaryData)
+  name.vb: Attachment(String, String, BinaryData)
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Attachment(string, string, System.BinaryData)
+  fullName.vb: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Attachment(String, String, System.BinaryData)
+  nameWithType: UFAzureEmailBuilderService.Attachment(string, string, BinaryData)
+  nameWithType.vb: UFAzureEmailBuilderService.Attachment(String, String, BinaryData)
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Attachment*
+  name: Attachment
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Attachment_
+  commentId: Overload:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Attachment
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Attachment
+  nameWithType: UFAzureEmailBuilderService.Attachment
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Bcc(System.String,System.String)
+  name: Bcc(string, string?)
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Bcc_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Bcc(System.String,System.String)
+  name.vb: Bcc(String, String)
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Bcc(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Bcc(String, String)
+  nameWithType: UFAzureEmailBuilderService.Bcc(string, string?)
+  nameWithType.vb: UFAzureEmailBuilderService.Bcc(String, String)
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Bcc*
+  name: Bcc
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Bcc_
+  commentId: Overload:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Bcc
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Bcc
+  nameWithType: UFAzureEmailBuilderService.Bcc
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Cc(System.String,System.String)
+  name: Cc(string, string?)
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Cc_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Cc(System.String,System.String)
+  name.vb: Cc(String, String)
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Cc(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Cc(String, String)
+  nameWithType: UFAzureEmailBuilderService.Cc(string, string?)
+  nameWithType.vb: UFAzureEmailBuilderService.Cc(String, String)
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Cc*
+  name: Cc
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Cc_
+  commentId: Overload:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Cc
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Cc
+  nameWithType: UFAzureEmailBuilderService.Cc
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.From(System.String,System.String)
+  name: From(string, string?)
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_From_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.From(System.String,System.String)
+  name.vb: From(String, String)
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.From(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.From(String, String)
+  nameWithType: UFAzureEmailBuilderService.From(string, string?)
+  nameWithType.vb: UFAzureEmailBuilderService.From(String, String)
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.From*
+  name: From
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_From_
+  commentId: Overload:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.From
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.From
+  nameWithType: UFAzureEmailBuilderService.From
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetConnectionString
+  name: GetConnectionString()
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetConnectionString
+  commentId: M:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetConnectionString
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetConnectionString()
+  nameWithType: UFAzureEmailBuilderService.GetConnectionString()
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetConnectionString*
+  name: GetConnectionString
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetConnectionString_
+  commentId: Overload:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetConnectionString
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetConnectionString
+  nameWithType: UFAzureEmailBuilderService.GetConnectionString
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Html(System.String)
+  name: Html(string)
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Html_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Html(System.String)
+  name.vb: Html(String)
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Html(string)
+  fullName.vb: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Html(String)
+  nameWithType: UFAzureEmailBuilderService.Html(string)
+  nameWithType.vb: UFAzureEmailBuilderService.Html(String)
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Html*
+  name: Html
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Html_
+  commentId: Overload:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Html
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Html
+  nameWithType: UFAzureEmailBuilderService.Html
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.ReplyTo(System.String,System.String)
+  name: ReplyTo(string, string?)
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_ReplyTo_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.ReplyTo(System.String,System.String)
+  name.vb: ReplyTo(String, String)
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.ReplyTo(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.ReplyTo(String, String)
+  nameWithType: UFAzureEmailBuilderService.ReplyTo(string, string?)
+  nameWithType.vb: UFAzureEmailBuilderService.ReplyTo(String, String)
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.ReplyTo*
+  name: ReplyTo
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_ReplyTo_
+  commentId: Overload:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.ReplyTo
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.ReplyTo
+  nameWithType: UFAzureEmailBuilderService.ReplyTo
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync
+  name: SendAsync()
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_SendAsync
+  commentId: M:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync()
+  nameWithType: UFAzureEmailBuilderService.SendAsync()
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync*
+  name: SendAsync
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_SendAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync
+  nameWithType: UFAzureEmailBuilderService.SendAsync
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Start
+  name: Start()
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Start
+  commentId: M:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Start
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Start()
+  nameWithType: UFAzureEmailBuilderService.Start()
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Start*
+  name: Start
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Start_
+  commentId: Overload:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Start
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Start
+  nameWithType: UFAzureEmailBuilderService.Start
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Subject(System.String)
+  name: Subject(string)
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Subject_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Subject(System.String)
+  name.vb: Subject(String)
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Subject(string)
+  fullName.vb: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Subject(String)
+  nameWithType: UFAzureEmailBuilderService.Subject(string)
+  nameWithType.vb: UFAzureEmailBuilderService.Subject(String)
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Subject*
+  name: Subject
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Subject_
+  commentId: Overload:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Subject
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Subject
+  nameWithType: UFAzureEmailBuilderService.Subject
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Text(System.String)
+  name: Text(string)
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Text_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Text(System.String)
+  name.vb: Text(String)
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Text(string)
+  fullName.vb: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Text(String)
+  nameWithType: UFAzureEmailBuilderService.Text(string)
+  nameWithType.vb: UFAzureEmailBuilderService.Text(String)
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Text*
+  name: Text
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Text_
+  commentId: Overload:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Text
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Text
+  nameWithType: UFAzureEmailBuilderService.Text
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.To(System.String,System.String)
+  name: To(string, string?)
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_To_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.To(System.String,System.String)
+  name.vb: To(String, String)
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.To(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.To(String, String)
+  nameWithType: UFAzureEmailBuilderService.To(string, string?)
+  nameWithType.vb: UFAzureEmailBuilderService.To(String, String)
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.To*
+  name: To
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_To_
+  commentId: Overload:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.To
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.To
+  nameWithType: UFAzureEmailBuilderService.To
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1
+  name: UFDataServiceFromContext<TContext>
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html
+  commentId: T:UltraForce.Library.Core.Services.UFDataServiceFromContext`1
+  name.vb: UFDataServiceFromContext(Of TContext)
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext)
+  nameWithType: UFDataServiceFromContext<TContext>
+  nameWithType.vb: UFDataServiceFromContext(Of TContext)
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.#ctor(`0,System.Boolean)
+  name: UFDataServiceFromContext(TContext, bool)
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1__ctor__0_System_Boolean_
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.#ctor(`0,System.Boolean)
+  name.vb: New(TContext, Boolean)
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.UFDataServiceFromContext(TContext, bool)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).New(TContext, Boolean)
+  nameWithType: UFDataServiceFromContext<TContext>.UFDataServiceFromContext(TContext, bool)
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).New(TContext, Boolean)
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.#ctor*
+  name: UFDataServiceFromContext
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1__ctor_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.UFDataServiceFromContext
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).New
+  nameWithType: UFDataServiceFromContext<TContext>.UFDataServiceFromContext
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).New
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.AddAsync*
+  name: AddAsync
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_AddAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.AddAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.AddAsync
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).AddAsync
+  nameWithType: UFDataServiceFromContext<TContext>.AddAsync
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).AddAsync
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.AddAsync``2(``0)
+  name: AddAsync<TServiceModel, TEntity>(TServiceModel)
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_AddAsync__2___0_
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.AddAsync``2(``0)
+  name.vb: AddAsync(Of TServiceModel, TEntity)(TServiceModel)
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.AddAsync<TServiceModel, TEntity>(TServiceModel)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).AddAsync(Of TServiceModel, TEntity)(TServiceModel)
+  nameWithType: UFDataServiceFromContext<TContext>.AddAsync<TServiceModel, TEntity>(TServiceModel)
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).AddAsync(Of TServiceModel, TEntity)(TServiceModel)
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Changed
+  name: Changed
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_Changed
+  commentId: P:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Changed
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.Changed
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).Changed
+  nameWithType: UFDataServiceFromContext<TContext>.Changed
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).Changed
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Changed*
+  name: Changed
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_Changed_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Changed
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.Changed
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).Changed
+  nameWithType: UFDataServiceFromContext<TContext>.Changed
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).Changed
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CheckContext
+  name: CheckContext()
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_CheckContext
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CheckContext
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.CheckContext()
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).CheckContext()
+  nameWithType: UFDataServiceFromContext<TContext>.CheckContext()
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).CheckContext()
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CheckContext*
+  name: CheckContext
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_CheckContext_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CheckContext
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.CheckContext
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).CheckContext
+  nameWithType: UFDataServiceFromContext<TContext>.CheckContext
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).CheckContext
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Context
+  name: Context
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_Context
+  commentId: P:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Context
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.Context
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).Context
+  nameWithType: UFDataServiceFromContext<TContext>.Context
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).Context
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Context*
+  name: Context
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_Context_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Context
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.Context
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).Context
+  nameWithType: UFDataServiceFromContext<TContext>.Context
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).Context
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachEntity(System.Object)
+  name: DetachEntity(object)
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_DetachEntity_System_Object_
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachEntity(System.Object)
+  name.vb: DetachEntity(Object)
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.DetachEntity(object)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).DetachEntity(Object)
+  nameWithType: UFDataServiceFromContext<TContext>.DetachEntity(object)
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).DetachEntity(Object)
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachEntity*
+  name: DetachEntity
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_DetachEntity_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachEntity
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.DetachEntity
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).DetachEntity
+  nameWithType: UFDataServiceFromContext<TContext>.DetachEntity
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).DetachEntity
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachTrackedEntries
+  name: DetachTrackedEntries()
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_DetachTrackedEntries
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachTrackedEntries
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.DetachTrackedEntries()
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).DetachTrackedEntries()
+  nameWithType: UFDataServiceFromContext<TContext>.DetachTrackedEntries()
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).DetachTrackedEntries()
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachTrackedEntries*
+  name: DetachTrackedEntries
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_DetachTrackedEntries_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachTrackedEntries
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.DetachTrackedEntries
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).DetachTrackedEntries
+  nameWithType: UFDataServiceFromContext<TContext>.DetachTrackedEntries
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).DetachTrackedEntries
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Dispose
+  name: Dispose()
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_Dispose
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Dispose
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.Dispose()
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).Dispose()
+  nameWithType: UFDataServiceFromContext<TContext>.Dispose()
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).Dispose()
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Dispose*
+  name: Dispose
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_Dispose_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Dispose
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.Dispose
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).Dispose
+  nameWithType: UFDataServiceFromContext<TContext>.Dispose
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).Dispose
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DisposeAsync
+  name: DisposeAsync()
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_DisposeAsync
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DisposeAsync
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.DisposeAsync()
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).DisposeAsync()
+  nameWithType: UFDataServiceFromContext<TContext>.DisposeAsync()
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).DisposeAsync()
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DisposeAsync*
+  name: DisposeAsync
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_DisposeAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DisposeAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.DisposeAsync
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).DisposeAsync
+  nameWithType: UFDataServiceFromContext<TContext>.DisposeAsync
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).DisposeAsync
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.FindAllAsync*
+  name: FindAllAsync
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_FindAllAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.FindAllAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.FindAllAsync
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).FindAllAsync
+  nameWithType: UFDataServiceFromContext<TContext>.FindAllAsync
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).FindAllAsync
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.FindAllAsync``2
+  name: FindAllAsync<TServiceModel, TEntity>()
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_FindAllAsync__2
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.FindAllAsync``2
+  name.vb: FindAllAsync(Of TServiceModel, TEntity)()
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.FindAllAsync<TServiceModel, TEntity>()
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).FindAllAsync(Of TServiceModel, TEntity)()
+  nameWithType: UFDataServiceFromContext<TContext>.FindAllAsync<TServiceModel, TEntity>()
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).FindAllAsync(Of TServiceModel, TEntity)()
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.FindForIdAsync*
+  name: FindForIdAsync
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_FindForIdAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.FindForIdAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.FindForIdAsync
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).FindForIdAsync
+  nameWithType: UFDataServiceFromContext<TContext>.FindForIdAsync
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).FindForIdAsync
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.FindForIdAsync``3(``2)
+  name: FindForIdAsync<TServiceModel, TEntity, TKey>(TKey)
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_FindForIdAsync__3___2_
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.FindForIdAsync``3(``2)
+  name.vb: FindForIdAsync(Of TServiceModel, TEntity, TKey)(TKey)
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.FindForIdAsync<TServiceModel, TEntity, TKey>(TKey)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).FindForIdAsync(Of TServiceModel, TEntity, TKey)(TKey)
+  nameWithType: UFDataServiceFromContext<TContext>.FindForIdAsync<TServiceModel, TEntity, TKey>(TKey)
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).FindForIdAsync(Of TServiceModel, TEntity, TKey)(TKey)
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyFromServiceModel*
+  name: GetPrimaryKeyFromServiceModel
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_GetPrimaryKeyFromServiceModel_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyFromServiceModel
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.GetPrimaryKeyFromServiceModel
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).GetPrimaryKeyFromServiceModel
+  nameWithType: UFDataServiceFromContext<TContext>.GetPrimaryKeyFromServiceModel
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).GetPrimaryKeyFromServiceModel
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyFromServiceModel``3(``0)
+  name: GetPrimaryKeyFromServiceModel<TServiceModel, TEntity, TKey>(TServiceModel)
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_GetPrimaryKeyFromServiceModel__3___0_
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyFromServiceModel``3(``0)
+  name.vb: GetPrimaryKeyFromServiceModel(Of TServiceModel, TEntity, TKey)(TServiceModel)
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.GetPrimaryKeyFromServiceModel<TServiceModel, TEntity, TKey>(TServiceModel)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).GetPrimaryKeyFromServiceModel(Of TServiceModel, TEntity, TKey)(TServiceModel)
+  nameWithType: UFDataServiceFromContext<TContext>.GetPrimaryKeyFromServiceModel<TServiceModel, TEntity, TKey>(TServiceModel)
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).GetPrimaryKeyFromServiceModel(Of TServiceModel, TEntity, TKey)(TServiceModel)
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyNameFromEntity*
+  name: GetPrimaryKeyNameFromEntity
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_GetPrimaryKeyNameFromEntity_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyNameFromEntity
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.GetPrimaryKeyNameFromEntity
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).GetPrimaryKeyNameFromEntity
+  nameWithType: UFDataServiceFromContext<TContext>.GetPrimaryKeyNameFromEntity
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).GetPrimaryKeyNameFromEntity
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyNameFromEntity``1
+  name: GetPrimaryKeyNameFromEntity<TEntity>()
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_GetPrimaryKeyNameFromEntity__1
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyNameFromEntity``1
+  name.vb: GetPrimaryKeyNameFromEntity(Of TEntity)()
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.GetPrimaryKeyNameFromEntity<TEntity>()
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).GetPrimaryKeyNameFromEntity(Of TEntity)()
+  nameWithType: UFDataServiceFromContext<TContext>.GetPrimaryKeyNameFromEntity<TEntity>()
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).GetPrimaryKeyNameFromEntity(Of TEntity)()
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.LockAsync
+  name: LockAsync()
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_LockAsync
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.LockAsync
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.LockAsync()
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).LockAsync()
+  nameWithType: UFDataServiceFromContext<TContext>.LockAsync()
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).LockAsync()
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.LockAsync*
+  name: LockAsync
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_LockAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.LockAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.LockAsync
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).LockAsync
+  nameWithType: UFDataServiceFromContext<TContext>.LockAsync
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).LockAsync
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.RemoveAsync*
+  name: RemoveAsync
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_RemoveAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.RemoveAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.RemoveAsync
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).RemoveAsync
+  nameWithType: UFDataServiceFromContext<TContext>.RemoveAsync
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).RemoveAsync
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.RemoveAsync``2(``0)
+  name: RemoveAsync<TServiceModel, TEntity>(TServiceModel)
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_RemoveAsync__2___0_
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.RemoveAsync``2(``0)
+  name.vb: RemoveAsync(Of TServiceModel, TEntity)(TServiceModel)
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.RemoveAsync<TServiceModel, TEntity>(TServiceModel)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).RemoveAsync(Of TServiceModel, TEntity)(TServiceModel)
+  nameWithType: UFDataServiceFromContext<TContext>.RemoveAsync<TServiceModel, TEntity>(TServiceModel)
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).RemoveAsync(Of TServiceModel, TEntity)(TServiceModel)
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SaveChangesAsync
+  name: SaveChangesAsync()
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SaveChangesAsync
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SaveChangesAsync
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SaveChangesAsync()
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).SaveChangesAsync()
+  nameWithType: UFDataServiceFromContext<TContext>.SaveChangesAsync()
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).SaveChangesAsync()
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SaveChangesAsync*
+  name: SaveChangesAsync
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SaveChangesAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SaveChangesAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SaveChangesAsync
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).SaveChangesAsync
+  nameWithType: UFDataServiceFromContext<TContext>.SaveChangesAsync
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).SaveChangesAsync
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync*
+  name: SwapAsync
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SwapAsync
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).SwapAsync
+  nameWithType: UFDataServiceFromContext<TContext>.SwapAsync
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).SwapAsync
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``1(System.String,System.String,``0,``0,System.String)
+  name: SwapAsync<T>(string, string, T, T, string?)
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__1_System_String_System_String___0___0_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``1(System.String,System.String,``0,``0,System.String)
+  name.vb: SwapAsync(Of T)(String, String, T, T, String)
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SwapAsync<T>(string, string, T, T, string?)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).SwapAsync(Of T)(String, String, T, T, String)
+  nameWithType: UFDataServiceFromContext<TContext>.SwapAsync<T>(string, string, T, T, string?)
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).SwapAsync(Of T)(String, String, T, T, String)
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String)
+  name: SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string?)
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__2_System_String_System_String___1___1_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String)
+  name.vb: SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String)
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string?)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String)
+  nameWithType: UFDataServiceFromContext<TContext>.SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string?)
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String)
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.TransactionAsync(System.Func{System.Threading.Tasks.Task})
+  name: TransactionAsync(Func<Task>)
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_TransactionAsync_System_Func_System_Threading_Tasks_Task__
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.TransactionAsync(System.Func{System.Threading.Tasks.Task})
+  name.vb: TransactionAsync(Func(Of Task))
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.TransactionAsync(System.Func<System.Threading.Tasks.Task>)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).TransactionAsync(System.Func(Of System.Threading.Tasks.Task))
+  nameWithType: UFDataServiceFromContext<TContext>.TransactionAsync(Func<Task>)
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).TransactionAsync(Func(Of Task))
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.TransactionAsync*
+  name: TransactionAsync
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_TransactionAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.TransactionAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.TransactionAsync
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).TransactionAsync
+  nameWithType: UFDataServiceFromContext<TContext>.TransactionAsync
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).TransactionAsync
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.TransactionAsync``1(System.Func{System.Threading.Tasks.Task{``0}})
+  name: TransactionAsync<T>(Func<Task<T>>)
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_TransactionAsync__1_System_Func_System_Threading_Tasks_Task___0___
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.TransactionAsync``1(System.Func{System.Threading.Tasks.Task{``0}})
+  name.vb: TransactionAsync(Of T)(Func(Of Task(Of T)))
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.TransactionAsync<T>(System.Func<System.Threading.Tasks.Task<T>>)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).TransactionAsync(Of T)(System.Func(Of System.Threading.Tasks.Task(Of T)))
+  nameWithType: UFDataServiceFromContext<TContext>.TransactionAsync<T>(Func<Task<T>>)
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).TransactionAsync(Of T)(Func(Of Task(Of T)))
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.UnlockAsync
+  name: UnlockAsync()
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_UnlockAsync
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.UnlockAsync
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.UnlockAsync()
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).UnlockAsync()
+  nameWithType: UFDataServiceFromContext<TContext>.UnlockAsync()
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).UnlockAsync()
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.UnlockAsync*
+  name: UnlockAsync
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_UnlockAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.UnlockAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.UnlockAsync
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).UnlockAsync
+  nameWithType: UFDataServiceFromContext<TContext>.UnlockAsync
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).UnlockAsync
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.UpdateAsync*
+  name: UpdateAsync
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_UpdateAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.UpdateAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.UpdateAsync
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).UpdateAsync
+  nameWithType: UFDataServiceFromContext<TContext>.UpdateAsync
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).UpdateAsync
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.UpdateAsync``2(``0)
+  name: UpdateAsync<TServiceModel, TEntity>(TServiceModel)
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_UpdateAsync__2___0_
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.UpdateAsync``2(``0)
+  name.vb: UpdateAsync(Of TServiceModel, TEntity)(TServiceModel)
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.UpdateAsync<TServiceModel, TEntity>(TServiceModel)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).UpdateAsync(Of TServiceModel, TEntity)(TServiceModel)
+  nameWithType: UFDataServiceFromContext<TContext>.UpdateAsync<TServiceModel, TEntity>(TServiceModel)
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).UpdateAsync(Of TServiceModel, TEntity)(TServiceModel)
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService
+  name: UFDummyEmailBuilderService
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html
+  commentId: T:UltraForce.Library.Core.Services.UFDummyEmailBuilderService
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService
+  nameWithType: UFDummyEmailBuilderService
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Attachment(System.String,System.String,System.BinaryData)
+  name: Attachment(string, string, BinaryData)
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_Attachment_System_String_System_String_System_BinaryData_
+  commentId: M:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Attachment(System.String,System.String,System.BinaryData)
+  name.vb: Attachment(String, String, BinaryData)
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Attachment(string, string, System.BinaryData)
+  fullName.vb: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Attachment(String, String, System.BinaryData)
+  nameWithType: UFDummyEmailBuilderService.Attachment(string, string, BinaryData)
+  nameWithType.vb: UFDummyEmailBuilderService.Attachment(String, String, BinaryData)
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Attachment*
+  name: Attachment
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_Attachment_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Attachment
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Attachment
+  nameWithType: UFDummyEmailBuilderService.Attachment
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Bcc(System.String,System.String)
+  name: Bcc(string, string?)
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_Bcc_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Bcc(System.String,System.String)
+  name.vb: Bcc(String, String)
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Bcc(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Bcc(String, String)
+  nameWithType: UFDummyEmailBuilderService.Bcc(string, string?)
+  nameWithType.vb: UFDummyEmailBuilderService.Bcc(String, String)
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Bcc*
+  name: Bcc
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_Bcc_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Bcc
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Bcc
+  nameWithType: UFDummyEmailBuilderService.Bcc
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Cc(System.String,System.String)
+  name: Cc(string, string?)
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_Cc_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Cc(System.String,System.String)
+  name.vb: Cc(String, String)
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Cc(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Cc(String, String)
+  nameWithType: UFDummyEmailBuilderService.Cc(string, string?)
+  nameWithType.vb: UFDummyEmailBuilderService.Cc(String, String)
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Cc*
+  name: Cc
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_Cc_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Cc
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Cc
+  nameWithType: UFDummyEmailBuilderService.Cc
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.From(System.String,System.String)
+  name: From(string, string?)
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_From_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.From(System.String,System.String)
+  name.vb: From(String, String)
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.From(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.From(String, String)
+  nameWithType: UFDummyEmailBuilderService.From(string, string?)
+  nameWithType.vb: UFDummyEmailBuilderService.From(String, String)
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.From*
+  name: From
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_From_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.From
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.From
+  nameWithType: UFDummyEmailBuilderService.From
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Html(System.String)
+  name: Html(string)
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_Html_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Html(System.String)
+  name.vb: Html(String)
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Html(string)
+  fullName.vb: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Html(String)
+  nameWithType: UFDummyEmailBuilderService.Html(string)
+  nameWithType.vb: UFDummyEmailBuilderService.Html(String)
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Html*
+  name: Html
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_Html_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Html
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Html
+  nameWithType: UFDummyEmailBuilderService.Html
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.ReplyTo(System.String,System.String)
+  name: ReplyTo(string, string?)
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_ReplyTo_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.ReplyTo(System.String,System.String)
+  name.vb: ReplyTo(String, String)
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.ReplyTo(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.ReplyTo(String, String)
+  nameWithType: UFDummyEmailBuilderService.ReplyTo(string, string?)
+  nameWithType.vb: UFDummyEmailBuilderService.ReplyTo(String, String)
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.ReplyTo*
+  name: ReplyTo
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_ReplyTo_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.ReplyTo
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.ReplyTo
+  nameWithType: UFDummyEmailBuilderService.ReplyTo
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.SendAsync
+  name: SendAsync()
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_SendAsync
+  commentId: M:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.SendAsync
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.SendAsync()
+  nameWithType: UFDummyEmailBuilderService.SendAsync()
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.SendAsync*
+  name: SendAsync
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_SendAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.SendAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.SendAsync
+  nameWithType: UFDummyEmailBuilderService.SendAsync
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Start
+  name: Start()
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_Start
+  commentId: M:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Start
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Start()
+  nameWithType: UFDummyEmailBuilderService.Start()
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Start*
+  name: Start
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_Start_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Start
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Start
+  nameWithType: UFDummyEmailBuilderService.Start
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Subject(System.String)
+  name: Subject(string)
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_Subject_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Subject(System.String)
+  name.vb: Subject(String)
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Subject(string)
+  fullName.vb: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Subject(String)
+  nameWithType: UFDummyEmailBuilderService.Subject(string)
+  nameWithType.vb: UFDummyEmailBuilderService.Subject(String)
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Subject*
+  name: Subject
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_Subject_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Subject
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Subject
+  nameWithType: UFDummyEmailBuilderService.Subject
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Text(System.String)
+  name: Text(string)
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_Text_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Text(System.String)
+  name.vb: Text(String)
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Text(string)
+  fullName.vb: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Text(String)
+  nameWithType: UFDummyEmailBuilderService.Text(string)
+  nameWithType.vb: UFDummyEmailBuilderService.Text(String)
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Text*
+  name: Text
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_Text_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Text
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Text
+  nameWithType: UFDummyEmailBuilderService.Text
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.To(System.String,System.String)
+  name: To(string, string?)
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_To_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.To(System.String,System.String)
+  name.vb: To(String, String)
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.To(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.To(String, String)
+  nameWithType: UFDummyEmailBuilderService.To(string, string?)
+  nameWithType.vb: UFDummyEmailBuilderService.To(String, String)
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.To*
+  name: To
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_To_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.To
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.To
+  nameWithType: UFDummyEmailBuilderService.To
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService
+  name: UFEmailBuilderService
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html
+  commentId: T:UltraForce.Library.Core.Services.UFEmailBuilderService
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService
+  nameWithType: UFEmailBuilderService
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.Attachment(System.String,System.String,System.BinaryData)
+  name: Attachment(string, string, BinaryData)
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_Attachment_System_String_System_String_System_BinaryData_
+  commentId: M:UltraForce.Library.Core.Services.UFEmailBuilderService.Attachment(System.String,System.String,System.BinaryData)
+  name.vb: Attachment(String, String, BinaryData)
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.Attachment(string, string, System.BinaryData)
+  fullName.vb: UltraForce.Library.Core.Services.UFEmailBuilderService.Attachment(String, String, System.BinaryData)
+  nameWithType: UFEmailBuilderService.Attachment(string, string, BinaryData)
+  nameWithType.vb: UFEmailBuilderService.Attachment(String, String, BinaryData)
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.Attachment*
+  name: Attachment
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_Attachment_
+  commentId: Overload:UltraForce.Library.Core.Services.UFEmailBuilderService.Attachment
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.Attachment
+  nameWithType: UFEmailBuilderService.Attachment
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.Attachments(System.String,System.Collections.Generic.IDictionary{System.String,System.BinaryData})
+  name: Attachments(string, IDictionary<string, BinaryData>)
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_Attachments_System_String_System_Collections_Generic_IDictionary_System_String_System_BinaryData__
+  commentId: M:UltraForce.Library.Core.Services.UFEmailBuilderService.Attachments(System.String,System.Collections.Generic.IDictionary{System.String,System.BinaryData})
+  name.vb: Attachments(String, IDictionary(Of String, BinaryData))
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.Attachments(string, System.Collections.Generic.IDictionary<string, System.BinaryData>)
+  fullName.vb: UltraForce.Library.Core.Services.UFEmailBuilderService.Attachments(String, System.Collections.Generic.IDictionary(Of String, System.BinaryData))
+  nameWithType: UFEmailBuilderService.Attachments(string, IDictionary<string, BinaryData>)
+  nameWithType.vb: UFEmailBuilderService.Attachments(String, IDictionary(Of String, BinaryData))
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.Attachments*
+  name: Attachments
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_Attachments_
+  commentId: Overload:UltraForce.Library.Core.Services.UFEmailBuilderService.Attachments
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.Attachments
+  nameWithType: UFEmailBuilderService.Attachments
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.Bcc(System.Collections.Generic.IDictionary{System.String,System.String})
+  name: Bcc(IDictionary<string, string?>)
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_Bcc_System_Collections_Generic_IDictionary_System_String_System_String__
+  commentId: M:UltraForce.Library.Core.Services.UFEmailBuilderService.Bcc(System.Collections.Generic.IDictionary{System.String,System.String})
+  name.vb: Bcc(IDictionary(Of String, String))
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.Bcc(System.Collections.Generic.IDictionary<string, string?>)
+  fullName.vb: UltraForce.Library.Core.Services.UFEmailBuilderService.Bcc(System.Collections.Generic.IDictionary(Of String, String))
+  nameWithType: UFEmailBuilderService.Bcc(IDictionary<string, string?>)
+  nameWithType.vb: UFEmailBuilderService.Bcc(IDictionary(Of String, String))
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.Bcc(System.String,System.String)
+  name: Bcc(string, string?)
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_Bcc_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFEmailBuilderService.Bcc(System.String,System.String)
+  name.vb: Bcc(String, String)
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.Bcc(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.UFEmailBuilderService.Bcc(String, String)
+  nameWithType: UFEmailBuilderService.Bcc(string, string?)
+  nameWithType.vb: UFEmailBuilderService.Bcc(String, String)
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.Bcc*
+  name: Bcc
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_Bcc_
+  commentId: Overload:UltraForce.Library.Core.Services.UFEmailBuilderService.Bcc
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.Bcc
+  nameWithType: UFEmailBuilderService.Bcc
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.Cc(System.Collections.Generic.IDictionary{System.String,System.String})
+  name: Cc(IDictionary<string, string?>)
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_Cc_System_Collections_Generic_IDictionary_System_String_System_String__
+  commentId: M:UltraForce.Library.Core.Services.UFEmailBuilderService.Cc(System.Collections.Generic.IDictionary{System.String,System.String})
+  name.vb: Cc(IDictionary(Of String, String))
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.Cc(System.Collections.Generic.IDictionary<string, string?>)
+  fullName.vb: UltraForce.Library.Core.Services.UFEmailBuilderService.Cc(System.Collections.Generic.IDictionary(Of String, String))
+  nameWithType: UFEmailBuilderService.Cc(IDictionary<string, string?>)
+  nameWithType.vb: UFEmailBuilderService.Cc(IDictionary(Of String, String))
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.Cc(System.String,System.String)
+  name: Cc(string, string?)
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_Cc_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFEmailBuilderService.Cc(System.String,System.String)
+  name.vb: Cc(String, String)
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.Cc(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.UFEmailBuilderService.Cc(String, String)
+  nameWithType: UFEmailBuilderService.Cc(string, string?)
+  nameWithType.vb: UFEmailBuilderService.Cc(String, String)
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.Cc*
+  name: Cc
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_Cc_
+  commentId: Overload:UltraForce.Library.Core.Services.UFEmailBuilderService.Cc
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.Cc
+  nameWithType: UFEmailBuilderService.Cc
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.From(System.String,System.String)
+  name: From(string, string?)
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_From_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFEmailBuilderService.From(System.String,System.String)
+  name.vb: From(String, String)
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.From(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.UFEmailBuilderService.From(String, String)
+  nameWithType: UFEmailBuilderService.From(string, string?)
+  nameWithType.vb: UFEmailBuilderService.From(String, String)
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.From*
+  name: From
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_From_
+  commentId: Overload:UltraForce.Library.Core.Services.UFEmailBuilderService.From
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.From
+  nameWithType: UFEmailBuilderService.From
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.Html(System.String)
+  name: Html(string)
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_Html_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFEmailBuilderService.Html(System.String)
+  name.vb: Html(String)
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.Html(string)
+  fullName.vb: UltraForce.Library.Core.Services.UFEmailBuilderService.Html(String)
+  nameWithType: UFEmailBuilderService.Html(string)
+  nameWithType.vb: UFEmailBuilderService.Html(String)
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.Html*
+  name: Html
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_Html_
+  commentId: Overload:UltraForce.Library.Core.Services.UFEmailBuilderService.Html
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.Html
+  nameWithType: UFEmailBuilderService.Html
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.ReplyTo(System.String,System.String)
+  name: ReplyTo(string, string?)
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_ReplyTo_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFEmailBuilderService.ReplyTo(System.String,System.String)
+  name.vb: ReplyTo(String, String)
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.ReplyTo(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.UFEmailBuilderService.ReplyTo(String, String)
+  nameWithType: UFEmailBuilderService.ReplyTo(string, string?)
+  nameWithType.vb: UFEmailBuilderService.ReplyTo(String, String)
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.ReplyTo*
+  name: ReplyTo
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_ReplyTo_
+  commentId: Overload:UltraForce.Library.Core.Services.UFEmailBuilderService.ReplyTo
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.ReplyTo
+  nameWithType: UFEmailBuilderService.ReplyTo
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.SendAsync
+  name: SendAsync()
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_SendAsync
+  commentId: M:UltraForce.Library.Core.Services.UFEmailBuilderService.SendAsync
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.SendAsync()
+  nameWithType: UFEmailBuilderService.SendAsync()
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.SendAsync*
+  name: SendAsync
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_SendAsync_
+  commentId: Overload:UltraForce.Library.Core.Services.UFEmailBuilderService.SendAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.SendAsync
+  nameWithType: UFEmailBuilderService.SendAsync
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.Start
+  name: Start()
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_Start
+  commentId: M:UltraForce.Library.Core.Services.UFEmailBuilderService.Start
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.Start()
+  nameWithType: UFEmailBuilderService.Start()
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.Start*
+  name: Start
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_Start_
+  commentId: Overload:UltraForce.Library.Core.Services.UFEmailBuilderService.Start
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.Start
+  nameWithType: UFEmailBuilderService.Start
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.Subject(System.String)
+  name: Subject(string)
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_Subject_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFEmailBuilderService.Subject(System.String)
+  name.vb: Subject(String)
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.Subject(string)
+  fullName.vb: UltraForce.Library.Core.Services.UFEmailBuilderService.Subject(String)
+  nameWithType: UFEmailBuilderService.Subject(string)
+  nameWithType.vb: UFEmailBuilderService.Subject(String)
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.Subject*
+  name: Subject
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_Subject_
+  commentId: Overload:UltraForce.Library.Core.Services.UFEmailBuilderService.Subject
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.Subject
+  nameWithType: UFEmailBuilderService.Subject
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.Text(System.String)
+  name: Text(string)
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_Text_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFEmailBuilderService.Text(System.String)
+  name.vb: Text(String)
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.Text(string)
+  fullName.vb: UltraForce.Library.Core.Services.UFEmailBuilderService.Text(String)
+  nameWithType: UFEmailBuilderService.Text(string)
+  nameWithType.vb: UFEmailBuilderService.Text(String)
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.Text*
+  name: Text
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_Text_
+  commentId: Overload:UltraForce.Library.Core.Services.UFEmailBuilderService.Text
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.Text
+  nameWithType: UFEmailBuilderService.Text
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.To(System.Collections.Generic.IDictionary{System.String,System.String})
+  name: To(IDictionary<string, string?>)
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_To_System_Collections_Generic_IDictionary_System_String_System_String__
+  commentId: M:UltraForce.Library.Core.Services.UFEmailBuilderService.To(System.Collections.Generic.IDictionary{System.String,System.String})
+  name.vb: To(IDictionary(Of String, String))
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.To(System.Collections.Generic.IDictionary<string, string?>)
+  fullName.vb: UltraForce.Library.Core.Services.UFEmailBuilderService.To(System.Collections.Generic.IDictionary(Of String, String))
+  nameWithType: UFEmailBuilderService.To(IDictionary<string, string?>)
+  nameWithType.vb: UFEmailBuilderService.To(IDictionary(Of String, String))
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.To(System.String,System.String)
+  name: To(string, string?)
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_To_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Services.UFEmailBuilderService.To(System.String,System.String)
+  name.vb: To(String, String)
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.To(string, string?)
+  fullName.vb: UltraForce.Library.Core.Services.UFEmailBuilderService.To(String, String)
+  nameWithType: UFEmailBuilderService.To(string, string?)
+  nameWithType.vb: UFEmailBuilderService.To(String, String)
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.To*
+  name: To
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_To_
+  commentId: Overload:UltraForce.Library.Core.Services.UFEmailBuilderService.To
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.To
+  nameWithType: UFEmailBuilderService.To
+- uid: UltraForce.Library.Core.Tools
+  name: UltraForce.Library.Core.Tools
+  href: api/UltraForce.Library.Core.Tools.html
+  commentId: N:UltraForce.Library.Core.Tools
+  fullName: UltraForce.Library.Core.Tools
+  nameWithType: UltraForce.Library.Core.Tools
+- uid: UltraForce.Library.Core.Tools.UFCoreFileTools
+  name: UFCoreFileTools
+  href: api/UltraForce.Library.Core.Tools.UFCoreFileTools.html
+  commentId: T:UltraForce.Library.Core.Tools.UFCoreFileTools
+  fullName: UltraForce.Library.Core.Tools.UFCoreFileTools
+  nameWithType: UFCoreFileTools
+- uid: UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile(System.String,System.String,System.String)
+  name: CheckAlternativeFile(string, string, string)
+  href: api/UltraForce.Library.Core.Tools.UFCoreFileTools.html#UltraForce_Library_Core_Tools_UFCoreFileTools_CheckAlternativeFile_System_String_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile(System.String,System.String,System.String)
+  name.vb: CheckAlternativeFile(String, String, String)
+  fullName: UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile(string, string, string)
+  fullName.vb: UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile(String, String, String)
+  nameWithType: UFCoreFileTools.CheckAlternativeFile(string, string, string)
+  nameWithType.vb: UFCoreFileTools.CheckAlternativeFile(String, String, String)
+- uid: UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile*
+  name: CheckAlternativeFile
+  href: api/UltraForce.Library.Core.Tools.UFCoreFileTools.html#UltraForce_Library_Core_Tools_UFCoreFileTools_CheckAlternativeFile_
+  commentId: Overload:UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile
+  nameWithType: UFCoreFileTools.CheckAlternativeFile
+- uid: UltraForce.Library.Core.Tools.UFDataServiceTools
+  name: UFDataServiceTools
+  href: api/UltraForce.Library.Core.Tools.UFDataServiceTools.html
+  commentId: T:UltraForce.Library.Core.Tools.UFDataServiceTools
+  fullName: UltraForce.Library.Core.Tools.UFDataServiceTools
+  nameWithType: UFDataServiceTools
+- uid: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync*
+  name: BuildFromAsync
+  href: api/UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildFromAsync_
+  commentId: Overload:UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync
+  nameWithType: UFDataServiceTools.BuildFromAsync
+- uid: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync``2(System.Collections.Generic.IEnumerable{``1})
+  name: BuildFromAsync<TServiceModel, TEntity>(IEnumerable<TEntity>)
+  href: api/UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildFromAsync__2_System_Collections_Generic_IEnumerable___1__
+  commentId: M:UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync``2(System.Collections.Generic.IEnumerable{``1})
+  name.vb: BuildFromAsync(Of TServiceModel, TEntity)(IEnumerable(Of TEntity))
+  fullName: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync<TServiceModel, TEntity>(System.Collections.Generic.IEnumerable<TEntity>)
+  fullName.vb: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync(Of TServiceModel, TEntity)(System.Collections.Generic.IEnumerable(Of TEntity))
+  nameWithType: UFDataServiceTools.BuildFromAsync<TServiceModel, TEntity>(IEnumerable<TEntity>)
+  nameWithType.vb: UFDataServiceTools.BuildFromAsync(Of TServiceModel, TEntity)(IEnumerable(Of TEntity))
+- uid: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync``2(``1)
+  name: BuildFromAsync<TServiceModel, TEntity>(TEntity)
+  href: api/UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildFromAsync__2___1_
+  commentId: M:UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync``2(``1)
+  name.vb: BuildFromAsync(Of TServiceModel, TEntity)(TEntity)
+  fullName: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync<TServiceModel, TEntity>(TEntity)
+  fullName.vb: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync(Of TServiceModel, TEntity)(TEntity)
+  nameWithType: UFDataServiceTools.BuildFromAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType.vb: UFDataServiceTools.BuildFromAsync(Of TServiceModel, TEntity)(TEntity)
+- uid: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildNullableFromAsync*
+  name: BuildNullableFromAsync
+  href: api/UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildNullableFromAsync_
+  commentId: Overload:UltraForce.Library.Core.Tools.UFDataServiceTools.BuildNullableFromAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildNullableFromAsync
+  nameWithType: UFDataServiceTools.BuildNullableFromAsync
+- uid: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildNullableFromAsync``2(``1)
+  name: BuildNullableFromAsync<TServiceModel, TEntity>(TEntity?)
+  href: api/UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildNullableFromAsync__2___1_
+  commentId: M:UltraForce.Library.Core.Tools.UFDataServiceTools.BuildNullableFromAsync``2(``1)
+  name.vb: BuildNullableFromAsync(Of TServiceModel, TEntity)(TEntity)
+  fullName: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildNullableFromAsync<TServiceModel, TEntity>(TEntity?)
+  fullName.vb: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildNullableFromAsync(Of TServiceModel, TEntity)(TEntity)
+  nameWithType: UFDataServiceTools.BuildNullableFromAsync<TServiceModel, TEntity>(TEntity?)
+  nameWithType.vb: UFDataServiceTools.BuildNullableFromAsync(Of TServiceModel, TEntity)(TEntity)
+- uid: UltraForce.Library.Core.Tools.UFTestTools
+  name: UFTestTools
+  href: api/UltraForce.Library.Core.Tools.UFTestTools.html
+  commentId: T:UltraForce.Library.Core.Tools.UFTestTools
+  fullName: UltraForce.Library.Core.Tools.UFTestTools
+  nameWithType: UFTestTools
+- uid: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualList*
+  name: AssertEqualList
+  href: api/UltraForce.Library.Core.Tools.UFTestTools.html#UltraForce_Library_Core_Tools_UFTestTools_AssertEqualList_
+  commentId: Overload:UltraForce.Library.Core.Tools.UFTestTools.AssertEqualList
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualList
+  nameWithType: UFTestTools.AssertEqualList
+- uid: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualList``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{System.String})
+  name: AssertEqualList<T>(IEnumerable<T>, IEnumerable<T>, IEnumerable<string>?)
+  href: api/UltraForce.Library.Core.Tools.UFTestTools.html#UltraForce_Library_Core_Tools_UFTestTools_AssertEqualList__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:UltraForce.Library.Core.Tools.UFTestTools.AssertEqualList``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{System.String})
+  name.vb: AssertEqualList(Of T)(IEnumerable(Of T), IEnumerable(Of T), IEnumerable(Of String))
+  fullName: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualList<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<string>?)
+  fullName.vb: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualList(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: UFTestTools.AssertEqualList<T>(IEnumerable<T>, IEnumerable<T>, IEnumerable<string>?)
+  nameWithType.vb: UFTestTools.AssertEqualList(Of T)(IEnumerable(Of T), IEnumerable(Of T), IEnumerable(Of String))
+- uid: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualList``2(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``1},System.Func{``0,``1,System.Boolean})
+  name: AssertEqualList<TFirst, TSecond>(IEnumerable<TFirst>, IEnumerable<TSecond>, Func<TFirst, TSecond, bool>)
+  href: api/UltraForce.Library.Core.Tools.UFTestTools.html#UltraForce_Library_Core_Tools_UFTestTools_AssertEqualList__2_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___1__System_Func___0___1_System_Boolean__
+  commentId: M:UltraForce.Library.Core.Tools.UFTestTools.AssertEqualList``2(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``1},System.Func{``0,``1,System.Boolean})
+  name.vb: AssertEqualList(Of TFirst, TSecond)(IEnumerable(Of TFirst), IEnumerable(Of TSecond), Func(Of TFirst, TSecond, Boolean))
+  fullName: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualList<TFirst, TSecond>(System.Collections.Generic.IEnumerable<TFirst>, System.Collections.Generic.IEnumerable<TSecond>, System.Func<TFirst, TSecond, bool>)
+  fullName.vb: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualList(Of TFirst, TSecond)(System.Collections.Generic.IEnumerable(Of TFirst), System.Collections.Generic.IEnumerable(Of TSecond), System.Func(Of TFirst, TSecond, Boolean))
+  nameWithType: UFTestTools.AssertEqualList<TFirst, TSecond>(IEnumerable<TFirst>, IEnumerable<TSecond>, Func<TFirst, TSecond, bool>)
+  nameWithType.vb: UFTestTools.AssertEqualList(Of TFirst, TSecond)(IEnumerable(Of TFirst), IEnumerable(Of TSecond), Func(Of TFirst, TSecond, Boolean))
+- uid: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualProperties*
+  name: AssertEqualProperties
+  href: api/UltraForce.Library.Core.Tools.UFTestTools.html#UltraForce_Library_Core_Tools_UFTestTools_AssertEqualProperties_
+  commentId: Overload:UltraForce.Library.Core.Tools.UFTestTools.AssertEqualProperties
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualProperties
+  nameWithType: UFTestTools.AssertEqualProperties
+- uid: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualProperties``1(``0,``0,System.Collections.Generic.IEnumerable{System.String})
+  name: AssertEqualProperties<T>(T, T, IEnumerable<string>?)
+  href: api/UltraForce.Library.Core.Tools.UFTestTools.html#UltraForce_Library_Core_Tools_UFTestTools_AssertEqualProperties__1___0___0_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:UltraForce.Library.Core.Tools.UFTestTools.AssertEqualProperties``1(``0,``0,System.Collections.Generic.IEnumerable{System.String})
+  name.vb: AssertEqualProperties(Of T)(T, T, IEnumerable(Of String))
+  fullName: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualProperties<T>(T, T, System.Collections.Generic.IEnumerable<string>?)
+  fullName.vb: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualProperties(Of T)(T, T, System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: UFTestTools.AssertEqualProperties<T>(T, T, IEnumerable<string>?)
+  nameWithType.vb: UFTestTools.AssertEqualProperties(Of T)(T, T, IEnumerable(Of String))
+- uid: UltraForce.Library.Core.Tools.UFTestTools.HasUniqueValues*
+  name: HasUniqueValues
+  href: api/UltraForce.Library.Core.Tools.UFTestTools.html#UltraForce_Library_Core_Tools_UFTestTools_HasUniqueValues_
+  commentId: Overload:UltraForce.Library.Core.Tools.UFTestTools.HasUniqueValues
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Tools.UFTestTools.HasUniqueValues
+  nameWithType: UFTestTools.HasUniqueValues
+- uid: UltraForce.Library.Core.Tools.UFTestTools.HasUniqueValues``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  name: HasUniqueValues<TObject, TValue>(IEnumerable<TObject>, Func<TObject, TValue>)
+  href: api/UltraForce.Library.Core.Tools.UFTestTools.html#UltraForce_Library_Core_Tools_UFTestTools_HasUniqueValues__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
+  commentId: M:UltraForce.Library.Core.Tools.UFTestTools.HasUniqueValues``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  name.vb: HasUniqueValues(Of TObject, TValue)(IEnumerable(Of TObject), Func(Of TObject, TValue))
+  fullName: UltraForce.Library.Core.Tools.UFTestTools.HasUniqueValues<TObject, TValue>(System.Collections.Generic.IEnumerable<TObject>, System.Func<TObject, TValue>)
+  fullName.vb: UltraForce.Library.Core.Tools.UFTestTools.HasUniqueValues(Of TObject, TValue)(System.Collections.Generic.IEnumerable(Of TObject), System.Func(Of TObject, TValue))
+  nameWithType: UFTestTools.HasUniqueValues<TObject, TValue>(IEnumerable<TObject>, Func<TObject, TValue>)
+  nameWithType.vb: UFTestTools.HasUniqueValues(Of TObject, TValue)(IEnumerable(Of TObject), Func(Of TObject, TValue))
+- uid: UltraForce.Library.Core.Types.Enums
+  name: UltraForce.Library.Core.Types.Enums
+  href: api/UltraForce.Library.Core.Types.Enums.html
+  commentId: N:UltraForce.Library.Core.Types.Enums
+  fullName: UltraForce.Library.Core.Types.Enums
+  nameWithType: UltraForce.Library.Core.Types.Enums
+- uid: UltraForce.Library.Core.Types.Enums.UFEntityAction
+  name: UFEntityAction
+  href: api/UltraForce.Library.Core.Types.Enums.UFEntityAction.html
+  commentId: T:UltraForce.Library.Core.Types.Enums.UFEntityAction
+  fullName: UltraForce.Library.Core.Types.Enums.UFEntityAction
+  nameWithType: UFEntityAction
+- uid: UltraForce.Library.Core.Types.Enums.UFEntityAction.Add
+  name: Add
+  href: api/UltraForce.Library.Core.Types.Enums.UFEntityAction.html#UltraForce_Library_Core_Types_Enums_UFEntityAction_Add
+  commentId: F:UltraForce.Library.Core.Types.Enums.UFEntityAction.Add
+  fullName: UltraForce.Library.Core.Types.Enums.UFEntityAction.Add
+  nameWithType: UFEntityAction.Add
+- uid: UltraForce.Library.Core.Types.Enums.UFEntityAction.Update
+  name: Update
+  href: api/UltraForce.Library.Core.Types.Enums.UFEntityAction.html#UltraForce_Library_Core_Types_Enums_UFEntityAction_Update
+  commentId: F:UltraForce.Library.Core.Types.Enums.UFEntityAction.Update
+  fullName: UltraForce.Library.Core.Types.Enums.UFEntityAction.Update
+  nameWithType: UFEntityAction.Update

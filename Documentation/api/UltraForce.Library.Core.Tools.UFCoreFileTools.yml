@@ -1,0 +1,390 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Tools.UFCoreFileTools
+  commentId: T:UltraForce.Library.Core.Tools.UFCoreFileTools
+  id: UFCoreFileTools
+  parent: UltraForce.Library.Core.Tools
+  children:
+  - UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile(System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: UFCoreFileTools
+  nameWithType: UFCoreFileTools
+  fullName: UltraForce.Library.Core.Tools.UFCoreFileTools
+  type: Class
+  source:
+    id: UFCoreFileTools
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Tools\UFCoreFileTools.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Tools
+  summary: File support methods.
+  example: []
+  syntax:
+    content: public static class UFCoreFileTools
+    content.vb: Public Module UFCoreFileTools
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile(System.String,System.String,System.String)
+  commentId: M:UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile(System.String,System.String,System.String)
+  id: CheckAlternativeFile(System.String,System.String,System.String)
+  parent: UltraForce.Library.Core.Tools.UFCoreFileTools
+  langs:
+  - csharp
+  - vb
+  name: CheckAlternativeFile(string, string, string)
+  nameWithType: UFCoreFileTools.CheckAlternativeFile(string, string, string)
+  fullName: UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile(string, string, string)
+  type: Method
+  source:
+    id: CheckAlternativeFile
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Tools\UFCoreFileTools.cs
+    startLine: 55
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Tools
+  summary: >-
+    Checks if there is an file using an alternative extension, if there is the method will copy the alternative
+
+    file to missing file.
+
+
+    This method uses `File.Copy` but does not handle any of the exceptions it can throw.
+  example: []
+  syntax:
+    content: public static bool CheckAlternativeFile(string aMissingFileName, string aRequiredExtension, string anAlternativeExtension)
+    parameters:
+    - id: aMissingFileName
+      type: System.String
+      description: Full path and file name
+    - id: aRequiredExtension
+      type: System.String
+      description: The extension the missing filename must use (including '.')
+    - id: anAlternativeExtension
+      type: System.String
+      description: The extension of the alternative file (including '.')
+    return:
+      type: System.Boolean
+      description: >-
+        <code>true</code> if an alternative file was found and a copy was made or 
+
+        if the missing file is actually existing.
+    content.vb: Public Shared Function CheckAlternativeFile(aMissingFileName As String, aRequiredExtension As String, anAlternativeExtension As String) As Boolean
+  overload: UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile*
+  nameWithType.vb: UFCoreFileTools.CheckAlternativeFile(String, String, String)
+  fullName.vb: UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile(String, String, String)
+  name.vb: CheckAlternativeFile(String, String, String)
+references:
+- uid: UltraForce.Library.Core.Tools
+  commentId: N:UltraForce.Library.Core.Tools
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Tools
+  nameWithType: UltraForce.Library.Core.Tools
+  fullName: UltraForce.Library.Core.Tools
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Tools
+    name: Tools
+    href: UltraForce.Library.Core.Tools.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Tools
+    name: Tools
+    href: UltraForce.Library.Core.Tools.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile*
+  commentId: Overload:UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile
+  href: UltraForce.Library.Core.Tools.UFCoreFileTools.html#UltraForce_Library_Core_Tools_UFCoreFileTools_CheckAlternativeFile_System_String_System_String_System_String_
+  name: CheckAlternativeFile
+  nameWithType: UFCoreFileTools.CheckAlternativeFile
+  fullName: UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

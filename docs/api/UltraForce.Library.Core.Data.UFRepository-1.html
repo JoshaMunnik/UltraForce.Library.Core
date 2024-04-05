@@ -1,0 +1,465 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFRepository&lt;TContext&gt; | UltraForce.Library.Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFRepository&lt;TContext&gt; | UltraForce.Library.Core ">
+      
+      <meta name="description" content="is a base class to implement a repository.  The class implements a locking mechanism to minimize the   calls.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.Core">
+            UltraForce.Library.Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.Core.Data.UFRepository`1">
+
+
+
+  <h1 id="UltraForce_Library_Core_Data_UFRepository_1" data-uid="UltraForce.Library.Core.Data.UFRepository`1" class="text-break">
+Class UFRepository&lt;TContext&gt;  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.Core.html">Core</a>.<a class="xref" href="UltraForce.Library.Core.Data.html">Data</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a class="xref" href="UltraForce.Library.Core.Data.UFRepository-1.html">UFRepository&lt;TContext&gt;</a> is a base class to implement a repository.</p>
+<p>
+The class implements a locking mechanism to minimize the 
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechanges#microsoft-entityframeworkcore-dbcontext-savechanges">SaveChanges()</a> calls.
+</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UFRepository&lt;TContext&gt; : IUFRepository where TContext : DbContext</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TContext</code></dt>
+    <dd><p>The database context type</p>
+</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UFRepository&lt;TContext&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="UltraForce.Library.Core.Data.IUFRepository.html">IUFRepository</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_">UFDataServiceExtensions.AsModelAsync&lt;TServiceModel, TEntity&gt;(TEntity)</a>
+  </div>
+  <div>
+      <a class="xref" href="UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_">UFDataServiceExtensions.AsNullableModelAsync&lt;TServiceModel, TEntity&gt;(TEntity?)</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="UltraForce_Library_Core_Data_UFRepository_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Interface definition for the repository should inherit from
+<a class="xref" href="UltraForce.Library.Core.Data.IUFRepository.html">IUFRepository</a>.</p>
+<p>
+See <a class="xref" href="UltraForce.Library.Core.Services.IUFDataService.html">IUFDataService</a> and <a class="xref" href="UltraForce.Library.Core.Models.IUFDataServiceModel-1.html">IUFDataServiceModel&lt;TEntity&gt;</a> for a 
+</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Data_UFRepository_1__ctor_" data-uid="UltraForce.Library.Core.Data.UFRepository`1.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_Core_Data_UFRepository_1__ctor__0_System_Boolean_" data-uid="UltraForce.Library.Core.Data.UFRepository`1.#ctor(`0,System.Boolean)">
+  UFRepository(TContext, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an instance of <a class="xref" href="UltraForce.Library.Core.Data.UFRepository-1.html">UFRepository&lt;TContext&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UFRepository(TContext aContext, bool aDisableTracking)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aContext</code> <span class="xref">TContext</span></dt>
+    <dd><p>Database context to use</p>
+</dd>
+    <dt><code>aDisableTracking</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When true tell <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.changetracker">ChangeTracker</a> to stop tracking
+and reset the state of any tracked entry to
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.entitystate#microsoft-entityframeworkcore-entitystate-detached">Detached</a> with the
+<a class="xref" href="UltraForce.Library.Core.Data.UFRepository-1.html#UltraForce_Library_Core_Data_UFRepository_1_SaveChangesAsync">SaveChangesAsync()</a> call.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Data_UFRepository_1_Changed_" data-uid="UltraForce.Library.Core.Data.UFRepository`1.Changed*"></a>
+
+  <h3 id="UltraForce_Library_Core_Data_UFRepository_1_Changed" data-uid="UltraForce.Library.Core.Data.UFRepository`1.Changed">
+  Changed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This property is true when the repository is locked and there is at
+least one change pending.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool Changed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Data_UFRepository_1_Context_" data-uid="UltraForce.Library.Core.Data.UFRepository`1.Context*"></a>
+
+  <h3 id="UltraForce_Library_Core_Data_UFRepository_1_Context" data-uid="UltraForce.Library.Core.Data.UFRepository`1.Context">
+  Context
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The context</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TContext Context { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TContext</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Data_UFRepository_1_DetachTrackedEntries_" data-uid="UltraForce.Library.Core.Data.UFRepository`1.DetachTrackedEntries*"></a>
+
+  <h3 id="UltraForce_Library_Core_Data_UFRepository_1_DetachTrackedEntries" data-uid="UltraForce.Library.Core.Data.UFRepository`1.DetachTrackedEntries">
+  DetachTrackedEntries()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the changed entries that have <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.entitystate#microsoft-entityframeworkcore-entitystate-added">Added</a>,
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.entitystate#microsoft-entityframeworkcore-entitystate-modified">Modified</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.entitystate#microsoft-entityframeworkcore-entitystate-deleted">Deleted</a>
+to <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.entitystate#microsoft-entityframeworkcore-entitystate-detached">Detached</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DetachTrackedEntries()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_Core_Data_UFRepository_1_DetachTrackedEntries_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Based on code from:
+<a href="https://stackoverflow.com/questions/27423059/how-do-i-clear-tracked-entities-in-entity-framework">https://stackoverflow.com/questions/27423059/how-do-i-clear-tracked-entities-in-entity-framework</a></p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_Core_Data_UFRepository_1_LockAsync_" data-uid="UltraForce.Library.Core.Data.UFRepository`1.LockAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Data_UFRepository_1_LockAsync" data-uid="UltraForce.Library.Core.Data.UFRepository`1.LockAsync">
+  LockAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Locks the repository, preventing the updating of underlying data
+storage with every change.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task LockAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_Core_Data_UFRepository_1_LockAsync_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Each call to <a class="xref" href="UltraForce.Library.Core.Data.IUFRepository.html#UltraForce_Library_Core_Data_IUFRepository_LockAsync">LockAsync()</a> must be matched with a call to
+<a class="xref" href="UltraForce.Library.Core.Data.IUFRepository.html#UltraForce_Library_Core_Data_IUFRepository_UnlockAsync">UnlockAsync()</a> before data is saved again.</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_Core_Data_UFRepository_1_SaveChangesAsync_" data-uid="UltraForce.Library.Core.Data.UFRepository`1.SaveChangesAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Data_UFRepository_1_SaveChangesAsync" data-uid="UltraForce.Library.Core.Data.UFRepository`1.SaveChangesAsync">
+  SaveChangesAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the changes when the instance is not locked, else set an internal
+flag to indicate data needs to be saved.</p>
+<p>
+If tracking was disabled, this method will also call 
+<a class="xref" href="UltraForce.Library.Core.Data.UFRepository-1.html#UltraForce_Library_Core_Data_UFRepository_1_DetachTrackedEntries">DetachTrackedEntries()</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task SaveChangesAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Data_UFRepository_1_UnlockAsync_" data-uid="UltraForce.Library.Core.Data.UFRepository`1.UnlockAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Data_UFRepository_1_UnlockAsync" data-uid="UltraForce.Library.Core.Data.UFRepository`1.UnlockAsync">
+  UnlockAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unlocks the repository. If this call matches the first call to
+<a class="xref" href="UltraForce.Library.Core.Data.IUFRepository.html#UltraForce_Library_Core_Data_IUFRepository_LockAsync">LockAsync()</a> any pending changes are saved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task UnlockAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

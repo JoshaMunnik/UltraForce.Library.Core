@@ -1,0 +1,156 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Services
+  commentId: N:UltraForce.Library.Core.Services
+  id: UltraForce.Library.Core.Services
+  children:
+  - UltraForce.Library.Core.Services.IUFDataService
+  - UltraForce.Library.Core.Services.IUFDataServiceCRUD`3
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService
+  - UltraForce.Library.Core.Services.UFAzureEmailBuilderService
+  - UltraForce.Library.Core.Services.UFDataServiceFromContext`1
+  - UltraForce.Library.Core.Services.UFDummyEmailBuilderService
+  - UltraForce.Library.Core.Services.UFEmailBuilderService
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.Core.Services
+  nameWithType: UltraForce.Library.Core.Services
+  fullName: UltraForce.Library.Core.Services
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.Core
+references:
+- uid: UltraForce.Library.Core.Services.IUFDataService
+  commentId: T:UltraForce.Library.Core.Services.IUFDataService
+  parent: UltraForce.Library.Core.Services
+  href: UltraForce.Library.Core.Services.IUFDataService.html
+  name: IUFDataService
+  nameWithType: IUFDataService
+  fullName: UltraForce.Library.Core.Services.IUFDataService
+- uid: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3
+  commentId: T:UltraForce.Library.Core.Services.IUFDataServiceCRUD`3
+  href: UltraForce.Library.Core.Services.IUFDataServiceCRUD-3.html
+  name: IUFDataServiceCRUD<TServiceModel, TKey, TEntity>
+  nameWithType: IUFDataServiceCRUD<TServiceModel, TKey, TEntity>
+  fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>
+  nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity)
+  fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity)
+  name.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3
+    name: IUFDataServiceCRUD
+    href: UltraForce.Library.Core.Services.IUFDataServiceCRUD-3.html
+  - name: <
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3
+    name: IUFDataServiceCRUD
+    href: UltraForce.Library.Core.Services.IUFDataServiceCRUD-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  commentId: T:UltraForce.Library.Core.Services.IUFEmailBuilderService
+  parent: UltraForce.Library.Core.Services
+  href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html
+  name: IUFEmailBuilderService
+  nameWithType: IUFEmailBuilderService
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService
+  commentId: T:UltraForce.Library.Core.Services.UFAzureEmailBuilderService
+  href: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html
+  name: UFAzureEmailBuilderService
+  nameWithType: UFAzureEmailBuilderService
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1
+  commentId: T:UltraForce.Library.Core.Services.UFDataServiceFromContext`1
+  href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html
+  name: UFDataServiceFromContext<TContext>
+  nameWithType: UFDataServiceFromContext<TContext>
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>
+  nameWithType.vb: UFDataServiceFromContext(Of TContext)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext)
+  name.vb: UFDataServiceFromContext(Of TContext)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1
+    name: UFDataServiceFromContext
+    href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1
+    name: UFDataServiceFromContext
+    href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService
+  commentId: T:UltraForce.Library.Core.Services.UFDummyEmailBuilderService
+  href: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html
+  name: UFDummyEmailBuilderService
+  nameWithType: UFDummyEmailBuilderService
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService
+  commentId: T:UltraForce.Library.Core.Services.UFEmailBuilderService
+  parent: UltraForce.Library.Core.Services
+  href: UltraForce.Library.Core.Services.UFEmailBuilderService.html
+  name: UFEmailBuilderService
+  nameWithType: UFEmailBuilderService
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService
+- uid: UltraForce.Library.Core.Services
+  commentId: N:UltraForce.Library.Core.Services
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Services
+  nameWithType: UltraForce.Library.Core.Services
+  fullName: UltraForce.Library.Core.Services
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Services
+    name: Services
+    href: UltraForce.Library.Core.Services.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Services
+    name: Services
+    href: UltraForce.Library.Core.Services.html

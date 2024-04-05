@@ -1,0 +1,477 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Services.IUFDataService
+  commentId: T:UltraForce.Library.Core.Services.IUFDataService
+  id: IUFDataService
+  parent: UltraForce.Library.Core.Services
+  children:
+  - UltraForce.Library.Core.Services.IUFDataService.LockAsync
+  - UltraForce.Library.Core.Services.IUFDataService.UnlockAsync
+  langs:
+  - csharp
+  - vb
+  name: IUFDataService
+  nameWithType: IUFDataService
+  fullName: UltraForce.Library.Core.Services.IUFDataService
+  type: Interface
+  source:
+    id: IUFDataService
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFDataService.cs
+    startLine: 35
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: >-
+    <xref href="UltraForce.Library.Core.Services.IUFDataService" data-throw-if-not-resolved="false"></xref> should be used by interface definitions for data service
+
+    implementations that will inherit from <xref href="UltraForce.Library.Core.Services.UFDataServiceFromContext%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public interface IUFDataService
+    content.vb: Public Interface IUFDataService
+  extensionMethods:
+  - UltraForce.Library.Core.Services.IUFDataService.UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2
+  - UltraForce.Library.Core.Services.IUFDataService.UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2
+- uid: UltraForce.Library.Core.Services.IUFDataService.LockAsync
+  commentId: M:UltraForce.Library.Core.Services.IUFDataService.LockAsync
+  id: LockAsync
+  parent: UltraForce.Library.Core.Services.IUFDataService
+  langs:
+  - csharp
+  - vb
+  name: LockAsync()
+  nameWithType: IUFDataService.LockAsync()
+  fullName: UltraForce.Library.Core.Services.IUFDataService.LockAsync()
+  type: Method
+  source:
+    id: LockAsync
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFDataService.cs
+    startLine: 46
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: >-
+    Locks the data service, preventing the updating of underlying data storage with every
+
+    change.
+  remarks: >-
+    Each call to <xref href="UltraForce.Library.Core.Services.IUFDataService.LockAsync" data-throw-if-not-resolved="false"></xref> must be matched with a call to
+
+    <xref href="UltraForce.Library.Core.Services.IUFDataService.UnlockAsync" data-throw-if-not-resolved="false"></xref> before data is
+
+    saved again.
+  example: []
+  syntax:
+    content: Task LockAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function LockAsync() As Task
+  overload: UltraForce.Library.Core.Services.IUFDataService.LockAsync*
+- uid: UltraForce.Library.Core.Services.IUFDataService.UnlockAsync
+  commentId: M:UltraForce.Library.Core.Services.IUFDataService.UnlockAsync
+  id: UnlockAsync
+  parent: UltraForce.Library.Core.Services.IUFDataService
+  langs:
+  - csharp
+  - vb
+  name: UnlockAsync()
+  nameWithType: IUFDataService.UnlockAsync()
+  fullName: UltraForce.Library.Core.Services.IUFDataService.UnlockAsync()
+  type: Method
+  source:
+    id: UnlockAsync
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFDataService.cs
+    startLine: 52
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: >-
+    Unlocks the data service. If this call matches the first call to <xref href="UltraForce.Library.Core.Services.IUFDataService.LockAsync" data-throw-if-not-resolved="false"></xref>
+
+    any pending changes are saved.
+  example: []
+  syntax:
+    content: Task UnlockAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UnlockAsync() As Task
+  overload: UltraForce.Library.Core.Services.IUFDataService.UnlockAsync*
+references:
+- uid: UltraForce.Library.Core.Services.IUFDataService
+  commentId: T:UltraForce.Library.Core.Services.IUFDataService
+  parent: UltraForce.Library.Core.Services
+  href: UltraForce.Library.Core.Services.IUFDataService.html
+  name: IUFDataService
+  nameWithType: IUFDataService
+  fullName: UltraForce.Library.Core.Services.IUFDataService
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1
+  commentId: T:UltraForce.Library.Core.Services.UFDataServiceFromContext`1
+  href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html
+  name: UFDataServiceFromContext<TContext>
+  nameWithType: UFDataServiceFromContext<TContext>
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>
+  nameWithType.vb: UFDataServiceFromContext(Of TContext)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext)
+  name.vb: UFDataServiceFromContext(Of TContext)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1
+    name: UFDataServiceFromContext
+    href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1
+    name: UFDataServiceFromContext
+    href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: UltraForce.Library.Core.Services
+  commentId: N:UltraForce.Library.Core.Services
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Services
+  nameWithType: UltraForce.Library.Core.Services
+  fullName: UltraForce.Library.Core.Services
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Services
+    name: Services
+    href: UltraForce.Library.Core.Services.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Services
+    name: Services
+    href: UltraForce.Library.Core.Services.html
+- uid: UltraForce.Library.Core.Services.IUFDataService.UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+  parent: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  definition: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+  href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  name: AsModelAsync<TServiceModel, IUFDataService>(IUFDataService)
+  nameWithType: UFDataServiceExtensions.AsModelAsync<TServiceModel, IUFDataService>(IUFDataService)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync<TServiceModel, UltraForce.Library.Core.Services.IUFDataService>(UltraForce.Library.Core.Services.IUFDataService)
+  nameWithType.vb: UFDataServiceExtensions.AsModelAsync(Of TServiceModel, IUFDataService)(IUFDataService)
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync(Of TServiceModel, UltraForce.Library.Core.Services.IUFDataService)(UltraForce.Library.Core.Services.IUFDataService)
+  name.vb: AsModelAsync(Of TServiceModel, IUFDataService)(IUFDataService)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(UltraForce.Library.Core.Services.IUFDataService)
+    name: AsModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  - name: <
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.Core.Services.IUFDataService
+    name: IUFDataService
+    href: UltraForce.Library.Core.Services.IUFDataService.html
+  - name: '>'
+  - name: (
+  - uid: UltraForce.Library.Core.Services.IUFDataService
+    name: IUFDataService
+    href: UltraForce.Library.Core.Services.IUFDataService.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(UltraForce.Library.Core.Services.IUFDataService)
+    name: AsModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.Core.Services.IUFDataService
+    name: IUFDataService
+    href: UltraForce.Library.Core.Services.IUFDataService.html
+  - name: )
+  - name: (
+  - uid: UltraForce.Library.Core.Services.IUFDataService
+    name: IUFDataService
+    href: UltraForce.Library.Core.Services.IUFDataService.html
+  - name: )
+- uid: UltraForce.Library.Core.Services.IUFDataService.UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+  parent: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  definition: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+  href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  name: AsNullableModelAsync<TServiceModel, IUFDataService>(IUFDataService)
+  nameWithType: UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, IUFDataService>(IUFDataService)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, UltraForce.Library.Core.Services.IUFDataService>(UltraForce.Library.Core.Services.IUFDataService)
+  nameWithType.vb: UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, IUFDataService)(IUFDataService)
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, UltraForce.Library.Core.Services.IUFDataService)(UltraForce.Library.Core.Services.IUFDataService)
+  name.vb: AsNullableModelAsync(Of TServiceModel, IUFDataService)(IUFDataService)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(UltraForce.Library.Core.Services.IUFDataService)
+    name: AsNullableModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  - name: <
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.Core.Services.IUFDataService
+    name: IUFDataService
+    href: UltraForce.Library.Core.Services.IUFDataService.html
+  - name: '>'
+  - name: (
+  - uid: UltraForce.Library.Core.Services.IUFDataService
+    name: IUFDataService
+    href: UltraForce.Library.Core.Services.IUFDataService.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(UltraForce.Library.Core.Services.IUFDataService)
+    name: AsNullableModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.Core.Services.IUFDataService
+    name: IUFDataService
+    href: UltraForce.Library.Core.Services.IUFDataService.html
+  - name: )
+  - name: (
+  - uid: UltraForce.Library.Core.Services.IUFDataService
+    name: IUFDataService
+    href: UltraForce.Library.Core.Services.IUFDataService.html
+  - name: )
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+  href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  name: AsModelAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType: UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(TEntity)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType.vb: UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(TEntity)
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(TEntity)
+  name.vb: AsModelAsync(Of TServiceModel, TEntity)(TEntity)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+    name: AsModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  - name: <
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+    name: AsModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: )
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  commentId: T:UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  parent: UltraForce.Library.Core.Extensions
+  href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html
+  name: UFDataServiceExtensions
+  nameWithType: UFDataServiceExtensions
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+  href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  name: AsNullableModelAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType: UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(TEntity)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType.vb: UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(TEntity)
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(TEntity)
+  name.vb: AsNullableModelAsync(Of TServiceModel, TEntity)(TEntity)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+    name: AsNullableModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  - name: <
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+    name: AsNullableModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: )
+- uid: UltraForce.Library.Core.Extensions
+  commentId: N:UltraForce.Library.Core.Extensions
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Extensions
+  nameWithType: UltraForce.Library.Core.Extensions
+  fullName: UltraForce.Library.Core.Extensions
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Extensions
+    name: Extensions
+    href: UltraForce.Library.Core.Extensions.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Extensions
+    name: Extensions
+    href: UltraForce.Library.Core.Extensions.html
+- uid: UltraForce.Library.Core.Services.IUFDataService.LockAsync
+  commentId: M:UltraForce.Library.Core.Services.IUFDataService.LockAsync
+  parent: UltraForce.Library.Core.Services.IUFDataService
+  href: UltraForce.Library.Core.Services.IUFDataService.html#UltraForce_Library_Core_Services_IUFDataService_LockAsync
+  name: LockAsync()
+  nameWithType: IUFDataService.LockAsync()
+  fullName: UltraForce.Library.Core.Services.IUFDataService.LockAsync()
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Services.IUFDataService.LockAsync
+    name: LockAsync
+    href: UltraForce.Library.Core.Services.IUFDataService.html#UltraForce_Library_Core_Services_IUFDataService_LockAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Services.IUFDataService.LockAsync
+    name: LockAsync
+    href: UltraForce.Library.Core.Services.IUFDataService.html#UltraForce_Library_Core_Services_IUFDataService_LockAsync
+  - name: (
+  - name: )
+- uid: UltraForce.Library.Core.Services.IUFDataService.UnlockAsync
+  commentId: M:UltraForce.Library.Core.Services.IUFDataService.UnlockAsync
+  parent: UltraForce.Library.Core.Services.IUFDataService
+  href: UltraForce.Library.Core.Services.IUFDataService.html#UltraForce_Library_Core_Services_IUFDataService_UnlockAsync
+  name: UnlockAsync()
+  nameWithType: IUFDataService.UnlockAsync()
+  fullName: UltraForce.Library.Core.Services.IUFDataService.UnlockAsync()
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Services.IUFDataService.UnlockAsync
+    name: UnlockAsync
+    href: UltraForce.Library.Core.Services.IUFDataService.html#UltraForce_Library_Core_Services_IUFDataService_UnlockAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Services.IUFDataService.UnlockAsync
+    name: UnlockAsync
+    href: UltraForce.Library.Core.Services.IUFDataService.html#UltraForce_Library_Core_Services_IUFDataService_UnlockAsync
+  - name: (
+  - name: )
+- uid: UltraForce.Library.Core.Services.IUFDataService.LockAsync*
+  commentId: Overload:UltraForce.Library.Core.Services.IUFDataService.LockAsync
+  href: UltraForce.Library.Core.Services.IUFDataService.html#UltraForce_Library_Core_Services_IUFDataService_LockAsync
+  name: LockAsync
+  nameWithType: IUFDataService.LockAsync
+  fullName: UltraForce.Library.Core.Services.IUFDataService.LockAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: UltraForce.Library.Core.Services.IUFDataService.UnlockAsync*
+  commentId: Overload:UltraForce.Library.Core.Services.IUFDataService.UnlockAsync
+  href: UltraForce.Library.Core.Services.IUFDataService.html#UltraForce_Library_Core_Services_IUFDataService_UnlockAsync
+  name: UnlockAsync
+  nameWithType: IUFDataService.UnlockAsync
+  fullName: UltraForce.Library.Core.Services.IUFDataService.UnlockAsync

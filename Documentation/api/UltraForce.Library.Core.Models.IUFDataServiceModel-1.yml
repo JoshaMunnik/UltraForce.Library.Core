@@ -1,0 +1,512 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1
+  commentId: T:UltraForce.Library.Core.Models.IUFDataServiceModel`1
+  id: IUFDataServiceModel`1
+  parent: UltraForce.Library.Core.Models
+  children:
+  - UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyFromEntityAsync(`0)
+  - UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyToEntityAsync(`0,UltraForce.Library.Core.Types.Enums.UFEntityAction)
+  langs:
+  - csharp
+  - vb
+  name: IUFDataServiceModel<TEntity>
+  nameWithType: IUFDataServiceModel<TEntity>
+  fullName: UltraForce.Library.Core.Models.IUFDataServiceModel<TEntity>
+  type: Interface
+  source:
+    id: IUFDataServiceModel
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Models\IUFDataServiceModel.cs
+    startLine: 37
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Models
+  summary: A data service model (DTO) that maps to a certain entity
+  example: []
+  syntax:
+    content: 'public interface IUFDataServiceModel<in TEntity> where TEntity : class'
+    typeParameters:
+    - id: TEntity
+      description: ''
+    content.vb: Public Interface IUFDataServiceModel(Of In TEntity As Class)
+  extensionMethods:
+  - UltraForce.Library.Core.Models.IUFDataServiceModel`1.UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2
+  - UltraForce.Library.Core.Models.IUFDataServiceModel`1.UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2
+  nameWithType.vb: IUFDataServiceModel(Of TEntity)
+  fullName.vb: UltraForce.Library.Core.Models.IUFDataServiceModel(Of TEntity)
+  name.vb: IUFDataServiceModel(Of TEntity)
+- uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyToEntityAsync(`0,UltraForce.Library.Core.Types.Enums.UFEntityAction)
+  commentId: M:UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyToEntityAsync(`0,UltraForce.Library.Core.Types.Enums.UFEntityAction)
+  id: CopyToEntityAsync(`0,UltraForce.Library.Core.Types.Enums.UFEntityAction)
+  parent: UltraForce.Library.Core.Models.IUFDataServiceModel`1
+  langs:
+  - csharp
+  - vb
+  name: CopyToEntityAsync(TEntity, UFEntityAction)
+  nameWithType: IUFDataServiceModel<TEntity>.CopyToEntityAsync(TEntity, UFEntityAction)
+  fullName: UltraForce.Library.Core.Models.IUFDataServiceModel<TEntity>.CopyToEntityAsync(TEntity, UltraForce.Library.Core.Types.Enums.UFEntityAction)
+  type: Method
+  source:
+    id: CopyToEntityAsync
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Models\IUFDataServiceModel.cs
+    startLine: 46
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Models
+  summary: Updates the properties of an entity by copying them from this instance.
+  example: []
+  syntax:
+    content: Task CopyToEntityAsync(TEntity anEntity, UFEntityAction anAction)
+    parameters:
+    - id: anEntity
+      type: '{TEntity}'
+      description: Value to copy properties to
+    - id: anAction
+      type: UltraForce.Library.Core.Types.Enums.UFEntityAction
+      description: Action that will be performed with the entity
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function CopyToEntityAsync(anEntity As TEntity, anAction As UFEntityAction) As Task
+  overload: UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyToEntityAsync*
+  nameWithType.vb: IUFDataServiceModel(Of TEntity).CopyToEntityAsync(TEntity, UFEntityAction)
+  fullName.vb: UltraForce.Library.Core.Models.IUFDataServiceModel(Of TEntity).CopyToEntityAsync(TEntity, UltraForce.Library.Core.Types.Enums.UFEntityAction)
+- uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyFromEntityAsync(`0)
+  commentId: M:UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyFromEntityAsync(`0)
+  id: CopyFromEntityAsync(`0)
+  parent: UltraForce.Library.Core.Models.IUFDataServiceModel`1
+  langs:
+  - csharp
+  - vb
+  name: CopyFromEntityAsync(TEntity)
+  nameWithType: IUFDataServiceModel<TEntity>.CopyFromEntityAsync(TEntity)
+  fullName: UltraForce.Library.Core.Models.IUFDataServiceModel<TEntity>.CopyFromEntityAsync(TEntity)
+  type: Method
+  source:
+    id: CopyFromEntityAsync
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Models\IUFDataServiceModel.cs
+    startLine: 52
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Models
+  summary: Updates this instance by copying the properties of an entity.
+  example: []
+  syntax:
+    content: Task CopyFromEntityAsync(TEntity anEntity)
+    parameters:
+    - id: anEntity
+      type: '{TEntity}'
+      description: Value to copy properties from
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function CopyFromEntityAsync(anEntity As TEntity) As Task
+  overload: UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyFromEntityAsync*
+  nameWithType.vb: IUFDataServiceModel(Of TEntity).CopyFromEntityAsync(TEntity)
+  fullName.vb: UltraForce.Library.Core.Models.IUFDataServiceModel(Of TEntity).CopyFromEntityAsync(TEntity)
+references:
+- uid: UltraForce.Library.Core.Models
+  commentId: N:UltraForce.Library.Core.Models
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Models
+  nameWithType: UltraForce.Library.Core.Models
+  fullName: UltraForce.Library.Core.Models
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Models
+    name: Models
+    href: UltraForce.Library.Core.Models.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Models
+    name: Models
+    href: UltraForce.Library.Core.Models.html
+- uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1.UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+  parent: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  definition: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+  href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  name: AsModelAsync<TServiceModel, IUFDataServiceModel<TEntity>>(IUFDataServiceModel<TEntity>)
+  nameWithType: UFDataServiceExtensions.AsModelAsync<TServiceModel, IUFDataServiceModel<TEntity>>(IUFDataServiceModel<TEntity>)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync<TServiceModel, UltraForce.Library.Core.Models.IUFDataServiceModel<TEntity>>(UltraForce.Library.Core.Models.IUFDataServiceModel<TEntity>)
+  nameWithType.vb: UFDataServiceExtensions.AsModelAsync(Of TServiceModel, IUFDataServiceModel(Of TEntity))(IUFDataServiceModel(Of TEntity))
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync(Of TServiceModel, UltraForce.Library.Core.Models.IUFDataServiceModel(Of TEntity))(UltraForce.Library.Core.Models.IUFDataServiceModel(Of TEntity))
+  name.vb: AsModelAsync(Of TServiceModel, IUFDataServiceModel(Of TEntity))(IUFDataServiceModel(Of TEntity))
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(UltraForce.Library.Core.Models.IUFDataServiceModel{`0})
+    name: AsModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  - name: <
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1
+    name: IUFDataServiceModel
+    href: UltraForce.Library.Core.Models.IUFDataServiceModel-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: '>'
+  - name: (
+  - uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1
+    name: IUFDataServiceModel
+    href: UltraForce.Library.Core.Models.IUFDataServiceModel-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(UltraForce.Library.Core.Models.IUFDataServiceModel{`0})
+    name: AsModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1
+    name: IUFDataServiceModel
+    href: UltraForce.Library.Core.Models.IUFDataServiceModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
+  - name: (
+  - uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1
+    name: IUFDataServiceModel
+    href: UltraForce.Library.Core.Models.IUFDataServiceModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
+- uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1.UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+  parent: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  definition: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+  href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  name: AsNullableModelAsync<TServiceModel, IUFDataServiceModel<TEntity>>(IUFDataServiceModel<TEntity>)
+  nameWithType: UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, IUFDataServiceModel<TEntity>>(IUFDataServiceModel<TEntity>)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, UltraForce.Library.Core.Models.IUFDataServiceModel<TEntity>>(UltraForce.Library.Core.Models.IUFDataServiceModel<TEntity>)
+  nameWithType.vb: UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, IUFDataServiceModel(Of TEntity))(IUFDataServiceModel(Of TEntity))
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, UltraForce.Library.Core.Models.IUFDataServiceModel(Of TEntity))(UltraForce.Library.Core.Models.IUFDataServiceModel(Of TEntity))
+  name.vb: AsNullableModelAsync(Of TServiceModel, IUFDataServiceModel(Of TEntity))(IUFDataServiceModel(Of TEntity))
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(UltraForce.Library.Core.Models.IUFDataServiceModel{`0})
+    name: AsNullableModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  - name: <
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1
+    name: IUFDataServiceModel
+    href: UltraForce.Library.Core.Models.IUFDataServiceModel-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: '>'
+  - name: (
+  - uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1
+    name: IUFDataServiceModel
+    href: UltraForce.Library.Core.Models.IUFDataServiceModel-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(UltraForce.Library.Core.Models.IUFDataServiceModel{`0})
+    name: AsNullableModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1
+    name: IUFDataServiceModel
+    href: UltraForce.Library.Core.Models.IUFDataServiceModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
+  - name: (
+  - uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1
+    name: IUFDataServiceModel
+    href: UltraForce.Library.Core.Models.IUFDataServiceModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+  href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  name: AsModelAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType: UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(TEntity)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType.vb: UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(TEntity)
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(TEntity)
+  name.vb: AsModelAsync(Of TServiceModel, TEntity)(TEntity)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+    name: AsModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  - name: <
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+    name: AsModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: )
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  commentId: T:UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  parent: UltraForce.Library.Core.Extensions
+  href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html
+  name: UFDataServiceExtensions
+  nameWithType: UFDataServiceExtensions
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+  href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  name: AsNullableModelAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType: UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(TEntity)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType.vb: UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(TEntity)
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(TEntity)
+  name.vb: AsNullableModelAsync(Of TServiceModel, TEntity)(TEntity)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+    name: AsNullableModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  - name: <
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+    name: AsNullableModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: )
+- uid: UltraForce.Library.Core.Extensions
+  commentId: N:UltraForce.Library.Core.Extensions
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Extensions
+  nameWithType: UltraForce.Library.Core.Extensions
+  fullName: UltraForce.Library.Core.Extensions
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Extensions
+    name: Extensions
+    href: UltraForce.Library.Core.Extensions.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Extensions
+    name: Extensions
+    href: UltraForce.Library.Core.Extensions.html
+- uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyToEntityAsync*
+  commentId: Overload:UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyToEntityAsync
+  href: UltraForce.Library.Core.Models.IUFDataServiceModel-1.html#UltraForce_Library_Core_Models_IUFDataServiceModel_1_CopyToEntityAsync__0_UltraForce_Library_Core_Types_Enums_UFEntityAction_
+  name: CopyToEntityAsync
+  nameWithType: IUFDataServiceModel<TEntity>.CopyToEntityAsync
+  fullName: UltraForce.Library.Core.Models.IUFDataServiceModel<TEntity>.CopyToEntityAsync
+  nameWithType.vb: IUFDataServiceModel(Of TEntity).CopyToEntityAsync
+  fullName.vb: UltraForce.Library.Core.Models.IUFDataServiceModel(Of TEntity).CopyToEntityAsync
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: UltraForce.Library.Core.Types.Enums.UFEntityAction
+  commentId: T:UltraForce.Library.Core.Types.Enums.UFEntityAction
+  parent: UltraForce.Library.Core.Types.Enums
+  href: UltraForce.Library.Core.Types.Enums.UFEntityAction.html
+  name: UFEntityAction
+  nameWithType: UFEntityAction
+  fullName: UltraForce.Library.Core.Types.Enums.UFEntityAction
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: UltraForce.Library.Core.Types.Enums
+  commentId: N:UltraForce.Library.Core.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Types.Enums
+  nameWithType: UltraForce.Library.Core.Types.Enums
+  fullName: UltraForce.Library.Core.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Types
+    name: Types
+    href: UltraForce.Library.Core.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Types
+    name: Types
+    href: UltraForce.Library.Core.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Types.Enums.html
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyFromEntityAsync*
+  commentId: Overload:UltraForce.Library.Core.Models.IUFDataServiceModel`1.CopyFromEntityAsync
+  href: UltraForce.Library.Core.Models.IUFDataServiceModel-1.html#UltraForce_Library_Core_Models_IUFDataServiceModel_1_CopyFromEntityAsync__0_
+  name: CopyFromEntityAsync
+  nameWithType: IUFDataServiceModel<TEntity>.CopyFromEntityAsync
+  fullName: UltraForce.Library.Core.Models.IUFDataServiceModel<TEntity>.CopyFromEntityAsync
+  nameWithType.vb: IUFDataServiceModel(Of TEntity).CopyFromEntityAsync
+  fullName.vb: UltraForce.Library.Core.Models.IUFDataServiceModel(Of TEntity).CopyFromEntityAsync

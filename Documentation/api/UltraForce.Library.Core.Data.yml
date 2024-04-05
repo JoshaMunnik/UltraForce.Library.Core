@@ -1,0 +1,88 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Data
+  commentId: N:UltraForce.Library.Core.Data
+  id: UltraForce.Library.Core.Data
+  children:
+  - UltraForce.Library.Core.Data.IUFRepository
+  - UltraForce.Library.Core.Data.UFRepository`1
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.Core.Data
+  nameWithType: UltraForce.Library.Core.Data
+  fullName: UltraForce.Library.Core.Data
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.Core
+references:
+- uid: UltraForce.Library.Core.Data.IUFRepository
+  commentId: T:UltraForce.Library.Core.Data.IUFRepository
+  parent: UltraForce.Library.Core.Data
+  href: UltraForce.Library.Core.Data.IUFRepository.html
+  name: IUFRepository
+  nameWithType: IUFRepository
+  fullName: UltraForce.Library.Core.Data.IUFRepository
+- uid: UltraForce.Library.Core.Data.UFRepository`1
+  commentId: T:UltraForce.Library.Core.Data.UFRepository`1
+  href: UltraForce.Library.Core.Data.UFRepository-1.html
+  name: UFRepository<TContext>
+  nameWithType: UFRepository<TContext>
+  fullName: UltraForce.Library.Core.Data.UFRepository<TContext>
+  nameWithType.vb: UFRepository(Of TContext)
+  fullName.vb: UltraForce.Library.Core.Data.UFRepository(Of TContext)
+  name.vb: UFRepository(Of TContext)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Data.UFRepository`1
+    name: UFRepository
+    href: UltraForce.Library.Core.Data.UFRepository-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.Core.Data.UFRepository`1
+    name: UFRepository
+    href: UltraForce.Library.Core.Data.UFRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: UltraForce.Library.Core.Data
+  commentId: N:UltraForce.Library.Core.Data
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Data
+  nameWithType: UltraForce.Library.Core.Data
+  fullName: UltraForce.Library.Core.Data
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Data
+    name: Data
+    href: UltraForce.Library.Core.Data.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Data
+    name: Data
+    href: UltraForce.Library.Core.Data.html

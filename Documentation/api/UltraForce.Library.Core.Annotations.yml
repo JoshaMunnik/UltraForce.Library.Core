@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Annotations
+  commentId: N:UltraForce.Library.Core.Annotations
+  id: UltraForce.Library.Core.Annotations
+  children:
+  - UltraForce.Library.Core.Annotations.UFEntityAttribute
+  - UltraForce.Library.Core.Annotations.UFRequiredIfAttribute
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.Core.Annotations
+  nameWithType: UltraForce.Library.Core.Annotations
+  fullName: UltraForce.Library.Core.Annotations
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.Core
+references:
+- uid: UltraForce.Library.Core.Annotations.UFEntityAttribute
+  commentId: T:UltraForce.Library.Core.Annotations.UFEntityAttribute
+  href: UltraForce.Library.Core.Annotations.UFEntityAttribute.html
+  name: UFEntityAttribute
+  nameWithType: UFEntityAttribute
+  fullName: UltraForce.Library.Core.Annotations.UFEntityAttribute
+- uid: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute
+  commentId: T:UltraForce.Library.Core.Annotations.UFRequiredIfAttribute
+  href: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html
+  name: UFRequiredIfAttribute
+  nameWithType: UFRequiredIfAttribute
+  fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute

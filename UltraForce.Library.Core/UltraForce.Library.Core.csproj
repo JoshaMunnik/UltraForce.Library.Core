@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Title>Ultra Force Library for .NET Core</Title>
+        <Authors>Josha Munnik</Authors>
+        <Copyright>(c) 2024 by Ultra Force Development</Copyright>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Description>A set of general usable classes for .NET Core</Description>
+        <PackageIcon>ufd.png</PackageIcon>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="ufd.png" Pack="True" PackagePath="" />
+        <None Include="README.md" Pack="True" PackagePath="" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Azure.Communication.Email" Version="1.0.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.3" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.3" />
+      <PackageReference Include="UltraForce.Library.NetStandard" Version="1.0.0" />
+      <PackageReference Include="xunit.assert" Version="2.7.0" />
+    </ItemGroup>
+
+</Project>

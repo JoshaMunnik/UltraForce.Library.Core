@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Converters
+  commentId: N:UltraForce.Library.Core.Converters
+  id: UltraForce.Library.Core.Converters
+  children:
+  - UltraForce.Library.Core.Converters.UFBoolJsonConverter
+  - UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.Core.Converters
+  nameWithType: UltraForce.Library.Core.Converters
+  fullName: UltraForce.Library.Core.Converters
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.Core
+references:
+- uid: UltraForce.Library.Core.Converters.UFBoolJsonConverter
+  commentId: T:UltraForce.Library.Core.Converters.UFBoolJsonConverter
+  href: UltraForce.Library.Core.Converters.UFBoolJsonConverter.html
+  name: UFBoolJsonConverter
+  nameWithType: UFBoolJsonConverter
+  fullName: UltraForce.Library.Core.Converters.UFBoolJsonConverter
+- uid: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter
+  commentId: T:UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter
+  href: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.html
+  name: UFDateOnlyJsonConverter
+  nameWithType: UFDateOnlyJsonConverter
+  fullName: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter

@@ -1,0 +1,1186 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  commentId: T:UltraForce.Library.Core.Services.IUFEmailBuilderService
+  id: IUFEmailBuilderService
+  parent: UltraForce.Library.Core.Services
+  children:
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachment(System.String,System.String,System.BinaryData)
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachments(System.String,System.Collections.Generic.IDictionary{System.String,System.BinaryData})
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(System.Collections.Generic.IDictionary{System.String,System.String})
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(System.String,System.String)
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(System.Collections.Generic.IDictionary{System.String,System.String})
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(System.String,System.String)
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService.From(System.String,System.String)
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService.Html(System.String)
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo(System.String,System.String)
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService.Start
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService.Subject(System.String)
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService.Text(System.String)
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService.To(System.Collections.Generic.IDictionary{System.String,System.String})
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService.To(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IUFEmailBuilderService
+  nameWithType: IUFEmailBuilderService
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  type: Interface
+  source:
+    id: IUFEmailBuilderService
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFEmailBuilderService.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: A helper interface to create and send an email.
+  example: []
+  syntax:
+    content: public interface IUFEmailBuilderService
+    content.vb: Public Interface IUFEmailBuilderService
+  extensionMethods:
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService.UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService.UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Start
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Start
+  id: Start
+  parent: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: IUFEmailBuilderService.Start()
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Start()
+  type: Method
+  source:
+    id: Start
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFEmailBuilderService.cs
+    startLine: 40
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: Start a new email, remove any previous stored data.
+  example: []
+  syntax:
+    content: IUFEmailBuilderService Start()
+    return:
+      type: UltraForce.Library.Core.Services.IUFEmailBuilderService
+      description: ''
+    content.vb: Function Start() As IUFEmailBuilderService
+  overload: UltraForce.Library.Core.Services.IUFEmailBuilderService.Start*
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Subject(System.String)
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Subject(System.String)
+  id: Subject(System.String)
+  parent: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  langs:
+  - csharp
+  - vb
+  name: Subject(string)
+  nameWithType: IUFEmailBuilderService.Subject(string)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Subject(string)
+  type: Method
+  source:
+    id: Subject
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFEmailBuilderService.cs
+    startLine: 47
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: Sets the email subject.
+  example: []
+  syntax:
+    content: IUFEmailBuilderService Subject(string aSubject)
+    parameters:
+    - id: aSubject
+      type: System.String
+      description: ''
+    return:
+      type: UltraForce.Library.Core.Services.IUFEmailBuilderService
+      description: ''
+    content.vb: Function Subject(aSubject As String) As IUFEmailBuilderService
+  overload: UltraForce.Library.Core.Services.IUFEmailBuilderService.Subject*
+  nameWithType.vb: IUFEmailBuilderService.Subject(String)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Subject(String)
+  name.vb: Subject(String)
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.From(System.String,System.String)
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.From(System.String,System.String)
+  id: From(System.String,System.String)
+  parent: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  langs:
+  - csharp
+  - vb
+  name: From(string, string?)
+  nameWithType: IUFEmailBuilderService.From(string, string?)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.From(string, string?)
+  type: Method
+  source:
+    id: From
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFEmailBuilderService.cs
+    startLine: 55
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: Sets the email sender.
+  example: []
+  syntax:
+    content: IUFEmailBuilderService From(string aFromEmail, string? aName = null)
+    parameters:
+    - id: aFromEmail
+      type: System.String
+      description: ''
+    - id: aName
+      type: System.String
+      description: ''
+    return:
+      type: UltraForce.Library.Core.Services.IUFEmailBuilderService
+      description: ''
+    content.vb: Function From(aFromEmail As String, aName As String = Nothing) As IUFEmailBuilderService
+  overload: UltraForce.Library.Core.Services.IUFEmailBuilderService.From*
+  nameWithType.vb: IUFEmailBuilderService.From(String, String)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.From(String, String)
+  name.vb: From(String, String)
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.To(System.String,System.String)
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.To(System.String,System.String)
+  id: To(System.String,System.String)
+  parent: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  langs:
+  - csharp
+  - vb
+  name: To(string, string?)
+  nameWithType: IUFEmailBuilderService.To(string, string?)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.To(string, string?)
+  type: Method
+  source:
+    id: To
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFEmailBuilderService.cs
+    startLine: 63
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: Adds an email recipient.
+  example: []
+  syntax:
+    content: IUFEmailBuilderService To(string aToEmail, string? aName = null)
+    parameters:
+    - id: aToEmail
+      type: System.String
+      description: ''
+    - id: aName
+      type: System.String
+      description: ''
+    return:
+      type: UltraForce.Library.Core.Services.IUFEmailBuilderService
+      description: ''
+    content.vb: Function [To](aToEmail As String, aName As String = Nothing) As IUFEmailBuilderService
+  overload: UltraForce.Library.Core.Services.IUFEmailBuilderService.To*
+  nameWithType.vb: IUFEmailBuilderService.To(String, String)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.To(String, String)
+  name.vb: To(String, String)
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.To(System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.To(System.Collections.Generic.IDictionary{System.String,System.String})
+  id: To(System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  langs:
+  - csharp
+  - vb
+  name: To(IDictionary<string, string?>)
+  nameWithType: IUFEmailBuilderService.To(IDictionary<string, string?>)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.To(System.Collections.Generic.IDictionary<string, string?>)
+  type: Method
+  source:
+    id: To
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFEmailBuilderService.cs
+    startLine: 70
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: Adds multiple email recipients.
+  example: []
+  syntax:
+    content: IUFEmailBuilderService To(IDictionary<string, string?> aEmailWithNames)
+    parameters:
+    - id: aEmailWithNames
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+      description: ''
+    return:
+      type: UltraForce.Library.Core.Services.IUFEmailBuilderService
+      description: ''
+    content.vb: Function [To](aEmailWithNames As IDictionary(Of String, String)) As IUFEmailBuilderService
+  overload: UltraForce.Library.Core.Services.IUFEmailBuilderService.To*
+  nameWithType.vb: IUFEmailBuilderService.To(IDictionary(Of String, String))
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.To(System.Collections.Generic.IDictionary(Of String, String))
+  name.vb: To(IDictionary(Of String, String))
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(System.String,System.String)
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(System.String,System.String)
+  id: Cc(System.String,System.String)
+  parent: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  langs:
+  - csharp
+  - vb
+  name: Cc(string, string?)
+  nameWithType: IUFEmailBuilderService.Cc(string, string?)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(string, string?)
+  type: Method
+  source:
+    id: Cc
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFEmailBuilderService.cs
+    startLine: 78
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: Adds a cc recipient.
+  example: []
+  syntax:
+    content: IUFEmailBuilderService Cc(string aToEmail, string? aName = null)
+    parameters:
+    - id: aToEmail
+      type: System.String
+      description: ''
+    - id: aName
+      type: System.String
+      description: ''
+    return:
+      type: UltraForce.Library.Core.Services.IUFEmailBuilderService
+      description: ''
+    content.vb: Function Cc(aToEmail As String, aName As String = Nothing) As IUFEmailBuilderService
+  overload: UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc*
+  nameWithType.vb: IUFEmailBuilderService.Cc(String, String)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(String, String)
+  name.vb: Cc(String, String)
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(System.Collections.Generic.IDictionary{System.String,System.String})
+  id: Cc(System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  langs:
+  - csharp
+  - vb
+  name: Cc(IDictionary<string, string?>)
+  nameWithType: IUFEmailBuilderService.Cc(IDictionary<string, string?>)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(System.Collections.Generic.IDictionary<string, string?>)
+  type: Method
+  source:
+    id: Cc
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFEmailBuilderService.cs
+    startLine: 85
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: Adds multiple cc recipients.
+  example: []
+  syntax:
+    content: IUFEmailBuilderService Cc(IDictionary<string, string?> aEmailWithNames)
+    parameters:
+    - id: aEmailWithNames
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+      description: ''
+    return:
+      type: UltraForce.Library.Core.Services.IUFEmailBuilderService
+      description: ''
+    content.vb: Function Cc(aEmailWithNames As IDictionary(Of String, String)) As IUFEmailBuilderService
+  overload: UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc*
+  nameWithType.vb: IUFEmailBuilderService.Cc(IDictionary(Of String, String))
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(System.Collections.Generic.IDictionary(Of String, String))
+  name.vb: Cc(IDictionary(Of String, String))
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(System.String,System.String)
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(System.String,System.String)
+  id: Bcc(System.String,System.String)
+  parent: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  langs:
+  - csharp
+  - vb
+  name: Bcc(string, string?)
+  nameWithType: IUFEmailBuilderService.Bcc(string, string?)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(string, string?)
+  type: Method
+  source:
+    id: Bcc
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFEmailBuilderService.cs
+    startLine: 93
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: Adds a bcc recipient.
+  example: []
+  syntax:
+    content: IUFEmailBuilderService Bcc(string aToEmail, string? aName = null)
+    parameters:
+    - id: aToEmail
+      type: System.String
+      description: ''
+    - id: aName
+      type: System.String
+      description: ''
+    return:
+      type: UltraForce.Library.Core.Services.IUFEmailBuilderService
+      description: ''
+    content.vb: Function Bcc(aToEmail As String, aName As String = Nothing) As IUFEmailBuilderService
+  overload: UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc*
+  nameWithType.vb: IUFEmailBuilderService.Bcc(String, String)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(String, String)
+  name.vb: Bcc(String, String)
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(System.Collections.Generic.IDictionary{System.String,System.String})
+  id: Bcc(System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  langs:
+  - csharp
+  - vb
+  name: Bcc(IDictionary<string, string?>)
+  nameWithType: IUFEmailBuilderService.Bcc(IDictionary<string, string?>)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(System.Collections.Generic.IDictionary<string, string?>)
+  type: Method
+  source:
+    id: Bcc
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFEmailBuilderService.cs
+    startLine: 100
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: Adds multiple bcc recipients.
+  example: []
+  syntax:
+    content: IUFEmailBuilderService Bcc(IDictionary<string, string?> aEmailWithNames)
+    parameters:
+    - id: aEmailWithNames
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+      description: ''
+    return:
+      type: UltraForce.Library.Core.Services.IUFEmailBuilderService
+      description: ''
+    content.vb: Function Bcc(aEmailWithNames As IDictionary(Of String, String)) As IUFEmailBuilderService
+  overload: UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc*
+  nameWithType.vb: IUFEmailBuilderService.Bcc(IDictionary(Of String, String))
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(System.Collections.Generic.IDictionary(Of String, String))
+  name.vb: Bcc(IDictionary(Of String, String))
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo(System.String,System.String)
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo(System.String,System.String)
+  id: ReplyTo(System.String,System.String)
+  parent: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  langs:
+  - csharp
+  - vb
+  name: ReplyTo(string, string?)
+  nameWithType: IUFEmailBuilderService.ReplyTo(string, string?)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo(string, string?)
+  type: Method
+  source:
+    id: ReplyTo
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFEmailBuilderService.cs
+    startLine: 108
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: Sets the reply to email.
+  example: []
+  syntax:
+    content: IUFEmailBuilderService ReplyTo(string aReplyToEmail, string? aName = null)
+    parameters:
+    - id: aReplyToEmail
+      type: System.String
+      description: ''
+    - id: aName
+      type: System.String
+      description: ''
+    return:
+      type: UltraForce.Library.Core.Services.IUFEmailBuilderService
+      description: ''
+    content.vb: Function ReplyTo(aReplyToEmail As String, aName As String = Nothing) As IUFEmailBuilderService
+  overload: UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo*
+  nameWithType.vb: IUFEmailBuilderService.ReplyTo(String, String)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo(String, String)
+  name.vb: ReplyTo(String, String)
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Html(System.String)
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Html(System.String)
+  id: Html(System.String)
+  parent: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  langs:
+  - csharp
+  - vb
+  name: Html(string)
+  nameWithType: IUFEmailBuilderService.Html(string)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Html(string)
+  type: Method
+  source:
+    id: Html
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFEmailBuilderService.cs
+    startLine: 115
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: Sets the html content.
+  example: []
+  syntax:
+    content: IUFEmailBuilderService Html(string aContent)
+    parameters:
+    - id: aContent
+      type: System.String
+      description: ''
+    return:
+      type: UltraForce.Library.Core.Services.IUFEmailBuilderService
+      description: ''
+    content.vb: Function Html(aContent As String) As IUFEmailBuilderService
+  overload: UltraForce.Library.Core.Services.IUFEmailBuilderService.Html*
+  nameWithType.vb: IUFEmailBuilderService.Html(String)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Html(String)
+  name.vb: Html(String)
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Text(System.String)
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Text(System.String)
+  id: Text(System.String)
+  parent: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  langs:
+  - csharp
+  - vb
+  name: Text(string)
+  nameWithType: IUFEmailBuilderService.Text(string)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Text(string)
+  type: Method
+  source:
+    id: Text
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFEmailBuilderService.cs
+    startLine: 122
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: Sets the text content.
+  example: []
+  syntax:
+    content: IUFEmailBuilderService Text(string aContent)
+    parameters:
+    - id: aContent
+      type: System.String
+      description: ''
+    return:
+      type: UltraForce.Library.Core.Services.IUFEmailBuilderService
+      description: ''
+    content.vb: Function Text(aContent As String) As IUFEmailBuilderService
+  overload: UltraForce.Library.Core.Services.IUFEmailBuilderService.Text*
+  nameWithType.vb: IUFEmailBuilderService.Text(String)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Text(String)
+  name.vb: Text(String)
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachment(System.String,System.String,System.BinaryData)
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachment(System.String,System.String,System.BinaryData)
+  id: Attachment(System.String,System.String,System.BinaryData)
+  parent: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  langs:
+  - csharp
+  - vb
+  name: Attachment(string, string, BinaryData)
+  nameWithType: IUFEmailBuilderService.Attachment(string, string, BinaryData)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachment(string, string, System.BinaryData)
+  type: Method
+  source:
+    id: Attachment
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFEmailBuilderService.cs
+    startLine: 131
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: Adds an attachment.
+  example: []
+  syntax:
+    content: IUFEmailBuilderService Attachment(string aName, string aContentTYpe, BinaryData aData)
+    parameters:
+    - id: aName
+      type: System.String
+      description: ''
+    - id: aContentTYpe
+      type: System.String
+      description: ''
+    - id: aData
+      type: System.BinaryData
+      description: ''
+    return:
+      type: UltraForce.Library.Core.Services.IUFEmailBuilderService
+      description: ''
+    content.vb: Function Attachment(aName As String, aContentTYpe As String, aData As BinaryData) As IUFEmailBuilderService
+  overload: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachment*
+  nameWithType.vb: IUFEmailBuilderService.Attachment(String, String, BinaryData)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachment(String, String, System.BinaryData)
+  name.vb: Attachment(String, String, BinaryData)
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachments(System.String,System.Collections.Generic.IDictionary{System.String,System.BinaryData})
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachments(System.String,System.Collections.Generic.IDictionary{System.String,System.BinaryData})
+  id: Attachments(System.String,System.Collections.Generic.IDictionary{System.String,System.BinaryData})
+  parent: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  langs:
+  - csharp
+  - vb
+  name: Attachments(string, IDictionary<string, BinaryData>)
+  nameWithType: IUFEmailBuilderService.Attachments(string, IDictionary<string, BinaryData>)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachments(string, System.Collections.Generic.IDictionary<string, System.BinaryData>)
+  type: Method
+  source:
+    id: Attachments
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFEmailBuilderService.cs
+    startLine: 139
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: Adds attachments of the same content type.
+  example: []
+  syntax:
+    content: IUFEmailBuilderService Attachments(string aContentType, IDictionary<string, BinaryData> anAttachments)
+    parameters:
+    - id: aContentType
+      type: System.String
+      description: ''
+    - id: anAttachments
+      type: System.Collections.Generic.IDictionary{System.String,System.BinaryData}
+      description: ''
+    return:
+      type: UltraForce.Library.Core.Services.IUFEmailBuilderService
+      description: ''
+    content.vb: Function Attachments(aContentType As String, anAttachments As IDictionary(Of String, BinaryData)) As IUFEmailBuilderService
+  overload: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachments*
+  nameWithType.vb: IUFEmailBuilderService.Attachments(String, IDictionary(Of String, BinaryData))
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachments(String, System.Collections.Generic.IDictionary(Of String, System.BinaryData))
+  name.vb: Attachments(String, IDictionary(Of String, BinaryData))
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync
+  id: SendAsync
+  parent: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  langs:
+  - csharp
+  - vb
+  name: SendAsync()
+  nameWithType: IUFEmailBuilderService.SendAsync()
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync()
+  type: Method
+  source:
+    id: SendAsync
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFEmailBuilderService.cs
+    startLine: 145
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: Sends the email.
+  example: []
+  syntax:
+    content: Task<bool> SendAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: True if email was send successfully.
+    content.vb: Function SendAsync() As Task(Of Boolean)
+  overload: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync*
+references:
+- uid: UltraForce.Library.Core.Services
+  commentId: N:UltraForce.Library.Core.Services
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Services
+  nameWithType: UltraForce.Library.Core.Services
+  fullName: UltraForce.Library.Core.Services
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Services
+    name: Services
+    href: UltraForce.Library.Core.Services.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Services
+    name: Services
+    href: UltraForce.Library.Core.Services.html
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+  parent: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  definition: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+  href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  name: AsModelAsync<TServiceModel, IUFEmailBuilderService>(IUFEmailBuilderService)
+  nameWithType: UFDataServiceExtensions.AsModelAsync<TServiceModel, IUFEmailBuilderService>(IUFEmailBuilderService)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync<TServiceModel, UltraForce.Library.Core.Services.IUFEmailBuilderService>(UltraForce.Library.Core.Services.IUFEmailBuilderService)
+  nameWithType.vb: UFDataServiceExtensions.AsModelAsync(Of TServiceModel, IUFEmailBuilderService)(IUFEmailBuilderService)
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync(Of TServiceModel, UltraForce.Library.Core.Services.IUFEmailBuilderService)(UltraForce.Library.Core.Services.IUFEmailBuilderService)
+  name.vb: AsModelAsync(Of TServiceModel, IUFEmailBuilderService)(IUFEmailBuilderService)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(UltraForce.Library.Core.Services.IUFEmailBuilderService)
+    name: AsModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  - name: <
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.Core.Services.IUFEmailBuilderService
+    name: IUFEmailBuilderService
+    href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html
+  - name: '>'
+  - name: (
+  - uid: UltraForce.Library.Core.Services.IUFEmailBuilderService
+    name: IUFEmailBuilderService
+    href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(UltraForce.Library.Core.Services.IUFEmailBuilderService)
+    name: AsModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.Core.Services.IUFEmailBuilderService
+    name: IUFEmailBuilderService
+    href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html
+  - name: )
+  - name: (
+  - uid: UltraForce.Library.Core.Services.IUFEmailBuilderService
+    name: IUFEmailBuilderService
+    href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html
+  - name: )
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+  parent: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  definition: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+  href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  name: AsNullableModelAsync<TServiceModel, IUFEmailBuilderService>(IUFEmailBuilderService)
+  nameWithType: UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, IUFEmailBuilderService>(IUFEmailBuilderService)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, UltraForce.Library.Core.Services.IUFEmailBuilderService>(UltraForce.Library.Core.Services.IUFEmailBuilderService)
+  nameWithType.vb: UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, IUFEmailBuilderService)(IUFEmailBuilderService)
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, UltraForce.Library.Core.Services.IUFEmailBuilderService)(UltraForce.Library.Core.Services.IUFEmailBuilderService)
+  name.vb: AsNullableModelAsync(Of TServiceModel, IUFEmailBuilderService)(IUFEmailBuilderService)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(UltraForce.Library.Core.Services.IUFEmailBuilderService)
+    name: AsNullableModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  - name: <
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.Core.Services.IUFEmailBuilderService
+    name: IUFEmailBuilderService
+    href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html
+  - name: '>'
+  - name: (
+  - uid: UltraForce.Library.Core.Services.IUFEmailBuilderService
+    name: IUFEmailBuilderService
+    href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(UltraForce.Library.Core.Services.IUFEmailBuilderService)
+    name: AsNullableModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.Core.Services.IUFEmailBuilderService
+    name: IUFEmailBuilderService
+    href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html
+  - name: )
+  - name: (
+  - uid: UltraForce.Library.Core.Services.IUFEmailBuilderService
+    name: IUFEmailBuilderService
+    href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html
+  - name: )
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+  href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  name: AsModelAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType: UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(TEntity)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType.vb: UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(TEntity)
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(TEntity)
+  name.vb: AsModelAsync(Of TServiceModel, TEntity)(TEntity)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+    name: AsModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  - name: <
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+    name: AsModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: )
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  commentId: T:UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  parent: UltraForce.Library.Core.Extensions
+  href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html
+  name: UFDataServiceExtensions
+  nameWithType: UFDataServiceExtensions
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+  href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  name: AsNullableModelAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType: UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(TEntity)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType.vb: UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(TEntity)
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(TEntity)
+  name.vb: AsNullableModelAsync(Of TServiceModel, TEntity)(TEntity)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+    name: AsNullableModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  - name: <
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+    name: AsNullableModelAsync
+    href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: )
+- uid: UltraForce.Library.Core.Extensions
+  commentId: N:UltraForce.Library.Core.Extensions
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Extensions
+  nameWithType: UltraForce.Library.Core.Extensions
+  fullName: UltraForce.Library.Core.Extensions
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Extensions
+    name: Extensions
+    href: UltraForce.Library.Core.Extensions.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Extensions
+    name: Extensions
+    href: UltraForce.Library.Core.Extensions.html
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Start*
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.Start
+  href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Start
+  name: Start
+  nameWithType: IUFEmailBuilderService.Start
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Start
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService
+  commentId: T:UltraForce.Library.Core.Services.IUFEmailBuilderService
+  parent: UltraForce.Library.Core.Services
+  href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html
+  name: IUFEmailBuilderService
+  nameWithType: IUFEmailBuilderService
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Subject*
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.Subject
+  href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Subject_System_String_
+  name: Subject
+  nameWithType: IUFEmailBuilderService.Subject
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Subject
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.From*
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.From
+  href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_From_System_String_System_String_
+  name: From
+  nameWithType: IUFEmailBuilderService.From
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.From
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.To*
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.To
+  href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_To_System_String_System_String_
+  name: To
+  nameWithType: IUFEmailBuilderService.To
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.To
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, string>
+  nameWithType: IDictionary<string, string>
+  fullName: System.Collections.Generic.IDictionary<string, string>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc*
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc
+  href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Cc_System_String_System_String_
+  name: Cc
+  nameWithType: IUFEmailBuilderService.Cc
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc*
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc
+  href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Bcc_System_String_System_String_
+  name: Bcc
+  nameWithType: IUFEmailBuilderService.Bcc
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo*
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo
+  href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_ReplyTo_System_String_System_String_
+  name: ReplyTo
+  nameWithType: IUFEmailBuilderService.ReplyTo
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Html*
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.Html
+  href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Html_System_String_
+  name: Html
+  nameWithType: IUFEmailBuilderService.Html
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Html
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Text*
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.Text
+  href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Text_System_String_
+  name: Text
+  nameWithType: IUFEmailBuilderService.Text
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Text
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachment*
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachment
+  href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Attachment_System_String_System_String_System_BinaryData_
+  name: Attachment
+  nameWithType: IUFEmailBuilderService.Attachment
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachment
+- uid: System.BinaryData
+  commentId: T:System.BinaryData
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.binarydata
+  name: BinaryData
+  nameWithType: BinaryData
+  fullName: System.BinaryData
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachments*
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachments
+  href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_Attachments_System_String_System_Collections_Generic_IDictionary_System_String_System_BinaryData__
+  name: Attachments
+  nameWithType: IUFEmailBuilderService.Attachments
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachments
+- uid: System.Collections.Generic.IDictionary{System.String,System.BinaryData}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.BinaryData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, BinaryData>
+  nameWithType: IDictionary<string, BinaryData>
+  fullName: System.Collections.Generic.IDictionary<string, System.BinaryData>
+  nameWithType.vb: IDictionary(Of String, BinaryData)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, System.BinaryData)
+  name.vb: IDictionary(Of String, BinaryData)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.BinaryData
+    name: BinaryData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.binarydata
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.BinaryData
+    name: BinaryData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.binarydata
+  - name: )
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync*
+  commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync
+  href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_SendAsync
+  name: SendAsync
+  nameWithType: IUFEmailBuilderService.SendAsync
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

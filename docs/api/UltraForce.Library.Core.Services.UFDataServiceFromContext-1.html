@@ -1,0 +1,1145 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFDataServiceFromContext&lt;TContext&gt; | UltraForce.Library.Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFDataServiceFromContext&lt;TContext&gt; | UltraForce.Library.Core ">
+      
+      <meta name="description" content="is a base class to implement a data service using a  to manage underlying entities.  The class implements a locking mechanism to minimize the  calls.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.Core">
+            UltraForce.Library.Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1">
+
+
+
+  <h1 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1" class="text-break">
+Class UFDataServiceFromContext&lt;TContext&gt;  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.Core.html">Core</a>.<a class="xref" href="UltraForce.Library.Core.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html">UFDataServiceFromContext&lt;TContext&gt;</a> is a base class to implement a data service using a
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext">DbContext</a> to manage underlying entities.</p>
+<p>
+The class implements a locking mechanism to minimize the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechanges#microsoft-entityframeworkcore-dbcontext-savechanges">SaveChanges()</a> calls.
+</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UFDataServiceFromContext&lt;TContext&gt; : IUFDataService, IDisposable, IAsyncDisposable where TContext : DbContext</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TContext</code></dt>
+    <dd><p>The database context type</p>
+</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UFDataServiceFromContext&lt;TContext&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="UltraForce.Library.Core.Services.IUFDataService.html">IUFDataService</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2___1_">UFDataServiceExtensions.AsModelAsync&lt;TServiceModel, TEntity&gt;(TEntity)</a>
+  </div>
+  <div>
+      <a class="xref" href="UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2___1_">UFDataServiceExtensions.AsNullableModelAsync&lt;TServiceModel, TEntity&gt;(TEntity?)</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Interface definition for the data service should inherit from <a class="xref" href="UltraForce.Library.Core.Services.IUFDataService.html">IUFDataService</a>.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1__ctor_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1__ctor__0_System_Boolean_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.#ctor(`0,System.Boolean)">
+  UFDataServiceFromContext(TContext, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an instance of <a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html">UFDataServiceFromContext&lt;TContext&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UFDataServiceFromContext(TContext aContext, bool aDisableTracking = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aContext</code> <span class="xref">TContext</span></dt>
+    <dd><p>Database context to use</p>
+</dd>
+    <dt><code>aDisableTracking</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When true tell <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.changetracker">ChangeTracker</a> to stop tracking and reset the state
+of any tracked entry to <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.entitystate#microsoft-entityframeworkcore-entitystate-detached">Detached</a> with
+the <a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SaveChangesAsync">SaveChangesAsync()</a> call.</p>
+<p>
+To disable tracking everywhere, use
+<pre><code class="lang-csharp">{context}.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;</code></pre>
+
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_Changed_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Changed*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_Changed" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Changed">
+  Changed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This property is true when the data service is locked and there is at least one change
+pending.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool Changed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_Context_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Context*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_Context" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Context">
+  Context
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The context or null if the service has been disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TContext? Context { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TContext</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_AddAsync_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.AddAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_AddAsync__2___0_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.AddAsync``2(``0)">
+  AddAsync&lt;TServiceModel, TEntity&gt;(TServiceModel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates and adds an entity from a service model. Then update the service model from the
+added entity (to update for example generated id values).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;TServiceModel&gt; AddAsync&lt;TServiceModel, TEntity&gt;(TServiceModel aData) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aData</code> <span class="xref">TServiceModel</span></dt>
+    <dd><p>Service model instance to add</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TServiceModel&gt;</dt>
+    <dd><p>The value of aData for chaining purposes</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TServiceModel</code></dt>
+    <dd><p>Type of service model</p>
+</dd>
+    <dt><code>TEntity</code></dt>
+    <dd><p>Entity to add</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_CheckContext_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CheckContext*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_CheckContext" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CheckContext">
+  CheckContext()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the context is not null, throws an exception if it is.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CheckContext()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_DetachEntity_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachEntity*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_DetachEntity_System_Object_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachEntity(System.Object)">
+  DetachEntity(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops an entity from being tracked by the entity framework.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DetachEntity(object anEntity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anEntity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_DetachTrackedEntries_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachTrackedEntries*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_DetachTrackedEntries" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachTrackedEntries">
+  DetachTrackedEntries()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the changed entries that have <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.entitystate#microsoft-entityframeworkcore-entitystate-added">Added</a>,
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.entitystate#microsoft-entityframeworkcore-entitystate-modified">Modified</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.entitystate#microsoft-entityframeworkcore-entitystate-deleted">Deleted</a> to
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.entitystate#microsoft-entityframeworkcore-entitystate-detached">Detached</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DetachTrackedEntries()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_DetachTrackedEntries_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Based on code from:
+<a href="https://stackoverflow.com/questions/27423059/how-do-i-clear-tracked-entities-in-entity-framework">https://stackoverflow.com/questions/27423059/how-do-i-clear-tracked-entities-in-entity-framework</a></p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_Dispose_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Dispose*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_Dispose" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_DisposeAsync_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DisposeAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_DisposeAsync" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DisposeAsync">
+  DisposeAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ValueTask DisposeAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></dt>
+    <dd><p>A task that represents the asynchronous dispose operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_FindAllAsync_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.FindAllAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_FindAllAsync__2" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.FindAllAsync``2">
+  FindAllAsync&lt;TServiceModel, TEntity&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds all entities and convert them to a service model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;IEnumerable&lt;TServiceModel&gt;&gt; FindAllAsync&lt;TServiceModel, TEntity&gt;() where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class, new()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TServiceModel&gt;&gt;</dt>
+    <dd><p>List of service model instances</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TServiceModel</code></dt>
+    <dd><p>Service model to convert to</p>
+</dd>
+    <dt><code>TEntity</code></dt>
+    <dd><p>Entity type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_FindForIdAsync_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.FindForIdAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_FindForIdAsync__3___2_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.FindForIdAsync``3(``2)">
+  FindForIdAsync&lt;TServiceModel, TEntity, TKey&gt;(TKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds a entity for a certain id and convert it to a service model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;TServiceModel?&gt; FindForIdAsync&lt;TServiceModel, TEntity, TKey&gt;(TKey anId) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anId</code> <span class="xref">TKey</span></dt>
+    <dd><p>Id to find entity for</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TServiceModel&gt;</dt>
+    <dd><p>Service model instance or null if no entity could be found</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TServiceModel</code></dt>
+    <dd><p>Service model to convert to</p>
+</dd>
+    <dt><code>TEntity</code></dt>
+    <dd><p>Type of entity</p>
+</dd>
+    <dt><code>TKey</code></dt>
+    <dd><p>Type of id</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_GetPrimaryKeyFromServiceModel_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyFromServiceModel*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_GetPrimaryKeyFromServiceModel__3___0_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyFromServiceModel``3(``0)">
+  GetPrimaryKeyFromServiceModel&lt;TServiceModel, TEntity, TKey&gt;(TServiceModel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the primary key value from a service model instance.</p>
+<p>
+With the first call the default implementation determines the primary key property in
+aServiceData using the result from
+<a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_GetPrimaryKeyNameFromEntity__1">GetPrimaryKeyNameFromEntity&lt;TEntity&gt;()</a> and caches
+it for future calls. 
+</p>
+<remarks>
+Subclasses can override this method to return the key directly for better performance.
+</remarks>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TKey GetPrimaryKeyFromServiceModel&lt;TServiceModel, TEntity, TKey&gt;(TServiceModel aServiceData) where TEntity : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aServiceData</code> <span class="xref">TServiceModel</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TKey</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TServiceModel</code></dt>
+    <dd></dd>
+    <dt><code>TEntity</code></dt>
+    <dd></dd>
+    <dt><code>TKey</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.missingprimarykeyexception">MissingPrimaryKeyException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_GetPrimaryKeyNameFromEntity_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyNameFromEntity*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_GetPrimaryKeyNameFromEntity__1" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyNameFromEntity``1">
+  GetPrimaryKeyNameFromEntity&lt;TEntity&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the primary key of an entity</p>
+<p>
+Code based on: https://stackoverflow.com/a/34993637/968451
+</p>
+<remarks>
+Subclasses can override this method to return the key directly for better performance.
+</remarks>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetPrimaryKeyNameFromEntity&lt;TEntity&gt;() where TEntity : class</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>primary key name</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEntity</code></dt>
+    <dd><p>Type of the entity</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_LockAsync_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.LockAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_LockAsync" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.LockAsync">
+  LockAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Locks the data service, preventing the updating of underlying data storage with every
+change.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task LockAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_LockAsync_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Each call to <a class="xref" href="UltraForce.Library.Core.Services.IUFDataService.html#UltraForce_Library_Core_Services_IUFDataService_LockAsync">LockAsync()</a> must be matched with a call to
+<a class="xref" href="UltraForce.Library.Core.Services.IUFDataService.html#UltraForce_Library_Core_Services_IUFDataService_UnlockAsync">UnlockAsync()</a> before data is
+saved again.</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_RemoveAsync_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.RemoveAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_RemoveAsync__2___0_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.RemoveAsync``2(``0)">
+  RemoveAsync&lt;TServiceModel, TEntity&gt;(TServiceModel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes an entity represented by a service model instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task RemoveAsync&lt;TServiceModel, TEntity&gt;(TServiceModel aData) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aData</code> <span class="xref">TServiceModel</span></dt>
+    <dd><p>Data that represents an entity</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TServiceModel</code></dt>
+    <dd><p>Service model type</p>
+</dd>
+    <dt><code>TEntity</code></dt>
+    <dd><p>Entity type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SaveChangesAsync_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SaveChangesAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SaveChangesAsync" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SaveChangesAsync">
+  SaveChangesAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the changes when the instance is not locked, else set an internal
+flag to indicate data needs to be saved.</p>
+<p>
+If tracking was disabled, this method will also call 
+<a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_DetachTrackedEntries">DetachTrackedEntries()</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task SaveChangesAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__1_System_String_System_String___0___0_System_String_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``1(System.String,System.String,``0,``0,System.String)">
+  SwapAsync&lt;T&gt;(string, string, T, T, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determine primary key and swap two entities calling <a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__2_System_String_System_String___1___1_System_String_">SwapAsync&lt;TEntity, TKey&gt;(string, string, TKey, TKey, string?)</a>.</p>
+<p>
+After swapping the method will call <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.changetracking.entityentry.reloadasync">ReloadAsync(CancellationToken)</a> to reload
+both entities from the database.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task SwapAsync&lt;T&gt;(string aTableName, string aColumnName, T aFirst, T aSecond, string? aModifiedName = null) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aTableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of table</p>
+</dd>
+    <dt><code>aColumnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of column</p>
+</dd>
+    <dt><code>aFirst</code> <span class="xref">T</span></dt>
+    <dd><p>First entity to swap value of</p>
+</dd>
+    <dt><code>aSecond</code> <span class="xref">T</span></dt>
+    <dd><p>Second entity to swap value of</p>
+</dd>
+    <dt><code>aModifiedName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>When non null, assign DateTime.Now to this column</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__2_System_String_System_String___1___1_System_String_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String)">
+  SwapAsync&lt;TEntity, TKey&gt;(string, string, TKey, TKey, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Swaps values of two records in a table using a single update statement (so that any unique
+index constraint does not generate an error).</p>
+<p>
+Code based on: https://stackoverflow.com/a/8109360/968451
+</p>
+<p>
+This code creates and executes a SQL statement directly, it assumes the database used is
+MSSQL.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task SwapAsync&lt;TEntity, TKey&gt;(string aTableName, string aColumnName, TKey aFirstId, TKey aSecondId, string? aModifiedName = null) where TEntity : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aTableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of table</p>
+</dd>
+    <dt><code>aColumnName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of column</p>
+</dd>
+    <dt><code>aFirstId</code> <span class="xref">TKey</span></dt>
+    <dd><p>First id to swap value of</p>
+</dd>
+    <dt><code>aSecondId</code> <span class="xref">TKey</span></dt>
+    <dd><p>Second id to swap value of</p>
+</dd>
+    <dt><code>aModifiedName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>When non null, assign DateTime.Now to this column</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEntity</code></dt>
+    <dd><p>Type of the entity record</p>
+</dd>
+    <dt><code>TKey</code></dt>
+    <dd><p>Type of the id values</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_TransactionAsync_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.TransactionAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_TransactionAsync_System_Func_System_Threading_Tasks_Task__" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.TransactionAsync(System.Func{System.Threading.Tasks.Task})">
+  TransactionAsync(Func&lt;Task&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes an action within a transaction. If a transaction is already active, the action
+just gets executed without using a transaction assuming the commit or rollback is handled
+by other code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task TransactionAsync(Func&lt;Task&gt; anAction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+    <dd><p>Action to execute</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_TransactionAsync_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.TransactionAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_TransactionAsync__1_System_Func_System_Threading_Tasks_Task___0___" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.TransactionAsync``1(System.Func{System.Threading.Tasks.Task{``0}})">
+  TransactionAsync&lt;T&gt;(Func&lt;Task&lt;T&gt;&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes an action within a transaction. If a transaction is already active, the action just
+gets executed without using a transaction assuming the commit or rollback is handled by
+other code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;T&gt; TransactionAsync&lt;T&gt;(Func&lt;Task&lt;T&gt;&gt; anAction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;&gt;</dt>
+    <dd><p>Action to execute</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
+    <dd><p>The result of the action</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_UnlockAsync_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.UnlockAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_UnlockAsync" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.UnlockAsync">
+  UnlockAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unlocks the data service. If this call matches the first call to <a class="xref" href="UltraForce.Library.Core.Services.IUFDataService.html#UltraForce_Library_Core_Services_IUFDataService_LockAsync">LockAsync()</a>
+any pending changes are saved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task UnlockAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_UpdateAsync_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.UpdateAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_UpdateAsync__2___0_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.UpdateAsync``2(``0)">
+  UpdateAsync&lt;TServiceModel, TEntity&gt;(TServiceModel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates an entity in the database with the data from a service model instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;TServiceModel&gt; UpdateAsync&lt;TServiceModel, TEntity&gt;(TServiceModel aData) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aData</code> <span class="xref">TServiceModel</span></dt>
+    <dd><p>Data to update entity with</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TServiceModel&gt;</dt>
+    <dd><p>The value of aData for chaining purposes</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TServiceModel</code></dt>
+    <dd><p>Service model type</p>
+</dd>
+    <dt><code>TEntity</code></dt>
+    <dd><p>Entity type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

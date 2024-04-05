@@ -1,0 +1,322 @@
+{
+  "source_base_path": "D:/projects/ultraforce.com/csharp/NuGetPackages/UltraForce.Library.Core/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Annotations.UFEntityAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Annotations.UFEntityAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Annotations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Annotations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Converters.UFBoolJsonConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Converters.UFBoolJsonConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Converters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Converters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Data.IUFRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Data.IUFRepository.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Data.UFRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Data.UFRepository-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Extensions.UFDataServiceExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Extensions.UFEnumExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Extensions.UFEnumExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Models.IUFDataServiceModel-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Models.IUFDataServiceModel-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Models.UFDataServiceModel-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Models.UFDataServiceModel-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Services.IUFDataService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Services.IUFDataService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Services.IUFDataServiceCRUD-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Services.IUFDataServiceCRUD-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Services.IUFEmailBuilderService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Services.UFEmailBuilderService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Services.UFEmailBuilderService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Tools.UFCoreFileTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Tools.UFCoreFileTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Tools.UFDataServiceTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Tools.UFDataServiceTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Tools.UFTestTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Tools.UFTestTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Tools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Tools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Types.Enums.UFEntityAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Types.Enums.UFEntityAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Types.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Types.Enums.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,1042 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  commentId: T:UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  id: UFDataServiceExtensions
+  parent: UltraForce.Library.Core.Extensions
+  children:
+  - UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(System.Collections.Generic.IEnumerable{``1})
+  - UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(System.Threading.Tasks.Task{``1})
+  - UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+  - UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(System.Threading.Tasks.Task{``1})
+  - UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(System.Threading.Tasks.ValueTask{``1})
+  - UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+  langs:
+  - csharp
+  - vb
+  name: UFDataServiceExtensions
+  nameWithType: UFDataServiceExtensions
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  type: Class
+  source:
+    id: UFDataServiceExtensions
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Extensions\UFDataServiceExtensions.cs
+    startLine: 39
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Extensions
+  summary: Defines extension methods in relation to <xref href="UltraForce.Library.Core.Services.IUFDataService" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static class UFDataServiceExtensions
+    content.vb: Public Module UFDataServiceExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(System.Threading.Tasks.Task{``1})
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(System.Threading.Tasks.Task{``1})
+  id: AsNullableModelAsync``2(System.Threading.Tasks.Task{``1})
+  isExtensionMethod: true
+  parent: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: AsNullableModelAsync<TServiceModel, TEntity>(Task<TEntity?>)
+  nameWithType: UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(Task<TEntity?>)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(System.Threading.Tasks.Task<TEntity?>)
+  type: Method
+  source:
+    id: AsNullableModelAsync
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Extensions\UFDataServiceExtensions.cs
+    startLine: 49
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Extensions
+  summary: >-
+    Uses <xref href="UltraForce.Library.Core.Tools.UFDataServiceTools.BuildNullableFromAsync%60%602(%60%601)" data-throw-if-not-resolved="false"></xref>
+
+    to create a data service model from an database entity. It supports nullable entities.
+  example: []
+  syntax:
+    content: 'public static Task<TServiceModel?> AsNullableModelAsync<TServiceModel, TEntity>(this Task<TEntity?> anEntity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
+    parameters:
+    - id: anEntity
+      type: System.Threading.Tasks.Task{{TEntity}}
+      description: Entity to create data service model instance from
+    typeParameters:
+    - id: TServiceModel
+      description: Type of the data service model
+    - id: TEntity
+      description: Type of the entity
+    return:
+      type: System.Threading.Tasks.Task{{TServiceModel}}
+      description: Data service instance or null if the entity is null
+    content.vb: Public Shared Function AsNullableModelAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(anEntity As Task(Of TEntity)) As Task(Of TServiceModel)
+  overload: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync*
+  nameWithType.vb: UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(Task(Of TEntity))
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(System.Threading.Tasks.Task(Of TEntity))
+  name.vb: AsNullableModelAsync(Of TServiceModel, TEntity)(Task(Of TEntity))
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(System.Threading.Tasks.ValueTask{``1})
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(System.Threading.Tasks.ValueTask{``1})
+  id: AsNullableModelAsync``2(System.Threading.Tasks.ValueTask{``1})
+  isExtensionMethod: true
+  parent: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: AsNullableModelAsync<TServiceModel, TEntity>(ValueTask<TEntity?>)
+  nameWithType: UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(ValueTask<TEntity?>)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(System.Threading.Tasks.ValueTask<TEntity?>)
+  type: Method
+  source:
+    id: AsNullableModelAsync
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Extensions\UFDataServiceExtensions.cs
+    startLine: 69
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Extensions
+  summary: >-
+    Uses
+
+    UFDataServiceTools.BuildFromAsync&lt;TServiceModel,TEntity&gt;(TEntity,UFEntityAction)
+
+    to create a data service model from an database entity. It supports nullable entities.
+  example: []
+  syntax:
+    content: 'public static Task<TServiceModel?> AsNullableModelAsync<TServiceModel, TEntity>(this ValueTask<TEntity?> anEntity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
+    parameters:
+    - id: anEntity
+      type: System.Threading.Tasks.ValueTask{{TEntity}}
+      description: Entity to create data service model instance from
+    typeParameters:
+    - id: TServiceModel
+      description: Type of the data service model
+    - id: TEntity
+      description: Type of the entity
+    return:
+      type: System.Threading.Tasks.Task{{TServiceModel}}
+      description: Data service instance or null if the entity is null
+    content.vb: Public Shared Function AsNullableModelAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(anEntity As ValueTask(Of TEntity)) As Task(Of TServiceModel)
+  overload: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync*
+  nameWithType.vb: UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(ValueTask(Of TEntity))
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(System.Threading.Tasks.ValueTask(Of TEntity))
+  name.vb: AsNullableModelAsync(Of TServiceModel, TEntity)(ValueTask(Of TEntity))
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync``2(``1)
+  id: AsNullableModelAsync``2(``1)
+  isExtensionMethod: true
+  parent: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: AsNullableModelAsync<TServiceModel, TEntity>(TEntity?)
+  nameWithType: UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(TEntity?)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(TEntity?)
+  type: Method
+  source:
+    id: AsNullableModelAsync
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Extensions\UFDataServiceExtensions.cs
+    startLine: 88
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Extensions
+  summary: >-
+    Uses <xref href="UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync%60%602(%60%601)" data-throw-if-not-resolved="false"></xref> to
+
+    create a data service model from an database entity. It supports nullable entities.
+  example: []
+  syntax:
+    content: 'public static Task<TServiceModel?> AsNullableModelAsync<TServiceModel, TEntity>(this TEntity? anEntity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
+    parameters:
+    - id: anEntity
+      type: '{TEntity}'
+      description: Entity to create data service model instance from
+    typeParameters:
+    - id: TServiceModel
+      description: Type of the data service model
+    - id: TEntity
+      description: Type of the entity
+    return:
+      type: System.Threading.Tasks.Task{{TServiceModel}}
+      description: Data service instance or null if the entity is null
+    content.vb: Public Shared Function AsNullableModelAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(anEntity As TEntity) As Task(Of TServiceModel)
+  overload: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync*
+  nameWithType.vb: UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(TEntity)
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(TEntity)
+  name.vb: AsNullableModelAsync(Of TServiceModel, TEntity)(TEntity)
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(System.Threading.Tasks.Task{``1})
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(System.Threading.Tasks.Task{``1})
+  id: AsModelAsync``2(System.Threading.Tasks.Task{``1})
+  isExtensionMethod: true
+  parent: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: AsModelAsync<TServiceModel, TEntity>(Task<TEntity>)
+  nameWithType: UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(Task<TEntity>)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(System.Threading.Tasks.Task<TEntity>)
+  type: Method
+  source:
+    id: AsModelAsync
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Extensions\UFDataServiceExtensions.cs
+    startLine: 105
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Extensions
+  summary: >-
+    Uses <xref href="UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync%60%602(%60%601)" data-throw-if-not-resolved="false"></xref> to
+
+    create a data service model from an database entity.
+  example: []
+  syntax:
+    content: 'public static Task<TServiceModel> AsModelAsync<TServiceModel, TEntity>(this Task<TEntity> anEntity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
+    parameters:
+    - id: anEntity
+      type: System.Threading.Tasks.Task{{TEntity}}
+      description: Entity to create data service model instance from
+    typeParameters:
+    - id: TServiceModel
+      description: Type of the data service model
+    - id: TEntity
+      description: Type of the entity
+    return:
+      type: System.Threading.Tasks.Task{{TServiceModel}}
+      description: Data service instance
+    content.vb: Public Shared Function AsModelAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(anEntity As Task(Of TEntity)) As Task(Of TServiceModel)
+  overload: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync*
+  nameWithType.vb: UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(Task(Of TEntity))
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(System.Threading.Tasks.Task(Of TEntity))
+  name.vb: AsModelAsync(Of TServiceModel, TEntity)(Task(Of TEntity))
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(``1)
+  id: AsModelAsync``2(``1)
+  isExtensionMethod: true
+  parent: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: AsModelAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType: UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(TEntity)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(TEntity)
+  type: Method
+  source:
+    id: AsModelAsync
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Extensions\UFDataServiceExtensions.cs
+    startLine: 122
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Extensions
+  summary: >-
+    Uses <xref href="UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync%60%602(%60%601)" data-throw-if-not-resolved="false"></xref> to
+
+    create a data service model from an database entity.
+  example: []
+  syntax:
+    content: 'public static Task<TServiceModel> AsModelAsync<TServiceModel, TEntity>(this TEntity anEntity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
+    parameters:
+    - id: anEntity
+      type: '{TEntity}'
+      description: Entity to create data service model instance from
+    typeParameters:
+    - id: TServiceModel
+      description: Type of the data service model
+    - id: TEntity
+      description: Type of the entity
+    return:
+      type: System.Threading.Tasks.Task{{TServiceModel}}
+      description: Data service instance
+    content.vb: Public Shared Function AsModelAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(anEntity As TEntity) As Task(Of TServiceModel)
+  overload: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync*
+  nameWithType.vb: UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(TEntity)
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(TEntity)
+  name.vb: AsModelAsync(Of TServiceModel, TEntity)(TEntity)
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(System.Collections.Generic.IEnumerable{``1})
+  commentId: M:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync``2(System.Collections.Generic.IEnumerable{``1})
+  id: AsModelAsync``2(System.Collections.Generic.IEnumerable{``1})
+  isExtensionMethod: true
+  parent: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: AsModelAsync<TServiceModel, TEntity>(IEnumerable<TEntity>)
+  nameWithType: UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(IEnumerable<TEntity>)
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(System.Collections.Generic.IEnumerable<TEntity>)
+  type: Method
+  source:
+    id: AsModelAsync
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Extensions\UFDataServiceExtensions.cs
+    startLine: 139
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Extensions
+  summary: >-
+    Uses <xref href="UltraForce.Library.Core.Tools.UFDataServiceTools" data-throw-if-not-resolved="false"></xref> to convert a list of entities to a list of data service
+
+    model instances.
+  example: []
+  syntax:
+    content: 'public static Task<IEnumerable<TServiceModel>> AsModelAsync<TServiceModel, TEntity>(this IEnumerable<TEntity> anEntities) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
+    parameters:
+    - id: anEntities
+      type: System.Collections.Generic.IEnumerable{{TEntity}}
+      description: Entities to create data service model instances for
+    typeParameters:
+    - id: TServiceModel
+      description: Type of the data service model
+    - id: TEntity
+      description: Type of the entity
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TServiceModel}}}
+      description: Data service instances
+    content.vb: Public Shared Function AsModelAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(anEntities As IEnumerable(Of TEntity)) As Task(Of IEnumerable(Of TServiceModel))
+  overload: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync*
+  nameWithType.vb: UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(IEnumerable(Of TEntity))
+  fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(System.Collections.Generic.IEnumerable(Of TEntity))
+  name.vb: AsModelAsync(Of TServiceModel, TEntity)(IEnumerable(Of TEntity))
+references:
+- uid: UltraForce.Library.Core.Services.IUFDataService
+  commentId: T:UltraForce.Library.Core.Services.IUFDataService
+  parent: UltraForce.Library.Core.Services
+  href: UltraForce.Library.Core.Services.IUFDataService.html
+  name: IUFDataService
+  nameWithType: IUFDataService
+  fullName: UltraForce.Library.Core.Services.IUFDataService
+- uid: UltraForce.Library.Core.Extensions
+  commentId: N:UltraForce.Library.Core.Extensions
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Extensions
+  nameWithType: UltraForce.Library.Core.Extensions
+  fullName: UltraForce.Library.Core.Extensions
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Extensions
+    name: Extensions
+    href: UltraForce.Library.Core.Extensions.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Extensions
+    name: Extensions
+    href: UltraForce.Library.Core.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: UltraForce.Library.Core.Services
+  commentId: N:UltraForce.Library.Core.Services
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Services
+  nameWithType: UltraForce.Library.Core.Services
+  fullName: UltraForce.Library.Core.Services
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Services
+    name: Services
+    href: UltraForce.Library.Core.Services.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Services
+    name: Services
+    href: UltraForce.Library.Core.Services.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildNullableFromAsync``2(``1)
+  commentId: M:UltraForce.Library.Core.Tools.UFDataServiceTools.BuildNullableFromAsync``2(``1)
+  href: UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildNullableFromAsync__2___1_
+  name: BuildNullableFromAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType: UFDataServiceTools.BuildNullableFromAsync<TServiceModel, TEntity>(TEntity)
+  fullName: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildNullableFromAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType.vb: UFDataServiceTools.BuildNullableFromAsync(Of TServiceModel, TEntity)(TEntity)
+  fullName.vb: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildNullableFromAsync(Of TServiceModel, TEntity)(TEntity)
+  name.vb: BuildNullableFromAsync(Of TServiceModel, TEntity)(TEntity)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildNullableFromAsync``2(``1)
+    name: BuildNullableFromAsync
+    href: UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildNullableFromAsync__2___1_
+  - name: <
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildNullableFromAsync``2(``1)
+    name: BuildNullableFromAsync
+    href: UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildNullableFromAsync__2___1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: )
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync*
+  commentId: Overload:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync
+  href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsNullableModelAsync__2_System_Threading_Tasks_Task___1__
+  name: AsNullableModelAsync
+  nameWithType: UFDataServiceExtensions.AsNullableModelAsync
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync
+- uid: System.Threading.Tasks.Task{{TEntity}}
+  commentId: T:System.Threading.Tasks.Task{``1}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TEntity>
+  nameWithType: Task<TEntity>
+  fullName: System.Threading.Tasks.Task<TEntity>
+  nameWithType.vb: Task(Of TEntity)
+  fullName.vb: System.Threading.Tasks.Task(Of TEntity)
+  name.vb: Task(Of TEntity)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: System.Threading.Tasks.Task{{TServiceModel}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TServiceModel>
+  nameWithType: Task<TServiceModel>
+  fullName: System.Threading.Tasks.Task<TServiceModel>
+  nameWithType.vb: Task(Of TServiceModel)
+  fullName.vb: System.Threading.Tasks.Task(Of TServiceModel)
+  name.vb: Task(Of TServiceModel)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TServiceModel
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Threading.Tasks.ValueTask{{TEntity}}
+  commentId: T:System.Threading.Tasks.ValueTask{``1}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.ValueTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TEntity>
+  nameWithType: ValueTask<TEntity>
+  fullName: System.Threading.Tasks.ValueTask<TEntity>
+  nameWithType.vb: ValueTask(Of TEntity)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TEntity)
+  name.vb: ValueTask(Of TEntity)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: System.Threading.Tasks.ValueTask`1
+  commentId: T:System.Threading.Tasks.ValueTask`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  name: ValueTask<TResult>
+  nameWithType: ValueTask<TResult>
+  fullName: System.Threading.Tasks.ValueTask<TResult>
+  nameWithType.vb: ValueTask(Of TResult)
+  fullName.vb: System.Threading.Tasks.ValueTask(Of TResult)
+  name.vb: ValueTask(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.ValueTask`1
+    name: ValueTask
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync``2(``1)
+  commentId: M:UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync``2(``1)
+  href: UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildFromAsync__2___1_
+  name: BuildFromAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType: UFDataServiceTools.BuildFromAsync<TServiceModel, TEntity>(TEntity)
+  fullName: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType.vb: UFDataServiceTools.BuildFromAsync(Of TServiceModel, TEntity)(TEntity)
+  fullName.vb: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync(Of TServiceModel, TEntity)(TEntity)
+  name.vb: BuildFromAsync(Of TServiceModel, TEntity)(TEntity)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync``2(``1)
+    name: BuildFromAsync
+    href: UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildFromAsync__2___1_
+  - name: <
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync``2(``1)
+    name: BuildFromAsync
+    href: UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildFromAsync__2___1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: )
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync*
+  commentId: Overload:UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync
+  href: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.html#UltraForce_Library_Core_Extensions_UFDataServiceExtensions_AsModelAsync__2_System_Threading_Tasks_Task___1__
+  name: AsModelAsync
+  nameWithType: UFDataServiceExtensions.AsModelAsync
+  fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync
+- uid: UltraForce.Library.Core.Tools.UFDataServiceTools
+  commentId: T:UltraForce.Library.Core.Tools.UFDataServiceTools
+  href: UltraForce.Library.Core.Tools.UFDataServiceTools.html
+  name: UFDataServiceTools
+  nameWithType: UFDataServiceTools
+  fullName: UltraForce.Library.Core.Tools.UFDataServiceTools
+- uid: System.Collections.Generic.IEnumerable{{TEntity}}
+  commentId: T:System.Collections.Generic.IEnumerable{``1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TEntity>
+  nameWithType: IEnumerable<TEntity>
+  fullName: System.Collections.Generic.IEnumerable<TEntity>
+  nameWithType.vb: IEnumerable(Of TEntity)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TEntity)
+  name.vb: IEnumerable(Of TEntity)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TServiceModel}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{``0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<TServiceModel>>
+  nameWithType: Task<IEnumerable<TServiceModel>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<TServiceModel>>
+  nameWithType.vb: Task(Of IEnumerable(Of TServiceModel))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of TServiceModel))
+  name.vb: Task(Of IEnumerable(Of TServiceModel))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TServiceModel
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
