@@ -17,8 +17,12 @@ items:
   fullName: UltraForce.Library.Core.Tools.UFTestTools
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core/Tools/UFTestTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFTestTools
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Tools\UFTestTools.cs
+    path: ../UltraForce.Library.Core/Tools/UFTestTools.cs
     startLine: 37
   assemblies:
   - UltraForce.Library.Core
@@ -50,8 +54,12 @@ items:
   fullName: UltraForce.Library.Core.Tools.UFTestTools.HasUniqueValues<TObject, TValue>(System.Collections.Generic.IEnumerable<TObject>, System.Func<TObject, TValue>)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Tools/UFTestTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: HasUniqueValues
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Tools\UFTestTools.cs
+    path: ../UltraForce.Library.Core/Tools/UFTestTools.cs
     startLine: 47
   assemblies:
   - UltraForce.Library.Core
@@ -89,8 +97,12 @@ items:
   fullName: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualProperties<T>(T, T, System.Collections.Generic.IEnumerable<string>?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Tools/UFTestTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AssertEqualProperties
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Tools\UFTestTools.cs
+    path: ../UltraForce.Library.Core/Tools/UFTestTools.cs
     startLine: 70
   assemblies:
   - UltraForce.Library.Core
@@ -129,8 +141,12 @@ items:
   fullName: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualList<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<string>?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Tools/UFTestTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AssertEqualList
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Tools\UFTestTools.cs
+    path: ../UltraForce.Library.Core/Tools/UFTestTools.cs
     startLine: 91
   assemblies:
   - UltraForce.Library.Core
@@ -178,8 +194,12 @@ items:
   fullName: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualList<TFirst, TSecond>(System.Collections.Generic.IEnumerable<TFirst>, System.Collections.Generic.IEnumerable<TSecond>, System.Func<TFirst, TSecond, bool>)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Tools/UFTestTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AssertEqualList
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Tools\UFTestTools.cs
+    path: ../UltraForce.Library.Core/Tools/UFTestTools.cs
     startLine: 118
   assemblies:
   - UltraForce.Library.Core

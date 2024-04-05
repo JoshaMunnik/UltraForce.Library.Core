@@ -15,8 +15,12 @@ items:
   fullName: UltraForce.Library.Core.Models.UFDataServiceModel<TServiceModel, TEntity>
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core/Models/UFDataServiceModel.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFDataServiceModel
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Models\UFDataServiceModel.cs
+    path: ../UltraForce.Library.Core/Models/UFDataServiceModel.cs
     startLine: 50
   assemblies:
   - UltraForce.Library.Core
@@ -78,8 +82,12 @@ items:
   fullName: UltraForce.Library.Core.Models.UFDataServiceModel<TServiceModel, TEntity>.CopyToEntityAsync(TEntity, UltraForce.Library.Core.Types.Enums.UFEntityAction)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Models/UFDataServiceModel.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: CopyToEntityAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Models\UFDataServiceModel.cs
+    path: ../UltraForce.Library.Core/Models/UFDataServiceModel.cs
     startLine: 92
   assemblies:
   - UltraForce.Library.Core
@@ -115,8 +123,12 @@ items:
   fullName: UltraForce.Library.Core.Models.UFDataServiceModel<TServiceModel, TEntity>.CopyFromEntityAsync(TEntity)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Models/UFDataServiceModel.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: CopyFromEntityAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Models\UFDataServiceModel.cs
+    path: ../UltraForce.Library.Core/Models/UFDataServiceModel.cs
     startLine: 99
   assemblies:
   - UltraForce.Library.Core

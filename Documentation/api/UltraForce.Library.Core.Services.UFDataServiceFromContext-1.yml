@@ -35,8 +35,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFDataServiceFromContext
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 52
   assemblies:
   - UltraForce.Library.Core
@@ -91,8 +95,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.UFDataServiceFromContext(TContext, bool)
   type: Constructor
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: .ctor
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 93
   assemblies:
   - UltraForce.Library.Core
@@ -138,8 +146,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.Dispose()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Dispose
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 107
   assemblies:
   - UltraForce.Library.Core
@@ -166,8 +178,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.DisposeAsync()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: DisposeAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 113
   assemblies:
   - UltraForce.Library.Core
@@ -197,8 +213,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.LockAsync()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: LockAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 124
   assemblies:
   - UltraForce.Library.Core
@@ -236,8 +256,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.UnlockAsync()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UnlockAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 131
   assemblies:
   - UltraForce.Library.Core
@@ -269,8 +293,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.Context
   type: Property
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Context
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 155
   assemblies:
   - UltraForce.Library.Core
@@ -298,8 +326,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.Changed
   type: Property
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Changed
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 161
   assemblies:
   - UltraForce.Library.Core
@@ -330,8 +362,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.DetachEntity(object)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: DetachEntity
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 171
   assemblies:
   - UltraForce.Library.Core
@@ -361,8 +397,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.FindForIdAsync<TServiceModel, TEntity, TKey>(TKey)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: FindForIdAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 184
   assemblies:
   - UltraForce.Library.Core
@@ -402,8 +442,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.FindAllAsync<TServiceModel, TEntity>()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: FindAllAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 202
   assemblies:
   - UltraForce.Library.Core
@@ -437,8 +481,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.AddAsync<TServiceModel, TEntity>(TServiceModel)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AddAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 230
   assemblies:
   - UltraForce.Library.Core
@@ -479,8 +527,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.UpdateAsync<TServiceModel, TEntity>(TServiceModel)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UpdateAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 250
   assemblies:
   - UltraForce.Library.Core
@@ -518,8 +570,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.RemoveAsync<TServiceModel, TEntity>(TServiceModel)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: RemoveAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 276
   assemblies:
   - UltraForce.Library.Core
@@ -556,8 +612,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SaveChangesAsync()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SaveChangesAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 302
   assemblies:
   - UltraForce.Library.Core
@@ -595,8 +655,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.DetachTrackedEntries()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: DetachTrackedEntries
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 329
   assemblies:
   - UltraForce.Library.Core
@@ -630,8 +694,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.TransactionAsync(System.Func<System.Threading.Tasks.Task>)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: TransactionAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 354
   assemblies:
   - UltraForce.Library.Core
@@ -668,8 +736,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.TransactionAsync<T>(System.Func<System.Threading.Tasks.Task<T>>)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: TransactionAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 386
   assemblies:
   - UltraForce.Library.Core
@@ -709,8 +781,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SwapAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
     startLine: 426
   assemblies:
   - UltraForce.Library.Core
@@ -735,7 +811,7 @@ items:
     </p>
   example: []
   syntax:
-    content: 'protected Task SwapAsync<TEntity, TKey>(string aTableName, string aColumnName, TKey aFirstId, TKey aSecondId, string? aModifiedName = null) where TEntity : class'
+    content: 'protected Task SwapAsync<TEntity, TKey>(string aTableName, string aColumnName, TKey aFirstId, TKey aSecondId, string? aModifiedName = null) where TEntity : class where TKey : notnull'
     parameters:
     - id: aTableName
       type: System.String
@@ -776,9 +852,13 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SwapAsync<T>(string, string, T, T, string?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SwapAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
-    startLine: 486
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+    startLine: 487
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -833,9 +913,13 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.GetPrimaryKeyNameFromEntity<TEntity>()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: GetPrimaryKeyNameFromEntity
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
-    startLine: 523
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+    startLine: 524
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -879,9 +963,13 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.GetPrimaryKeyFromServiceModel<TServiceModel, TEntity, TKey>(TServiceModel)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: GetPrimaryKeyFromServiceModel
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
-    startLine: 557
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+    startLine: 558
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -940,9 +1028,13 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.CheckContext()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: CheckContext
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDataServiceFromContext.cs
-    startLine: 583
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+    startLine: 584
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services

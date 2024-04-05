@@ -19,8 +19,12 @@ items:
   fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core/Extensions/UFDataServiceExtensions.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFDataServiceExtensions
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Extensions\UFDataServiceExtensions.cs
+    path: ../UltraForce.Library.Core/Extensions/UFDataServiceExtensions.cs
     startLine: 39
   assemblies:
   - UltraForce.Library.Core
@@ -53,8 +57,12 @@ items:
   fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(System.Threading.Tasks.Task<TEntity?>)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Extensions/UFDataServiceExtensions.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AsNullableModelAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Extensions\UFDataServiceExtensions.cs
+    path: ../UltraForce.Library.Core/Extensions/UFDataServiceExtensions.cs
     startLine: 49
   assemblies:
   - UltraForce.Library.Core
@@ -96,8 +104,12 @@ items:
   fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(System.Threading.Tasks.ValueTask<TEntity?>)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Extensions/UFDataServiceExtensions.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AsNullableModelAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Extensions\UFDataServiceExtensions.cs
+    path: ../UltraForce.Library.Core/Extensions/UFDataServiceExtensions.cs
     startLine: 69
   assemblies:
   - UltraForce.Library.Core
@@ -105,7 +117,7 @@ items:
   summary: >-
     Uses
 
-    UFDataServiceTools.BuildFromAsync&lt;TServiceModel,TEntity&gt;(TEntity,UFEntityAction)
+    <xref href="UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync%60%602(%60%601)" data-throw-if-not-resolved="false"></xref>
 
     to create a data service model from an database entity. It supports nullable entities.
   example: []
@@ -141,8 +153,12 @@ items:
   fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(TEntity?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Extensions/UFDataServiceExtensions.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AsNullableModelAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Extensions\UFDataServiceExtensions.cs
+    path: ../UltraForce.Library.Core/Extensions/UFDataServiceExtensions.cs
     startLine: 88
   assemblies:
   - UltraForce.Library.Core
@@ -184,8 +200,12 @@ items:
   fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(System.Threading.Tasks.Task<TEntity>)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Extensions/UFDataServiceExtensions.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AsModelAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Extensions\UFDataServiceExtensions.cs
+    path: ../UltraForce.Library.Core/Extensions/UFDataServiceExtensions.cs
     startLine: 105
   assemblies:
   - UltraForce.Library.Core
@@ -227,8 +247,12 @@ items:
   fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(TEntity)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Extensions/UFDataServiceExtensions.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AsModelAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Extensions\UFDataServiceExtensions.cs
+    path: ../UltraForce.Library.Core/Extensions/UFDataServiceExtensions.cs
     startLine: 122
   assemblies:
   - UltraForce.Library.Core
@@ -270,8 +294,12 @@ items:
   fullName: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(System.Collections.Generic.IEnumerable<TEntity>)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Extensions/UFDataServiceExtensions.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AsModelAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Extensions\UFDataServiceExtensions.cs
+    path: ../UltraForce.Library.Core/Extensions/UFDataServiceExtensions.cs
     startLine: 139
   assemblies:
   - UltraForce.Library.Core
@@ -787,6 +815,43 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync``2(``1)
+  commentId: M:UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync``2(``1)
+  href: UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildFromAsync__2___1_
+  name: BuildFromAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType: UFDataServiceTools.BuildFromAsync<TServiceModel, TEntity>(TEntity)
+  fullName: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync<TServiceModel, TEntity>(TEntity)
+  nameWithType.vb: UFDataServiceTools.BuildFromAsync(Of TServiceModel, TEntity)(TEntity)
+  fullName.vb: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync(Of TServiceModel, TEntity)(TEntity)
+  name.vb: BuildFromAsync(Of TServiceModel, TEntity)(TEntity)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync``2(``1)
+    name: BuildFromAsync
+    href: UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildFromAsync__2___1_
+  - name: <
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync``2(``1)
+    name: BuildFromAsync
+    href: UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildFromAsync__2___1_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TServiceModel
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: )
 - uid: System.Threading.Tasks.ValueTask{{TEntity}}
   commentId: T:System.Threading.Tasks.ValueTask{``1}
   parent: System.Threading.Tasks
@@ -843,43 +908,6 @@ references:
   - name: Of
   - name: " "
   - name: TResult
-  - name: )
-- uid: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync``2(``1)
-  commentId: M:UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync``2(``1)
-  href: UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildFromAsync__2___1_
-  name: BuildFromAsync<TServiceModel, TEntity>(TEntity)
-  nameWithType: UFDataServiceTools.BuildFromAsync<TServiceModel, TEntity>(TEntity)
-  fullName: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync<TServiceModel, TEntity>(TEntity)
-  nameWithType.vb: UFDataServiceTools.BuildFromAsync(Of TServiceModel, TEntity)(TEntity)
-  fullName.vb: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync(Of TServiceModel, TEntity)(TEntity)
-  name.vb: BuildFromAsync(Of TServiceModel, TEntity)(TEntity)
-  spec.csharp:
-  - uid: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync``2(``1)
-    name: BuildFromAsync
-    href: UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildFromAsync__2___1_
-  - name: <
-  - name: TServiceModel
-  - name: ','
-  - name: " "
-  - name: TEntity
-  - name: '>'
-  - name: (
-  - name: TEntity
-  - name: )
-  spec.vb:
-  - uid: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync``2(``1)
-    name: BuildFromAsync
-    href: UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildFromAsync__2___1_
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TServiceModel
-  - name: ','
-  - name: " "
-  - name: TEntity
-  - name: )
-  - name: (
-  - name: TEntity
   - name: )
 - uid: '{TEntity}'
   commentId: '!:TEntity'

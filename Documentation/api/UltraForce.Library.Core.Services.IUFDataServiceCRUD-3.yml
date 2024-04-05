@@ -18,8 +18,12 @@ items:
   fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>
   type: Interface
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: IUFDataServiceCRUD
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFDataServiceCRUD.cs
+    path: ../UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
     startLine: 40
   assemblies:
   - UltraForce.Library.Core
@@ -60,8 +64,12 @@ items:
   fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.FindForIdAsync(TKey)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: FindForIdAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFDataServiceCRUD.cs
+    path: ../UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
     startLine: 49
   assemblies:
   - UltraForce.Library.Core
@@ -93,8 +101,12 @@ items:
   fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.FindAllAsync()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: FindAllAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFDataServiceCRUD.cs
+    path: ../UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
     startLine: 55
   assemblies:
   - UltraForce.Library.Core
@@ -122,8 +134,12 @@ items:
   fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.AddAsync(TServiceModel)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AddAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFDataServiceCRUD.cs
+    path: ../UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
     startLine: 64
   assemblies:
   - UltraForce.Library.Core
@@ -155,8 +171,12 @@ items:
   fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.UpdateAsync(TServiceModel)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UpdateAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFDataServiceCRUD.cs
+    path: ../UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
     startLine: 73
   assemblies:
   - UltraForce.Library.Core
@@ -188,8 +208,12 @@ items:
   fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.RemoveAsync(TServiceModel)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: RemoveAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFDataServiceCRUD.cs
+    path: ../UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
     startLine: 79
   assemblies:
   - UltraForce.Library.Core

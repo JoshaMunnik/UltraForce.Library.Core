@@ -15,8 +15,12 @@ items:
   fullName: UltraForce.Library.Core.Services.IUFDataService
   type: Interface
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/IUFDataService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: IUFDataService
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFDataService.cs
+    path: ../UltraForce.Library.Core/Services/IUFDataService.cs
     startLine: 35
   assemblies:
   - UltraForce.Library.Core
@@ -44,8 +48,12 @@ items:
   fullName: UltraForce.Library.Core.Services.IUFDataService.LockAsync()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/IUFDataService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: LockAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFDataService.cs
+    path: ../UltraForce.Library.Core/Services/IUFDataService.cs
     startLine: 46
   assemblies:
   - UltraForce.Library.Core
@@ -79,8 +87,12 @@ items:
   fullName: UltraForce.Library.Core.Services.IUFDataService.UnlockAsync()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/IUFDataService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UnlockAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\IUFDataService.cs
+    path: ../UltraForce.Library.Core/Services/IUFDataService.cs
     startLine: 52
   assemblies:
   - UltraForce.Library.Core

@@ -16,8 +16,12 @@ items:
   fullName: UltraForce.Library.Core.Tools.UFDataServiceTools
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core/Tools/UFDataServiceTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFDataServiceTools
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Tools\UFDataServiceTools.cs
+    path: ../UltraForce.Library.Core/Tools/UFDataServiceTools.cs
     startLine: 38
   assemblies:
   - UltraForce.Library.Core
@@ -49,8 +53,12 @@ items:
   fullName: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync<TServiceModel, TEntity>(TEntity)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Tools/UFDataServiceTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: BuildFromAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Tools\UFDataServiceTools.cs
+    path: ../UltraForce.Library.Core/Tools/UFDataServiceTools.cs
     startLine: 49
   assemblies:
   - UltraForce.Library.Core
@@ -88,8 +96,12 @@ items:
   fullName: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildNullableFromAsync<TServiceModel, TEntity>(TEntity?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Tools/UFDataServiceTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: BuildNullableFromAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Tools\UFDataServiceTools.cs
+    path: ../UltraForce.Library.Core/Tools/UFDataServiceTools.cs
     startLine: 67
   assemblies:
   - UltraForce.Library.Core
@@ -127,8 +139,12 @@ items:
   fullName: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync<TServiceModel, TEntity>(System.Collections.Generic.IEnumerable<TEntity>)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Tools/UFDataServiceTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: BuildFromAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Tools\UFDataServiceTools.cs
+    path: ../UltraForce.Library.Core/Tools/UFDataServiceTools.cs
     startLine: 89
   assemblies:
   - UltraForce.Library.Core

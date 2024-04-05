@@ -14,8 +14,12 @@ items:
   fullName: UltraForce.Library.Core.Tools.UFCoreFileTools
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core/Tools/UFCoreFileTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFCoreFileTools
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Tools\UFCoreFileTools.cs
+    path: ../UltraForce.Library.Core/Tools/UFCoreFileTools.cs
     startLine: 34
   assemblies:
   - UltraForce.Library.Core
@@ -47,8 +51,12 @@ items:
   fullName: UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile(string, string, string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Tools/UFCoreFileTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: CheckAlternativeFile
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Tools\UFCoreFileTools.cs
+    path: ../UltraForce.Library.Core/Tools/UFCoreFileTools.cs
     startLine: 55
   assemblies:
   - UltraForce.Library.Core

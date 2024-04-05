@@ -15,8 +15,12 @@ items:
   fullName: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core/Converters/UFDateOnlyJsonConverter.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFDateOnlyJsonConverter
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Converters\UFDateOnlyJsonConverter.cs
+    path: ../UltraForce.Library.Core/Converters/UFDateOnlyJsonConverter.cs
     startLine: 38
   assemblies:
   - UltraForce.Library.Core
@@ -58,8 +62,12 @@ items:
   fullName: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.Read(ref System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Converters/UFDateOnlyJsonConverter.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Read
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Converters\UFDateOnlyJsonConverter.cs
+    path: ../UltraForce.Library.Core/Converters/UFDateOnlyJsonConverter.cs
     startLine: 46
   assemblies:
   - UltraForce.Library.Core
@@ -96,8 +104,12 @@ items:
   fullName: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.Write(System.Text.Json.Utf8JsonWriter, System.DateOnly, System.Text.Json.JsonSerializerOptions)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Converters/UFDateOnlyJsonConverter.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Write
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Converters\UFDateOnlyJsonConverter.cs
+    path: ../UltraForce.Library.Core/Converters/UFDateOnlyJsonConverter.cs
     startLine: 59
   assemblies:
   - UltraForce.Library.Core

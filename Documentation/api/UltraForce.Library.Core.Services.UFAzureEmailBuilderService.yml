@@ -25,8 +25,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFAzureEmailBuilderService
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFAzureEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
     startLine: 40
   assemblies:
   - UltraForce.Library.Core
@@ -75,8 +79,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Start()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Start
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFAzureEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
     startLine: 94
   assemblies:
   - UltraForce.Library.Core
@@ -103,8 +111,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Subject(string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Subject
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFAzureEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
     startLine: 109
   assemblies:
   - UltraForce.Library.Core
@@ -138,8 +150,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.From(string, string?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: From
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFAzureEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
     startLine: 124
   assemblies:
   - UltraForce.Library.Core
@@ -176,8 +192,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.To(string, string?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: To
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFAzureEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
     startLine: 131
   assemblies:
   - UltraForce.Library.Core
@@ -214,8 +234,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Cc(string, string?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Cc
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFAzureEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
     startLine: 138
   assemblies:
   - UltraForce.Library.Core
@@ -252,8 +276,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Bcc(string, string?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Bcc
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFAzureEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
     startLine: 145
   assemblies:
   - UltraForce.Library.Core
@@ -290,8 +318,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.ReplyTo(string, string?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: ReplyTo
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFAzureEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
     startLine: 152
   assemblies:
   - UltraForce.Library.Core
@@ -328,8 +360,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Html(string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Html
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFAzureEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
     startLine: 159
   assemblies:
   - UltraForce.Library.Core
@@ -363,8 +399,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Text(string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Text
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFAzureEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
     startLine: 173
   assemblies:
   - UltraForce.Library.Core
@@ -398,8 +438,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Attachment(string, string, System.BinaryData)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Attachment
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFAzureEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
     startLine: 187
   assemblies:
   - UltraForce.Library.Core
@@ -439,8 +483,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SendAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFAzureEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
     startLine: 194
   assemblies:
   - UltraForce.Library.Core
@@ -467,8 +515,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetConnectionString()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: GetConnectionString
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFAzureEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
     startLine: 249
   assemblies:
   - UltraForce.Library.Core

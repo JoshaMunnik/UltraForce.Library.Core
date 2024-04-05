@@ -15,8 +15,12 @@ items:
   fullName: UltraForce.Library.Core.Converters.UFBoolJsonConverter
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core/Converters/UFBoolJsonConverter.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFBoolJsonConverter
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Converters\UFBoolJsonConverter.cs
+    path: ../UltraForce.Library.Core/Converters/UFBoolJsonConverter.cs
     startLine: 40
   assemblies:
   - UltraForce.Library.Core
@@ -65,8 +69,12 @@ items:
   fullName: UltraForce.Library.Core.Converters.UFBoolJsonConverter.Read(ref System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Converters/UFBoolJsonConverter.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Read
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Converters\UFBoolJsonConverter.cs
+    path: ../UltraForce.Library.Core/Converters/UFBoolJsonConverter.cs
     startLine: 43
   assemblies:
   - UltraForce.Library.Core
@@ -103,8 +111,12 @@ items:
   fullName: UltraForce.Library.Core.Converters.UFBoolJsonConverter.Write(System.Text.Json.Utf8JsonWriter, bool, System.Text.Json.JsonSerializerOptions)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Converters/UFBoolJsonConverter.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Write
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Converters\UFBoolJsonConverter.cs
+    path: ../UltraForce.Library.Core/Converters/UFBoolJsonConverter.cs
     startLine: 51
   assemblies:
   - UltraForce.Library.Core

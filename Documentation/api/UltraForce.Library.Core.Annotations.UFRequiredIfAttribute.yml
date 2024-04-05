@@ -21,8 +21,12 @@ items:
   fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core/Annotations/UFRequiredIfAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFRequiredIfAttribute
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Annotations\UFRequiredIfAttribute.cs
+    path: ../UltraForce.Library.Core/Annotations/UFRequiredIfAttribute.cs
     startLine: 42
   assemblies:
   - UltraForce.Library.Core
@@ -120,8 +124,12 @@ items:
   fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherProperty
   type: Property
   source:
+    remote:
+      path: UltraForce.Library.Core/Annotations/UFRequiredIfAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: OtherProperty
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Annotations\UFRequiredIfAttribute.cs
+    path: ../UltraForce.Library.Core/Annotations/UFRequiredIfAttribute.cs
     startLine: 54
   assemblies:
   - UltraForce.Library.Core
@@ -151,8 +159,12 @@ items:
   fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherPropertyDisplayName
   type: Property
   source:
+    remote:
+      path: UltraForce.Library.Core/Annotations/UFRequiredIfAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: OtherPropertyDisplayName
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Annotations\UFRequiredIfAttribute.cs
+    path: ../UltraForce.Library.Core/Annotations/UFRequiredIfAttribute.cs
     startLine: 62
   assemblies:
   - UltraForce.Library.Core
@@ -179,8 +191,12 @@ items:
   fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.OtherPropertyValue
   type: Property
   source:
+    remote:
+      path: UltraForce.Library.Core/Annotations/UFRequiredIfAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: OtherPropertyValue
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Annotations\UFRequiredIfAttribute.cs
+    path: ../UltraForce.Library.Core/Annotations/UFRequiredIfAttribute.cs
     startLine: 71
   assemblies:
   - UltraForce.Library.Core
@@ -210,8 +226,12 @@ items:
   fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.IsInverted
   type: Property
   source:
+    remote:
+      path: UltraForce.Library.Core/Annotations/UFRequiredIfAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: IsInverted
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Annotations\UFRequiredIfAttribute.cs
+    path: ../UltraForce.Library.Core/Annotations/UFRequiredIfAttribute.cs
     startLine: 89
   assemblies:
   - UltraForce.Library.Core
@@ -253,8 +273,12 @@ items:
   fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.RequiresValidationContext
   type: Property
   source:
+    remote:
+      path: UltraForce.Library.Core/Annotations/UFRequiredIfAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: RequiresValidationContext
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Annotations\UFRequiredIfAttribute.cs
+    path: ../UltraForce.Library.Core/Annotations/UFRequiredIfAttribute.cs
     startLine: 99
   assemblies:
   - UltraForce.Library.Core
@@ -288,8 +312,12 @@ items:
   fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.UFRequiredIfAttribute(string, object)
   type: Constructor
   source:
+    remote:
+      path: UltraForce.Library.Core/Annotations/UFRequiredIfAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: .ctor
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Annotations\UFRequiredIfAttribute.cs
+    path: ../UltraForce.Library.Core/Annotations/UFRequiredIfAttribute.cs
     startLine: 114
   assemblies:
   - UltraForce.Library.Core
@@ -322,8 +350,12 @@ items:
   fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.FormatErrorMessage(string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Annotations/UFRequiredIfAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: FormatErrorMessage
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Annotations\UFRequiredIfAttribute.cs
+    path: ../UltraForce.Library.Core/Annotations/UFRequiredIfAttribute.cs
     startLine: 134
   assemblies:
   - UltraForce.Library.Core
@@ -360,8 +392,12 @@ items:
   fullName: UltraForce.Library.Core.Annotations.UFRequiredIfAttribute.IsValid(object?, System.ComponentModel.DataAnnotations.ValidationContext?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Annotations/UFRequiredIfAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: IsValid
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Annotations\UFRequiredIfAttribute.cs
+    path: ../UltraForce.Library.Core/Annotations/UFRequiredIfAttribute.cs
     startLine: 161
   assemblies:
   - UltraForce.Library.Core

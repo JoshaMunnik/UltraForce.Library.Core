@@ -24,8 +24,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFDummyEmailBuilderService
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDummyEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
     startLine: 34
   assemblies:
   - UltraForce.Library.Core
@@ -67,8 +71,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Start()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Start
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDummyEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
     startLine: 37
   assemblies:
   - UltraForce.Library.Core
@@ -95,8 +103,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Subject(string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Subject
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDummyEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
     startLine: 43
   assemblies:
   - UltraForce.Library.Core
@@ -130,8 +142,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.From(string, string?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: From
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDummyEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
     startLine: 49
   assemblies:
   - UltraForce.Library.Core
@@ -168,8 +184,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.To(string, string?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: To
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDummyEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
     startLine: 55
   assemblies:
   - UltraForce.Library.Core
@@ -206,8 +226,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Cc(string, string?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Cc
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDummyEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
     startLine: 61
   assemblies:
   - UltraForce.Library.Core
@@ -244,8 +268,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Bcc(string, string?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Bcc
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDummyEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
     startLine: 67
   assemblies:
   - UltraForce.Library.Core
@@ -282,8 +310,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.ReplyTo(string, string?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: ReplyTo
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDummyEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
     startLine: 73
   assemblies:
   - UltraForce.Library.Core
@@ -320,8 +352,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Html(string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Html
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDummyEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
     startLine: 79
   assemblies:
   - UltraForce.Library.Core
@@ -355,8 +391,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Text(string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Text
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDummyEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
     startLine: 85
   assemblies:
   - UltraForce.Library.Core
@@ -390,8 +430,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Attachment(string, string, System.BinaryData)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Attachment
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDummyEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
     startLine: 91
   assemblies:
   - UltraForce.Library.Core
@@ -431,8 +475,12 @@ items:
   fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.SendAsync()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SendAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Services\UFDummyEmailBuilderService.cs
+    path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
     startLine: 97
   assemblies:
   - UltraForce.Library.Core

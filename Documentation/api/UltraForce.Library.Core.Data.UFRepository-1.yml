@@ -20,8 +20,12 @@ items:
   fullName: UltraForce.Library.Core.Data.UFRepository<TContext>
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core/Data/UFRepository.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFRepository
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Data\UFRepository.cs
+    path: ../UltraForce.Library.Core/Data/UFRepository.cs
     startLine: 51
   assemblies:
   - UltraForce.Library.Core
@@ -83,8 +87,12 @@ items:
   fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.UFRepository(TContext, bool)
   type: Constructor
   source:
+    remote:
+      path: UltraForce.Library.Core/Data/UFRepository.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: .ctor
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Data\UFRepository.cs
+    path: ../UltraForce.Library.Core/Data/UFRepository.cs
     startLine: 80
   assemblies:
   - UltraForce.Library.Core
@@ -124,8 +132,12 @@ items:
   fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.LockAsync()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Data/UFRepository.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: LockAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Data\UFRepository.cs
+    path: ../UltraForce.Library.Core/Data/UFRepository.cs
     startLine: 97
   assemblies:
   - UltraForce.Library.Core
@@ -161,8 +173,12 @@ items:
   fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.UnlockAsync()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Data/UFRepository.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UnlockAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Data\UFRepository.cs
+    path: ../UltraForce.Library.Core/Data/UFRepository.cs
     startLine: 103
   assemblies:
   - UltraForce.Library.Core
@@ -194,8 +210,12 @@ items:
   fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.Context
   type: Property
   source:
+    remote:
+      path: UltraForce.Library.Core/Data/UFRepository.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Context
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Data\UFRepository.cs
+    path: ../UltraForce.Library.Core/Data/UFRepository.cs
     startLine: 123
   assemblies:
   - UltraForce.Library.Core
@@ -223,8 +243,12 @@ items:
   fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.Changed
   type: Property
   source:
+    remote:
+      path: UltraForce.Library.Core/Data/UFRepository.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Changed
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Data\UFRepository.cs
+    path: ../UltraForce.Library.Core/Data/UFRepository.cs
     startLine: 129
   assemblies:
   - UltraForce.Library.Core
@@ -255,8 +279,12 @@ items:
   fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.SaveChangesAsync()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Data/UFRepository.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SaveChangesAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Data\UFRepository.cs
+    path: ../UltraForce.Library.Core/Data/UFRepository.cs
     startLine: 143
   assemblies:
   - UltraForce.Library.Core
@@ -294,9 +322,13 @@ items:
   fullName: UltraForce.Library.Core.Data.UFRepository<TContext>.DetachTrackedEntries()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Data/UFRepository.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: DetachTrackedEntries
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Data\UFRepository.cs
-    startLine: 170
+    path: ../UltraForce.Library.Core/Data/UFRepository.cs
+    startLine: 171
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Data

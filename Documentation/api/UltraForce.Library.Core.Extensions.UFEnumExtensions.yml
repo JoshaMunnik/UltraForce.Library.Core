@@ -15,8 +15,12 @@ items:
   fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core/Extensions/UFEnumExtensions.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFEnumExtensions
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Extensions\UFEnumExtensions.cs
+    path: ../UltraForce.Library.Core/Extensions/UFEnumExtensions.cs
     startLine: 39
   assemblies:
   - UltraForce.Library.Core
@@ -49,8 +53,12 @@ items:
   fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Extensions/UFEnumExtensions.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: GetDisplayDescription
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Extensions\UFEnumExtensions.cs
+    path: ../UltraForce.Library.Core/Extensions/UFEnumExtensions.cs
     startLine: 49
   assemblies:
   - UltraForce.Library.Core
@@ -84,8 +92,12 @@ items:
   fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core/Extensions/UFEnumExtensions.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: GetDisplayName
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Extensions\UFEnumExtensions.cs
+    path: ../UltraForce.Library.Core/Extensions/UFEnumExtensions.cs
     startLine: 67
   assemblies:
   - UltraForce.Library.Core

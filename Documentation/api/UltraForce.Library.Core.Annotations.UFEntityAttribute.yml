@@ -19,8 +19,12 @@ items:
   fullName: UltraForce.Library.Core.Annotations.UFEntityAttribute
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFEntityAttribute
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Annotations\UFEntityAttribute.cs
+    path: ../UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
     startLine: 34
   assemblies:
   - UltraForce.Library.Core
@@ -102,8 +106,12 @@ items:
   fullName: UltraForce.Library.Core.Annotations.UFEntityAttribute.Name
   type: Property
   source:
+    remote:
+      path: UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Name
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Annotations\UFEntityAttribute.cs
+    path: ../UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
     startLine: 46
   assemblies:
   - UltraForce.Library.Core
@@ -133,8 +141,12 @@ items:
   fullName: UltraForce.Library.Core.Annotations.UFEntityAttribute.ReadOnly
   type: Property
   source:
+    remote:
+      path: UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: ReadOnly
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Annotations\UFEntityAttribute.cs
+    path: ../UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
     startLine: 52
   assemblies:
   - UltraForce.Library.Core
@@ -163,8 +175,12 @@ items:
   fullName: UltraForce.Library.Core.Annotations.UFEntityAttribute.UFEntityAttribute(string)
   type: Constructor
   source:
+    remote:
+      path: UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: .ctor
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Annotations\UFEntityAttribute.cs
+    path: ../UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
     startLine: 62
   assemblies:
   - UltraForce.Library.Core
@@ -194,8 +210,12 @@ items:
   fullName: UltraForce.Library.Core.Annotations.UFEntityAttribute.UFEntityAttribute(string, bool)
   type: Constructor
   source:
+    remote:
+      path: UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: .ctor
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Annotations\UFEntityAttribute.cs
+    path: ../UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
     startLine: 72
   assemblies:
   - UltraForce.Library.Core
@@ -228,8 +248,12 @@ items:
   fullName: UltraForce.Library.Core.Annotations.UFEntityAttribute.UFEntityAttribute(bool)
   type: Constructor
   source:
+    remote:
+      path: UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: .ctor
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Annotations\UFEntityAttribute.cs
+    path: ../UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
     startLine: 82
   assemblies:
   - UltraForce.Library.Core
@@ -259,8 +283,12 @@ items:
   fullName: UltraForce.Library.Core.Annotations.UFEntityAttribute.UFEntityAttribute()
   type: Constructor
   source:
+    remote:
+      path: UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: .ctor
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core\UltraForce.Library.Core\Annotations\UFEntityAttribute.cs
+    path: ../UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
     startLine: 90
   assemblies:
   - UltraForce.Library.Core
