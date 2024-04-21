@@ -620,11 +620,11 @@ items:
   summary: Sends the email.
   example: []
   syntax:
-    content: Task<bool> SendAsync()
+    content: Task<string> SendAsync()
     return:
-      type: System.Threading.Tasks.Task{System.Boolean}
-      description: True if email was send successfully.
-    content.vb: Function SendAsync() As Task(Of Boolean)
+      type: System.Threading.Tasks.Task{System.String}
+      description: Empty string if email was sent successfully, else an error message.
+    content.vb: Function SendAsync() As Task(Of String)
   overload: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync*
 references:
 - uid: UltraForce.Library.Core.Services
@@ -1148,27 +1148,27 @@ references:
   name: SendAsync
   nameWithType: IUFEmailBuilderService.SendAsync
   fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync
-- uid: System.Threading.Tasks.Task{System.Boolean}
-  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<bool>
-  nameWithType: Task<bool>
-  fullName: System.Threading.Tasks.Task<bool>
-  nameWithType.vb: Task(Of Boolean)
-  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
-  name.vb: Task(Of Boolean)
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: System.Boolean
-    name: bool
+  - uid: System.String
+    name: string
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1178,10 +1178,10 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: System.Boolean
-    name: Boolean
+  - uid: System.String
+    name: String
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: System.Threading.Tasks.Task`1
   commentId: T:System.Threading.Tasks.Task`1

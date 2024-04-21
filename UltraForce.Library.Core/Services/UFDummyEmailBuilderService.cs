@@ -95,8 +95,8 @@ public class UFDummyEmailBuilderService : UFEmailBuilderService
   }
 
   /// <inheritdoc />
-  public override Task<bool> SendAsync()
+  public override Task<string> SendAsync()
   {
-    return Task.FromResult(true);
+    return Task.FromResult(string.Empty);
   }
 }

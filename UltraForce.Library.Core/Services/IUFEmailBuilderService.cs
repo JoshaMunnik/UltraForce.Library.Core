@@ -142,6 +142,6 @@ public interface IUFEmailBuilderService
   /// <summary>
   /// Sends the email.
   /// </summary>
-  /// <returns>True if email was send successfully.</returns>
-  Task<bool> SendAsync();
+  /// <returns>Empty string if email was sent successfully, else an error message.</returns>
+  Task<string> SendAsync();
 }

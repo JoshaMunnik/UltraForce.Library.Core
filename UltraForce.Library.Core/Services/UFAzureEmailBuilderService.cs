@@ -185,14 +185,16 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
   }
 
   /// <inheritdoc />
-  public override IUFEmailBuilderService Attachment(string aName, string aContentTYpe, BinaryData aData)
+  public override IUFEmailBuilderService Attachment(
+    string aName, string aContentTYpe, BinaryData aData
+  )
   {
     this.m_attachments.Add(new EmailAttachment(aName, aContentTYpe, aData));
     return this;
   }
 
   /// <inheritdoc />
-  public override async Task<bool> SendAsync()
+  public override async Task<string> SendAsync()
   {
     if (this.m_from == null)
     {
@@ -225,17 +227,17 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
     {
       EmailClient emailClient = new(this.GetConnectionString());
       EmailSendOperation sendOperation = await emailClient.SendAsync(WaitUntil.Completed, message);
-      Console.WriteLine($"Email Sent. Status = {sendOperation.Value.Status}");
       // get the OperationId so that it can be used for tracking the message for troubleshooting
       string operationId = sendOperation.Id;
-      Console.WriteLine($"Email operation id = {operationId}");
-      return true;
+      return sendOperation.Value.Status == EmailSendStatus.Succeeded
+        ? ""
+        : $"Failed: {sendOperation.Value.Status}, operation id: {operationId}";
     }
     catch (RequestFailedException ex)
     {
-      // operationID is contained in the exception message and can be used for troubleshooting purposes
-      Console.WriteLine($"Email send operation failed with error code: {ex.ErrorCode}, message: {ex.Message}");
-      return false;
+      // operationID is contained in the exception message and can be used for
+      // troubleshooting purposes
+      return $"Exception: {ex.ErrorCode}, message: {ex.Message}";
     }
   }
   

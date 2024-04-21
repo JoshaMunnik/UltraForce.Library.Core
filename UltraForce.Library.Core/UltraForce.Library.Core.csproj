@@ -13,6 +13,12 @@
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <Version>1.0.1</Version>
+        <PackageReleaseNotes>1.0.1
+IUFEmailBuilderService.Send now returns string instead of bool
+
+1.0.0
+Initial version</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>

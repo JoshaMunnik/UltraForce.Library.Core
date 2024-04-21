@@ -489,18 +489,18 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SendAsync
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 194
+    startLine: 196
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: Sends the email.
   example: []
   syntax:
-    content: public override Task<bool> SendAsync()
+    content: public override Task<string> SendAsync()
     return:
-      type: System.Threading.Tasks.Task{System.Boolean}
-      description: True if email was send successfully.
-    content.vb: Public Overrides Function SendAsync() As Task(Of Boolean)
+      type: System.Threading.Tasks.Task{System.String}
+      description: Empty string if email was sent successfully, else an error message.
+    content.vb: Public Overrides Function SendAsync() As Task(Of String)
   overridden: UltraForce.Library.Core.Services.UFEmailBuilderService.SendAsync
   overload: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync*
 - uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetConnectionString
@@ -521,7 +521,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: GetConnectionString
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 249
+    startLine: 251
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -1781,27 +1781,27 @@ references:
   name: SendAsync
   nameWithType: UFAzureEmailBuilderService.SendAsync
   fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync
-- uid: System.Threading.Tasks.Task{System.Boolean}
-  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
   parent: System.Threading.Tasks
   definition: System.Threading.Tasks.Task`1
   href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
-  name: Task<bool>
-  nameWithType: Task<bool>
-  fullName: System.Threading.Tasks.Task<bool>
-  nameWithType.vb: Task(Of Boolean)
-  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
-  name.vb: Task(Of Boolean)
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
   spec.csharp:
   - uid: System.Threading.Tasks.Task`1
     name: Task
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - uid: System.Boolean
-    name: bool
+  - uid: System.String
+    name: string
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '>'
   spec.vb:
   - uid: System.Threading.Tasks.Task`1
@@ -1811,10 +1811,10 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: System.Boolean
-    name: Boolean
+  - uid: System.String
+    name: String
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.boolean
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: System.Threading.Tasks.Task`1
   commentId: T:System.Threading.Tasks.Task`1

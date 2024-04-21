@@ -347,7 +347,7 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
 
   <h3 id="UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetConnectionString" data-uid="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetConnectionString">
   GetConnectionString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L252"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the connection string for the email service.</p>
@@ -455,7 +455,7 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
 
   <h3 id="UltraForce_Library_Core_Services_UFAzureEmailBuilderService_SendAsync" data-uid="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync">
   SendAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sends the email.</p>
@@ -463,14 +463,14 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task&lt;bool&gt; SendAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task&lt;string&gt; SendAsync()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-    <dd><p>True if email was send successfully.</p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>Empty string if email was sent successfully, else an error message.</p>
 </dd>
   </dl>
 
