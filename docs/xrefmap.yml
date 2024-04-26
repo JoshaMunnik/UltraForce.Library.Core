@@ -1092,6 +1092,19 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetConnectionString
   nameWithType: UFAzureEmailBuilderService.GetConnectionString
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail
+  name: GetFromEmail()
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetFromEmail
+  commentId: M:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail()
+  nameWithType: UFAzureEmailBuilderService.GetFromEmail()
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail*
+  name: GetFromEmail
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetFromEmail_
+  commentId: Overload:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail
+  nameWithType: UFAzureEmailBuilderService.GetFromEmail
 - uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Html(System.String)
   name: Html(string)
   href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Html_System_String_

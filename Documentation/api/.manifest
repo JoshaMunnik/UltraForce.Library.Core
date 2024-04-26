@@ -85,6 +85,7 @@
   "UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Cc(System.String,System.String)": "UltraForce.Library.Core.Services.UFAzureEmailBuilderService.yml",
   "UltraForce.Library.Core.Services.UFAzureEmailBuilderService.From(System.String,System.String)": "UltraForce.Library.Core.Services.UFAzureEmailBuilderService.yml",
   "UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetConnectionString": "UltraForce.Library.Core.Services.UFAzureEmailBuilderService.yml",
+  "UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail": "UltraForce.Library.Core.Services.UFAzureEmailBuilderService.yml",
   "UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Html(System.String)": "UltraForce.Library.Core.Services.UFAzureEmailBuilderService.yml",
   "UltraForce.Library.Core.Services.UFAzureEmailBuilderService.ReplyTo(System.String,System.String)": "UltraForce.Library.Core.Services.UFAzureEmailBuilderService.yml",
   "UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync": "UltraForce.Library.Core.Services.UFAzureEmailBuilderService.yml",

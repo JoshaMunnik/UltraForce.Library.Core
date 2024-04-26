@@ -98,7 +98,8 @@ Classes
       <dt><a class="xref" href="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html">UFAzureEmailBuilderService</a></dt>
       <dd><p>An implement of <a class="xref" href="UltraForce.Library.Core.Services.IUFEmailBuilderService.html">IUFEmailBuilderService</a> using Azure's Email Communication Resource.</p>
 <p>
-Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetConnectionString">GetConnectionString()</a>.
+Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetConnectionString">GetConnectionString()</a>. Subclasses can also override
+<a class="xref" href="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetFromEmail">GetFromEmail()</a> with an email address set within the communication resource. 
 </p>
 </dd>
     </dl>

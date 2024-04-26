@@ -35,7 +35,8 @@ namespace UltraForce.Library.Core.Services;
 /// <summary>
 /// An implement of <see cref="IUFEmailBuilderService"/> using Azure's Email Communication Resource.
 /// <para>
-/// Subclasses must implement <see cref="GetConnectionString"/>.
+/// Subclasses must implement <see cref="GetConnectionString"/>. Subclasses can also override
+/// <see cref="GetFromEmail"/> with an email address set within the communication resource. 
 /// </para>
 /// </summary>
 public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
@@ -196,7 +197,8 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
   /// <inheritdoc />
   public override async Task<string> SendAsync()
   {
-    if (this.m_from == null)
+    string fromEmail = this.m_from?.Address ?? this.GetFromEmail();
+    if (string.IsNullOrWhiteSpace(fromEmail))
     {
       throw new Exception("Missing from");
     }
@@ -210,8 +212,7 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
     }
     EmailRecipients recipients = new (this.m_to, this.m_cc, this.m_bcc);
     EmailMessage message = new(
-      // only the senders email address can be used, Azure does not support a name
-      this.m_from!.Value.Address,
+      fromEmail,
       recipients,
       this.m_content
     );
@@ -250,6 +251,16 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
   /// </summary>
   /// <returns></returns>
   protected abstract string GetConnectionString();
+
+  /// <summary>
+  /// Returns the email address to use as the sender. Azure does not support names for the from
+  /// address.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetFromEmail()
+  {
+    return "";
+  }
   
   #endregion
   

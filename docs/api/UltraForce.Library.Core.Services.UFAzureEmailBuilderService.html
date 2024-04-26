@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFAzureEmailBuilderService | UltraForce.Library.Core ">
       
-      <meta name="description" content="An implement of  using Azure&#39;s Email Communication Resource.  Subclasses must implement .">
+      <meta name="description" content="An implement of  using Azure&#39;s Email Communication Resource.  Subclasses must implement . Subclasses can also override  with an email address set within the communication resource.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_Core_Services_UFAzureEmailBuilderService" data-uid="UltraForce.Library.Core.Services.UFAzureEmailBuilderService" class="text-break">
-Class UFAzureEmailBuilderService  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L41"><i class="bi bi-code-slash"></i></a>
+Class UFAzureEmailBuilderService  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -99,7 +99,8 @@ Class UFAzureEmailBuilderService  <a class="header-action link-secondary" title=
 
   <div class="markdown summary"><p>An implement of <a class="xref" href="UltraForce.Library.Core.Services.IUFEmailBuilderService.html">IUFEmailBuilderService</a> using Azure's Email Communication Resource.</p>
 <p>
-Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetConnectionString">GetConnectionString()</a>.
+Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetConnectionString">GetConnectionString()</a>. Subclasses can also override
+<a class="xref" href="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetFromEmail">GetFromEmail()</a> with an email address set within the communication resource. 
 </p>
 </div>
   <div class="markdown conceptual"></div>
@@ -189,7 +190,7 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
 
   <h3 id="UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Attachment_System_String_System_String_System_BinaryData_" data-uid="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Attachment(System.String,System.String,System.BinaryData)">
   Attachment(string, string, BinaryData)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L189"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds an attachment.</p>
@@ -230,7 +231,7 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
 
   <h3 id="UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Bcc_System_String_System_String_" data-uid="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Bcc(System.String,System.String)">
   Bcc(string, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L147"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a bcc recipient.</p>
@@ -269,7 +270,7 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
 
   <h3 id="UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Cc_System_String_System_String_" data-uid="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Cc(System.String,System.String)">
   Cc(string, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L140"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a cc recipient.</p>
@@ -308,7 +309,7 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
 
   <h3 id="UltraForce_Library_Core_Services_UFAzureEmailBuilderService_From_System_String_System_String_" data-uid="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.From(System.String,System.String)">
   From(string, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L126"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the email sender.</p>
@@ -347,7 +348,7 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
 
   <h3 id="UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetConnectionString" data-uid="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetConnectionString">
   GetConnectionString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L253"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the connection string for the email service.</p>
@@ -375,11 +376,44 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
 
 
 
+  <a id="UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetFromEmail_" data-uid="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetFromEmail" data-uid="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail">
+  GetFromEmail()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the email address to use as the sender. Azure does not support names for the from
+address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetFromEmail()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Html_" data-uid="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Html*"></a>
 
   <h3 id="UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Html_System_String_" data-uid="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Html(System.String)">
   Html(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the html content.</p>
@@ -416,7 +450,7 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
 
   <h3 id="UltraForce_Library_Core_Services_UFAzureEmailBuilderService_ReplyTo_System_String_System_String_" data-uid="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.ReplyTo(System.String,System.String)">
   ReplyTo(string, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L154"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the reply to email.</p>
@@ -455,7 +489,7 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
 
   <h3 id="UltraForce_Library_Core_Services_UFAzureEmailBuilderService_SendAsync" data-uid="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync">
   SendAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L198"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sends the email.</p>
@@ -488,7 +522,7 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
 
   <h3 id="UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Start" data-uid="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Start">
   Start()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Start a new email, remove any previous stored data.</p>
@@ -520,7 +554,7 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
 
   <h3 id="UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Subject_System_String_" data-uid="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Subject(System.String)">
   Subject(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the email subject.</p>
@@ -557,7 +591,7 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
 
   <h3 id="UltraForce_Library_Core_Services_UFAzureEmailBuilderService_Text_System_String_" data-uid="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Text(System.String)">
   Text(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the text content.</p>
@@ -594,7 +628,7 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
 
   <h3 id="UltraForce_Library_Core_Services_UFAzureEmailBuilderService_To_System_String_System_String_" data-uid="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.To(System.String,System.String)">
   To(string, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds an email recipient.</p>
@@ -633,7 +667,7 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L41" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs/#L42" class="edit-link">Edit this page</a>
         </div>
 
 

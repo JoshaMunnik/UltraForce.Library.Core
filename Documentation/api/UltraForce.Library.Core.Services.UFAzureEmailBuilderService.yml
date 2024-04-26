@@ -10,6 +10,7 @@ items:
   - UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Cc(System.String,System.String)
   - UltraForce.Library.Core.Services.UFAzureEmailBuilderService.From(System.String,System.String)
   - UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetConnectionString
+  - UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail
   - UltraForce.Library.Core.Services.UFAzureEmailBuilderService.Html(System.String)
   - UltraForce.Library.Core.Services.UFAzureEmailBuilderService.ReplyTo(System.String,System.String)
   - UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync
@@ -31,7 +32,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFAzureEmailBuilderService
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 40
+    startLine: 41
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -40,7 +41,9 @@ items:
 
     <p>
 
-    Subclasses must implement <xref href="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetConnectionString" data-throw-if-not-resolved="false"></xref>.
+    Subclasses must implement <xref href="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetConnectionString" data-throw-if-not-resolved="false"></xref>. Subclasses can also override
+
+    <xref href="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail" data-throw-if-not-resolved="false"></xref> with an email address set within the communication resource. 
 
     </p>
   example: []
@@ -85,7 +88,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Start
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 94
+    startLine: 95
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -117,7 +120,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Subject
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 109
+    startLine: 110
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -156,7 +159,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: From
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 124
+    startLine: 125
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -198,7 +201,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: To
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 131
+    startLine: 132
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -240,7 +243,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Cc
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 138
+    startLine: 139
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -282,7 +285,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Bcc
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 145
+    startLine: 146
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -324,7 +327,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: ReplyTo
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 152
+    startLine: 153
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -366,7 +369,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Html
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 159
+    startLine: 160
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -405,7 +408,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Text
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 173
+    startLine: 174
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -444,7 +447,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Attachment
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 187
+    startLine: 188
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -489,7 +492,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SendAsync
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 196
+    startLine: 197
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -521,7 +524,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: GetConnectionString
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 251
+    startLine: 252
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -534,6 +537,40 @@ items:
       description: ''
     content.vb: Protected MustOverride Function GetConnectionString() As String
   overload: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetConnectionString*
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail
+  commentId: M:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail
+  id: GetFromEmail
+  parent: UltraForce.Library.Core.Services.UFAzureEmailBuilderService
+  langs:
+  - csharp
+  - vb
+  name: GetFromEmail()
+  nameWithType: UFAzureEmailBuilderService.GetFromEmail()
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
+    id: GetFromEmail
+    path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
+    startLine: 259
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: >-
+    Returns the email address to use as the sender. Azure does not support names for the from
+
+    address.
+  example: []
+  syntax:
+    content: protected virtual string GetFromEmail()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetFromEmail() As String
+  overload: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail*
 references:
 - uid: UltraForce.Library.Core.Services.IUFEmailBuilderService
   commentId: T:UltraForce.Library.Core.Services.IUFEmailBuilderService
@@ -558,6 +595,24 @@ references:
   - uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetConnectionString
     name: GetConnectionString
     href: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetConnectionString
+  - name: (
+  - name: )
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail
+  commentId: M:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail
+  href: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetFromEmail
+  name: GetFromEmail()
+  nameWithType: UFAzureEmailBuilderService.GetFromEmail()
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail()
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail
+    name: GetFromEmail
+    href: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetFromEmail
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail
+    name: GetFromEmail
+    href: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetFromEmail
   - name: (
   - name: )
 - uid: UltraForce.Library.Core.Services
@@ -1887,3 +1942,9 @@ references:
   name: GetConnectionString
   nameWithType: UFAzureEmailBuilderService.GetConnectionString
   fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetConnectionString
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail*
+  commentId: Overload:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail
+  href: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetFromEmail
+  name: GetFromEmail
+  nameWithType: UFAzureEmailBuilderService.GetFromEmail
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.GetFromEmail
