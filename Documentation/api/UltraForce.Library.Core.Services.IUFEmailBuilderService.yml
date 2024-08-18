@@ -14,7 +14,7 @@ items:
   - UltraForce.Library.Core.Services.IUFEmailBuilderService.From(System.String,System.String)
   - UltraForce.Library.Core.Services.IUFEmailBuilderService.Html(System.String)
   - UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo(System.String,System.String)
-  - UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync
+  - UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync(System.Boolean)
   - UltraForce.Library.Core.Services.IUFEmailBuilderService.Start
   - UltraForce.Library.Core.Services.IUFEmailBuilderService.Subject(System.String)
   - UltraForce.Library.Core.Services.IUFEmailBuilderService.Text(System.String)
@@ -595,16 +595,16 @@ items:
   nameWithType.vb: IUFEmailBuilderService.Attachments(String, IDictionary(Of String, BinaryData))
   fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachments(String, System.Collections.Generic.IDictionary(Of String, System.BinaryData))
   name.vb: Attachments(String, IDictionary(Of String, BinaryData))
-- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync
-  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync
-  id: SendAsync
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync(System.Boolean)
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync(System.Boolean)
+  id: SendAsync(System.Boolean)
   parent: UltraForce.Library.Core.Services.IUFEmailBuilderService
   langs:
   - csharp
   - vb
-  name: SendAsync()
-  nameWithType: IUFEmailBuilderService.SendAsync()
-  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync()
+  name: SendAsync(bool)
+  nameWithType: IUFEmailBuilderService.SendAsync(bool)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync(bool)
   type: Method
   source:
     remote:
@@ -613,19 +613,31 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SendAsync
     path: ../UltraForce.Library.Core/Services/IUFEmailBuilderService.cs
-    startLine: 145
+    startLine: 150
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: Sends the email.
   example: []
   syntax:
-    content: Task<string> SendAsync()
+    content: Task<string> SendAsync(bool aWaitForCompletion)
+    parameters:
+    - id: aWaitForCompletion
+      type: System.Boolean
+      description: >-
+        True to wait until the email has been sent, false to return after the sending process has
+
+        started. When set to false, the result of the send operation is unknown and the method
+
+        will return an empty string if everything else was successful.
     return:
       type: System.Threading.Tasks.Task{System.String}
       description: Empty string if email was sent successfully, else an error message.
-    content.vb: Function SendAsync() As Task(Of String)
+    content.vb: Function SendAsync(aWaitForCompletion As Boolean) As Task(Of String)
   overload: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync*
+  nameWithType.vb: IUFEmailBuilderService.SendAsync(Boolean)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync(Boolean)
+  name.vb: SendAsync(Boolean)
 references:
 - uid: UltraForce.Library.Core.Services
   commentId: N:UltraForce.Library.Core.Services
@@ -1144,10 +1156,21 @@ references:
   - name: )
 - uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync*
   commentId: Overload:UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync
-  href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_SendAsync
+  href: UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_SendAsync_System_Boolean_
   name: SendAsync
   nameWithType: IUFEmailBuilderService.SendAsync
   fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: System.Threading.Tasks.Task{System.String}
   commentId: T:System.Threading.Tasks.Task{System.String}
   parent: System.Threading.Tasks

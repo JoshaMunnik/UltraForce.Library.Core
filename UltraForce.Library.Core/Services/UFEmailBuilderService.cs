@@ -108,5 +108,5 @@ public abstract class UFEmailBuilderService : IUFEmailBuilderService
   }
 
   /// <inheritdoc />
-  public abstract Task<string> SendAsync();
+  public abstract Task<string> SendAsync(bool aWaitForCompletion);
 }

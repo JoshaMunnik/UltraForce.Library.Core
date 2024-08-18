@@ -87,20 +87,20 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
   /// Attachments.
   /// </summary>
   private readonly List<EmailAttachment> m_attachments = [];
-  
+
   /// <summary>
   /// Share email client between instances.
   /// </summary>
   private static EmailClient? s_emailClient = null;
-  
+
   /// <summary>
   /// Used when creating the email client 
   /// </summary>
   private static readonly object s_emailClientLock = new object();
-  
+
   #endregion
-  
-  #region IUFEmailBuilder 
+
+  #region IUFEmailBuilder
 
   /// <inheritdoc />
   public override IUFEmailBuilderService Start()
@@ -118,7 +118,9 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
   }
 
   /// <inheritdoc />
-  public override IUFEmailBuilderService Subject(string aSubject)
+  public override IUFEmailBuilderService Subject(
+    string aSubject
+  )
   {
     this.m_content = new EmailContent(aSubject);
     if (this.m_html != null)
@@ -133,42 +135,59 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
   }
 
   /// <inheritdoc />
-  public override IUFEmailBuilderService From(string aFromEmail, string? aName = null)
+  public override IUFEmailBuilderService From(
+    string aFromEmail,
+    string? aName = null
+  )
   {
     this.m_from = CreateEmailAddress(aFromEmail, aName);
     return this;
   }
 
   /// <inheritdoc />
-  public override IUFEmailBuilderService To(string aToEmail, string? aName = null)
+  public override IUFEmailBuilderService To(
+    string aToEmail,
+    string? aName = null
+  )
   {
     this.m_to.Add(CreateEmailAddress(aToEmail, aName));
     return this;
   }
 
   /// <inheritdoc />
-  public override IUFEmailBuilderService Cc(string aToEmail, string? aName = null)
+  public override IUFEmailBuilderService Cc(
+    string aToEmail,
+    string? aName = null
+  )
   {
     this.m_cc.Add(CreateEmailAddress(aToEmail, aName));
     return this;
   }
 
   /// <inheritdoc />
-  public override IUFEmailBuilderService Bcc(string aToEmail, string? aName = null)
+  public override IUFEmailBuilderService Bcc(
+    string aToEmail,
+    string? aName = null
+  )
   {
     this.m_bcc.Add(CreateEmailAddress(aToEmail, aName));
     return this;
   }
 
   /// <inheritdoc />
-  public override IUFEmailBuilderService ReplyTo(string aReplyToEmail, string? aName = null)
+  public override IUFEmailBuilderService ReplyTo(
+    string aReplyToEmail,
+    string? aName = null
+  )
   {
     this.m_replyTo = CreateEmailAddress(aReplyToEmail, aName);
     return this;
   }
 
   /// <inheritdoc />
-  public override IUFEmailBuilderService Html(string aContent)
+  public override IUFEmailBuilderService Html(
+    string aContent
+  )
   {
     if (this.m_content != null)
     {
@@ -182,7 +201,9 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
   }
 
   /// <inheritdoc />
-  public override IUFEmailBuilderService Text(string aContent)
+  public override IUFEmailBuilderService Text(
+    string aContent
+  )
   {
     if (this.m_content != null)
     {
@@ -197,7 +218,9 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
 
   /// <inheritdoc />
   public override IUFEmailBuilderService Attachment(
-    string aName, string aContentTYpe, BinaryData aData
+    string aName,
+    string aContentTYpe,
+    BinaryData aData
   )
   {
     this.m_attachments.Add(new EmailAttachment(aName, aContentTYpe, aData));
@@ -205,7 +228,9 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
   }
 
   /// <inheritdoc />
-  public override async Task<string> SendAsync()
+  public override async Task<string> SendAsync(
+    bool aWaitForCompletion
+  )
   {
     string fromEmail = this.m_from?.Address ?? this.GetFromEmail();
     if (string.IsNullOrWhiteSpace(fromEmail))
@@ -220,7 +245,7 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
     {
       throw new Exception("Missing recipients");
     }
-    EmailRecipients recipients = new (this.m_to, this.m_cc, this.m_bcc);
+    EmailRecipients recipients = new(this.m_to, this.m_cc, this.m_bcc);
     EmailMessage message = new(
       fromEmail,
       recipients,
@@ -237,12 +262,18 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
     try
     {
       EmailClient emailClient = GetEmailClient(this.GetConnectionString());
-      EmailSendOperation sendOperation = await emailClient.SendAsync(WaitUntil.Completed, message);
-      // get the OperationId so that it can be used for tracking the message for troubleshooting
-      string operationId = sendOperation.Id;
-      return sendOperation.Value.Status == EmailSendStatus.Succeeded
-        ? ""
-        : $"Failed: {sendOperation.Value.Status}, operation id: {operationId}";
+      EmailSendOperation sendOperation = await emailClient.SendAsync(
+        aWaitForCompletion ? WaitUntil.Completed : WaitUntil.Started, message
+      );
+      if (sendOperation.HasCompleted || (sendOperation.Value.Status == EmailSendStatus.Failed))
+      {
+        // get the OperationId so that it can be used for tracking the message for troubleshooting
+        string operationId = sendOperation.Id;
+        return sendOperation.Value.Status == EmailSendStatus.Succeeded
+          ? ""
+          : $"Failed: {sendOperation.Value.Status}, operation id: {operationId}";
+      }
+      return "";
     }
     catch (RequestFailedException ex)
     {
@@ -251,9 +282,9 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
       return $"Exception: {ex.ErrorCode}, message: {ex.Message}";
     }
   }
-  
+
   #endregion
-  
+
   #region abstract methods
 
   /// <summary>
@@ -271,31 +302,36 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
   {
     return "";
   }
-  
+
   #endregion
-  
+
   #region private methods
-  
+
   /// <summary>
   /// Creates an email address with optional name (if any).
   /// </summary>
   /// <param name="aEmail"></param>
   /// <param name="aName"></param>
   /// <returns></returns>
-  private static EmailAddress CreateEmailAddress(string aEmail, string? aName)
+  private static EmailAddress CreateEmailAddress(
+    string aEmail,
+    string? aName
+  )
   {
     return (aName == null)
       ? new EmailAddress(aEmail)
       : new EmailAddress(aEmail, aName);
   }
-  
+
   /// <summary>
   /// Gets the email client. With the first call the client is created, the client is cached
   /// and shared between instances.
   /// </summary>
   /// <param name="connectionString"></param>
   /// <returns></returns>
-  private static EmailClient GetEmailClient(string connectionString)
+  private static EmailClient GetEmailClient(
+    string connectionString
+  )
   {
     if (s_emailClient != null)
     {
@@ -306,7 +342,7 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
       s_emailClient ??= new EmailClient(connectionString);
     }
     return s_emailClient;
-  }  
-  
+  }
+
   #endregion
 }

@@ -142,6 +142,11 @@ public interface IUFEmailBuilderService
   /// <summary>
   /// Sends the email.
   /// </summary>
+  /// <param name="aWaitForCompletion">
+  /// True to wait until the email has been sent, false to return after the sending process has
+  /// started. When set to false, the result of the send operation is unknown and the method
+  /// will return an empty string if everything else was successful.  
+  /// </param>
   /// <returns>Empty string if email was sent successfully, else an error message.</returns>
-  Task<string> SendAsync();
+  Task<string> SendAsync(bool aWaitForCompletion);
 }

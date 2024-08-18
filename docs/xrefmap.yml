@@ -926,12 +926,15 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo
   nameWithType: IUFEmailBuilderService.ReplyTo
-- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync
-  name: SendAsync()
-  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_SendAsync
-  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync
-  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync()
-  nameWithType: IUFEmailBuilderService.SendAsync()
+- uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync(System.Boolean)
+  name: SendAsync(bool)
+  href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_SendAsync_System_Boolean_
+  commentId: M:UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync(System.Boolean)
+  name.vb: SendAsync(Boolean)
+  fullName: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync(bool)
+  fullName.vb: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync(Boolean)
+  nameWithType: IUFEmailBuilderService.SendAsync(bool)
+  nameWithType.vb: IUFEmailBuilderService.SendAsync(Boolean)
 - uid: UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync*
   name: SendAsync
   href: api/UltraForce.Library.Core.Services.IUFEmailBuilderService.html#UltraForce_Library_Core_Services_IUFEmailBuilderService_SendAsync_
@@ -1137,12 +1140,15 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.ReplyTo
   nameWithType: UFAzureEmailBuilderService.ReplyTo
-- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync
-  name: SendAsync()
-  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_SendAsync
-  commentId: M:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync
-  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync()
-  nameWithType: UFAzureEmailBuilderService.SendAsync()
+- uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync(System.Boolean)
+  name: SendAsync(bool)
+  href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_SendAsync_System_Boolean_
+  commentId: M:UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync(System.Boolean)
+  name.vb: SendAsync(Boolean)
+  fullName: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync(bool)
+  fullName.vb: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync(Boolean)
+  nameWithType: UFAzureEmailBuilderService.SendAsync(bool)
+  nameWithType.vb: UFAzureEmailBuilderService.SendAsync(Boolean)
 - uid: UltraForce.Library.Core.Services.UFAzureEmailBuilderService.SendAsync*
   name: SendAsync
   href: api/UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_SendAsync_
@@ -1692,12 +1698,15 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.ReplyTo
   nameWithType: UFDummyEmailBuilderService.ReplyTo
-- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.SendAsync
-  name: SendAsync()
-  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_SendAsync
-  commentId: M:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.SendAsync
-  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.SendAsync()
-  nameWithType: UFDummyEmailBuilderService.SendAsync()
+- uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.SendAsync(System.Boolean)
+  name: SendAsync(bool)
+  href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_SendAsync_System_Boolean_
+  commentId: M:UltraForce.Library.Core.Services.UFDummyEmailBuilderService.SendAsync(System.Boolean)
+  name.vb: SendAsync(Boolean)
+  fullName: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.SendAsync(bool)
+  fullName.vb: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.SendAsync(Boolean)
+  nameWithType: UFDummyEmailBuilderService.SendAsync(bool)
+  nameWithType.vb: UFDummyEmailBuilderService.SendAsync(Boolean)
 - uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.SendAsync*
   name: SendAsync
   href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html#UltraForce_Library_Core_Services_UFDummyEmailBuilderService_SendAsync_
@@ -1902,12 +1911,15 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.ReplyTo
   nameWithType: UFEmailBuilderService.ReplyTo
-- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.SendAsync
-  name: SendAsync()
-  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_SendAsync
-  commentId: M:UltraForce.Library.Core.Services.UFEmailBuilderService.SendAsync
-  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.SendAsync()
-  nameWithType: UFEmailBuilderService.SendAsync()
+- uid: UltraForce.Library.Core.Services.UFEmailBuilderService.SendAsync(System.Boolean)
+  name: SendAsync(bool)
+  href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_SendAsync_System_Boolean_
+  commentId: M:UltraForce.Library.Core.Services.UFEmailBuilderService.SendAsync(System.Boolean)
+  name.vb: SendAsync(Boolean)
+  fullName: UltraForce.Library.Core.Services.UFEmailBuilderService.SendAsync(bool)
+  fullName.vb: UltraForce.Library.Core.Services.UFEmailBuilderService.SendAsync(Boolean)
+  nameWithType: UFEmailBuilderService.SendAsync(bool)
+  nameWithType.vb: UFEmailBuilderService.SendAsync(Boolean)
 - uid: UltraForce.Library.Core.Services.UFEmailBuilderService.SendAsync*
   name: SendAsync
   href: api/UltraForce.Library.Core.Services.UFEmailBuilderService.html#UltraForce_Library_Core_Services_UFEmailBuilderService_SendAsync_

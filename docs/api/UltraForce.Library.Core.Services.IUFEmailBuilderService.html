@@ -480,9 +480,9 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
 
   <a id="UltraForce_Library_Core_Services_IUFEmailBuilderService_SendAsync_" data-uid="UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync*"></a>
 
-  <h3 id="UltraForce_Library_Core_Services_IUFEmailBuilderService_SendAsync" data-uid="UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync">
-  SendAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Services_IUFEmailBuilderService_SendAsync_System_Boolean_" data-uid="UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync(System.Boolean)">
+  SendAsync(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L151"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sends the email.</p>
@@ -490,9 +490,17 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;string&gt; SendAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;string&gt; SendAsync(bool aWaitForCompletion)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aWaitForCompletion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to wait until the email has been sent, false to return after the sending process has
+started. When set to false, the result of the send operation is unknown and the method
+will return an empty string if everything else was successful.</p>
+</dd>
+  </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
