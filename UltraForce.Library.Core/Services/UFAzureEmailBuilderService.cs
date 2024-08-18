@@ -88,6 +88,16 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
   /// </summary>
   private readonly List<EmailAttachment> m_attachments = [];
   
+  /// <summary>
+  /// Share email client between instances.
+  /// </summary>
+  private static EmailClient? s_emailClient = null;
+  
+  /// <summary>
+  /// Used when creating the email client 
+  /// </summary>
+  private static readonly object s_emailClientLock = new object();
+  
   #endregion
   
   #region IUFEmailBuilder 
@@ -226,7 +236,7 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
     }
     try
     {
-      EmailClient emailClient = new(this.GetConnectionString());
+      EmailClient emailClient = GetEmailClient(this.GetConnectionString());
       EmailSendOperation sendOperation = await emailClient.SendAsync(WaitUntil.Completed, message);
       // get the OperationId so that it can be used for tracking the message for troubleshooting
       string operationId = sendOperation.Id;
@@ -278,6 +288,25 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
       ? new EmailAddress(aEmail)
       : new EmailAddress(aEmail, aName);
   }
+  
+  /// <summary>
+  /// Gets the email client. With the first call the client is created, the client is cached
+  /// and shared between instances.
+  /// </summary>
+  /// <param name="connectionString"></param>
+  /// <returns></returns>
+  private static EmailClient GetEmailClient(string connectionString)
+  {
+    if (s_emailClient != null)
+    {
+      return s_emailClient;
+    }
+    lock (s_emailClientLock)
+    {
+      s_emailClient ??= new EmailClient(connectionString);
+    }
+    return s_emailClient;
+  }  
   
   #endregion
 }
