@@ -104,13 +104,12 @@ public static class UFTestTools
   }
 
   /// <summary>
-  /// Checks if a list contains all the items (and not more) of an another list. The method succeeds
+  /// Checks if a list contains all the items (and not more) of another list. The method succeeds
   /// if the size are equal and all items are found within the list.
   /// </summary>
   /// <param name="anActualList"></param>
   /// <param name="anExpectedList"></param>
   /// <param name="aComparer"></param>
-  /// <param name="aNotEqualProperties"></param>
   /// <typeparam name="TFirst"></typeparam>
   /// <typeparam name="TSecond"></typeparam>
   /// <exception cref="Exception">
@@ -126,7 +125,7 @@ public static class UFTestTools
     List<TFirst> expectedList = anExpectedList.ToList();
     Assert.Equal(expectedList.Count, actualList.Count);
     if (
-      !expectedList.Any(
+      !expectedList.All(
         expected => actualList.Any(actual => aComparer(expected, actual))
       )
     )
