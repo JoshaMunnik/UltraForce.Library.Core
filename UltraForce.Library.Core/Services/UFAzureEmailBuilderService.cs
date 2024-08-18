@@ -265,7 +265,7 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
       EmailSendOperation sendOperation = await emailClient.SendAsync(
         aWaitForCompletion ? WaitUntil.Completed : WaitUntil.Started, message
       );
-      if (sendOperation.HasCompleted || (sendOperation.Value.Status == EmailSendStatus.Failed))
+      if (aWaitForCompletion)
       {
         // get the OperationId so that it can be used for tracking the message for troubleshooting
         string operationId = sendOperation.Id;
