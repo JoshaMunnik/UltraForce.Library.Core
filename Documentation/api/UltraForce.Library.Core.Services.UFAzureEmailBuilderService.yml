@@ -88,7 +88,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Start
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 95
+    startLine: 105
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -120,7 +120,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Subject
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 110
+    startLine: 120
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -159,7 +159,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: From
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 125
+    startLine: 135
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -201,7 +201,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: To
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 132
+    startLine: 142
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -243,7 +243,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Cc
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 139
+    startLine: 149
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -285,7 +285,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Bcc
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 146
+    startLine: 156
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -327,7 +327,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: ReplyTo
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 153
+    startLine: 163
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -369,7 +369,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Html
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 160
+    startLine: 170
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -408,7 +408,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Text
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 174
+    startLine: 184
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -447,7 +447,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Attachment
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 188
+    startLine: 198
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -492,7 +492,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SendAsync
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 197
+    startLine: 207
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -524,7 +524,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: GetConnectionString
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 252
+    startLine: 262
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -555,7 +555,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: GetFromEmail
     path: ../UltraForce.Library.Core/Services/UFAzureEmailBuilderService.cs
-    startLine: 259
+    startLine: 269
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services

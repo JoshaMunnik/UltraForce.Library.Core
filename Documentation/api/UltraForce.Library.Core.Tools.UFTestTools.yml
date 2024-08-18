@@ -200,12 +200,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AssertEqualList
     path: ../UltraForce.Library.Core/Tools/UFTestTools.cs
-    startLine: 118
+    startLine: 117
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Tools
   summary: >-
-    Checks if a list contains all the items (and not more) of an another list. The method succeeds
+    Checks if a list contains all the items (and not more) of another list. The method succeeds
 
     if the size are equal and all items are found within the list.
   example: []
