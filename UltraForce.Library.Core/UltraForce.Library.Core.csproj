@@ -13,8 +13,17 @@
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
-        <Version>1.0.5</Version>
-        <PackageReleaseNotes>1.0.5
+        <Version>1.0.8</Version>
+        <PackageReleaseNotes>1.0.8
+Include source comments.
+
+1.0.7
+Updated IUFDataServiceCrud and IUFDataServiceFromContext to support immutable IUFDataServiceModel instances.
+
+1.0.6
+Fixed bug in SendAsync
+
+1.0.5
 Added aWaitForCompletion parameter to IUFEmailBuilder.SendAsync
 
 1.0.4
@@ -33,17 +42,22 @@ IUFEmailBuilderService.Send now returns string instead of bool
 Initial version</PackageReleaseNotes>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DocumentationFile>bin\Release\UltraForce.Library.Core.xml</DocumentationFile>
+    </PropertyGroup>
+
     <ItemGroup>
         <None Include="ufd.png" Pack="True" PackagePath="" />
         <None Include="README.md" Pack="True" PackagePath="" />
+        <None Include="bin\$(Configuration)\$(TargetFramework)\*.xml" Pack="true" PackagePath="\" />      
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Azure.Communication.Email" Version="1.0.1" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.3" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.3" />
-      <PackageReference Include="UltraForce.Library.NetStandard" Version="1.0.0" />
-      <PackageReference Include="xunit.assert" Version="2.7.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
+      <PackageReference Include="UltraForce.Library.NetStandard" Version="1.0.3" />
+      <PackageReference Include="xunit.assert" Version="2.9.2" />
     </ItemGroup>
 
 </Project>

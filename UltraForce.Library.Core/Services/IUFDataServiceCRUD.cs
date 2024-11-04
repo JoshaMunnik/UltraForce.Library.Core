@@ -33,7 +33,7 @@ namespace UltraForce.Library.Core.Services;
 
 /// <summary>
 /// A definition of data services that offers CRUD methods, assuming the data service maps
-/// to a single entity type.
+/// to a single entity type and each record is identified by a single key value.
 /// </summary>
 /// <typeparam name="TServiceModel"></typeparam>
 /// <typeparam name="TKey"></typeparam>
@@ -61,8 +61,10 @@ public interface IUFDataServiceCRUD<TServiceModel, in TKey, TEntity> : IUFDataSe
   /// <param name="aData">
   /// Record to add. Properties within in this value might get updated.
   /// </param>
-  /// <returns></returns>
-  public Task AddAsync(TServiceModel aData);
+  /// <returns>
+  /// The record that has been added, this value might be a different instance then aData.
+  /// </returns>
+  public Task<TServiceModel> AddAsync(TServiceModel aData);
 
   /// <summary>
   /// Updates the data with an existing record. 
@@ -70,8 +72,8 @@ public interface IUFDataServiceCRUD<TServiceModel, in TKey, TEntity> : IUFDataSe
   /// <param name="aData">
   /// Record to update with. Properties within in this value might get updated.
   /// </param>
-  /// <returns></returns>
-  public Task UpdateAsync(TServiceModel aData);
+  /// <returns>The updated record, this value might be a different instance then aData.</returns>
+  public Task<TServiceModel> UpdateAsync(TServiceModel aData);
 
   /// <summary>
   /// Removes a record from the data. 

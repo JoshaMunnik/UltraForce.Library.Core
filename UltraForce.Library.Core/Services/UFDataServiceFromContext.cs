@@ -40,10 +40,11 @@ using UltraForce.Library.Core.Types.Enums;
 namespace UltraForce.Library.Core.Services;
 
 /// <summary>
-/// <see cref="UFDataServiceFromContext{TContext}" /> is a base class to implement a data service using a
-/// <see cref="DbContext"/> to manage underlying entities. 
+/// <see cref="UFDataServiceFromContext{TContext}" /> is a base class to implement a data
+/// service using a <see cref="DbContext"/> to manage underlying entities. 
 /// <para>
-/// The class implements a locking mechanism to minimize the <see cref="DbContext.SaveChanges()"/> calls.
+/// The class implements a locking mechanism to minimize the
+/// <see cref="DbContext.SaveChanges()"/> calls.
 /// </para>
 /// </summary>
 /// <remarks>
@@ -221,13 +222,14 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   }
 
   /// <summary>
-  /// Creates and adds an entity from a service model. Then update the service model from the
-  /// added entity (to update for example generated id values).
+  /// Creates and adds an entity from a service model. Since aData might be an immutable instance,
+  /// after adding the entity a new service model instance is created from the added entity that
+  /// might include updated fields (like the id of the entity).
   /// </summary>
   /// <param name="aData">Service model instance to add</param>
   /// <typeparam name="TServiceModel">Type of service model</typeparam>
   /// <typeparam name="TEntity">Entity to add</typeparam>
-  /// <returns>The value of aData for chaining purposes</returns>
+  /// <returns>The service model build from the added entity; this is a new instance</returns>
   protected async Task<TServiceModel> AddAsync<TServiceModel, TEntity>(TServiceModel aData)
     where TEntity : class, new()
     where TServiceModel : class, IUFDataServiceModel<TEntity>, new()
@@ -237,17 +239,21 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
     await aData.CopyToEntityAsync(entity, UFEntityAction.Add);
     await this.Context!.Set<TEntity>().AddAsync(entity);
     await this.SaveChangesAsync();
-    await aData.CopyFromEntityAsync(entity);
-    return aData;
+    TServiceModel result = new();
+    await result.CopyFromEntityAsync(entity);
+    return result;
   }
 
   /// <summary>
-  /// Updates an entity in the database with the data from a service model instance.
+  /// Updates an entity in the database with the data from a service model instance. Since
+  /// aData might be immutable, a new service model instance is created after updating the
+  /// entity in the database. The new service model might include updated fields (like a modified
+  /// date/time field). 
   /// </summary>
   /// <param name="aData">Data to update entity with</param>
   /// <typeparam name="TServiceModel">Service model type</typeparam>
   /// <typeparam name="TEntity">Entity type</typeparam>
-  /// <returns>The value of aData for chaining purposes</returns>
+  /// <returns>The service model build from the updated entity; this is a new instance</returns>
   protected async Task<TServiceModel> UpdateAsync<TServiceModel, TEntity>(TServiceModel aData)
     where TEntity : class, new()
     where TServiceModel : class, IUFDataServiceModel<TEntity>, new()
@@ -264,8 +270,9 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
     await aData.CopyToEntityAsync(entity, UFEntityAction.Update);
     this.Context.Set<TEntity>().Update(entity);
     await this.SaveChangesAsync();
-    await aData.CopyFromEntityAsync(entity);
-    return aData;
+    TServiceModel result = new();
+    await result.CopyFromEntityAsync(entity);
+    return result;
   }
 
   /// <summary>
@@ -413,7 +420,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// Code based on: https://stackoverflow.com/a/8109360/968451
   /// </para>
   /// <para>
-  /// This code creates and executes a SQL statement directly, it assumes the database used is
+  /// The default implementation executes a SQL statement directly, it assumes the database used is
   /// MSSQL.
   /// </para>
   /// </summary>
@@ -425,7 +432,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// <typeparam name="TEntity">Type of the entity record</typeparam>
   /// <typeparam name="TKey">Type of the id values</typeparam>
   [SuppressMessage("Security", "EF1002:Risk of vulnerability to SQL injection.")]
-  protected async Task SwapAsync<TEntity, TKey>(
+  protected virtual async Task SwapAsync<TEntity, TKey>(
     string aTableName,
     string aColumnName,
     TKey aFirstId,
@@ -485,7 +492,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// <param name="aSecond">Second entity to swap value of</param>
   /// <param name="aModifiedName">When non null, assign DateTime.Now to this column</param>
   /// <typeparam name="T"></typeparam>
-  protected async Task SwapAsync<T>(
+  protected virtual async Task SwapAsync<T>(
     string aTableName,
     string aColumnName,
     T aFirst,
@@ -542,7 +549,9 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   }
 
   /// <summary>
-  /// Gets the primary key value from a service model instance.
+  /// Gets the primary key value from a service model instance. The method assumes the service
+  /// model instance contains a property with the same name as the primary key property in the
+  /// entity.
   /// <para>
   /// With the first call the default implementation determines the primary key property in
   /// aServiceData using the result from
