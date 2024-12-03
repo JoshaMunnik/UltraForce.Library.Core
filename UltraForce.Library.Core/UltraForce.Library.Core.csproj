@@ -13,8 +13,11 @@
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
-        <Version>1.0.8</Version>
-        <PackageReleaseNotes>1.0.8
+        <Version>1.0.9</Version>
+        <PackageReleaseNotes>1.0.9
+Updated used package.
+
+1.0.8
 Include source comments.
 
 1.0.7
@@ -54,9 +57,9 @@ Initial version</PackageReleaseNotes>
 
     <ItemGroup>
       <PackageReference Include="Azure.Communication.Email" Version="1.0.1" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
-      <PackageReference Include="UltraForce.Library.NetStandard" Version="1.0.3" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+      <PackageReference Include="UltraForce.Library.NetStandard" Version="1.0.6" />
       <PackageReference Include="xunit.assert" Version="2.9.2" />
     </ItemGroup>
 
