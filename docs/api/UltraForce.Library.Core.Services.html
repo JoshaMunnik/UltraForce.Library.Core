@@ -105,10 +105,11 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html">UFDataServiceFromContext&lt;TContext&gt;</a></dt>
-      <dd><p><a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html">UFDataServiceFromContext&lt;TContext&gt;</a> is a base class to implement a data service using a
-<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext">DbContext</a> to manage underlying entities.</p>
+      <dd><p><a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html">UFDataServiceFromContext&lt;TContext&gt;</a> is a base class to implement a data
+service using a <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext">DbContext</a> to manage underlying entities.</p>
 <p>
-The class implements a locking mechanism to minimize the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechanges#microsoft-entityframeworkcore-dbcontext-savechanges">SaveChanges()</a> calls.
+The class implements a locking mechanism to minimize the
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechanges#microsoft-entityframeworkcore-dbcontext-savechanges">SaveChanges()</a> calls.
 </p>
 </dd>
     </dl>
@@ -135,7 +136,7 @@ implementations that will inherit from <a class="xref" href="UltraForce.Library.
     <dl class="jumplist">
       <dt><a class="xref" href="UltraForce.Library.Core.Services.IUFDataServiceCRUD-3.html">IUFDataServiceCRUD&lt;TServiceModel, TKey, TEntity&gt;</a></dt>
       <dd><p>A definition of data services that offers CRUD methods, assuming the data service maps
-to a single entity type.</p>
+to a single entity type and each record is identified by a single key value.</p>
 </dd>
     </dl>
     <dl class="jumplist">

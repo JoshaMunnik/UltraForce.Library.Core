@@ -70,7 +70,7 @@ public static class UFTestTools
   /// <exception>If properties are not equal</exception>
   public static void AssertEqualProperties<T>(
     T anExpected, T anActual, IEnumerable<string>? aNotEqualProperties = null
-  )
+  ) 
   {
     UFPropertiesComparer<T> comparer = new(true, aNotEqualProperties);
     // ReSharper disable once ReturnValueOfPureMethodIsNotUsed
@@ -93,7 +93,7 @@ public static class UFTestTools
     IEnumerable<T> anExpectedList,
     IEnumerable<T> anActualList,
     IEnumerable<string>? aNotEqualProperties = null
-  )
+  ) 
   {
     UFPropertiesComparer<T> comparer = new(false, aNotEqualProperties);
     AssertEqualList(

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IUFDataServiceCRUD&lt;TServiceModel, TKey, TEntity&gt; | UltraForce.Library.Core ">
       
-      <meta name="description" content="A definition of data services that offers CRUD methods, assuming the data service maps to a single entity type.">
+      <meta name="description" content="A definition of data services that offers CRUD methods, assuming the data service maps to a single entity type and each record is identified by a single key value.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -98,7 +98,7 @@ Interface IUFDataServiceCRUD&lt;TServiceModel, TKey, TEntity&gt;  <a class="head
   </div>
 
   <div class="markdown summary"><p>A definition of data services that offers CRUD methods, assuming the data service maps
-to a single entity type.</p>
+to a single entity type and each record is identified by a single key value.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -155,7 +155,7 @@ to a single entity type.</p>
 
   <h3 id="UltraForce_Library_Core_Services_IUFDataServiceCRUD_3_AddAsync__0_" data-uid="UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.AddAsync(`0)">
   AddAsync(TServiceModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a new record to the data.</p>
@@ -163,7 +163,7 @@ to a single entity type.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task AddAsync(TServiceModel aData)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;TServiceModel&gt; AddAsync(TServiceModel aData)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -175,8 +175,9 @@ to a single entity type.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TServiceModel&gt;</dt>
+    <dd><p>The record that has been added, this value might be a different instance then aData.</p>
+</dd>
   </dl>
 
 
@@ -265,7 +266,7 @@ to a single entity type.</p>
 
   <h3 id="UltraForce_Library_Core_Services_IUFDataServiceCRUD_3_RemoveAsync__0_" data-uid="UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.RemoveAsync(`0)">
   RemoveAsync(TServiceModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes a record from the data.</p>
@@ -303,7 +304,7 @@ to a single entity type.</p>
 
   <h3 id="UltraForce_Library_Core_Services_IUFDataServiceCRUD_3_UpdateAsync__0_" data-uid="UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.UpdateAsync(`0)">
   UpdateAsync(TServiceModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Updates the data with an existing record.</p>
@@ -311,7 +312,7 @@ to a single entity type.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task UpdateAsync(TServiceModel aData)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;TServiceModel&gt; UpdateAsync(TServiceModel aData)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -323,8 +324,9 @@ to a single entity type.</p>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TServiceModel&gt;</dt>
+    <dd><p>The updated record, this value might be a different instance then aData.</p>
+</dd>
   </dl>
 
 

@@ -41,18 +41,20 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFDataServiceFromContext
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 52
+    startLine: 53
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: >-
-    <xref href="UltraForce.Library.Core.Services.UFDataServiceFromContext%601" data-throw-if-not-resolved="false"></xref> is a base class to implement a data service using a
+    <xref href="UltraForce.Library.Core.Services.UFDataServiceFromContext%601" data-throw-if-not-resolved="false"></xref> is a base class to implement a data
 
-    <xref href="Microsoft.EntityFrameworkCore.DbContext" data-throw-if-not-resolved="false"></xref> to manage underlying entities. 
+    service using a <xref href="Microsoft.EntityFrameworkCore.DbContext" data-throw-if-not-resolved="false"></xref> to manage underlying entities. 
 
     <p>
 
-    The class implements a locking mechanism to minimize the <xref href="Microsoft.EntityFrameworkCore.DbContext.SaveChanges" data-throw-if-not-resolved="false"></xref> calls.
+    The class implements a locking mechanism to minimize the
+
+    <xref href="Microsoft.EntityFrameworkCore.DbContext.SaveChanges" data-throw-if-not-resolved="false"></xref> calls.
 
     </p>
   remarks: Interface definition for the data service should inherit from <xref href="UltraForce.Library.Core.Services.IUFDataService" data-throw-if-not-resolved="false"></xref>.
@@ -101,7 +103,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: .ctor
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 93
+    startLine: 94
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -152,7 +154,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Dispose
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 107
+    startLine: 108
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -184,7 +186,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: DisposeAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 113
+    startLine: 114
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -219,7 +221,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: LockAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 124
+    startLine: 125
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -262,7 +264,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UnlockAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 131
+    startLine: 132
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -299,7 +301,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Context
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 155
+    startLine: 156
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -332,7 +334,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Changed
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 161
+    startLine: 162
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -368,7 +370,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: DetachEntity
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 171
+    startLine: 172
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -403,7 +405,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: FindForIdAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 184
+    startLine: 185
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -448,7 +450,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: FindAllAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 202
+    startLine: 203
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -487,14 +489,16 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AddAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 230
+    startLine: 232
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: >-
-    Creates and adds an entity from a service model. Then update the service model from the
+    Creates and adds an entity from a service model. Since aData might be an immutable instance,
 
-    added entity (to update for example generated id values).
+    after adding the entity a new service model instance is created from the added entity that
+
+    might include updated fields (like the id of the entity).
   example: []
   syntax:
     content: 'protected Task<TServiceModel> AddAsync<TServiceModel, TEntity>(TServiceModel aData) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class, new()'
@@ -509,7 +513,7 @@ items:
       description: Entity to add
     return:
       type: System.Threading.Tasks.Task{{TServiceModel}}
-      description: The value of aData for chaining purposes
+      description: The service model build from the added entity; this is a new instance
     content.vb: Protected Function AddAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As {Class, New})(aData As TServiceModel) As Task(Of TServiceModel)
   overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.AddAsync*
   nameWithType.vb: UFDataServiceFromContext(Of TContext).AddAsync(Of TServiceModel, TEntity)(TServiceModel)
@@ -533,11 +537,18 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UpdateAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 250
+    startLine: 256
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
-  summary: Updates an entity in the database with the data from a service model instance.
+  summary: >-
+    Updates an entity in the database with the data from a service model instance. Since
+
+    aData might be immutable, a new service model instance is created after updating the
+
+    entity in the database. The new service model might include updated fields (like a modified
+
+    date/time field).
   example: []
   syntax:
     content: 'protected Task<TServiceModel> UpdateAsync<TServiceModel, TEntity>(TServiceModel aData) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class, new()'
@@ -552,7 +563,7 @@ items:
       description: Entity type
     return:
       type: System.Threading.Tasks.Task{{TServiceModel}}
-      description: The value of aData for chaining purposes
+      description: The service model build from the updated entity; this is a new instance
     content.vb: Protected Function UpdateAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As {Class, New})(aData As TServiceModel) As Task(Of TServiceModel)
   overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.UpdateAsync*
   nameWithType.vb: UFDataServiceFromContext(Of TContext).UpdateAsync(Of TServiceModel, TEntity)(TServiceModel)
@@ -576,7 +587,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: RemoveAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 276
+    startLine: 283
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -618,7 +629,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SaveChangesAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 302
+    startLine: 309
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -661,7 +672,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: DetachTrackedEntries
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 329
+    startLine: 336
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -700,7 +711,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: TransactionAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 354
+    startLine: 361
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -742,7 +753,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: TransactionAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 386
+    startLine: 393
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -787,7 +798,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SwapAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 426
+    startLine: 433
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -804,14 +815,14 @@ items:
 
     <p>
 
-    This code creates and executes a SQL statement directly, it assumes the database used is
+    The default implementation executes a SQL statement directly, it assumes the database used is
 
     MSSQL.
 
     </p>
   example: []
   syntax:
-    content: 'protected Task SwapAsync<TEntity, TKey>(string aTableName, string aColumnName, TKey aFirstId, TKey aSecondId, string? aModifiedName = null) where TEntity : class where TKey : notnull'
+    content: 'protected virtual Task SwapAsync<TEntity, TKey>(string aTableName, string aColumnName, TKey aFirstId, TKey aSecondId, string? aModifiedName = null) where TEntity : class where TKey : notnull'
     parameters:
     - id: aTableName
       type: System.String
@@ -835,7 +846,7 @@ items:
       description: Type of the id values
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Protected Function SwapAsync(Of TEntity As Class, TKey)(aTableName As String, aColumnName As String, aFirstId As TKey, aSecondId As TKey, aModifiedName As String = Nothing) As Task
+    content.vb: Protected Overridable Function SwapAsync(Of TEntity As Class, TKey)(aTableName As String, aColumnName As String, aFirstId As TKey, aSecondId As TKey, aModifiedName As String = Nothing) As Task
   overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync*
   nameWithType.vb: UFDataServiceFromContext(Of TContext).SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String)
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String)
@@ -858,7 +869,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SwapAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 487
+    startLine: 494
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -874,7 +885,7 @@ items:
     </p>
   example: []
   syntax:
-    content: 'protected Task SwapAsync<T>(string aTableName, string aColumnName, T aFirst, T aSecond, string? aModifiedName = null) where T : class'
+    content: 'protected virtual Task SwapAsync<T>(string aTableName, string aColumnName, T aFirst, T aSecond, string? aModifiedName = null) where T : class'
     parameters:
     - id: aTableName
       type: System.String
@@ -896,7 +907,7 @@ items:
       description: ''
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Protected Function SwapAsync(Of T As Class)(aTableName As String, aColumnName As String, aFirst As T, aSecond As T, aModifiedName As String = Nothing) As Task
+    content.vb: Protected Overridable Function SwapAsync(Of T As Class)(aTableName As String, aColumnName As String, aFirst As T, aSecond As T, aModifiedName As String = Nothing) As Task
   overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync*
   nameWithType.vb: UFDataServiceFromContext(Of TContext).SwapAsync(Of T)(String, String, T, T, String)
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).SwapAsync(Of T)(String, String, T, T, String)
@@ -919,7 +930,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: GetPrimaryKeyNameFromEntity
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 524
+    startLine: 531
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -969,12 +980,16 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: GetPrimaryKeyFromServiceModel
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 558
+    startLine: 567
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: >-
-    Gets the primary key value from a service model instance.
+    Gets the primary key value from a service model instance. The method assumes the service
+
+    model instance contains a property with the same name as the primary key property in the
+
+    entity.
 
     <p>
 
@@ -1034,7 +1049,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: CheckContext
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 584
+    startLine: 593
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services

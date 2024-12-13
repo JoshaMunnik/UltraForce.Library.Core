@@ -31,7 +31,7 @@ items:
   summary: >-
     A definition of data services that offers CRUD methods, assuming the data service maps
 
-    to a single entity type.
+    to a single entity type and each record is identified by a single key value.
   example: []
   syntax:
     content: 'public interface IUFDataServiceCRUD<TServiceModel, in TKey, TEntity> : IUFDataService where TServiceModel : IUFDataServiceModel<TEntity>, new() where TEntity : class'
@@ -140,22 +140,22 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AddAsync
     path: ../UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
-    startLine: 64
+    startLine: 66
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: Adds a new record to the data.
   example: []
   syntax:
-    content: Task AddAsync(TServiceModel aData)
+    content: Task<TServiceModel> AddAsync(TServiceModel aData)
     parameters:
     - id: aData
       type: '{TServiceModel}'
       description: Record to add. Properties within in this value might get updated.
     return:
-      type: System.Threading.Tasks.Task
-      description: ''
-    content.vb: Function AddAsync(aData As TServiceModel) As Task
+      type: System.Threading.Tasks.Task{{TServiceModel}}
+      description: The record that has been added, this value might be a different instance then aData.
+    content.vb: Function AddAsync(aData As TServiceModel) As Task(Of TServiceModel)
   overload: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.AddAsync*
   nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).AddAsync(TServiceModel)
   fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).AddAsync(TServiceModel)
@@ -177,22 +177,22 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UpdateAsync
     path: ../UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
-    startLine: 73
+    startLine: 75
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: Updates the data with an existing record.
   example: []
   syntax:
-    content: Task UpdateAsync(TServiceModel aData)
+    content: Task<TServiceModel> UpdateAsync(TServiceModel aData)
     parameters:
     - id: aData
       type: '{TServiceModel}'
       description: Record to update with. Properties within in this value might get updated.
     return:
-      type: System.Threading.Tasks.Task
-      description: ''
-    content.vb: Function UpdateAsync(aData As TServiceModel) As Task
+      type: System.Threading.Tasks.Task{{TServiceModel}}
+      description: The updated record, this value might be a different instance then aData.
+    content.vb: Function UpdateAsync(aData As TServiceModel) As Task(Of TServiceModel)
   overload: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.UpdateAsync*
   nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).UpdateAsync(TServiceModel)
   fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).UpdateAsync(TServiceModel)
@@ -214,7 +214,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: RemoveAsync
     path: ../UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
-    startLine: 79
+    startLine: 81
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -786,14 +786,6 @@ references:
   name: TServiceModel
   nameWithType: TServiceModel
   fullName: TServiceModel
-- uid: System.Threading.Tasks.Task
-  commentId: T:System.Threading.Tasks.Task
-  parent: System.Threading.Tasks
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
-  name: Task
-  nameWithType: Task
-  fullName: System.Threading.Tasks.Task
 - uid: TServiceModel
   name: TServiceModel
   nameWithType: TServiceModel
@@ -814,3 +806,11 @@ references:
   fullName: UltraForce.Library.Core.Services.IUFDataServiceCRUD<TServiceModel, TKey, TEntity>.RemoveAsync
   nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).RemoveAsync
   fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).RemoveAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
