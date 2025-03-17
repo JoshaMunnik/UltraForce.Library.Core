@@ -1,0 +1,416 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Types.Enums.UFCompareOption
+  commentId: T:UltraForce.Library.Core.Types.Enums.UFCompareOption
+  id: UFCompareOption
+  parent: UltraForce.Library.Core.Types.Enums
+  children:
+  - UltraForce.Library.Core.Types.Enums.UFCompareOption.Equal
+  - UltraForce.Library.Core.Types.Enums.UFCompareOption.GreaterThan
+  - UltraForce.Library.Core.Types.Enums.UFCompareOption.GreaterThanOrEqual
+  - UltraForce.Library.Core.Types.Enums.UFCompareOption.LessThan
+  - UltraForce.Library.Core.Types.Enums.UFCompareOption.LessThanOrEqual
+  - UltraForce.Library.Core.Types.Enums.UFCompareOption.NotEqual
+  langs:
+  - csharp
+  - vb
+  name: UFCompareOption
+  nameWithType: UFCompareOption
+  fullName: UltraForce.Library.Core.Types.Enums.UFCompareOption
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core/Types/Enums/UFCompareOption.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
+    id: UFCompareOption
+    path: ../UltraForce.Library.Core/Types/Enums/UFCompareOption.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Types.Enums
+  summary: Different options when comparing two values.
+  example: []
+  syntax:
+    content: public enum UFCompareOption
+    content.vb: Public Enum UFCompareOption
+  extensionMethods:
+  - System.Enum.UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription
+  - System.Enum.UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName
+- uid: UltraForce.Library.Core.Types.Enums.UFCompareOption.LessThan
+  commentId: F:UltraForce.Library.Core.Types.Enums.UFCompareOption.LessThan
+  id: LessThan
+  parent: UltraForce.Library.Core.Types.Enums.UFCompareOption
+  langs:
+  - csharp
+  - vb
+  name: LessThan
+  nameWithType: UFCompareOption.LessThan
+  fullName: UltraForce.Library.Core.Types.Enums.UFCompareOption.LessThan
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core/Types/Enums/UFCompareOption.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
+    id: LessThan
+    path: ../UltraForce.Library.Core/Types/Enums/UFCompareOption.cs
+    startLine: 39
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Types.Enums
+  summary: Value must be less than the comparison value.
+  example: []
+  syntax:
+    content: LessThan = 0
+    return:
+      type: UltraForce.Library.Core.Types.Enums.UFCompareOption
+- uid: UltraForce.Library.Core.Types.Enums.UFCompareOption.LessThanOrEqual
+  commentId: F:UltraForce.Library.Core.Types.Enums.UFCompareOption.LessThanOrEqual
+  id: LessThanOrEqual
+  parent: UltraForce.Library.Core.Types.Enums.UFCompareOption
+  langs:
+  - csharp
+  - vb
+  name: LessThanOrEqual
+  nameWithType: UFCompareOption.LessThanOrEqual
+  fullName: UltraForce.Library.Core.Types.Enums.UFCompareOption.LessThanOrEqual
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core/Types/Enums/UFCompareOption.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
+    id: LessThanOrEqual
+    path: ../UltraForce.Library.Core/Types/Enums/UFCompareOption.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Types.Enums
+  summary: Value must be less than or equal to the comparison value.
+  example: []
+  syntax:
+    content: LessThanOrEqual = 1
+    return:
+      type: UltraForce.Library.Core.Types.Enums.UFCompareOption
+- uid: UltraForce.Library.Core.Types.Enums.UFCompareOption.Equal
+  commentId: F:UltraForce.Library.Core.Types.Enums.UFCompareOption.Equal
+  id: Equal
+  parent: UltraForce.Library.Core.Types.Enums.UFCompareOption
+  langs:
+  - csharp
+  - vb
+  name: Equal
+  nameWithType: UFCompareOption.Equal
+  fullName: UltraForce.Library.Core.Types.Enums.UFCompareOption.Equal
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core/Types/Enums/UFCompareOption.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
+    id: Equal
+    path: ../UltraForce.Library.Core/Types/Enums/UFCompareOption.cs
+    startLine: 49
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Types.Enums
+  summary: Value must be equal to the comparison value.
+  example: []
+  syntax:
+    content: Equal = 2
+    return:
+      type: UltraForce.Library.Core.Types.Enums.UFCompareOption
+- uid: UltraForce.Library.Core.Types.Enums.UFCompareOption.NotEqual
+  commentId: F:UltraForce.Library.Core.Types.Enums.UFCompareOption.NotEqual
+  id: NotEqual
+  parent: UltraForce.Library.Core.Types.Enums.UFCompareOption
+  langs:
+  - csharp
+  - vb
+  name: NotEqual
+  nameWithType: UFCompareOption.NotEqual
+  fullName: UltraForce.Library.Core.Types.Enums.UFCompareOption.NotEqual
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core/Types/Enums/UFCompareOption.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
+    id: NotEqual
+    path: ../UltraForce.Library.Core/Types/Enums/UFCompareOption.cs
+    startLine: 54
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Types.Enums
+  summary: Value must not be equal to the comparison value.
+  example: []
+  syntax:
+    content: NotEqual = 3
+    return:
+      type: UltraForce.Library.Core.Types.Enums.UFCompareOption
+- uid: UltraForce.Library.Core.Types.Enums.UFCompareOption.GreaterThanOrEqual
+  commentId: F:UltraForce.Library.Core.Types.Enums.UFCompareOption.GreaterThanOrEqual
+  id: GreaterThanOrEqual
+  parent: UltraForce.Library.Core.Types.Enums.UFCompareOption
+  langs:
+  - csharp
+  - vb
+  name: GreaterThanOrEqual
+  nameWithType: UFCompareOption.GreaterThanOrEqual
+  fullName: UltraForce.Library.Core.Types.Enums.UFCompareOption.GreaterThanOrEqual
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core/Types/Enums/UFCompareOption.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
+    id: GreaterThanOrEqual
+    path: ../UltraForce.Library.Core/Types/Enums/UFCompareOption.cs
+    startLine: 59
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Types.Enums
+  summary: Value must greater than or equal to the comparison value.
+  example: []
+  syntax:
+    content: GreaterThanOrEqual = 4
+    return:
+      type: UltraForce.Library.Core.Types.Enums.UFCompareOption
+- uid: UltraForce.Library.Core.Types.Enums.UFCompareOption.GreaterThan
+  commentId: F:UltraForce.Library.Core.Types.Enums.UFCompareOption.GreaterThan
+  id: GreaterThan
+  parent: UltraForce.Library.Core.Types.Enums.UFCompareOption
+  langs:
+  - csharp
+  - vb
+  name: GreaterThan
+  nameWithType: UFCompareOption.GreaterThan
+  fullName: UltraForce.Library.Core.Types.Enums.UFCompareOption.GreaterThan
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core/Types/Enums/UFCompareOption.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
+    id: GreaterThan
+    path: ../UltraForce.Library.Core/Types/Enums/UFCompareOption.cs
+    startLine: 64
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Types.Enums
+  summary: Value must be greater than the comparison value.
+  example: []
+  syntax:
+    content: GreaterThan = 5
+    return:
+      type: UltraForce.Library.Core.Types.Enums.UFCompareOption
+references:
+- uid: UltraForce.Library.Core.Types.Enums
+  commentId: N:UltraForce.Library.Core.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Types.Enums
+  nameWithType: UltraForce.Library.Core.Types.Enums
+  fullName: UltraForce.Library.Core.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Types
+    name: Types
+    href: UltraForce.Library.Core.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Types
+    name: Types
+    href: UltraForce.Library.Core.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Types.Enums.html
+- uid: System.Enum.UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription
+  commentId: M:UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+  parent: UltraForce.Library.Core.Extensions.UFEnumExtensions
+  definition: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+  href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayDescription_System_Enum_
+  name: GetDisplayDescription(Enum)
+  nameWithType: UFEnumExtensions.GetDisplayDescription(Enum)
+  fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+    name: GetDisplayDescription
+    href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+    name: GetDisplayDescription
+    href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: System.Enum.UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName
+  commentId: M:UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+  parent: UltraForce.Library.Core.Extensions.UFEnumExtensions
+  definition: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+  href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayName_System_Enum_
+  name: GetDisplayName(Enum)
+  nameWithType: UFEnumExtensions.GetDisplayName(Enum)
+  fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+    name: GetDisplayName
+    href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+    name: GetDisplayName
+    href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+  commentId: M:UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+  isExternal: true
+  href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayDescription_System_Enum_
+  name: GetDisplayDescription(Enum)
+  nameWithType: UFEnumExtensions.GetDisplayDescription(Enum)
+  fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+    name: GetDisplayDescription
+    href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription(System.Enum)
+    name: GetDisplayDescription
+    href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: UltraForce.Library.Core.Extensions.UFEnumExtensions
+  commentId: T:UltraForce.Library.Core.Extensions.UFEnumExtensions
+  parent: UltraForce.Library.Core.Extensions
+  href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html
+  name: UFEnumExtensions
+  nameWithType: UFEnumExtensions
+  fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions
+- uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+  commentId: M:UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+  isExternal: true
+  href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayName_System_Enum_
+  name: GetDisplayName(Enum)
+  nameWithType: UFEnumExtensions.GetDisplayName(Enum)
+  fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+    name: GetDisplayName
+    href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
+    name: GetDisplayName
+    href: UltraForce.Library.Core.Extensions.UFEnumExtensions.html#UltraForce_Library_Core_Extensions_UFEnumExtensions_GetDisplayName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: UltraForce.Library.Core.Extensions
+  commentId: N:UltraForce.Library.Core.Extensions
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Extensions
+  nameWithType: UltraForce.Library.Core.Extensions
+  fullName: UltraForce.Library.Core.Extensions
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Extensions
+    name: Extensions
+    href: UltraForce.Library.Core.Extensions.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Extensions
+    name: Extensions
+    href: UltraForce.Library.Core.Extensions.html
+- uid: UltraForce.Library.Core.Types.Enums.UFCompareOption
+  commentId: T:UltraForce.Library.Core.Types.Enums.UFCompareOption
+  parent: UltraForce.Library.Core.Types.Enums
+  href: UltraForce.Library.Core.Types.Enums.UFCompareOption.html
+  name: UFCompareOption
+  nameWithType: UFCompareOption
+  fullName: UltraForce.Library.Core.Types.Enums.UFCompareOption

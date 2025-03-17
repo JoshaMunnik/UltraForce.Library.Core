@@ -1,4 +1,9 @@
 {
+  "api/UltraForce.Library.Core.Annotations.UFCompareToAttribute.html": {
+    "href": "api/UltraForce.Library.Core.Annotations.UFCompareToAttribute.html",
+    "title": "Class UFCompareToAttribute | UltraForce.Library.Core",
+    "keywords": "Class UFCompareToAttribute Namespace UltraForce.Library.Core.Annotations Assembly UltraForce.Library.Core.dll This attribute can be used to annotate a property that should pass a certain comparison to another property. The type of the property must implement IComparable. public class UFCompareToAttribute : ValidationAttribute Inheritance object Attribute ValidationAttribute UFCompareToAttribute Inherited Members ValidationAttribute.FormatErrorMessage(string) ValidationAttribute.GetValidationResult(object, ValidationContext) ValidationAttribute.IsValid(object) ValidationAttribute.Validate(object, ValidationContext) ValidationAttribute.Validate(object, string) ValidationAttribute.ErrorMessage ValidationAttribute.ErrorMessageResourceName ValidationAttribute.ErrorMessageResourceType ValidationAttribute.ErrorMessageString ValidationAttribute.RequiresValidationContext Attribute.Equals(object) Attribute.GetCustomAttribute(Assembly, Type) Attribute.GetCustomAttribute(Assembly, Type, bool) Attribute.GetCustomAttribute(MemberInfo, Type) Attribute.GetCustomAttribute(MemberInfo, Type, bool) Attribute.GetCustomAttribute(Module, Type) Attribute.GetCustomAttribute(Module, Type, bool) Attribute.GetCustomAttribute(ParameterInfo, Type) Attribute.GetCustomAttribute(ParameterInfo, Type, bool) Attribute.GetCustomAttributes(Assembly) Attribute.GetCustomAttributes(Assembly, bool) Attribute.GetCustomAttributes(Assembly, Type) Attribute.GetCustomAttributes(Assembly, Type, bool) Attribute.GetCustomAttributes(MemberInfo) Attribute.GetCustomAttributes(MemberInfo, bool) Attribute.GetCustomAttributes(MemberInfo, Type) Attribute.GetCustomAttributes(MemberInfo, Type, bool) Attribute.GetCustomAttributes(Module) Attribute.GetCustomAttributes(Module, bool) Attribute.GetCustomAttributes(Module, Type) Attribute.GetCustomAttributes(Module, Type, bool) Attribute.GetCustomAttributes(ParameterInfo) Attribute.GetCustomAttributes(ParameterInfo, bool) Attribute.GetCustomAttributes(ParameterInfo, Type) Attribute.GetCustomAttributes(ParameterInfo, Type, bool) Attribute.GetHashCode() Attribute.IsDefaultAttribute() Attribute.IsDefined(Assembly, Type) Attribute.IsDefined(Assembly, Type, bool) Attribute.IsDefined(MemberInfo, Type) Attribute.IsDefined(MemberInfo, Type, bool) Attribute.IsDefined(Module, Type) Attribute.IsDefined(Module, Type, bool) Attribute.IsDefined(ParameterInfo, Type) Attribute.IsDefined(ParameterInfo, Type, bool) Attribute.Match(object) Attribute.TypeId object.Equals(object, object) object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods UFDataServiceExtensions.AsModelAsync<TServiceModel, TEntity>(TEntity) UFDataServiceExtensions.AsNullableModelAsync<TServiceModel, TEntity>(TEntity?) Constructors UFCompareToAttribute(string, UFCompareOption) Constructs a new instance of UFCompareToAttribute. public UFCompareToAttribute(string comparisonProperty, UFCompareOption compareOption) Parameters comparisonProperty string Name of other property to compare to compareOption UFCompareOption How to compare this property to the other compare Methods IsValid(object?, ValidationContext) Validates the specified value with respect to the current validation attribute. protected override ValidationResult IsValid(object? value, ValidationContext validationContext) Parameters value object The value to validate. validationContext ValidationContext The context information about the validation operation. Returns ValidationResult An instance of the ValidationResult class. Exceptions InvalidOperationException The current attribute is malformed. NotImplementedException IsValid(object, ValidationContext) has not been implemented by a derived class."
+  },
   "api/UltraForce.Library.Core.Annotations.UFEntityAttribute.html": {
     "href": "api/UltraForce.Library.Core.Annotations.UFEntityAttribute.html",
     "title": "Class UFEntityAttribute | UltraForce.Library.Core",
@@ -12,7 +17,7 @@
   "api/UltraForce.Library.Core.Annotations.html": {
     "href": "api/UltraForce.Library.Core.Annotations.html",
     "title": "Namespace UltraForce.Library.Core.Annotations | UltraForce.Library.Core",
-    "keywords": "Namespace UltraForce.Library.Core.Annotations Classes UFEntityAttribute Indicates that a property maps to a property in an entity UFRequiredIfAttribute Provides conditional validation based on related property value."
+    "keywords": "Namespace UltraForce.Library.Core.Annotations Classes UFCompareToAttribute This attribute can be used to annotate a property that should pass a certain comparison to another property. The type of the property must implement IComparable. UFEntityAttribute Indicates that a property maps to a property in an entity UFRequiredIfAttribute Provides conditional validation based on related property value."
   },
   "api/UltraForce.Library.Core.Converters.UFBoolJsonConverter.html": {
     "href": "api/UltraForce.Library.Core.Converters.UFBoolJsonConverter.html",
@@ -54,10 +59,15 @@
     "title": "Class UFEnumExtensions | UltraForce.Library.Core",
     "keywords": "Class UFEnumExtensions Namespace UltraForce.Library.Core.Extensions Assembly UltraForce.Library.Core.dll Defines extension method for use with Enum type. public static class UFEnumExtensions Inheritance object UFEnumExtensions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods GetDisplayDescription(Enum) Get the description value of an enum. Try to get a value from DisplayAttribute, UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute and DescriptionAttribute. public static string GetDisplayDescription(this Enum anEnumerationValue) Parameters anEnumerationValue Enum Enumeration value. Returns string The value of a description attribute or enum value converted to string. GetDisplayName(Enum) Get the name value of an enum. Try to get a value from DisplayAttribute, UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute and DisplayNameAttribute. public static string GetDisplayName(this Enum anEnumerationValue) Parameters anEnumerationValue Enum Enumeration value. Returns string The value of a description attribute or enum value converted to string."
   },
+  "api/UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions.html": {
+    "href": "api/UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions.html",
+    "title": "Class UFPropertyInfoExtensions | UltraForce.Library.Core",
+    "keywords": "Class UFPropertyInfoExtensions Namespace UltraForce.Library.Core.Extensions Assembly UltraForce.Library.Core.dll Extensions for the PropertyInfo class. public static class UFPropertyInfoExtensions Inheritance object UFPropertyInfoExtensions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods GetDisplayName(PropertyInfo) Returns the display name of the property. If no display name can be found, the method just returns the name of the property. public static string GetDisplayName(this PropertyInfo propertyInfo) Parameters propertyInfo PropertyInfo Property to get display name for Returns string Display name or name of property"
+  },
   "api/UltraForce.Library.Core.Extensions.html": {
     "href": "api/UltraForce.Library.Core.Extensions.html",
     "title": "Namespace UltraForce.Library.Core.Extensions | UltraForce.Library.Core",
-    "keywords": "Namespace UltraForce.Library.Core.Extensions Classes UFDataServiceExtensions Defines extension methods in relation to IUFDataService. UFEnumExtensions Defines extension method for use with Enum type."
+    "keywords": "Namespace UltraForce.Library.Core.Extensions Classes UFDataServiceExtensions Defines extension methods in relation to IUFDataService. UFEnumExtensions Defines extension method for use with Enum type. UFPropertyInfoExtensions Extensions for the PropertyInfo class."
   },
   "api/UltraForce.Library.Core.Models.IUFDataServiceModel-1.html": {
     "href": "api/UltraForce.Library.Core.Models.IUFDataServiceModel-1.html",
@@ -134,6 +144,11 @@
     "title": "Namespace UltraForce.Library.Core.Tools | UltraForce.Library.Core",
     "keywords": "Namespace UltraForce.Library.Core.Tools Classes UFCoreFileTools File support methods. UFDataServiceTools Support methods for IUFDataServiceModel<TEntity> and IUFDataService UFTestTools THis class contains static methods to support unit testing with xUnit."
   },
+  "api/UltraForce.Library.Core.Types.Enums.UFCompareOption.html": {
+    "href": "api/UltraForce.Library.Core.Types.Enums.UFCompareOption.html",
+    "title": "Enum UFCompareOption | UltraForce.Library.Core",
+    "keywords": "Enum UFCompareOption Namespace UltraForce.Library.Core.Types.Enums Assembly UltraForce.Library.Core.dll Different options when comparing two values. public enum UFCompareOption Extension Methods UFEnumExtensions.GetDisplayDescription(Enum) UFEnumExtensions.GetDisplayName(Enum) Fields Equal = 2 Value must be equal to the comparison value. GreaterThan = 5 Value must be greater than the comparison value. GreaterThanOrEqual = 4 Value must greater than or equal to the comparison value. LessThan = 0 Value must be less than the comparison value. LessThanOrEqual = 1 Value must be less than or equal to the comparison value. NotEqual = 3 Value must not be equal to the comparison value."
+  },
   "api/UltraForce.Library.Core.Types.Enums.UFEntityAction.html": {
     "href": "api/UltraForce.Library.Core.Types.Enums.UFEntityAction.html",
     "title": "Enum UFEntityAction | UltraForce.Library.Core",
@@ -142,7 +157,7 @@
   "api/UltraForce.Library.Core.Types.Enums.html": {
     "href": "api/UltraForce.Library.Core.Types.Enums.html",
     "title": "Namespace UltraForce.Library.Core.Types.Enums | UltraForce.Library.Core",
-    "keywords": "Namespace UltraForce.Library.Core.Types.Enums Enums UFEntityAction Actions on the entity."
+    "keywords": "Namespace UltraForce.Library.Core.Types.Enums Enums UFCompareOption Different options when comparing two values. UFEntityAction Actions on the entity."
   },
   "index.html": {
     "href": "index.html",

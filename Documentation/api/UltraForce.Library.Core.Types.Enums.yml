@@ -4,6 +4,7 @@ items:
   commentId: N:UltraForce.Library.Core.Types.Enums
   id: UltraForce.Library.Core.Types.Enums
   children:
+  - UltraForce.Library.Core.Types.Enums.UFCompareOption
   - UltraForce.Library.Core.Types.Enums.UFEntityAction
   langs:
   - csharp
@@ -15,6 +16,13 @@ items:
   assemblies:
   - UltraForce.Library.Core
 references:
+- uid: UltraForce.Library.Core.Types.Enums.UFCompareOption
+  commentId: T:UltraForce.Library.Core.Types.Enums.UFCompareOption
+  parent: UltraForce.Library.Core.Types.Enums
+  href: UltraForce.Library.Core.Types.Enums.UFCompareOption.html
+  name: UFCompareOption
+  nameWithType: UFCompareOption
+  fullName: UltraForce.Library.Core.Types.Enums.UFCompareOption
 - uid: UltraForce.Library.Core.Types.Enums.UFEntityAction
   commentId: T:UltraForce.Library.Core.Types.Enums.UFEntityAction
   parent: UltraForce.Library.Core.Types.Enums

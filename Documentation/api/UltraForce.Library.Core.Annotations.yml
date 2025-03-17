@@ -4,6 +4,7 @@ items:
   commentId: N:UltraForce.Library.Core.Annotations
   id: UltraForce.Library.Core.Annotations
   children:
+  - UltraForce.Library.Core.Annotations.UFCompareToAttribute
   - UltraForce.Library.Core.Annotations.UFEntityAttribute
   - UltraForce.Library.Core.Annotations.UFRequiredIfAttribute
   langs:
@@ -16,6 +17,12 @@ items:
   assemblies:
   - UltraForce.Library.Core
 references:
+- uid: UltraForce.Library.Core.Annotations.UFCompareToAttribute
+  commentId: T:UltraForce.Library.Core.Annotations.UFCompareToAttribute
+  href: UltraForce.Library.Core.Annotations.UFCompareToAttribute.html
+  name: UFCompareToAttribute
+  nameWithType: UFCompareToAttribute
+  fullName: UltraForce.Library.Core.Annotations.UFCompareToAttribute
 - uid: UltraForce.Library.Core.Annotations.UFEntityAttribute
   commentId: T:UltraForce.Library.Core.Annotations.UFEntityAttribute
   href: UltraForce.Library.Core.Annotations.UFEntityAttribute.html

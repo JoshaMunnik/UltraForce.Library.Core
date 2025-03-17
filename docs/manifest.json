@@ -12,6 +12,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Annotations.UFCompareToAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Annotations.UFCompareToAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/UltraForce.Library.Core.Annotations.UFEntityAttribute.yml",
       "output": {
         ".html": {
@@ -116,6 +126,16 @@
       "output": {
         ".html": {
           "relative_path": "api/UltraForce.Library.Core.Extensions.UFEnumExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions.html"
         }
       },
       "version": ""
@@ -276,6 +296,16 @@
       "output": {
         ".html": {
           "relative_path": "api/UltraForce.Library.Core.Tools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Types.Enums.UFCompareOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Types.Enums.UFCompareOption.html"
         }
       },
       "version": ""

@@ -7,6 +7,47 @@ references:
   commentId: N:UltraForce.Library.Core.Annotations
   fullName: UltraForce.Library.Core.Annotations
   nameWithType: UltraForce.Library.Core.Annotations
+- uid: UltraForce.Library.Core.Annotations.UFCompareToAttribute
+  name: UFCompareToAttribute
+  href: api/UltraForce.Library.Core.Annotations.UFCompareToAttribute.html
+  commentId: T:UltraForce.Library.Core.Annotations.UFCompareToAttribute
+  fullName: UltraForce.Library.Core.Annotations.UFCompareToAttribute
+  nameWithType: UFCompareToAttribute
+- uid: UltraForce.Library.Core.Annotations.UFCompareToAttribute.#ctor(System.String,UltraForce.Library.Core.Types.Enums.UFCompareOption)
+  name: UFCompareToAttribute(string, UFCompareOption)
+  href: api/UltraForce.Library.Core.Annotations.UFCompareToAttribute.html#UltraForce_Library_Core_Annotations_UFCompareToAttribute__ctor_System_String_UltraForce_Library_Core_Types_Enums_UFCompareOption_
+  commentId: M:UltraForce.Library.Core.Annotations.UFCompareToAttribute.#ctor(System.String,UltraForce.Library.Core.Types.Enums.UFCompareOption)
+  name.vb: New(String, UFCompareOption)
+  fullName: UltraForce.Library.Core.Annotations.UFCompareToAttribute.UFCompareToAttribute(string, UltraForce.Library.Core.Types.Enums.UFCompareOption)
+  fullName.vb: UltraForce.Library.Core.Annotations.UFCompareToAttribute.New(String, UltraForce.Library.Core.Types.Enums.UFCompareOption)
+  nameWithType: UFCompareToAttribute.UFCompareToAttribute(string, UFCompareOption)
+  nameWithType.vb: UFCompareToAttribute.New(String, UFCompareOption)
+- uid: UltraForce.Library.Core.Annotations.UFCompareToAttribute.#ctor*
+  name: UFCompareToAttribute
+  href: api/UltraForce.Library.Core.Annotations.UFCompareToAttribute.html#UltraForce_Library_Core_Annotations_UFCompareToAttribute__ctor_
+  commentId: Overload:UltraForce.Library.Core.Annotations.UFCompareToAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: UltraForce.Library.Core.Annotations.UFCompareToAttribute.UFCompareToAttribute
+  fullName.vb: UltraForce.Library.Core.Annotations.UFCompareToAttribute.New
+  nameWithType: UFCompareToAttribute.UFCompareToAttribute
+  nameWithType.vb: UFCompareToAttribute.New
+- uid: UltraForce.Library.Core.Annotations.UFCompareToAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)
+  name: IsValid(object?, ValidationContext)
+  href: api/UltraForce.Library.Core.Annotations.UFCompareToAttribute.html#UltraForce_Library_Core_Annotations_UFCompareToAttribute_IsValid_System_Object_System_ComponentModel_DataAnnotations_ValidationContext_
+  commentId: M:UltraForce.Library.Core.Annotations.UFCompareToAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)
+  name.vb: IsValid(Object, ValidationContext)
+  fullName: UltraForce.Library.Core.Annotations.UFCompareToAttribute.IsValid(object?, System.ComponentModel.DataAnnotations.ValidationContext)
+  fullName.vb: UltraForce.Library.Core.Annotations.UFCompareToAttribute.IsValid(Object, System.ComponentModel.DataAnnotations.ValidationContext)
+  nameWithType: UFCompareToAttribute.IsValid(object?, ValidationContext)
+  nameWithType.vb: UFCompareToAttribute.IsValid(Object, ValidationContext)
+- uid: UltraForce.Library.Core.Annotations.UFCompareToAttribute.IsValid*
+  name: IsValid
+  href: api/UltraForce.Library.Core.Annotations.UFCompareToAttribute.html#UltraForce_Library_Core_Annotations_UFCompareToAttribute_IsValid_
+  commentId: Overload:UltraForce.Library.Core.Annotations.UFCompareToAttribute.IsValid
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Annotations.UFCompareToAttribute.IsValid
+  nameWithType: UFCompareToAttribute.IsValid
 - uid: UltraForce.Library.Core.Annotations.UFEntityAttribute
   name: UFEntityAttribute
   href: api/UltraForce.Library.Core.Annotations.UFEntityAttribute.html
@@ -566,6 +607,25 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName
   nameWithType: UFEnumExtensions.GetDisplayName
+- uid: UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions
+  name: UFPropertyInfoExtensions
+  href: api/UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions.html
+  commentId: T:UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions
+  fullName: UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions
+  nameWithType: UFPropertyInfoExtensions
+- uid: UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions.GetDisplayName(System.Reflection.PropertyInfo)
+  name: GetDisplayName(PropertyInfo)
+  href: api/UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions.html#UltraForce_Library_Core_Extensions_UFPropertyInfoExtensions_GetDisplayName_System_Reflection_PropertyInfo_
+  commentId: M:UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions.GetDisplayName(System.Reflection.PropertyInfo)
+  fullName: UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions.GetDisplayName(System.Reflection.PropertyInfo)
+  nameWithType: UFPropertyInfoExtensions.GetDisplayName(PropertyInfo)
+- uid: UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions.GetDisplayName*
+  name: GetDisplayName
+  href: api/UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions.html#UltraForce_Library_Core_Extensions_UFPropertyInfoExtensions_GetDisplayName_
+  commentId: Overload:UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions.GetDisplayName
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions.GetDisplayName
+  nameWithType: UFPropertyInfoExtensions.GetDisplayName
 - uid: UltraForce.Library.Core.Models
   name: UltraForce.Library.Core.Models
   href: api/UltraForce.Library.Core.Models.html
@@ -2141,6 +2201,48 @@ references:
   commentId: N:UltraForce.Library.Core.Types.Enums
   fullName: UltraForce.Library.Core.Types.Enums
   nameWithType: UltraForce.Library.Core.Types.Enums
+- uid: UltraForce.Library.Core.Types.Enums.UFCompareOption
+  name: UFCompareOption
+  href: api/UltraForce.Library.Core.Types.Enums.UFCompareOption.html
+  commentId: T:UltraForce.Library.Core.Types.Enums.UFCompareOption
+  fullName: UltraForce.Library.Core.Types.Enums.UFCompareOption
+  nameWithType: UFCompareOption
+- uid: UltraForce.Library.Core.Types.Enums.UFCompareOption.Equal
+  name: Equal
+  href: api/UltraForce.Library.Core.Types.Enums.UFCompareOption.html#UltraForce_Library_Core_Types_Enums_UFCompareOption_Equal
+  commentId: F:UltraForce.Library.Core.Types.Enums.UFCompareOption.Equal
+  fullName: UltraForce.Library.Core.Types.Enums.UFCompareOption.Equal
+  nameWithType: UFCompareOption.Equal
+- uid: UltraForce.Library.Core.Types.Enums.UFCompareOption.GreaterThan
+  name: GreaterThan
+  href: api/UltraForce.Library.Core.Types.Enums.UFCompareOption.html#UltraForce_Library_Core_Types_Enums_UFCompareOption_GreaterThan
+  commentId: F:UltraForce.Library.Core.Types.Enums.UFCompareOption.GreaterThan
+  fullName: UltraForce.Library.Core.Types.Enums.UFCompareOption.GreaterThan
+  nameWithType: UFCompareOption.GreaterThan
+- uid: UltraForce.Library.Core.Types.Enums.UFCompareOption.GreaterThanOrEqual
+  name: GreaterThanOrEqual
+  href: api/UltraForce.Library.Core.Types.Enums.UFCompareOption.html#UltraForce_Library_Core_Types_Enums_UFCompareOption_GreaterThanOrEqual
+  commentId: F:UltraForce.Library.Core.Types.Enums.UFCompareOption.GreaterThanOrEqual
+  fullName: UltraForce.Library.Core.Types.Enums.UFCompareOption.GreaterThanOrEqual
+  nameWithType: UFCompareOption.GreaterThanOrEqual
+- uid: UltraForce.Library.Core.Types.Enums.UFCompareOption.LessThan
+  name: LessThan
+  href: api/UltraForce.Library.Core.Types.Enums.UFCompareOption.html#UltraForce_Library_Core_Types_Enums_UFCompareOption_LessThan
+  commentId: F:UltraForce.Library.Core.Types.Enums.UFCompareOption.LessThan
+  fullName: UltraForce.Library.Core.Types.Enums.UFCompareOption.LessThan
+  nameWithType: UFCompareOption.LessThan
+- uid: UltraForce.Library.Core.Types.Enums.UFCompareOption.LessThanOrEqual
+  name: LessThanOrEqual
+  href: api/UltraForce.Library.Core.Types.Enums.UFCompareOption.html#UltraForce_Library_Core_Types_Enums_UFCompareOption_LessThanOrEqual
+  commentId: F:UltraForce.Library.Core.Types.Enums.UFCompareOption.LessThanOrEqual
+  fullName: UltraForce.Library.Core.Types.Enums.UFCompareOption.LessThanOrEqual
+  nameWithType: UFCompareOption.LessThanOrEqual
+- uid: UltraForce.Library.Core.Types.Enums.UFCompareOption.NotEqual
+  name: NotEqual
+  href: api/UltraForce.Library.Core.Types.Enums.UFCompareOption.html#UltraForce_Library_Core_Types_Enums_UFCompareOption_NotEqual
+  commentId: F:UltraForce.Library.Core.Types.Enums.UFCompareOption.NotEqual
+  fullName: UltraForce.Library.Core.Types.Enums.UFCompareOption.NotEqual
+  nameWithType: UFCompareOption.NotEqual
 - uid: UltraForce.Library.Core.Types.Enums.UFEntityAction
   name: UFEntityAction
   href: api/UltraForce.Library.Core.Types.Enums.UFEntityAction.html

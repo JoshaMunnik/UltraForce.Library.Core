@@ -6,6 +6,7 @@ items:
   children:
   - UltraForce.Library.Core.Extensions.UFDataServiceExtensions
   - UltraForce.Library.Core.Extensions.UFEnumExtensions
+  - UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions
   langs:
   - csharp
   - vb
@@ -30,6 +31,12 @@ references:
   name: UFEnumExtensions
   nameWithType: UFEnumExtensions
   fullName: UltraForce.Library.Core.Extensions.UFEnumExtensions
+- uid: UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions
+  commentId: T:UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions
+  href: UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions.html
+  name: UFPropertyInfoExtensions
+  nameWithType: UFPropertyInfoExtensions
+  fullName: UltraForce.Library.Core.Extensions.UFPropertyInfoExtensions
 - uid: UltraForce.Library.Core.Extensions
   commentId: N:UltraForce.Library.Core.Extensions
   href: UltraForce.html
