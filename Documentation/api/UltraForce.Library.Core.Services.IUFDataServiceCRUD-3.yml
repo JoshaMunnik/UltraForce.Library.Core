@@ -77,15 +77,15 @@ items:
   summary: Finds a record instance for a certain id.
   example: []
   syntax:
-    content: Task<TServiceModel?> FindForIdAsync(TKey anId)
+    content: Task<TServiceModel?> FindForIdAsync(TKey id)
     parameters:
-    - id: anId
+    - id: id
       type: '{TKey}'
       description: Id to find record for
     return:
       type: System.Threading.Tasks.Task{{TServiceModel}}
       description: instance or null when not found
-    content.vb: Function FindForIdAsync(anId As TKey) As Task(Of TServiceModel)
+    content.vb: Function FindForIdAsync(id As TKey) As Task(Of TServiceModel)
   overload: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.FindForIdAsync*
   nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).FindForIdAsync(TKey)
   fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).FindForIdAsync(TKey)
@@ -147,15 +147,15 @@ items:
   summary: Adds a new record to the data.
   example: []
   syntax:
-    content: Task<TServiceModel> AddAsync(TServiceModel aData)
+    content: Task<TServiceModel> AddAsync(TServiceModel data)
     parameters:
-    - id: aData
+    - id: data
       type: '{TServiceModel}'
       description: Record to add. Properties within in this value might get updated.
     return:
       type: System.Threading.Tasks.Task{{TServiceModel}}
-      description: The record that has been added, this value might be a different instance then aData.
-    content.vb: Function AddAsync(aData As TServiceModel) As Task(Of TServiceModel)
+      description: The record that has been added, this value might be a different instance then data.
+    content.vb: Function AddAsync(data As TServiceModel) As Task(Of TServiceModel)
   overload: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.AddAsync*
   nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).AddAsync(TServiceModel)
   fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).AddAsync(TServiceModel)
@@ -184,15 +184,15 @@ items:
   summary: Updates the data with an existing record.
   example: []
   syntax:
-    content: Task<TServiceModel> UpdateAsync(TServiceModel aData)
+    content: Task<TServiceModel> UpdateAsync(TServiceModel data)
     parameters:
-    - id: aData
+    - id: data
       type: '{TServiceModel}'
       description: Record to update with. Properties within in this value might get updated.
     return:
       type: System.Threading.Tasks.Task{{TServiceModel}}
-      description: The updated record, this value might be a different instance then aData.
-    content.vb: Function UpdateAsync(aData As TServiceModel) As Task(Of TServiceModel)
+      description: The updated record, this value might be a different instance then data.
+    content.vb: Function UpdateAsync(data As TServiceModel) As Task(Of TServiceModel)
   overload: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.UpdateAsync*
   nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).UpdateAsync(TServiceModel)
   fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).UpdateAsync(TServiceModel)
@@ -221,14 +221,14 @@ items:
   summary: Removes a record from the data.
   example: []
   syntax:
-    content: Task RemoveAsync(TServiceModel aLocation)
+    content: Task RemoveAsync(TServiceModel data)
     parameters:
-    - id: aLocation
+    - id: data
       type: '{TServiceModel}'
       description: Record to remove
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Function RemoveAsync(aLocation As TServiceModel) As Task
+    content.vb: Function RemoveAsync(data As TServiceModel) As Task
   overload: UltraForce.Library.Core.Services.IUFDataServiceCRUD`3.RemoveAsync*
   nameWithType.vb: IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).RemoveAsync(TServiceModel)
   fullName.vb: UltraForce.Library.Core.Services.IUFDataServiceCRUD(Of TServiceModel, TKey, TEntity).RemoveAsync(TServiceModel)

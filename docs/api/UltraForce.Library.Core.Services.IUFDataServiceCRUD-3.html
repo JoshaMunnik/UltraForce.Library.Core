@@ -163,12 +163,12 @@ to a single entity type and each record is identified by a single key value.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;TServiceModel&gt; AddAsync(TServiceModel aData)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;TServiceModel&gt; AddAsync(TServiceModel data)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aData</code> <span class="xref">TServiceModel</span></dt>
+    <dt><code>data</code> <span class="xref">TServiceModel</span></dt>
     <dd><p>Record to add. Properties within in this value might get updated.</p>
 </dd>
   </dl>
@@ -176,7 +176,7 @@ to a single entity type and each record is identified by a single key value.</p>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TServiceModel&gt;</dt>
-    <dd><p>The record that has been added, this value might be a different instance then aData.</p>
+    <dd><p>The record that has been added, this value might be a different instance then data.</p>
 </dd>
   </dl>
 
@@ -235,12 +235,12 @@ to a single entity type and each record is identified by a single key value.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;TServiceModel?&gt; FindForIdAsync(TKey anId)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;TServiceModel?&gt; FindForIdAsync(TKey id)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anId</code> <span class="xref">TKey</span></dt>
+    <dt><code>id</code> <span class="xref">TKey</span></dt>
     <dd><p>Id to find record for</p>
 </dd>
   </dl>
@@ -274,12 +274,12 @@ to a single entity type and each record is identified by a single key value.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task RemoveAsync(TServiceModel aLocation)</code></pre>
+    <pre><code class="lang-csharp hljs">Task RemoveAsync(TServiceModel data)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aLocation</code> <span class="xref">TServiceModel</span></dt>
+    <dt><code>data</code> <span class="xref">TServiceModel</span></dt>
     <dd><p>Record to remove</p>
 </dd>
   </dl>
@@ -312,12 +312,12 @@ to a single entity type and each record is identified by a single key value.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;TServiceModel&gt; UpdateAsync(TServiceModel aData)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;TServiceModel&gt; UpdateAsync(TServiceModel data)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aData</code> <span class="xref">TServiceModel</span></dt>
+    <dt><code>data</code> <span class="xref">TServiceModel</span></dt>
     <dd><p>Record to update with. Properties within in this value might get updated.</p>
 </dd>
   </dl>
@@ -325,7 +325,7 @@ to a single entity type and each record is identified by a single key value.</p>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TServiceModel&gt;</dt>
-    <dd><p>The updated record, this value might be a different instance then aData.</p>
+    <dd><p>The updated record, this value might be a different instance then data.</p>
 </dd>
   </dl>
 

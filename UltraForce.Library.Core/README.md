@@ -2,6 +2,9 @@
 https://joshamunnik.github.io/UltraForce.Library.Core/index.html
 
 ## Version history
+1.0.13
+- updated used packages
+
 1.0.12
 - created version history section in documentation
 - added `UFCompareToAttribute`, `UFCompareOption` and `UFPropertyInfoExtensions`
