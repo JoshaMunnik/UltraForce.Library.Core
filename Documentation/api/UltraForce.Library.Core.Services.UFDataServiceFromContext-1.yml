@@ -6,10 +6,9 @@ items:
   parent: UltraForce.Library.Core.Services
   children:
   - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.#ctor(`0,System.Boolean)
+  - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.#ctor(`0,`0,System.Boolean)
   - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.AddAsync``2(``0)
   - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Changed
-  - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CheckContext
-  - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Context
   - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachEntity(System.Object)
   - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachTrackedEntries
   - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Dispose
@@ -19,14 +18,16 @@ items:
   - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyFromServiceModel``3(``0)
   - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyNameFromEntity``1
   - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.LockAsync
+  - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.ReadContext
   - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.RemoveAsync``2(``0)
   - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SaveChangesAsync
-  - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``1(System.String,System.String,``0,``0,System.String)
-  - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String)
+  - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``1(System.String,System.String,``0,``0,System.String,System.Nullable{System.DateTime})
+  - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String,System.Nullable{System.DateTime})
   - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.TransactionAsync(System.Func{System.Threading.Tasks.Task})
   - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.TransactionAsync``1(System.Func{System.Threading.Tasks.Task{``0}})
   - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.UnlockAsync
   - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.UpdateAsync``2(``0)
+  - UltraForce.Library.Core.Services.UFDataServiceFromContext`1.WriteContext
   langs:
   - csharp
   - vb
@@ -41,20 +42,32 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFDataServiceFromContext
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 53
+    startLine: 59
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: >-
     <xref href="UltraForce.Library.Core.Services.UFDataServiceFromContext%601" data-throw-if-not-resolved="false"></xref> is a base class to implement a data
 
-    service using a <xref href="Microsoft.EntityFrameworkCore.DbContext" data-throw-if-not-resolved="false"></xref> to manage underlying entities. 
+    service using a <xref href="Microsoft.EntityFrameworkCore.DbContext" data-throw-if-not-resolved="false"></xref> to manage underlying entities.
 
     <p>
 
     The class implements a locking mechanism to minimize the
 
     <xref href="Microsoft.EntityFrameworkCore.DbContext.SaveChanges" data-throw-if-not-resolved="false"></xref> calls.
+
+    </p>
+
+    <p>
+
+    The class defines both a read and write context, to support in-memory copies to read
+
+    from. All protected methods that perform some operation that changes the database
+
+    will use the write context, while all methods that only read data will use the read
+
+    context.
 
     </p>
   remarks: Interface definition for the data service should inherit from <xref href="UltraForce.Library.Core.Services.IUFDataService" data-throw-if-not-resolved="false"></xref>.
@@ -103,19 +116,19 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: .ctor
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 94
+    startLine: 112
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: Constructs an instance of <xref href="UltraForce.Library.Core.Services.UFDataServiceFromContext%601" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: protected UFDataServiceFromContext(TContext aContext, bool aDisableTracking = false)
+    content: protected UFDataServiceFromContext(TContext context, bool disableTracking = false)
     parameters:
-    - id: aContext
+    - id: context
       type: '{TContext}'
-      description: Database context to use
-    - id: aDisableTracking
+      description: Database context to use for both read and write operations.
+    - id: disableTracking
       type: System.Boolean
       description: >-
         When true tell <xref href="Microsoft.EntityFrameworkCore.DbContext.ChangeTracker" data-throw-if-not-resolved="false"></xref> to stop tracking and reset the state
@@ -126,16 +139,78 @@ items:
 
         <p>
 
-        To disable tracking everywhere, use
+        To disable the tracking everywhere, the method assigns:
 
         <pre><code class="lang-csharp">{context}.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;</code></pre>
 
+        And disables auto-detect changes with:
+
+        <pre><code class="lang-csharp">{context}.ChangeTracker.AutoDetectChangesEnabled = false;</code></pre>
+
         </p>
-    content.vb: Protected Sub New(aContext As TContext, aDisableTracking As Boolean = False)
+    content.vb: Protected Sub New(context As TContext, disableTracking As Boolean = False)
   overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.#ctor*
   nameWithType.vb: UFDataServiceFromContext(Of TContext).New(TContext, Boolean)
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).New(TContext, Boolean)
   name.vb: New(TContext, Boolean)
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.#ctor(`0,`0,System.Boolean)
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.#ctor(`0,`0,System.Boolean)
+  id: '#ctor(`0,`0,System.Boolean)'
+  parent: UltraForce.Library.Core.Services.UFDataServiceFromContext`1
+  langs:
+  - csharp
+  - vb
+  name: UFDataServiceFromContext(TContext, TContext, bool)
+  nameWithType: UFDataServiceFromContext<TContext>.UFDataServiceFromContext(TContext, TContext, bool)
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.UFDataServiceFromContext(TContext, TContext, bool)
+  type: Constructor
+  source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
+    id: .ctor
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+    startLine: 139
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: Constructs an instance of <xref href="UltraForce.Library.Core.Services.UFDataServiceFromContext%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected UFDataServiceFromContext(TContext readContext, TContext writeContext, bool disableTracking = false)
+    parameters:
+    - id: readContext
+      type: '{TContext}'
+      description: Database context to use for read operations.
+    - id: writeContext
+      type: '{TContext}'
+      description: Database context to use for write operations.
+    - id: disableTracking
+      type: System.Boolean
+      description: >-
+        When true tell <xref href="Microsoft.EntityFrameworkCore.DbContext.ChangeTracker" data-throw-if-not-resolved="false"></xref> to stop tracking and reset the state
+
+        of any tracked entry to <xref href="Microsoft.EntityFrameworkCore.EntityState.Detached" data-throw-if-not-resolved="false"></xref> with
+
+        the <xref href="UltraForce.Library.Core.Services.UFDataServiceFromContext%601.SaveChangesAsync" data-throw-if-not-resolved="false"></xref> call.
+
+        <p>
+
+        To disable the tracking everywhere, the method assigns:
+
+        <pre><code class="lang-csharp">{context}.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;</code></pre>
+
+        And disables auto-detect changes with:
+
+        <pre><code class="lang-csharp">{context}.ChangeTracker.AutoDetectChangesEnabled = false;</code></pre>
+
+        </p>
+    content.vb: Protected Sub New(readContext As TContext, writeContext As TContext, disableTracking As Boolean = False)
+  overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.#ctor*
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).New(TContext, TContext, Boolean)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).New(TContext, TContext, Boolean)
+  name.vb: New(TContext, TContext, Boolean)
 - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Dispose
   commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Dispose
   id: Dispose
@@ -154,15 +229,15 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Dispose
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 108
+    startLine: 165
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
   example: []
   syntax:
-    content: public void Dispose()
-    content.vb: Public Sub Dispose()
+    content: public virtual void Dispose()
+    content.vb: Public Overridable Sub Dispose()
   overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Dispose*
   implements:
   - System.IDisposable.Dispose
@@ -186,7 +261,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: DisposeAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 114
+    startLine: 173
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -221,7 +296,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: LockAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 125
+    startLine: 186
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -264,7 +339,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UnlockAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 132
+    startLine: 193
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -283,39 +358,78 @@ items:
   - UltraForce.Library.Core.Services.IUFDataService.UnlockAsync
   nameWithType.vb: UFDataServiceFromContext(Of TContext).UnlockAsync()
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).UnlockAsync()
-- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Context
-  commentId: P:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Context
-  id: Context
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.ReadContext
+  commentId: P:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.ReadContext
+  id: ReadContext
   parent: UltraForce.Library.Core.Services.UFDataServiceFromContext`1
   langs:
   - csharp
   - vb
-  name: Context
-  nameWithType: UFDataServiceFromContext<TContext>.Context
-  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.Context
+  name: ReadContext
+  nameWithType: UFDataServiceFromContext<TContext>.ReadContext
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.ReadContext
   type: Property
   source:
     remote:
       path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
-    id: Context
+    id: ReadContext
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 156
+    startLine: 218
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
-  summary: The context or null if the service has been disposed.
+  summary: >-
+    The context to read data. If the instance is disposed, this property will throw an
+
+    exception.
   example: []
   syntax:
-    content: protected TContext? Context { get; }
+    content: protected TContext ReadContext { get; }
     parameters: []
     return:
       type: '{TContext}'
-    content.vb: Protected Property Context As TContext
-  overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Context*
-  nameWithType.vb: UFDataServiceFromContext(Of TContext).Context
-  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).Context
+    content.vb: Protected ReadOnly Property ReadContext As TContext
+  overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.ReadContext*
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).ReadContext
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).ReadContext
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.WriteContext
+  commentId: P:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.WriteContext
+  id: WriteContext
+  parent: UltraForce.Library.Core.Services.UFDataServiceFromContext`1
+  langs:
+  - csharp
+  - vb
+  name: WriteContext
+  nameWithType: UFDataServiceFromContext<TContext>.WriteContext
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.WriteContext
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
+    id: WriteContext
+    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
+    startLine: 234
+  assemblies:
+  - UltraForce.Library.Core
+  namespace: UltraForce.Library.Core.Services
+  summary: >-
+    The context to perform operation with that changes the database. If the instance is
+
+    disposed, this property will throw an exception.
+  example: []
+  syntax:
+    content: protected TContext WriteContext { get; }
+    parameters: []
+    return:
+      type: '{TContext}'
+    content.vb: Protected ReadOnly Property WriteContext As TContext
+  overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.WriteContext*
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).WriteContext
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).WriteContext
 - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Changed
   commentId: P:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Changed
   id: Changed
@@ -334,7 +448,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Changed
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 162
+    startLine: 250
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -370,19 +484,19 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: DetachEntity
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 172
+    startLine: 260
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: Stops an entity from being tracked by the entity framework.
   example: []
   syntax:
-    content: protected void DetachEntity(object anEntity)
+    content: protected void DetachEntity(object entity)
     parameters:
-    - id: anEntity
+    - id: entity
       type: System.Object
       description: ''
-    content.vb: Protected Sub DetachEntity(anEntity As Object)
+    content.vb: Protected Sub DetachEntity(entity As Object)
   overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachEntity*
   nameWithType.vb: UFDataServiceFromContext(Of TContext).DetachEntity(Object)
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).DetachEntity(Object)
@@ -405,16 +519,16 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: FindForIdAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 185
+    startLine: 275
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: Finds a entity for a certain id and convert it to a service model.
   example: []
   syntax:
-    content: 'protected Task<TServiceModel?> FindForIdAsync<TServiceModel, TEntity, TKey>(TKey anId) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class, new()'
+    content: 'protected Task<TServiceModel?> FindForIdAsync<TServiceModel, TEntity, TKey>(TKey id) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class, new()'
     parameters:
-    - id: anId
+    - id: id
       type: '{TKey}'
       description: Id to find entity for
     typeParameters:
@@ -427,7 +541,7 @@ items:
     return:
       type: System.Threading.Tasks.Task{{TServiceModel}}
       description: Service model instance or null if no entity could be found
-    content.vb: Protected Function FindForIdAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As {Class, New}, TKey)(anId As TKey) As Task(Of TServiceModel)
+    content.vb: Protected Function FindForIdAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As {Class, New}, TKey)(id As TKey) As Task(Of TServiceModel)
   overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.FindForIdAsync*
   nameWithType.vb: UFDataServiceFromContext(Of TContext).FindForIdAsync(Of TServiceModel, TEntity, TKey)(TKey)
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).FindForIdAsync(Of TServiceModel, TEntity, TKey)(TKey)
@@ -450,7 +564,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: FindAllAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 203
+    startLine: 294
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -489,7 +603,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AddAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 232
+    startLine: 322
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -501,9 +615,9 @@ items:
     might include updated fields (like the id of the entity).
   example: []
   syntax:
-    content: 'protected Task<TServiceModel> AddAsync<TServiceModel, TEntity>(TServiceModel aData) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class, new()'
+    content: 'protected Task<TServiceModel> AddAsync<TServiceModel, TEntity>(TServiceModel data) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class, new()'
     parameters:
-    - id: aData
+    - id: data
       type: '{TServiceModel}'
       description: Service model instance to add
     typeParameters:
@@ -514,7 +628,7 @@ items:
     return:
       type: System.Threading.Tasks.Task{{TServiceModel}}
       description: The service model build from the added entity; this is a new instance
-    content.vb: Protected Function AddAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As {Class, New})(aData As TServiceModel) As Task(Of TServiceModel)
+    content.vb: Protected Function AddAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As {Class, New})(data As TServiceModel) As Task(Of TServiceModel)
   overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.AddAsync*
   nameWithType.vb: UFDataServiceFromContext(Of TContext).AddAsync(Of TServiceModel, TEntity)(TServiceModel)
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).AddAsync(Of TServiceModel, TEntity)(TServiceModel)
@@ -537,7 +651,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UpdateAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 256
+    startLine: 347
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -551,9 +665,9 @@ items:
     date/time field).
   example: []
   syntax:
-    content: 'protected Task<TServiceModel> UpdateAsync<TServiceModel, TEntity>(TServiceModel aData) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class, new()'
+    content: 'protected Task<TServiceModel> UpdateAsync<TServiceModel, TEntity>(TServiceModel data) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class, new()'
     parameters:
-    - id: aData
+    - id: data
       type: '{TServiceModel}'
       description: Data to update entity with
     typeParameters:
@@ -564,7 +678,7 @@ items:
     return:
       type: System.Threading.Tasks.Task{{TServiceModel}}
       description: The service model build from the updated entity; this is a new instance
-    content.vb: Protected Function UpdateAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As {Class, New})(aData As TServiceModel) As Task(Of TServiceModel)
+    content.vb: Protected Function UpdateAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As {Class, New})(data As TServiceModel) As Task(Of TServiceModel)
   overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.UpdateAsync*
   nameWithType.vb: UFDataServiceFromContext(Of TContext).UpdateAsync(Of TServiceModel, TEntity)(TServiceModel)
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).UpdateAsync(Of TServiceModel, TEntity)(TServiceModel)
@@ -587,16 +701,16 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: RemoveAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 283
+    startLine: 375
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: Removes an entity represented by a service model instance.
   example: []
   syntax:
-    content: 'protected Task RemoveAsync<TServiceModel, TEntity>(TServiceModel aData) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class, new()'
+    content: 'protected Task RemoveAsync<TServiceModel, TEntity>(TServiceModel data) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class, new()'
     parameters:
-    - id: aData
+    - id: data
       type: '{TServiceModel}'
       description: Data that represents an entity
     typeParameters:
@@ -606,7 +720,7 @@ items:
       description: Entity type
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Protected Function RemoveAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As {Class, New})(aData As TServiceModel) As Task
+    content.vb: Protected Function RemoveAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As {Class, New})(data As TServiceModel) As Task
   overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.RemoveAsync*
   nameWithType.vb: UFDataServiceFromContext(Of TContext).RemoveAsync(Of TServiceModel, TEntity)(TServiceModel)
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).RemoveAsync(Of TServiceModel, TEntity)(TServiceModel)
@@ -629,7 +743,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SaveChangesAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 309
+    startLine: 402
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -640,7 +754,7 @@ items:
 
     <p>
 
-    If tracking was disabled, this method will also call 
+    If tracking was disabled, this method will also call
 
     <xref href="UltraForce.Library.Core.Services.UFDataServiceFromContext%601.DetachTrackedEntries" data-throw-if-not-resolved="false"></xref>.
 
@@ -672,7 +786,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: DetachTrackedEntries
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 336
+    startLine: 428
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -711,7 +825,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: TransactionAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 361
+    startLine: 452
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -723,14 +837,14 @@ items:
     by other code.
   example: []
   syntax:
-    content: protected Task TransactionAsync(Func<Task> anAction)
+    content: protected Task TransactionAsync(Func<Task> action)
     parameters:
-    - id: anAction
+    - id: action
       type: System.Func{System.Threading.Tasks.Task}
       description: Action to execute
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Protected Function TransactionAsync(anAction As Func(Of Task)) As Task
+    content.vb: Protected Function TransactionAsync(action As Func(Of Task)) As Task
   overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.TransactionAsync*
   nameWithType.vb: UFDataServiceFromContext(Of TContext).TransactionAsync(Func(Of Task))
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).TransactionAsync(System.Func(Of System.Threading.Tasks.Task))
@@ -753,7 +867,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: TransactionAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 393
+    startLine: 485
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -765,9 +879,9 @@ items:
     other code.
   example: []
   syntax:
-    content: protected Task<T> TransactionAsync<T>(Func<Task<T>> anAction)
+    content: protected Task<T> TransactionAsync<T>(Func<Task<T>> action)
     parameters:
-    - id: anAction
+    - id: action
       type: System.Func{System.Threading.Tasks.Task{{T}}}
       description: Action to execute
     typeParameters:
@@ -775,21 +889,21 @@ items:
     return:
       type: System.Threading.Tasks.Task{{T}}
       description: The result of the action
-    content.vb: Protected Function TransactionAsync(Of T)(anAction As Func(Of Task(Of T))) As Task(Of T)
+    content.vb: Protected Function TransactionAsync(Of T)(action As Func(Of Task(Of T))) As Task(Of T)
   overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.TransactionAsync*
   nameWithType.vb: UFDataServiceFromContext(Of TContext).TransactionAsync(Of T)(Func(Of Task(Of T)))
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).TransactionAsync(Of T)(System.Func(Of System.Threading.Tasks.Task(Of T)))
   name.vb: TransactionAsync(Of T)(Func(Of Task(Of T)))
-- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String)
-  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String)
-  id: SwapAsync``2(System.String,System.String,``1,``1,System.String)
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String,System.Nullable{System.DateTime})
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String,System.Nullable{System.DateTime})
+  id: SwapAsync``2(System.String,System.String,``1,``1,System.String,System.Nullable{System.DateTime})
   parent: UltraForce.Library.Core.Services.UFDataServiceFromContext`1
   langs:
   - csharp
   - vb
-  name: SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string?)
-  nameWithType: UFDataServiceFromContext<TContext>.SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string?)
-  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string?)
+  name: SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string?, DateTime?)
+  nameWithType: UFDataServiceFromContext<TContext>.SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string?, DateTime?)
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string?, System.DateTime?)
   type: Method
   source:
     remote:
@@ -798,14 +912,14 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SwapAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 433
+    startLine: 527
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: >-
     Swaps values of two records in a table using a single update statement (so that any unique
 
-    index constraint does not generate an error). 
+    index constraint does not generate an error).
 
     <p>
 
@@ -822,23 +936,26 @@ items:
     </p>
   example: []
   syntax:
-    content: 'protected virtual Task SwapAsync<TEntity, TKey>(string aTableName, string aColumnName, TKey aFirstId, TKey aSecondId, string? aModifiedName = null) where TEntity : class where TKey : notnull'
+    content: 'protected virtual Task SwapAsync<TEntity, TKey>(string tableName, string columnName, TKey firstId, TKey secondId, string? modifiedName = null, DateTime? modifiedDate = null) where TEntity : class where TKey : notnull'
     parameters:
-    - id: aTableName
+    - id: tableName
       type: System.String
       description: Name of table
-    - id: aColumnName
+    - id: columnName
       type: System.String
       description: Name of column
-    - id: aFirstId
+    - id: firstId
       type: '{TKey}'
       description: First id to swap value of
-    - id: aSecondId
+    - id: secondId
       type: '{TKey}'
       description: Second id to swap value of
-    - id: aModifiedName
+    - id: modifiedName
       type: System.String
-      description: When non null, assign DateTime.Now to this column
+      description: When not null, assign <code>modifiedDate</code> to this column
+    - id: modifiedDate
+      type: System.Nullable{System.DateTime}
+      description: When null, use <code>DateTime.UtcNow();</code>
     typeParameters:
     - id: TEntity
       description: Type of the entity record
@@ -846,21 +963,21 @@ items:
       description: Type of the id values
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Protected Overridable Function SwapAsync(Of TEntity As Class, TKey)(aTableName As String, aColumnName As String, aFirstId As TKey, aSecondId As TKey, aModifiedName As String = Nothing) As Task
+    content.vb: Protected Overridable Function SwapAsync(Of TEntity As Class, TKey)(tableName As String, columnName As String, firstId As TKey, secondId As TKey, modifiedName As String = Nothing, modifiedDate As Date? = Nothing) As Task
   overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync*
-  nameWithType.vb: UFDataServiceFromContext(Of TContext).SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String)
-  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String)
-  name.vb: SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String)
-- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``1(System.String,System.String,``0,``0,System.String)
-  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``1(System.String,System.String,``0,``0,System.String)
-  id: SwapAsync``1(System.String,System.String,``0,``0,System.String)
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String, Date?)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String, Date?)
+  name.vb: SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String, Date?)
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``1(System.String,System.String,``0,``0,System.String,System.Nullable{System.DateTime})
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``1(System.String,System.String,``0,``0,System.String,System.Nullable{System.DateTime})
+  id: SwapAsync``1(System.String,System.String,``0,``0,System.String,System.Nullable{System.DateTime})
   parent: UltraForce.Library.Core.Services.UFDataServiceFromContext`1
   langs:
   - csharp
   - vb
-  name: SwapAsync<T>(string, string, T, T, string?)
-  nameWithType: UFDataServiceFromContext<TContext>.SwapAsync<T>(string, string, T, T, string?)
-  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SwapAsync<T>(string, string, T, T, string?)
+  name: SwapAsync<T>(string, string, T, T, string?, DateTime?)
+  nameWithType: UFDataServiceFromContext<TContext>.SwapAsync<T>(string, string, T, T, string?, DateTime?)
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SwapAsync<T>(string, string, T, T, string?, System.DateTime?)
   type: Method
   source:
     remote:
@@ -869,12 +986,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SwapAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 494
+    startLine: 589
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: >-
-    Determine primary key and swap two entities calling <xref href="UltraForce.Library.Core.Services.UFDataServiceFromContext%601.SwapAsync%60%602(System.String%2cSystem.String%2c%60%601%2c%60%601%2cSystem.String)" data-throw-if-not-resolved="false"></xref>. 
+    Determine primary key and swap two entities calling <xref href="UltraForce.Library.Core.Services.UFDataServiceFromContext%601.SwapAsync%60%602(System.String%2cSystem.String%2c%60%601%2c%60%601%2cSystem.String%2cSystem.Nullable%7bSystem.DateTime%7d)" data-throw-if-not-resolved="false"></xref>.
 
     <p>
 
@@ -885,33 +1002,36 @@ items:
     </p>
   example: []
   syntax:
-    content: 'protected virtual Task SwapAsync<T>(string aTableName, string aColumnName, T aFirst, T aSecond, string? aModifiedName = null) where T : class'
+    content: 'protected virtual Task SwapAsync<T>(string tableName, string columnName, T first, T second, string? modifiedName = null, DateTime? modifiedDate = null) where T : class'
     parameters:
-    - id: aTableName
+    - id: tableName
       type: System.String
       description: Name of table
-    - id: aColumnName
+    - id: columnName
       type: System.String
       description: Name of column
-    - id: aFirst
+    - id: first
       type: '{T}'
       description: First entity to swap value of
-    - id: aSecond
+    - id: second
       type: '{T}'
       description: Second entity to swap value of
-    - id: aModifiedName
+    - id: modifiedName
       type: System.String
-      description: When non null, assign DateTime.Now to this column
+      description: When not null, assign <code>modifiedDate</code> to this column
+    - id: modifiedDate
+      type: System.Nullable{System.DateTime}
+      description: When null, use <code>DateTime.UtcNow();</code>
     typeParameters:
     - id: T
       description: ''
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Protected Overridable Function SwapAsync(Of T As Class)(aTableName As String, aColumnName As String, aFirst As T, aSecond As T, aModifiedName As String = Nothing) As Task
+    content.vb: Protected Overridable Function SwapAsync(Of T As Class)(tableName As String, columnName As String, first As T, second As T, modifiedName As String = Nothing, modifiedDate As Date? = Nothing) As Task
   overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync*
-  nameWithType.vb: UFDataServiceFromContext(Of TContext).SwapAsync(Of T)(String, String, T, T, String)
-  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).SwapAsync(Of T)(String, String, T, T, String)
-  name.vb: SwapAsync(Of T)(String, String, T, T, String)
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).SwapAsync(Of T)(String, String, T, T, String, Date?)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).SwapAsync(Of T)(String, String, T, T, String, Date?)
+  name.vb: SwapAsync(Of T)(String, String, T, T, String, Date?)
 - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyNameFromEntity``1
   commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyNameFromEntity``1
   id: GetPrimaryKeyNameFromEntity``1
@@ -930,7 +1050,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: GetPrimaryKeyNameFromEntity
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 531
+    startLine: 628
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -980,7 +1100,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: GetPrimaryKeyFromServiceModel
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 567
+    startLine: 663
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -999,7 +1119,7 @@ items:
 
     <xref href="UltraForce.Library.Core.Services.UFDataServiceFromContext%601.GetPrimaryKeyNameFromEntity%60%601" data-throw-if-not-resolved="false"></xref> and caches
 
-    it for future calls. 
+    it for future calls.
 
     </p>
 
@@ -1010,9 +1130,9 @@ items:
     </remarks>
   example: []
   syntax:
-    content: 'protected virtual TKey GetPrimaryKeyFromServiceModel<TServiceModel, TEntity, TKey>(TServiceModel aServiceData) where TEntity : class'
+    content: 'protected virtual TKey GetPrimaryKeyFromServiceModel<TServiceModel, TEntity, TKey>(TServiceModel serviceData) where TEntity : class'
     parameters:
-    - id: aServiceData
+    - id: serviceData
       type: '{TServiceModel}'
       description: ''
     typeParameters:
@@ -1022,7 +1142,7 @@ items:
     return:
       type: '{TKey}'
       description: ''
-    content.vb: Protected Overridable Function GetPrimaryKeyFromServiceModel(Of TServiceModel, TEntity As Class, TKey)(aServiceData As TServiceModel) As TKey
+    content.vb: Protected Overridable Function GetPrimaryKeyFromServiceModel(Of TServiceModel, TEntity As Class, TKey)(serviceData As TServiceModel) As TKey
   overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyFromServiceModel*
   exceptions:
   - type: System.Data.MissingPrimaryKeyException
@@ -1031,40 +1151,6 @@ items:
   nameWithType.vb: UFDataServiceFromContext(Of TContext).GetPrimaryKeyFromServiceModel(Of TServiceModel, TEntity, TKey)(TServiceModel)
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).GetPrimaryKeyFromServiceModel(Of TServiceModel, TEntity, TKey)(TServiceModel)
   name.vb: GetPrimaryKeyFromServiceModel(Of TServiceModel, TEntity, TKey)(TServiceModel)
-- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CheckContext
-  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CheckContext
-  id: CheckContext
-  parent: UltraForce.Library.Core.Services.UFDataServiceFromContext`1
-  langs:
-  - csharp
-  - vb
-  name: CheckContext()
-  nameWithType: UFDataServiceFromContext<TContext>.CheckContext()
-  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.CheckContext()
-  type: Method
-  source:
-    remote:
-      path: UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
-    id: CheckContext
-    path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 593
-  assemblies:
-  - UltraForce.Library.Core
-  namespace: UltraForce.Library.Core.Services
-  summary: Checks if the context is not null, throws an exception if it is.
-  example: []
-  syntax:
-    content: protected void CheckContext()
-    content.vb: Protected Sub CheckContext()
-  overload: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CheckContext*
-  exceptions:
-  - type: System.Exception
-    commentId: T:System.Exception
-    description: ''
-  nameWithType.vb: UFDataServiceFromContext(Of TContext).CheckContext()
-  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).CheckContext()
 references:
 - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1
   commentId: T:UltraForce.Library.Core.Services.UFDataServiceFromContext`1
@@ -1893,14 +1979,22 @@ references:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.UnlockAsync
   nameWithType.vb: UFDataServiceFromContext(Of TContext).UnlockAsync
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).UnlockAsync
-- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Context*
-  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Context
-  href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_Context
-  name: Context
-  nameWithType: UFDataServiceFromContext<TContext>.Context
-  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.Context
-  nameWithType.vb: UFDataServiceFromContext(Of TContext).Context
-  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).Context
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.ReadContext*
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.ReadContext
+  href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_ReadContext
+  name: ReadContext
+  nameWithType: UFDataServiceFromContext<TContext>.ReadContext
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.ReadContext
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).ReadContext
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).ReadContext
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.WriteContext*
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.WriteContext
+  href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_WriteContext
+  name: WriteContext
+  nameWithType: UFDataServiceFromContext<TContext>.WriteContext
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.WriteContext
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).WriteContext
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).WriteContext
 - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Changed*
   commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Changed
   href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_Changed
@@ -2279,7 +2373,7 @@ references:
   - name: )
 - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync*
   commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync
-  href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__2_System_String_System_String___1___1_System_String_
+  href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__2_System_String_System_String___1___1_System_String_System_Nullable_System_DateTime__
   name: SwapAsync
   nameWithType: UFDataServiceFromContext<TContext>.SwapAsync
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SwapAsync
@@ -2296,20 +2390,71 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String)
-  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String)
-  isExternal: true
-  href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__2_System_String_System_String___1___1_System_String_
-  name: SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string)
-  nameWithType: UFDataServiceFromContext<TContext>.SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string)
-  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string)
-  nameWithType.vb: UFDataServiceFromContext(Of TContext).SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String)
-  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String)
-  name.vb: SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String)
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
   spec.csharp:
-  - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String)
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String,System.Nullable{System.DateTime})
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String,System.Nullable{System.DateTime})
+  isExternal: true
+  href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__2_System_String_System_String___1___1_System_String_System_Nullable_System_DateTime__
+  name: SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string, DateTime?)
+  nameWithType: UFDataServiceFromContext<TContext>.SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string, DateTime?)
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string, System.DateTime?)
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String, Date?)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String, Date?)
+  name.vb: SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String, Date?)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String,System.Nullable{System.DateTime})
     name: SwapAsync
-    href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__2_System_String_System_String___1___1_System_String_
+    href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__2_System_String_System_String___1___1_System_String_System_Nullable_System_DateTime__
   - name: <
   - name: TEntity
   - name: ','
@@ -2339,11 +2484,18 @@ references:
     name: string
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
   - name: )
   spec.vb:
-  - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String)
+  - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String,System.Nullable{System.DateTime})
     name: SwapAsync
-    href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__2_System_String_System_String___1___1_System_String_
+    href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__2_System_String_System_String___1___1_System_String_System_Nullable_System_DateTime__
   - name: (
   - name: Of
   - name: " "
@@ -2375,6 +2527,13 @@ references:
     name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
   - name: )
 - uid: Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry.ReloadAsync(System.Threading.CancellationToken)
   commentId: M:Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry.ReloadAsync(System.Threading.CancellationToken)
@@ -2467,18 +2626,3 @@ references:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.GetPrimaryKeyFromServiceModel
   nameWithType.vb: UFDataServiceFromContext(Of TContext).GetPrimaryKeyFromServiceModel
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).GetPrimaryKeyFromServiceModel
-- uid: System.Exception
-  commentId: T:System.Exception
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.exception
-  name: Exception
-  nameWithType: Exception
-  fullName: System.Exception
-- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CheckContext*
-  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CheckContext
-  href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_CheckContext
-  name: CheckContext
-  nameWithType: UFDataServiceFromContext<TContext>.CheckContext
-  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.CheckContext
-  nameWithType.vb: UFDataServiceFromContext(Of TContext).CheckContext
-  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).CheckContext

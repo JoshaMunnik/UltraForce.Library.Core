@@ -135,7 +135,7 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
 
   <h3 id="UltraForce_Library_Core_Services_IUFEmailBuilderService_Attachment_System_String_System_String_System_BinaryData_" data-uid="UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachment(System.String,System.String,System.BinaryData)">
   Attachment(string, string, BinaryData)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L159"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds an attachment.</p>
@@ -143,16 +143,16 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IUFEmailBuilderService Attachment(string aName, string aContentTYpe, BinaryData aData)</code></pre>
+    <pre><code class="lang-csharp hljs">IUFEmailBuilderService Attachment(string name, string contentTYpe, BinaryData data)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>aContentTYpe</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>contentTYpe</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>aData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.binarydata">BinaryData</a></dt>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.binarydata">BinaryData</a></dt>
     <dd></dd>
   </dl>
 
@@ -176,7 +176,7 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
 
   <h3 id="UltraForce_Library_Core_Services_IUFEmailBuilderService_Attachments_System_String_System_Collections_Generic_IDictionary_System_String_System_BinaryData__" data-uid="UltraForce.Library.Core.Services.IUFEmailBuilderService.Attachments(System.String,System.Collections.Generic.IDictionary{System.String,System.BinaryData})">
   Attachments(string, IDictionary&lt;string, BinaryData&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L171"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds attachments of the same content type.</p>
@@ -184,14 +184,14 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IUFEmailBuilderService Attachments(string aContentType, IDictionary&lt;string, BinaryData&gt; anAttachments)</code></pre>
+    <pre><code class="lang-csharp hljs">IUFEmailBuilderService Attachments(string contentType, IDictionary&lt;string, BinaryData&gt; attachments)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aContentType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>contentType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>anAttachments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.binarydata">BinaryData</a>&gt;</dt>
+    <dt><code>attachments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.binarydata">BinaryData</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -215,7 +215,7 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
 
   <h3 id="UltraForce_Library_Core_Services_IUFEmailBuilderService_Bcc_System_Collections_Generic_IDictionary_System_String_System_String__" data-uid="UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(System.Collections.Generic.IDictionary{System.String,System.String})">
   Bcc(IDictionary&lt;string, string?&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds multiple bcc recipients.</p>
@@ -223,12 +223,12 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IUFEmailBuilderService Bcc(IDictionary&lt;string, string?&gt; aEmailWithNames)</code></pre>
+    <pre><code class="lang-csharp hljs">IUFEmailBuilderService Bcc(IDictionary&lt;string, string?&gt; emailWithNames)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aEmailWithNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><code>emailWithNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -252,7 +252,7 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
 
   <h3 id="UltraForce_Library_Core_Services_IUFEmailBuilderService_Bcc_System_String_System_String_" data-uid="UltraForce.Library.Core.Services.IUFEmailBuilderService.Bcc(System.String,System.String)">
   Bcc(string, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a bcc recipient.</p>
@@ -260,14 +260,14 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IUFEmailBuilderService Bcc(string aToEmail, string? aName = null)</code></pre>
+    <pre><code class="lang-csharp hljs">IUFEmailBuilderService Bcc(string toEmail, string? name = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aToEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>toEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -291,7 +291,7 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
 
   <h3 id="UltraForce_Library_Core_Services_IUFEmailBuilderService_Cc_System_Collections_Generic_IDictionary_System_String_System_String__" data-uid="UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(System.Collections.Generic.IDictionary{System.String,System.String})">
   Cc(IDictionary&lt;string, string?&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds multiple cc recipients.</p>
@@ -299,12 +299,12 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IUFEmailBuilderService Cc(IDictionary&lt;string, string?&gt; aEmailWithNames)</code></pre>
+    <pre><code class="lang-csharp hljs">IUFEmailBuilderService Cc(IDictionary&lt;string, string?&gt; emailWithNames)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aEmailWithNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><code>emailWithNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -328,7 +328,7 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
 
   <h3 id="UltraForce_Library_Core_Services_IUFEmailBuilderService_Cc_System_String_System_String_" data-uid="UltraForce.Library.Core.Services.IUFEmailBuilderService.Cc(System.String,System.String)">
   Cc(string, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a cc recipient.</p>
@@ -336,14 +336,14 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IUFEmailBuilderService Cc(string aToEmail, string? aName = null)</code></pre>
+    <pre><code class="lang-csharp hljs">IUFEmailBuilderService Cc(string toEmail, string? name = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aToEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>toEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -367,7 +367,7 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
 
   <h3 id="UltraForce_Library_Core_Services_IUFEmailBuilderService_From_System_String_System_String_" data-uid="UltraForce.Library.Core.Services.IUFEmailBuilderService.From(System.String,System.String)">
   From(string, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the email sender.</p>
@@ -375,14 +375,14 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IUFEmailBuilderService From(string aFromEmail, string? aName = null)</code></pre>
+    <pre><code class="lang-csharp hljs">IUFEmailBuilderService From(string fromEmail, string? name = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aFromEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>fromEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -406,7 +406,7 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
 
   <h3 id="UltraForce_Library_Core_Services_IUFEmailBuilderService_Html_System_String_" data-uid="UltraForce.Library.Core.Services.IUFEmailBuilderService.Html(System.String)">
   Html(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the html content.</p>
@@ -414,12 +414,12 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IUFEmailBuilderService Html(string aContent)</code></pre>
+    <pre><code class="lang-csharp hljs">IUFEmailBuilderService Html(string content)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aContent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -443,7 +443,7 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
 
   <h3 id="UltraForce_Library_Core_Services_IUFEmailBuilderService_ReplyTo_System_String_System_String_" data-uid="UltraForce.Library.Core.Services.IUFEmailBuilderService.ReplyTo(System.String,System.String)">
   ReplyTo(string, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the reply to email.</p>
@@ -451,14 +451,14 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IUFEmailBuilderService ReplyTo(string aReplyToEmail, string? aName = null)</code></pre>
+    <pre><code class="lang-csharp hljs">IUFEmailBuilderService ReplyTo(string replyToEmail, string? name = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aReplyToEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>replyToEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -482,7 +482,7 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
 
   <h3 id="UltraForce_Library_Core_Services_IUFEmailBuilderService_SendAsync_System_Boolean_" data-uid="UltraForce.Library.Core.Services.IUFEmailBuilderService.SendAsync(System.Boolean)">
   SendAsync(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sends the email.</p>
@@ -490,12 +490,12 @@ Interface IUFEmailBuilderService  <a class="header-action link-secondary" title=
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;string&gt; SendAsync(bool aWaitForCompletion)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;string&gt; SendAsync(bool waitForCompletion)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aWaitForCompletion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><code>waitForCompletion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd><p>True to wait until the email has been sent, false to return after the sending process has
 started. When set to false, the result of the send operation is unknown and the method
 will return an empty string if everything else was successful.</p>
@@ -563,12 +563,12 @@ will return an empty string if everything else was successful.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IUFEmailBuilderService Subject(string aSubject)</code></pre>
+    <pre><code class="lang-csharp hljs">IUFEmailBuilderService Subject(string subject)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aSubject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>subject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -592,7 +592,7 @@ will return an empty string if everything else was successful.</p>
 
   <h3 id="UltraForce_Library_Core_Services_IUFEmailBuilderService_Text_System_String_" data-uid="UltraForce.Library.Core.Services.IUFEmailBuilderService.Text(System.String)">
   Text(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L148"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the text content.</p>
@@ -600,12 +600,12 @@ will return an empty string if everything else was successful.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IUFEmailBuilderService Text(string aContent)</code></pre>
+    <pre><code class="lang-csharp hljs">IUFEmailBuilderService Text(string content)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aContent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -629,7 +629,7 @@ will return an empty string if everything else was successful.</p>
 
   <h3 id="UltraForce_Library_Core_Services_IUFEmailBuilderService_To_System_Collections_Generic_IDictionary_System_String_System_String__" data-uid="UltraForce.Library.Core.Services.IUFEmailBuilderService.To(System.Collections.Generic.IDictionary{System.String,System.String})">
   To(IDictionary&lt;string, string?&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds multiple email recipients.</p>
@@ -637,12 +637,12 @@ will return an empty string if everything else was successful.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IUFEmailBuilderService To(IDictionary&lt;string, string?&gt; aEmailWithNames)</code></pre>
+    <pre><code class="lang-csharp hljs">IUFEmailBuilderService To(IDictionary&lt;string, string?&gt; emailWithNames)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aEmailWithNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><code>emailWithNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -666,7 +666,7 @@ will return an empty string if everything else was successful.</p>
 
   <h3 id="UltraForce_Library_Core_Services_IUFEmailBuilderService_To_System_String_System_String_" data-uid="UltraForce.Library.Core.Services.IUFEmailBuilderService.To(System.String,System.String)">
   To(string, string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/IUFEmailBuilderService.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds an email recipient.</p>
@@ -674,14 +674,14 @@ will return an empty string if everything else was successful.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IUFEmailBuilderService To(string aToEmail, string? aName = null)</code></pre>
+    <pre><code class="lang-csharp hljs">IUFEmailBuilderService To(string toEmail, string? name = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aToEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>toEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 

@@ -100,7 +100,7 @@ Class UFAzureEmailBuilderService  <a class="header-action link-secondary" title=
   <div class="markdown summary"><p>An implement of <a class="xref" href="UltraForce.Library.Core.Services.IUFEmailBuilderService.html">IUFEmailBuilderService</a> using Azure's Email Communication Resource.</p>
 <p>
 Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetConnectionString">GetConnectionString()</a>. Subclasses can also override
-<a class="xref" href="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetFromEmail">GetFromEmail()</a> with an email address set within the communication resource. 
+<a class="xref" href="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetFromEmail">GetFromEmail()</a> with an email address set within the communication resource.
 </p>
 </div>
   <div class="markdown conceptual"></div>
@@ -198,16 +198,16 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override IUFEmailBuilderService Attachment(string aName, string aContentTYpe, BinaryData aData)</code></pre>
+    <pre><code class="lang-csharp hljs">public override IUFEmailBuilderService Attachment(string name, string contentTYpe, BinaryData data)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>aContentTYpe</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>contentTYpe</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>aData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.binarydata">BinaryData</a></dt>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.binarydata">BinaryData</a></dt>
     <dd></dd>
   </dl>
 
@@ -239,14 +239,14 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override IUFEmailBuilderService Bcc(string aToEmail, string? aName = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public override IUFEmailBuilderService Bcc(string toEmail, string? name = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aToEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>toEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -278,14 +278,14 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override IUFEmailBuilderService Cc(string aToEmail, string? aName = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public override IUFEmailBuilderService Cc(string toEmail, string? name = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aToEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>toEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -317,14 +317,14 @@ Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override IUFEmailBuilderService From(string aFromEmail, string? aName = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public override IUFEmailBuilderService From(string fromEmail, string? name = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aFromEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>fromEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -421,12 +421,12 @@ address.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override IUFEmailBuilderService Html(string aContent)</code></pre>
+    <pre><code class="lang-csharp hljs">public override IUFEmailBuilderService Html(string content)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aContent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -458,14 +458,14 @@ address.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override IUFEmailBuilderService ReplyTo(string aReplyToEmail, string? aName = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public override IUFEmailBuilderService ReplyTo(string replyToEmail, string? name = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aReplyToEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>replyToEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -497,12 +497,12 @@ address.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task&lt;string&gt; SendAsync(bool aWaitForCompletion)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task&lt;string&gt; SendAsync(bool waitForCompletion)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aWaitForCompletion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><code>waitForCompletion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd><p>True to wait until the email has been sent, false to return after the sending process has
 started. When set to false, the result of the send operation is unknown and the method
 will return an empty string if everything else was successful.</p>
@@ -570,12 +570,12 @@ will return an empty string if everything else was successful.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override IUFEmailBuilderService Subject(string aSubject)</code></pre>
+    <pre><code class="lang-csharp hljs">public override IUFEmailBuilderService Subject(string subject)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aSubject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>subject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -607,12 +607,12 @@ will return an empty string if everything else was successful.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override IUFEmailBuilderService Text(string aContent)</code></pre>
+    <pre><code class="lang-csharp hljs">public override IUFEmailBuilderService Text(string content)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aContent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -644,14 +644,14 @@ will return an empty string if everything else was successful.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override IUFEmailBuilderService To(string aToEmail, string? aName = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public override IUFEmailBuilderService To(string toEmail, string? name = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aToEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>toEmail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 

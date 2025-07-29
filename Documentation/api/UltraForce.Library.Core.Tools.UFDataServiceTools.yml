@@ -66,9 +66,9 @@ items:
   summary: Creates a service model instance for an entity.
   example: []
   syntax:
-    content: 'public static Task<TServiceModel> BuildFromAsync<TServiceModel, TEntity>(TEntity anEntity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
+    content: 'public static Task<TServiceModel> BuildFromAsync<TServiceModel, TEntity>(TEntity entity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
     parameters:
-    - id: anEntity
+    - id: entity
       type: '{TEntity}'
       description: Entity to create instance for
     typeParameters:
@@ -79,7 +79,7 @@ items:
     return:
       type: System.Threading.Tasks.Task{{TServiceModel}}
       description: service model instance or null if anEntity was null
-    content.vb: Public Shared Function BuildFromAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(anEntity As TEntity) As Task(Of TServiceModel)
+    content.vb: Public Shared Function BuildFromAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(entity As TEntity) As Task(Of TServiceModel)
   overload: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync*
   nameWithType.vb: UFDataServiceTools.BuildFromAsync(Of TServiceModel, TEntity)(TEntity)
   fullName.vb: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync(Of TServiceModel, TEntity)(TEntity)
@@ -109,9 +109,9 @@ items:
   summary: Creates a service model instance for an entity.
   example: []
   syntax:
-    content: 'public static Task<TServiceModel?> BuildNullableFromAsync<TServiceModel, TEntity>(TEntity? anEntity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
+    content: 'public static Task<TServiceModel?> BuildNullableFromAsync<TServiceModel, TEntity>(TEntity? entity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
     parameters:
-    - id: anEntity
+    - id: entity
       type: '{TEntity}'
       description: Entity to create instance for
     typeParameters:
@@ -122,7 +122,7 @@ items:
     return:
       type: System.Threading.Tasks.Task{{TServiceModel}}
       description: service model instance or null if anEntity was null
-    content.vb: Public Shared Function BuildNullableFromAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(anEntity As TEntity) As Task(Of TServiceModel)
+    content.vb: Public Shared Function BuildNullableFromAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(entity As TEntity) As Task(Of TServiceModel)
   overload: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildNullableFromAsync*
   nameWithType.vb: UFDataServiceTools.BuildNullableFromAsync(Of TServiceModel, TEntity)(TEntity)
   fullName.vb: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildNullableFromAsync(Of TServiceModel, TEntity)(TEntity)
@@ -152,9 +152,9 @@ items:
   summary: Creates a list of service model instances from a list of entities.
   example: []
   syntax:
-    content: 'public static Task<IEnumerable<TServiceModel>> BuildFromAsync<TServiceModel, TEntity>(IEnumerable<TEntity> anEntities) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
+    content: 'public static Task<IEnumerable<TServiceModel>> BuildFromAsync<TServiceModel, TEntity>(IEnumerable<TEntity> entities) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
     parameters:
-    - id: anEntities
+    - id: entities
       type: System.Collections.Generic.IEnumerable{{TEntity}}
       description: Entities to create instance for
     typeParameters:
@@ -165,7 +165,7 @@ items:
     return:
       type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TServiceModel}}}
       description: A list of service model instance
-    content.vb: Public Shared Function BuildFromAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(anEntities As IEnumerable(Of TEntity)) As Task(Of IEnumerable(Of TServiceModel))
+    content.vb: Public Shared Function BuildFromAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(entities As IEnumerable(Of TEntity)) As Task(Of IEnumerable(Of TServiceModel))
   overload: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync*
   nameWithType.vb: UFDataServiceTools.BuildFromAsync(Of TServiceModel, TEntity)(IEnumerable(Of TEntity))
   fullName.vb: UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync(Of TServiceModel, TEntity)(System.Collections.Generic.IEnumerable(Of TEntity))

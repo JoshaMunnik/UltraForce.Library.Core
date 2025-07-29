@@ -107,7 +107,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: FindAllAsync
     path: ../UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
-    startLine: 55
+    startLine: 57
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -140,7 +140,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AddAsync
     path: ../UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
-    startLine: 66
+    startLine: 68
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -177,7 +177,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UpdateAsync
     path: ../UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
-    startLine: 75
+    startLine: 79
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -214,7 +214,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: RemoveAsync
     path: ../UltraForce.Library.Core/Services/IUFDataServiceCRUD.cs
-    startLine: 81
+    startLine: 87
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services

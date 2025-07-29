@@ -13,8 +13,10 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>1.0.13</Version>
-    <PackageReleaseNotes>- updated used packages</PackageReleaseNotes>
+    <Version>1.0.14</Version>
+    <PackageReleaseNotes>- [BREAKING CHANGE] Updated UFDataServiceFromContext: replaced `Context` with `ReadContext`
+and `WriteContext`
+- reformatted code and renamed method parameters</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">

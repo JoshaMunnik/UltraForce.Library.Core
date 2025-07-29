@@ -116,15 +116,15 @@ items:
   summary: Sets the email subject.
   example: []
   syntax:
-    content: public override IUFEmailBuilderService Subject(string aSubject)
+    content: public override IUFEmailBuilderService Subject(string subject)
     parameters:
-    - id: aSubject
+    - id: subject
       type: System.String
       description: ''
     return:
       type: UltraForce.Library.Core.Services.IUFEmailBuilderService
       description: ''
-    content.vb: Public Overrides Function Subject(aSubject As String) As IUFEmailBuilderService
+    content.vb: Public Overrides Function Subject(subject As String) As IUFEmailBuilderService
   overridden: UltraForce.Library.Core.Services.UFEmailBuilderService.Subject(System.String)
   overload: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Subject*
   nameWithType.vb: UFDummyEmailBuilderService.Subject(String)
@@ -148,25 +148,25 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: From
     path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
-    startLine: 49
+    startLine: 51
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: Sets the email sender.
   example: []
   syntax:
-    content: public override IUFEmailBuilderService From(string aFromEmail, string? aName = null)
+    content: public override IUFEmailBuilderService From(string fromEmail, string? name = null)
     parameters:
-    - id: aFromEmail
+    - id: fromEmail
       type: System.String
       description: ''
-    - id: aName
+    - id: name
       type: System.String
       description: ''
     return:
       type: UltraForce.Library.Core.Services.IUFEmailBuilderService
       description: ''
-    content.vb: Public Overrides Function From(aFromEmail As String, aName As String = Nothing) As IUFEmailBuilderService
+    content.vb: Public Overrides Function From(fromEmail As String, name As String = Nothing) As IUFEmailBuilderService
   overridden: UltraForce.Library.Core.Services.UFEmailBuilderService.From(System.String,System.String)
   overload: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.From*
   nameWithType.vb: UFDummyEmailBuilderService.From(String, String)
@@ -190,25 +190,25 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: To
     path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
-    startLine: 55
+    startLine: 60
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: Adds an email recipient.
   example: []
   syntax:
-    content: public override IUFEmailBuilderService To(string aToEmail, string? aName = null)
+    content: public override IUFEmailBuilderService To(string toEmail, string? name = null)
     parameters:
-    - id: aToEmail
+    - id: toEmail
       type: System.String
       description: ''
-    - id: aName
+    - id: name
       type: System.String
       description: ''
     return:
       type: UltraForce.Library.Core.Services.IUFEmailBuilderService
       description: ''
-    content.vb: Public Overrides Function [To](aToEmail As String, aName As String = Nothing) As IUFEmailBuilderService
+    content.vb: Public Overrides Function [To](toEmail As String, name As String = Nothing) As IUFEmailBuilderService
   overridden: UltraForce.Library.Core.Services.UFEmailBuilderService.To(System.String,System.String)
   overload: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.To*
   nameWithType.vb: UFDummyEmailBuilderService.To(String, String)
@@ -232,25 +232,25 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Cc
     path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
-    startLine: 61
+    startLine: 69
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: Adds a cc recipient.
   example: []
   syntax:
-    content: public override IUFEmailBuilderService Cc(string aToEmail, string? aName = null)
+    content: public override IUFEmailBuilderService Cc(string toEmail, string? name = null)
     parameters:
-    - id: aToEmail
+    - id: toEmail
       type: System.String
       description: ''
-    - id: aName
+    - id: name
       type: System.String
       description: ''
     return:
       type: UltraForce.Library.Core.Services.IUFEmailBuilderService
       description: ''
-    content.vb: Public Overrides Function Cc(aToEmail As String, aName As String = Nothing) As IUFEmailBuilderService
+    content.vb: Public Overrides Function Cc(toEmail As String, name As String = Nothing) As IUFEmailBuilderService
   overridden: UltraForce.Library.Core.Services.UFEmailBuilderService.Cc(System.String,System.String)
   overload: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Cc*
   nameWithType.vb: UFDummyEmailBuilderService.Cc(String, String)
@@ -274,25 +274,25 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Bcc
     path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
-    startLine: 67
+    startLine: 78
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: Adds a bcc recipient.
   example: []
   syntax:
-    content: public override IUFEmailBuilderService Bcc(string aToEmail, string? aName = null)
+    content: public override IUFEmailBuilderService Bcc(string toEmail, string? name = null)
     parameters:
-    - id: aToEmail
+    - id: toEmail
       type: System.String
       description: ''
-    - id: aName
+    - id: name
       type: System.String
       description: ''
     return:
       type: UltraForce.Library.Core.Services.IUFEmailBuilderService
       description: ''
-    content.vb: Public Overrides Function Bcc(aToEmail As String, aName As String = Nothing) As IUFEmailBuilderService
+    content.vb: Public Overrides Function Bcc(toEmail As String, name As String = Nothing) As IUFEmailBuilderService
   overridden: UltraForce.Library.Core.Services.UFEmailBuilderService.Bcc(System.String,System.String)
   overload: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Bcc*
   nameWithType.vb: UFDummyEmailBuilderService.Bcc(String, String)
@@ -316,25 +316,25 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: ReplyTo
     path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
-    startLine: 73
+    startLine: 87
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: Sets the reply to email.
   example: []
   syntax:
-    content: public override IUFEmailBuilderService ReplyTo(string aReplyToEmail, string? aName = null)
+    content: public override IUFEmailBuilderService ReplyTo(string replyToEmail, string? name = null)
     parameters:
-    - id: aReplyToEmail
+    - id: replyToEmail
       type: System.String
       description: ''
-    - id: aName
+    - id: name
       type: System.String
       description: ''
     return:
       type: UltraForce.Library.Core.Services.IUFEmailBuilderService
       description: ''
-    content.vb: Public Overrides Function ReplyTo(aReplyToEmail As String, aName As String = Nothing) As IUFEmailBuilderService
+    content.vb: Public Overrides Function ReplyTo(replyToEmail As String, name As String = Nothing) As IUFEmailBuilderService
   overridden: UltraForce.Library.Core.Services.UFEmailBuilderService.ReplyTo(System.String,System.String)
   overload: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.ReplyTo*
   nameWithType.vb: UFDummyEmailBuilderService.ReplyTo(String, String)
@@ -358,22 +358,22 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Html
     path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
-    startLine: 79
+    startLine: 96
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: Sets the html content.
   example: []
   syntax:
-    content: public override IUFEmailBuilderService Html(string aContent)
+    content: public override IUFEmailBuilderService Html(string content)
     parameters:
-    - id: aContent
+    - id: content
       type: System.String
       description: ''
     return:
       type: UltraForce.Library.Core.Services.IUFEmailBuilderService
       description: ''
-    content.vb: Public Overrides Function Html(aContent As String) As IUFEmailBuilderService
+    content.vb: Public Overrides Function Html(content As String) As IUFEmailBuilderService
   overridden: UltraForce.Library.Core.Services.UFEmailBuilderService.Html(System.String)
   overload: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Html*
   nameWithType.vb: UFDummyEmailBuilderService.Html(String)
@@ -397,22 +397,22 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Text
     path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
-    startLine: 85
+    startLine: 104
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: Sets the text content.
   example: []
   syntax:
-    content: public override IUFEmailBuilderService Text(string aContent)
+    content: public override IUFEmailBuilderService Text(string content)
     parameters:
-    - id: aContent
+    - id: content
       type: System.String
       description: ''
     return:
       type: UltraForce.Library.Core.Services.IUFEmailBuilderService
       description: ''
-    content.vb: Public Overrides Function Text(aContent As String) As IUFEmailBuilderService
+    content.vb: Public Overrides Function Text(content As String) As IUFEmailBuilderService
   overridden: UltraForce.Library.Core.Services.UFEmailBuilderService.Text(System.String)
   overload: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Text*
   nameWithType.vb: UFDummyEmailBuilderService.Text(String)
@@ -436,28 +436,28 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Attachment
     path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
-    startLine: 91
+    startLine: 112
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: Adds an attachment.
   example: []
   syntax:
-    content: public override IUFEmailBuilderService Attachment(string aName, string aContentTYpe, BinaryData aData)
+    content: public override IUFEmailBuilderService Attachment(string name, string contentTYpe, BinaryData data)
     parameters:
-    - id: aName
+    - id: name
       type: System.String
       description: ''
-    - id: aContentTYpe
+    - id: contentTYpe
       type: System.String
       description: ''
-    - id: aData
+    - id: data
       type: System.BinaryData
       description: ''
     return:
       type: UltraForce.Library.Core.Services.IUFEmailBuilderService
       description: ''
-    content.vb: Public Overrides Function Attachment(aName As String, aContentTYpe As String, aData As BinaryData) As IUFEmailBuilderService
+    content.vb: Public Overrides Function Attachment(name As String, contentTYpe As String, data As BinaryData) As IUFEmailBuilderService
   overridden: UltraForce.Library.Core.Services.UFEmailBuilderService.Attachment(System.String,System.String,System.BinaryData)
   overload: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.Attachment*
   nameWithType.vb: UFDummyEmailBuilderService.Attachment(String, String, BinaryData)
@@ -481,16 +481,16 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SendAsync
     path: ../UltraForce.Library.Core/Services/UFDummyEmailBuilderService.cs
-    startLine: 97
+    startLine: 122
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: Sends the email.
   example: []
   syntax:
-    content: public override Task<string> SendAsync(bool aWaitForCompletion)
+    content: public override Task<string> SendAsync(bool waitForCompletion)
     parameters:
-    - id: aWaitForCompletion
+    - id: waitForCompletion
       type: System.Boolean
       description: >-
         True to wait until the email has been sent, false to return after the sending process has
@@ -501,7 +501,7 @@ items:
     return:
       type: System.Threading.Tasks.Task{System.String}
       description: Empty string if email was sent successfully, else an error message.
-    content.vb: Public Overrides Function SendAsync(aWaitForCompletion As Boolean) As Task(Of String)
+    content.vb: Public Overrides Function SendAsync(waitForCompletion As Boolean) As Task(Of String)
   overridden: UltraForce.Library.Core.Services.UFEmailBuilderService.SendAsync(System.Boolean)
   overload: UltraForce.Library.Core.Services.UFDummyEmailBuilderService.SendAsync*
   nameWithType.vb: UFDummyEmailBuilderService.SendAsync(Boolean)

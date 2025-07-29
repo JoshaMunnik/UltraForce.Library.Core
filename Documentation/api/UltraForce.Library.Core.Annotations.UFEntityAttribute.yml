@@ -25,7 +25,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFEntityAttribute
     path: ../UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
-    startLine: 34
+    startLine: 36
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Annotations
@@ -112,7 +112,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Name
     path: ../UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
-    startLine: 46
+    startLine: 49
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Annotations
@@ -147,7 +147,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: ReadOnly
     path: ../UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
-    startLine: 52
+    startLine: 55
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Annotations
@@ -181,19 +181,19 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: .ctor
     path: ../UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
-    startLine: 62
+    startLine: 65
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Annotations
   summary: Creates a new instance of <xref href="UltraForce.Library.Core.Annotations.UFEntityAttribute" data-throw-if-not-resolved="false"></xref> using a name.
   example: []
   syntax:
-    content: public UFEntityAttribute(string aName)
+    content: public UFEntityAttribute(string name)
     parameters:
-    - id: aName
+    - id: name
       type: System.String
       description: Entity name to use
-    content.vb: Public Sub New(aName As String)
+    content.vb: Public Sub New(name As String)
   overload: UltraForce.Library.Core.Annotations.UFEntityAttribute.#ctor*
   nameWithType.vb: UFEntityAttribute.New(String)
   fullName.vb: UltraForce.Library.Core.Annotations.UFEntityAttribute.New(String)
@@ -216,22 +216,22 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: .ctor
     path: ../UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
-    startLine: 72
+    startLine: 77
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Annotations
   summary: Creates a new instance of <xref href="UltraForce.Library.Core.Annotations.UFEntityAttribute" data-throw-if-not-resolved="false"></xref> using a name and readonly.
   example: []
   syntax:
-    content: public UFEntityAttribute(string aName, bool aReadOnly)
+    content: public UFEntityAttribute(string name, bool readOnly)
     parameters:
-    - id: aName
+    - id: name
       type: System.String
       description: Entity name to use
-    - id: aReadOnly
+    - id: readOnly
       type: System.Boolean
       description: <xref href="UltraForce.Library.Core.Annotations.UFEntityAttribute.ReadOnly" data-throw-if-not-resolved="false"></xref> value
-    content.vb: Public Sub New(aName As String, aReadOnly As Boolean)
+    content.vb: Public Sub New(name As String, [readOnly] As Boolean)
   overload: UltraForce.Library.Core.Annotations.UFEntityAttribute.#ctor*
   nameWithType.vb: UFEntityAttribute.New(String, Boolean)
   fullName.vb: UltraForce.Library.Core.Annotations.UFEntityAttribute.New(String, Boolean)
@@ -254,19 +254,19 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: .ctor
     path: ../UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
-    startLine: 82
+    startLine: 90
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Annotations
   summary: Creates a new instance of <xref href="UltraForce.Library.Core.Annotations.UFEntityAttribute" data-throw-if-not-resolved="false"></xref> using readonly.
   example: []
   syntax:
-    content: public UFEntityAttribute(bool aReadOnly)
+    content: public UFEntityAttribute(bool readOnly)
     parameters:
-    - id: aReadOnly
+    - id: readOnly
       type: System.Boolean
       description: <xref href="UltraForce.Library.Core.Annotations.UFEntityAttribute.ReadOnly" data-throw-if-not-resolved="false"></xref> value
-    content.vb: Public Sub New(aReadOnly As Boolean)
+    content.vb: Public Sub New([readOnly] As Boolean)
   overload: UltraForce.Library.Core.Annotations.UFEntityAttribute.#ctor*
   nameWithType.vb: UFEntityAttribute.New(Boolean)
   fullName.vb: UltraForce.Library.Core.Annotations.UFEntityAttribute.New(Boolean)
@@ -289,7 +289,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: .ctor
     path: ../UltraForce.Library.Core/Annotations/UFEntityAttribute.cs
-    startLine: 90
+    startLine: 100
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Annotations

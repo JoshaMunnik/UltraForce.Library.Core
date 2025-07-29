@@ -190,7 +190,7 @@ speed subclasses can override the <a class="xref" href="UltraForce.Library.Core.
 
   <h3 id="UltraForce_Library_Core_Models_UFDataServiceModel_2_CopyFromEntityAsync__1_" data-uid="UltraForce.Library.Core.Models.UFDataServiceModel`2.CopyFromEntityAsync(`1)">
   CopyFromEntityAsync(TEntity)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Models/UFDataServiceModel.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Models/UFDataServiceModel.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Updates this instance by copying the properties of an entity.</p>
@@ -198,12 +198,12 @@ speed subclasses can override the <a class="xref" href="UltraForce.Library.Core.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task CopyFromEntityAsync(TEntity anEntity)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task CopyFromEntityAsync(TEntity entity)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anEntity</code> <span class="xref">TEntity</span></dt>
+    <dt><code>entity</code> <span class="xref">TEntity</span></dt>
     <dd><p>Value to copy properties from</p>
 </dd>
   </dl>
@@ -236,15 +236,15 @@ speed subclasses can override the <a class="xref" href="UltraForce.Library.Core.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task CopyToEntityAsync(TEntity anEntity, UFEntityAction anAction)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task CopyToEntityAsync(TEntity entity, UFEntityAction action)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anEntity</code> <span class="xref">TEntity</span></dt>
+    <dt><code>entity</code> <span class="xref">TEntity</span></dt>
     <dd><p>Value to copy properties to</p>
 </dd>
-    <dt><code>anAction</code> <a class="xref" href="UltraForce.Library.Core.Types.Enums.UFEntityAction.html">UFEntityAction</a></dt>
+    <dt><code>action</code> <a class="xref" href="UltraForce.Library.Core.Types.Enums.UFEntityAction.html">UFEntityAction</a></dt>
     <dd><p>Action that will be performed with the entity</p>
 </dd>
   </dl>

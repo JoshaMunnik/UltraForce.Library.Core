@@ -57,37 +57,40 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: CheckAlternativeFile
     path: ../UltraForce.Library.Core/Tools/UFCoreFileTools.cs
-    startLine: 55
+    startLine: 56
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Tools
   summary: >-
-    Checks if there is an file using an alternative extension, if there is the method will copy the alternative
+    Checks if there is a file using an alternative extension, if there is the method will copy
 
-    file to missing file.
+    the alternative file to the missing file.
 
+    <p>
 
-    This method uses `File.Copy` but does not handle any of the exceptions it can throw.
+    This method uses <code>File.Copy</code> but does not handle any of the exceptions it can throw.
+
+    </p>
   example: []
   syntax:
-    content: public static bool CheckAlternativeFile(string aMissingFileName, string aRequiredExtension, string anAlternativeExtension)
+    content: public static bool CheckAlternativeFile(string missingFileName, string requiredExtension, string alternativeExtension)
     parameters:
-    - id: aMissingFileName
+    - id: missingFileName
       type: System.String
       description: Full path and file name
-    - id: aRequiredExtension
+    - id: requiredExtension
       type: System.String
       description: The extension the missing filename must use (including '.')
-    - id: anAlternativeExtension
+    - id: alternativeExtension
       type: System.String
       description: The extension of the alternative file (including '.')
     return:
       type: System.Boolean
       description: >-
-        <code>true</code> if an alternative file was found and a copy was made or 
+        <code>true</code> if an alternative file was found and a copy was made or
 
         if the missing file is actually existing.
-    content.vb: Public Shared Function CheckAlternativeFile(aMissingFileName As String, aRequiredExtension As String, anAlternativeExtension As String) As Boolean
+    content.vb: Public Shared Function CheckAlternativeFile(missingFileName As String, requiredExtension As String, alternativeExtension As String) As Boolean
   overload: UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile*
   nameWithType.vb: UFCoreFileTools.CheckAlternativeFile(String, String, String)
   fullName.vb: UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile(String, String, String)

@@ -56,7 +56,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: LockAsync
     path: ../UltraForce.Library.Core/Data/IUFRepository.cs
-    startLine: 45
+    startLine: 46
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Data
@@ -93,7 +93,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UnlockAsync
     path: ../UltraForce.Library.Core/Data/IUFRepository.cs
-    startLine: 51
+    startLine: 52
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Data

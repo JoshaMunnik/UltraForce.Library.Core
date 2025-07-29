@@ -26,16 +26,16 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UFRepository
     path: ../UltraForce.Library.Core/Data/UFRepository.cs
-    startLine: 51
+    startLine: 52
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Data
   summary: >-
-    <xref href="UltraForce.Library.Core.Data.UFRepository%601" data-throw-if-not-resolved="false"></xref> is a base class to implement a repository. 
+    <xref href="UltraForce.Library.Core.Data.UFRepository%601" data-throw-if-not-resolved="false"></xref> is a base class to implement a repository.
 
     <p>
 
-    The class implements a locking mechanism to minimize the 
+    The class implements a locking mechanism to minimize the
 
     <xref href="Microsoft.EntityFrameworkCore.DbContext.SaveChanges" data-throw-if-not-resolved="false"></xref> calls.
 
@@ -47,7 +47,7 @@ items:
 
     <p>
 
-    See <xref href="UltraForce.Library.Core.Services.IUFDataService" data-throw-if-not-resolved="false"></xref> and <xref href="UltraForce.Library.Core.Models.IUFDataServiceModel%601" data-throw-if-not-resolved="false"></xref> for a 
+    See <xref href="UltraForce.Library.Core.Services.IUFDataService" data-throw-if-not-resolved="false"></xref> and <xref href="UltraForce.Library.Core.Models.IUFDataServiceModel%601" data-throw-if-not-resolved="false"></xref> for a
 
     </p>
   example: []
@@ -93,29 +93,29 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: .ctor
     path: ../UltraForce.Library.Core/Data/UFRepository.cs
-    startLine: 80
+    startLine: 83
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Data
   summary: Constructs an instance of <xref href="UltraForce.Library.Core.Data.UFRepository%601" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: protected UFRepository(TContext aContext, bool aDisableTracking)
+    content: protected UFRepository(TContext context, bool disableTracking)
     parameters:
-    - id: aContext
+    - id: context
       type: '{TContext}'
       description: Database context to use
-    - id: aDisableTracking
+    - id: disableTracking
       type: System.Boolean
       description: >-
         When true tell <xref href="Microsoft.EntityFrameworkCore.DbContext.ChangeTracker" data-throw-if-not-resolved="false"></xref> to stop tracking
 
-        and reset the state of any tracked entry to 
+        and reset the state of any tracked entry to
 
-        <xref href="Microsoft.EntityFrameworkCore.EntityState.Detached" data-throw-if-not-resolved="false"></xref> with the 
+        <xref href="Microsoft.EntityFrameworkCore.EntityState.Detached" data-throw-if-not-resolved="false"></xref> with the
 
         <xref href="UltraForce.Library.Core.Data.UFRepository%601.SaveChangesAsync" data-throw-if-not-resolved="false"></xref> call.
-    content.vb: Protected Sub New(aContext As TContext, aDisableTracking As Boolean)
+    content.vb: Protected Sub New(context As TContext, disableTracking As Boolean)
   overload: UltraForce.Library.Core.Data.UFRepository`1.#ctor*
   nameWithType.vb: UFRepository(Of TContext).New(TContext, Boolean)
   fullName.vb: UltraForce.Library.Core.Data.UFRepository(Of TContext).New(TContext, Boolean)
@@ -138,7 +138,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: LockAsync
     path: ../UltraForce.Library.Core/Data/UFRepository.cs
-    startLine: 97
+    startLine: 105
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Data
@@ -179,7 +179,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UnlockAsync
     path: ../UltraForce.Library.Core/Data/UFRepository.cs
-    startLine: 103
+    startLine: 112
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Data
@@ -216,7 +216,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Context
     path: ../UltraForce.Library.Core/Data/UFRepository.cs
-    startLine: 123
+    startLine: 136
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Data
@@ -249,7 +249,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Changed
     path: ../UltraForce.Library.Core/Data/UFRepository.cs
-    startLine: 129
+    startLine: 142
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Data
@@ -285,7 +285,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SaveChangesAsync
     path: ../UltraForce.Library.Core/Data/UFRepository.cs
-    startLine: 143
+    startLine: 156
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Data
@@ -296,7 +296,7 @@ items:
 
     <p>
 
-    If tracking was disabled, this method will also call 
+    If tracking was disabled, this method will also call
 
     <xref href="UltraForce.Library.Core.Data.UFRepository%601.DetachTrackedEntries" data-throw-if-not-resolved="false"></xref>.
 
@@ -328,12 +328,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: DetachTrackedEntries
     path: ../UltraForce.Library.Core/Data/UFRepository.cs
-    startLine: 171
+    startLine: 190
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Data
   summary: >-
-    Sets the changed entries that have <xref href="Microsoft.EntityFrameworkCore.EntityState.Added" data-throw-if-not-resolved="false"></xref>, 
+    Sets the changed entries that have <xref href="Microsoft.EntityFrameworkCore.EntityState.Added" data-throw-if-not-resolved="false"></xref>,
 
     <xref href="Microsoft.EntityFrameworkCore.EntityState.Modified" data-throw-if-not-resolved="false"></xref> or <xref href="Microsoft.EntityFrameworkCore.EntityState.Deleted" data-throw-if-not-resolved="false"></xref>
 

@@ -70,12 +70,12 @@ items:
   summary: >-
     Uses <xref href="UltraForce.Library.Core.Tools.UFDataServiceTools.BuildNullableFromAsync%60%602(%60%601)" data-throw-if-not-resolved="false"></xref>
 
-    to create a data service model from an database entity. It supports nullable entities.
+    to create a data service model from a database entity. It supports nullable entities.
   example: []
   syntax:
-    content: 'public static Task<TServiceModel?> AsNullableModelAsync<TServiceModel, TEntity>(this Task<TEntity?> anEntity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
+    content: 'public static Task<TServiceModel?> AsNullableModelAsync<TServiceModel, TEntity>(this Task<TEntity?> entity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
     parameters:
-    - id: anEntity
+    - id: entity
       type: System.Threading.Tasks.Task{{TEntity}}
       description: Entity to create data service model instance from
     typeParameters:
@@ -86,7 +86,7 @@ items:
     return:
       type: System.Threading.Tasks.Task{{TServiceModel}}
       description: Data service instance or null if the entity is null
-    content.vb: Public Shared Function AsNullableModelAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(anEntity As Task(Of TEntity)) As Task(Of TServiceModel)
+    content.vb: Public Shared Function AsNullableModelAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(entity As Task(Of TEntity)) As Task(Of TServiceModel)
   overload: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync*
   nameWithType.vb: UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(Task(Of TEntity))
   fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(System.Threading.Tasks.Task(Of TEntity))
@@ -119,12 +119,12 @@ items:
 
     <xref href="UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync%60%602(%60%601)" data-throw-if-not-resolved="false"></xref>
 
-    to create a data service model from an database entity. It supports nullable entities.
+    to create a data service model from a database entity. It supports nullable entities.
   example: []
   syntax:
-    content: 'public static Task<TServiceModel?> AsNullableModelAsync<TServiceModel, TEntity>(this ValueTask<TEntity?> anEntity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
+    content: 'public static Task<TServiceModel?> AsNullableModelAsync<TServiceModel, TEntity>(this ValueTask<TEntity?> entity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
     parameters:
-    - id: anEntity
+    - id: entity
       type: System.Threading.Tasks.ValueTask{{TEntity}}
       description: Entity to create data service model instance from
     typeParameters:
@@ -135,7 +135,7 @@ items:
     return:
       type: System.Threading.Tasks.Task{{TServiceModel}}
       description: Data service instance or null if the entity is null
-    content.vb: Public Shared Function AsNullableModelAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(anEntity As ValueTask(Of TEntity)) As Task(Of TServiceModel)
+    content.vb: Public Shared Function AsNullableModelAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(entity As ValueTask(Of TEntity)) As Task(Of TServiceModel)
   overload: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync*
   nameWithType.vb: UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(ValueTask(Of TEntity))
   fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(System.Threading.Tasks.ValueTask(Of TEntity))
@@ -166,12 +166,12 @@ items:
   summary: >-
     Uses <xref href="UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync%60%602(%60%601)" data-throw-if-not-resolved="false"></xref> to
 
-    create a data service model from an database entity. It supports nullable entities.
+    create a data service model from a database entity. It supports nullable entities.
   example: []
   syntax:
-    content: 'public static Task<TServiceModel?> AsNullableModelAsync<TServiceModel, TEntity>(this TEntity? anEntity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
+    content: 'public static Task<TServiceModel?> AsNullableModelAsync<TServiceModel, TEntity>(this TEntity? entity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
     parameters:
-    - id: anEntity
+    - id: entity
       type: '{TEntity}'
       description: Entity to create data service model instance from
     typeParameters:
@@ -182,7 +182,7 @@ items:
     return:
       type: System.Threading.Tasks.Task{{TServiceModel}}
       description: Data service instance or null if the entity is null
-    content.vb: Public Shared Function AsNullableModelAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(anEntity As TEntity) As Task(Of TServiceModel)
+    content.vb: Public Shared Function AsNullableModelAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(entity As TEntity) As Task(Of TServiceModel)
   overload: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync*
   nameWithType.vb: UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(TEntity)
   fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsNullableModelAsync(Of TServiceModel, TEntity)(TEntity)
@@ -213,12 +213,12 @@ items:
   summary: >-
     Uses <xref href="UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync%60%602(%60%601)" data-throw-if-not-resolved="false"></xref> to
 
-    create a data service model from an database entity.
+    create a data service model from a database entity.
   example: []
   syntax:
-    content: 'public static Task<TServiceModel> AsModelAsync<TServiceModel, TEntity>(this Task<TEntity> anEntity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
+    content: 'public static Task<TServiceModel> AsModelAsync<TServiceModel, TEntity>(this Task<TEntity> entity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
     parameters:
-    - id: anEntity
+    - id: entity
       type: System.Threading.Tasks.Task{{TEntity}}
       description: Entity to create data service model instance from
     typeParameters:
@@ -229,7 +229,7 @@ items:
     return:
       type: System.Threading.Tasks.Task{{TServiceModel}}
       description: Data service instance
-    content.vb: Public Shared Function AsModelAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(anEntity As Task(Of TEntity)) As Task(Of TServiceModel)
+    content.vb: Public Shared Function AsModelAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(entity As Task(Of TEntity)) As Task(Of TServiceModel)
   overload: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync*
   nameWithType.vb: UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(Task(Of TEntity))
   fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(System.Threading.Tasks.Task(Of TEntity))
@@ -260,12 +260,12 @@ items:
   summary: >-
     Uses <xref href="UltraForce.Library.Core.Tools.UFDataServiceTools.BuildFromAsync%60%602(%60%601)" data-throw-if-not-resolved="false"></xref> to
 
-    create a data service model from an database entity.
+    create a data service model from a database entity.
   example: []
   syntax:
-    content: 'public static Task<TServiceModel> AsModelAsync<TServiceModel, TEntity>(this TEntity anEntity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
+    content: 'public static Task<TServiceModel> AsModelAsync<TServiceModel, TEntity>(this TEntity entity) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
     parameters:
-    - id: anEntity
+    - id: entity
       type: '{TEntity}'
       description: Entity to create data service model instance from
     typeParameters:
@@ -276,7 +276,7 @@ items:
     return:
       type: System.Threading.Tasks.Task{{TServiceModel}}
       description: Data service instance
-    content.vb: Public Shared Function AsModelAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(anEntity As TEntity) As Task(Of TServiceModel)
+    content.vb: Public Shared Function AsModelAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(entity As TEntity) As Task(Of TServiceModel)
   overload: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync*
   nameWithType.vb: UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(TEntity)
   fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(TEntity)
@@ -310,9 +310,9 @@ items:
     model instances.
   example: []
   syntax:
-    content: 'public static Task<IEnumerable<TServiceModel>> AsModelAsync<TServiceModel, TEntity>(this IEnumerable<TEntity> anEntities) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
+    content: 'public static Task<IEnumerable<TServiceModel>> AsModelAsync<TServiceModel, TEntity>(this IEnumerable<TEntity> entities) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class'
     parameters:
-    - id: anEntities
+    - id: entities
       type: System.Collections.Generic.IEnumerable{{TEntity}}
       description: Entities to create data service model instances for
     typeParameters:
@@ -323,7 +323,7 @@ items:
     return:
       type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TServiceModel}}}
       description: Data service instances
-    content.vb: Public Shared Function AsModelAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(anEntities As IEnumerable(Of TEntity)) As Task(Of IEnumerable(Of TServiceModel))
+    content.vb: Public Shared Function AsModelAsync(Of TServiceModel As {Class, IUFDataServiceModel(Of TEntity), New}, TEntity As Class)(entities As IEnumerable(Of TEntity)) As Task(Of IEnumerable(Of TServiceModel))
   overload: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync*
   nameWithType.vb: UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(IEnumerable(Of TEntity))
   fullName.vb: UltraForce.Library.Core.Extensions.UFDataServiceExtensions.AsModelAsync(Of TServiceModel, TEntity)(System.Collections.Generic.IEnumerable(Of TEntity))

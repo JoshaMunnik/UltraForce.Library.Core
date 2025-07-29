@@ -157,7 +157,7 @@ Class UFTestTools  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="UltraForce_Library_Core_Tools_UFTestTools_AssertEqualList__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable_System_String__" data-uid="UltraForce.Library.Core.Tools.UFTestTools.AssertEqualList``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{System.String})">
   AssertEqualList&lt;T&gt;(IEnumerable&lt;T&gt;, IEnumerable&lt;T&gt;, IEnumerable&lt;string&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Tools/UFTestTools.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Tools/UFTestTools.cs/#L94"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if a list contains all the items (and not more) of an another list. The method succeeds
@@ -167,16 +167,16 @@ the order of the items.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AssertEqualList&lt;T&gt;(IEnumerable&lt;T&gt; anExpectedList, IEnumerable&lt;T&gt; anActualList, IEnumerable&lt;string&gt;? aNotEqualProperties = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void AssertEqualList&lt;T&gt;(IEnumerable&lt;T&gt; expectedList, IEnumerable&lt;T&gt; actualList, IEnumerable&lt;string&gt;? notEqualProperties = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anExpectedList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dt><code>expectedList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
     <dd></dd>
-    <dt><code>anActualList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dt><code>actualList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
     <dd></dd>
-    <dt><code>aNotEqualProperties</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><code>notEqualProperties</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -206,7 +206,7 @@ the order of the items.</p>
 
   <h3 id="UltraForce_Library_Core_Tools_UFTestTools_AssertEqualList__2_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___1__System_Func___0___1_System_Boolean__" data-uid="UltraForce.Library.Core.Tools.UFTestTools.AssertEqualList``2(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``1},System.Func{``0,``1,System.Boolean})">
   AssertEqualList&lt;TFirst, TSecond&gt;(IEnumerable&lt;TFirst&gt;, IEnumerable&lt;TSecond&gt;, Func&lt;TFirst, TSecond, bool&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Tools/UFTestTools.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Tools/UFTestTools.cs/#L123"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if a list contains all the items (and not more) of another list. The method succeeds
@@ -215,16 +215,16 @@ if the size are equal and all items are found within the list.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AssertEqualList&lt;TFirst, TSecond&gt;(IEnumerable&lt;TFirst&gt; anExpectedList, IEnumerable&lt;TSecond&gt; anActualList, Func&lt;TFirst, TSecond, bool&gt; aComparer)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void AssertEqualList&lt;TFirst, TSecond&gt;(IEnumerable&lt;TFirst&gt; expectedEnumerable, IEnumerable&lt;TSecond&gt; actualEnumerable, Func&lt;TFirst, TSecond, bool&gt; comparer)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anExpectedList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TFirst&gt;</dt>
+    <dt><code>expectedEnumerable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TFirst&gt;</dt>
     <dd></dd>
-    <dt><code>anActualList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TSecond&gt;</dt>
+    <dt><code>actualEnumerable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TSecond&gt;</dt>
     <dd></dd>
-    <dt><code>aComparer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;TFirst, TSecond, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dt><code>comparer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;TFirst, TSecond, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -264,16 +264,16 @@ if the size are equal and all items are found within the list.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void AssertEqualProperties&lt;T&gt;(T anExpected, T anActual, IEnumerable&lt;string&gt;? aNotEqualProperties = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void AssertEqualProperties&lt;T&gt;(T expected, T actual, IEnumerable&lt;string&gt;? notEqualProperties = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anExpected</code> <span class="xref">T</span></dt>
+    <dt><code>expected</code> <span class="xref">T</span></dt>
     <dd></dd>
-    <dt><code>anActual</code> <span class="xref">T</span></dt>
+    <dt><code>actual</code> <span class="xref">T</span></dt>
     <dd></dd>
-    <dt><code>aNotEqualProperties</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><code>notEqualProperties</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -305,15 +305,15 @@ if the size are equal and all items are found within the list.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void HasUniqueValues&lt;TObject, TValue&gt;(IEnumerable&lt;TObject&gt; aList, Func&lt;TObject, TValue&gt; aGetValue) where TValue : IEquatable&lt;TValue&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public static void HasUniqueValues&lt;TObject, TValue&gt;(IEnumerable&lt;TObject&gt; list, Func&lt;TObject, TValue&gt; getValue) where TValue : IEquatable&lt;TValue&gt;</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TObject&gt;</dt>
+    <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TObject&gt;</dt>
     <dd><p>List to check</p>
 </dd>
-    <dt><code>aGetValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TObject, TValue&gt;</dt>
+    <dt><code>getValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TObject, TValue&gt;</dt>
     <dd><p>A function to get the value</p>
 </dd>
   </dl>

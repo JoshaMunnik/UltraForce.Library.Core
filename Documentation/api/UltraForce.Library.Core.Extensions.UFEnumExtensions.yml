@@ -69,15 +69,15 @@ items:
     <xref href="UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute" data-throw-if-not-resolved="false"></xref> and <xref href="System.ComponentModel.DescriptionAttribute" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public static string GetDisplayDescription(this Enum anEnumerationValue)
+    content: public static string GetDisplayDescription(this Enum enumerationValue)
     parameters:
-    - id: anEnumerationValue
+    - id: enumerationValue
       type: System.Enum
       description: Enumeration value.
     return:
       type: System.String
       description: The value of a description attribute or enum value converted to string.
-    content.vb: Public Shared Function GetDisplayDescription(anEnumerationValue As [Enum]) As String
+    content.vb: Public Shared Function GetDisplayDescription(enumerationValue As [Enum]) As String
   overload: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayDescription*
 - uid: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
   commentId: M:UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName(System.Enum)
@@ -98,7 +98,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: GetDisplayName
     path: ../UltraForce.Library.Core/Extensions/UFEnumExtensions.cs
-    startLine: 67
+    startLine: 69
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Extensions
@@ -108,15 +108,15 @@ items:
     <xref href="UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute" data-throw-if-not-resolved="false"></xref> and <xref href="System.ComponentModel.DisplayNameAttribute" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public static string GetDisplayName(this Enum anEnumerationValue)
+    content: public static string GetDisplayName(this Enum enumerationValue)
     parameters:
-    - id: anEnumerationValue
+    - id: enumerationValue
       type: System.Enum
       description: Enumeration value.
     return:
       type: System.String
       description: The value of a description attribute or enum value converted to string.
-    content.vb: Public Shared Function GetDisplayName(anEnumerationValue As [Enum]) As String
+    content.vb: Public Shared Function GetDisplayName(enumerationValue As [Enum]) As String
   overload: UltraForce.Library.Core.Extensions.UFEnumExtensions.GetDisplayName*
 references:
 - uid: System.Enum

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFRepository&lt;TContext&gt; | UltraForce.Library.Core ">
       
-      <meta name="description" content="is a base class to implement a repository.  The class implements a locking mechanism to minimize the   calls.">
+      <meta name="description" content="is a base class to implement a repository.  The class implements a locking mechanism to minimize the  calls.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_Core_Data_UFRepository_1" data-uid="UltraForce.Library.Core.Data.UFRepository`1" class="text-break">
-Class UFRepository&lt;TContext&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Data/UFRepository.cs/#L52"><i class="bi bi-code-slash"></i></a>
+Class UFRepository&lt;TContext&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Data/UFRepository.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -99,7 +99,7 @@ Class UFRepository&lt;TContext&gt;  <a class="header-action link-secondary" titl
 
   <div class="markdown summary"><p><a class="xref" href="UltraForce.Library.Core.Data.UFRepository-1.html">UFRepository&lt;TContext&gt;</a> is a base class to implement a repository.</p>
 <p>
-The class implements a locking mechanism to minimize the 
+The class implements a locking mechanism to minimize the
 <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechanges#microsoft-entityframeworkcore-dbcontext-savechanges">SaveChanges()</a> calls.
 </p>
 </div>
@@ -177,7 +177,7 @@ The class implements a locking mechanism to minimize the
   <div class="markdown level0 remarks"><p>Interface definition for the repository should inherit from
 <a class="xref" href="UltraForce.Library.Core.Data.IUFRepository.html">IUFRepository</a>.</p>
 <p>
-See <a class="xref" href="UltraForce.Library.Core.Services.IUFDataService.html">IUFDataService</a> and <a class="xref" href="UltraForce.Library.Core.Models.IUFDataServiceModel-1.html">IUFDataServiceModel&lt;TEntity&gt;</a> for a 
+See <a class="xref" href="UltraForce.Library.Core.Services.IUFDataService.html">IUFDataService</a> and <a class="xref" href="UltraForce.Library.Core.Models.IUFDataServiceModel-1.html">IUFDataServiceModel&lt;TEntity&gt;</a> for a
 </p>
 </div>
 
@@ -190,7 +190,7 @@ See <a class="xref" href="UltraForce.Library.Core.Services.IUFDataService.html">
 
   <h3 id="UltraForce_Library_Core_Data_UFRepository_1__ctor__0_System_Boolean_" data-uid="UltraForce.Library.Core.Data.UFRepository`1.#ctor(`0,System.Boolean)">
   UFRepository(TContext, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Data/UFRepository.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Data/UFRepository.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Constructs an instance of <a class="xref" href="UltraForce.Library.Core.Data.UFRepository-1.html">UFRepository&lt;TContext&gt;</a>.</p>
@@ -198,15 +198,15 @@ See <a class="xref" href="UltraForce.Library.Core.Services.IUFDataService.html">
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected UFRepository(TContext aContext, bool aDisableTracking)</code></pre>
+    <pre><code class="lang-csharp hljs">protected UFRepository(TContext context, bool disableTracking)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aContext</code> <span class="xref">TContext</span></dt>
+    <dt><code>context</code> <span class="xref">TContext</span></dt>
     <dd><p>Database context to use</p>
 </dd>
-    <dt><code>aDisableTracking</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><code>disableTracking</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd><p>When true tell <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.changetracker">ChangeTracker</a> to stop tracking
 and reset the state of any tracked entry to
 <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.entitystate#microsoft-entityframeworkcore-entitystate-detached">Detached</a> with the
@@ -233,7 +233,7 @@ and reset the state of any tracked entry to
 
   <h3 id="UltraForce_Library_Core_Data_UFRepository_1_Changed" data-uid="UltraForce.Library.Core.Data.UFRepository`1.Changed">
   Changed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Data/UFRepository.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Data/UFRepository.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This property is true when the repository is locked and there is at
@@ -266,7 +266,7 @@ least one change pending.</p>
 
   <h3 id="UltraForce_Library_Core_Data_UFRepository_1_Context" data-uid="UltraForce.Library.Core.Data.UFRepository`1.Context">
   Context
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Data/UFRepository.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Data/UFRepository.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The context</p>
@@ -302,7 +302,7 @@ least one change pending.</p>
 
   <h3 id="UltraForce_Library_Core_Data_UFRepository_1_DetachTrackedEntries" data-uid="UltraForce.Library.Core.Data.UFRepository`1.DetachTrackedEntries">
   DetachTrackedEntries()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Data/UFRepository.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Data/UFRepository.cs/#L191"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the changed entries that have <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.entitystate#microsoft-entityframeworkcore-entitystate-added">Added</a>,
@@ -335,7 +335,7 @@ to <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entity
 
   <h3 id="UltraForce_Library_Core_Data_UFRepository_1_LockAsync" data-uid="UltraForce.Library.Core.Data.UFRepository`1.LockAsync">
   LockAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Data/UFRepository.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Data/UFRepository.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Locks the repository, preventing the updating of underlying data
@@ -372,13 +372,13 @@ storage with every change.</p>
 
   <h3 id="UltraForce_Library_Core_Data_UFRepository_1_SaveChangesAsync" data-uid="UltraForce.Library.Core.Data.UFRepository`1.SaveChangesAsync">
   SaveChangesAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Data/UFRepository.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Data/UFRepository.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Saves the changes when the instance is not locked, else set an internal
 flag to indicate data needs to be saved.</p>
 <p>
-If tracking was disabled, this method will also call 
+If tracking was disabled, this method will also call
 <a class="xref" href="UltraForce.Library.Core.Data.UFRepository-1.html#UltraForce_Library_Core_Data_UFRepository_1_DetachTrackedEntries">DetachTrackedEntries()</a>.
 </p>
 </div>
@@ -409,7 +409,7 @@ If tracking was disabled, this method will also call
 
   <h3 id="UltraForce_Library_Core_Data_UFRepository_1_UnlockAsync" data-uid="UltraForce.Library.Core.Data.UFRepository`1.UnlockAsync">
   UnlockAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Data/UFRepository.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Data/UFRepository.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unlocks the repository. If this call matches the first call to
@@ -442,7 +442,7 @@ If tracking was disabled, this method will also call
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Data/UFRepository.cs/#L52" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Data/UFRepository.cs/#L53" class="edit-link">Edit this page</a>
         </div>
 
 

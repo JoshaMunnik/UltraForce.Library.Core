@@ -1295,6 +1295,15 @@ references:
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).New(TContext, Boolean)
   nameWithType: UFDataServiceFromContext<TContext>.UFDataServiceFromContext(TContext, bool)
   nameWithType.vb: UFDataServiceFromContext(Of TContext).New(TContext, Boolean)
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.#ctor(`0,`0,System.Boolean)
+  name: UFDataServiceFromContext(TContext, TContext, bool)
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1__ctor__0__0_System_Boolean_
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.#ctor(`0,`0,System.Boolean)
+  name.vb: New(TContext, TContext, Boolean)
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.UFDataServiceFromContext(TContext, TContext, bool)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).New(TContext, TContext, Boolean)
+  nameWithType: UFDataServiceFromContext<TContext>.UFDataServiceFromContext(TContext, TContext, bool)
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).New(TContext, TContext, Boolean)
 - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.#ctor*
   name: UFDataServiceFromContext
   href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1__ctor_
@@ -1340,40 +1349,6 @@ references:
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).Changed
   nameWithType: UFDataServiceFromContext<TContext>.Changed
   nameWithType.vb: UFDataServiceFromContext(Of TContext).Changed
-- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CheckContext
-  name: CheckContext()
-  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_CheckContext
-  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CheckContext
-  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.CheckContext()
-  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).CheckContext()
-  nameWithType: UFDataServiceFromContext<TContext>.CheckContext()
-  nameWithType.vb: UFDataServiceFromContext(Of TContext).CheckContext()
-- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CheckContext*
-  name: CheckContext
-  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_CheckContext_
-  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CheckContext
-  isSpec: "True"
-  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.CheckContext
-  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).CheckContext
-  nameWithType: UFDataServiceFromContext<TContext>.CheckContext
-  nameWithType.vb: UFDataServiceFromContext(Of TContext).CheckContext
-- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Context
-  name: Context
-  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_Context
-  commentId: P:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Context
-  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.Context
-  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).Context
-  nameWithType: UFDataServiceFromContext<TContext>.Context
-  nameWithType.vb: UFDataServiceFromContext(Of TContext).Context
-- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Context*
-  name: Context
-  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_Context_
-  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Context
-  isSpec: "True"
-  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.Context
-  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).Context
-  nameWithType: UFDataServiceFromContext<TContext>.Context
-  nameWithType.vb: UFDataServiceFromContext(Of TContext).Context
 - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachEntity(System.Object)
   name: DetachEntity(object)
   href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_DetachEntity_System_Object_
@@ -1532,6 +1507,23 @@ references:
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).LockAsync
   nameWithType: UFDataServiceFromContext<TContext>.LockAsync
   nameWithType.vb: UFDataServiceFromContext(Of TContext).LockAsync
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.ReadContext
+  name: ReadContext
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_ReadContext
+  commentId: P:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.ReadContext
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.ReadContext
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).ReadContext
+  nameWithType: UFDataServiceFromContext<TContext>.ReadContext
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).ReadContext
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.ReadContext*
+  name: ReadContext
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_ReadContext_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.ReadContext
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.ReadContext
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).ReadContext
+  nameWithType: UFDataServiceFromContext<TContext>.ReadContext
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).ReadContext
 - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.RemoveAsync*
   name: RemoveAsync
   href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_RemoveAsync_
@@ -1576,24 +1568,24 @@ references:
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).SwapAsync
   nameWithType: UFDataServiceFromContext<TContext>.SwapAsync
   nameWithType.vb: UFDataServiceFromContext(Of TContext).SwapAsync
-- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``1(System.String,System.String,``0,``0,System.String)
-  name: SwapAsync<T>(string, string, T, T, string?)
-  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__1_System_String_System_String___0___0_System_String_
-  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``1(System.String,System.String,``0,``0,System.String)
-  name.vb: SwapAsync(Of T)(String, String, T, T, String)
-  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SwapAsync<T>(string, string, T, T, string?)
-  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).SwapAsync(Of T)(String, String, T, T, String)
-  nameWithType: UFDataServiceFromContext<TContext>.SwapAsync<T>(string, string, T, T, string?)
-  nameWithType.vb: UFDataServiceFromContext(Of TContext).SwapAsync(Of T)(String, String, T, T, String)
-- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String)
-  name: SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string?)
-  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__2_System_String_System_String___1___1_System_String_
-  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String)
-  name.vb: SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String)
-  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string?)
-  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String)
-  nameWithType: UFDataServiceFromContext<TContext>.SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string?)
-  nameWithType.vb: UFDataServiceFromContext(Of TContext).SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String)
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``1(System.String,System.String,``0,``0,System.String,System.Nullable{System.DateTime})
+  name: SwapAsync<T>(string, string, T, T, string?, DateTime?)
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__1_System_String_System_String___0___0_System_String_System_Nullable_System_DateTime__
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``1(System.String,System.String,``0,``0,System.String,System.Nullable{System.DateTime})
+  name.vb: SwapAsync(Of T)(String, String, T, T, String, Date?)
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SwapAsync<T>(string, string, T, T, string?, System.DateTime?)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).SwapAsync(Of T)(String, String, T, T, String, Date?)
+  nameWithType: UFDataServiceFromContext<TContext>.SwapAsync<T>(string, string, T, T, string?, DateTime?)
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).SwapAsync(Of T)(String, String, T, T, String, Date?)
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String,System.Nullable{System.DateTime})
+  name: SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string?, DateTime?)
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__2_System_String_System_String___1___1_System_String_System_Nullable_System_DateTime__
+  commentId: M:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String,System.Nullable{System.DateTime})
+  name.vb: SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String, Date?)
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string?, System.DateTime?)
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String, Date?)
+  nameWithType: UFDataServiceFromContext<TContext>.SwapAsync<TEntity, TKey>(string, string, TKey, TKey, string?, DateTime?)
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).SwapAsync(Of TEntity, TKey)(String, String, TKey, TKey, String, Date?)
 - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.TransactionAsync(System.Func{System.Threading.Tasks.Task})
   name: TransactionAsync(Func<Task>)
   href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_TransactionAsync_System_Func_System_Threading_Tasks_Task__
@@ -1656,6 +1648,23 @@ references:
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).UpdateAsync(Of TServiceModel, TEntity)(TServiceModel)
   nameWithType: UFDataServiceFromContext<TContext>.UpdateAsync<TServiceModel, TEntity>(TServiceModel)
   nameWithType.vb: UFDataServiceFromContext(Of TContext).UpdateAsync(Of TServiceModel, TEntity)(TServiceModel)
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.WriteContext
+  name: WriteContext
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_WriteContext
+  commentId: P:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.WriteContext
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.WriteContext
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).WriteContext
+  nameWithType: UFDataServiceFromContext<TContext>.WriteContext
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).WriteContext
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.WriteContext*
+  name: WriteContext
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_WriteContext_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.WriteContext
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.WriteContext
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).WriteContext
+  nameWithType: UFDataServiceFromContext<TContext>.WriteContext
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).WriteContext
 - uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService
   name: UFDummyEmailBuilderService
   href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html

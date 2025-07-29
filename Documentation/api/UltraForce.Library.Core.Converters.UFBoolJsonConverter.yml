@@ -82,18 +82,21 @@ items:
   summary: Reads and converts the JSON to type <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public override bool Read(ref Utf8JsonReader aReader, Type aTypeToConvert, JsonSerializerOptions anOptions)
+    content: public override bool Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     parameters:
-    - id: aReader
+    - id: reader
       type: System.Text.Json.Utf8JsonReader
-    - id: aTypeToConvert
+      description: The reader.
+    - id: typeToConvert
       type: System.Type
-    - id: anOptions
+      description: The type to convert.
+    - id: options
       type: System.Text.Json.JsonSerializerOptions
+      description: An object that specifies serialization options to use.
     return:
       type: System.Boolean
       description: The converted value.
-    content.vb: Public Overrides Function Read(aReader As Utf8JsonReader, aTypeToConvert As Type, anOptions As JsonSerializerOptions) As Boolean
+    content.vb: Public Overrides Function Read(reader As Utf8JsonReader, typeToConvert As Type, options As JsonSerializerOptions) As Boolean
   overridden: System.Text.Json.Serialization.JsonConverter{System.Boolean}.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
   overload: UltraForce.Library.Core.Converters.UFBoolJsonConverter.Read*
   nameWithType.vb: UFBoolJsonConverter.Read(Utf8JsonReader, Type, JsonSerializerOptions)
@@ -117,22 +120,25 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Write
     path: ../UltraForce.Library.Core/Converters/UFBoolJsonConverter.cs
-    startLine: 51
+    startLine: 53
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Converters
   summary: Writes a specified value as JSON.
   example: []
   syntax:
-    content: public override void Write(Utf8JsonWriter aWriter, bool aValue, JsonSerializerOptions anOptions)
+    content: public override void Write(Utf8JsonWriter writer, bool value, JsonSerializerOptions options)
     parameters:
-    - id: aWriter
+    - id: writer
       type: System.Text.Json.Utf8JsonWriter
-    - id: aValue
+      description: The writer to write to.
+    - id: value
       type: System.Boolean
-    - id: anOptions
+      description: The value to convert to JSON.
+    - id: options
       type: System.Text.Json.JsonSerializerOptions
-    content.vb: Public Overrides Sub Write(aWriter As Utf8JsonWriter, aValue As Boolean, anOptions As JsonSerializerOptions)
+      description: An object that specifies serialization options to use.
+    content.vb: Public Overrides Sub Write(writer As Utf8JsonWriter, value As Boolean, options As JsonSerializerOptions)
   overridden: System.Text.Json.Serialization.JsonConverter{System.Boolean}.Write(System.Text.Json.Utf8JsonWriter,System.Boolean,System.Text.Json.JsonSerializerOptions)
   overload: UltraForce.Library.Core.Converters.UFBoolJsonConverter.Write*
   nameWithType.vb: UFBoolJsonConverter.Write(Utf8JsonWriter, Boolean, JsonSerializerOptions)

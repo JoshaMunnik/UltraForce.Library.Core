@@ -192,17 +192,20 @@ Class UFDateOnlyJsonConverter  <a class="header-action link-secondary" title="Vi
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override DateOnly Read(ref Utf8JsonReader aReader, Type aTypeToConvert, JsonSerializerOptions anOptions)</code></pre>
+    <pre><code class="lang-csharp hljs">public override DateOnly Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aReader</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.utf8jsonreader">Utf8JsonReader</a></dt>
-    <dd></dd>
-    <dt><code>aTypeToConvert</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-    <dd></dd>
-    <dt><code>anOptions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
-    <dd></dd>
+    <dt><code>reader</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.utf8jsonreader">Utf8JsonReader</a></dt>
+    <dd><p>The reader.</p>
+</dd>
+    <dt><code>typeToConvert</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type to convert.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
+    <dd><p>An object that specifies serialization options to use.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -226,7 +229,7 @@ Class UFDateOnlyJsonConverter  <a class="header-action link-secondary" title="Vi
 
   <h3 id="UltraForce_Library_Core_Converters_UFDateOnlyJsonConverter_Write_System_Text_Json_Utf8JsonWriter_System_DateOnly_System_Text_Json_JsonSerializerOptions_" data-uid="UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.Write(System.Text.Json.Utf8JsonWriter,System.DateOnly,System.Text.Json.JsonSerializerOptions)">
   Write(Utf8JsonWriter, DateOnly, JsonSerializerOptions)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Converters/UFDateOnlyJsonConverter.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Converters/UFDateOnlyJsonConverter.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Writes a specified value as JSON.</p>
@@ -234,17 +237,20 @@ Class UFDateOnlyJsonConverter  <a class="header-action link-secondary" title="Vi
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Write(Utf8JsonWriter aWriter, DateOnly aValue, JsonSerializerOptions anOptions)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Write(Utf8JsonWriter writer, DateOnly value, JsonSerializerOptions options)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aWriter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.utf8jsonwriter">Utf8JsonWriter</a></dt>
-    <dd></dd>
-    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dateonly">DateOnly</a></dt>
-    <dd></dd>
-    <dt><code>anOptions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
-    <dd></dd>
+    <dt><code>writer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.utf8jsonwriter">Utf8JsonWriter</a></dt>
+    <dd><p>The writer to write to.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dateonly">DateOnly</a></dt>
+    <dd><p>The value to convert to JSON.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
+    <dd><p>An object that specifies serialization options to use.</p>
+</dd>
   </dl>
 
 

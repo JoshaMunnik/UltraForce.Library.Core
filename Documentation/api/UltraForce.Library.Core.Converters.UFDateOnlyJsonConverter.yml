@@ -75,18 +75,21 @@ items:
   summary: Reads and converts the JSON to type <xref href="System.DateOnly" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public override DateOnly Read(ref Utf8JsonReader aReader, Type aTypeToConvert, JsonSerializerOptions anOptions)
+    content: public override DateOnly Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     parameters:
-    - id: aReader
+    - id: reader
       type: System.Text.Json.Utf8JsonReader
-    - id: aTypeToConvert
+      description: The reader.
+    - id: typeToConvert
       type: System.Type
-    - id: anOptions
+      description: The type to convert.
+    - id: options
       type: System.Text.Json.JsonSerializerOptions
+      description: An object that specifies serialization options to use.
     return:
       type: System.DateOnly
       description: The converted value.
-    content.vb: Public Overrides Function Read(aReader As Utf8JsonReader, aTypeToConvert As Type, anOptions As JsonSerializerOptions) As DateOnly
+    content.vb: Public Overrides Function Read(reader As Utf8JsonReader, typeToConvert As Type, options As JsonSerializerOptions) As DateOnly
   overridden: System.Text.Json.Serialization.JsonConverter{System.DateOnly}.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
   overload: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.Read*
   nameWithType.vb: UFDateOnlyJsonConverter.Read(Utf8JsonReader, Type, JsonSerializerOptions)
@@ -110,22 +113,25 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Write
     path: ../UltraForce.Library.Core/Converters/UFDateOnlyJsonConverter.cs
-    startLine: 59
+    startLine: 61
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Converters
   summary: Writes a specified value as JSON.
   example: []
   syntax:
-    content: public override void Write(Utf8JsonWriter aWriter, DateOnly aValue, JsonSerializerOptions anOptions)
+    content: public override void Write(Utf8JsonWriter writer, DateOnly value, JsonSerializerOptions options)
     parameters:
-    - id: aWriter
+    - id: writer
       type: System.Text.Json.Utf8JsonWriter
-    - id: aValue
+      description: The writer to write to.
+    - id: value
       type: System.DateOnly
-    - id: anOptions
+      description: The value to convert to JSON.
+    - id: options
       type: System.Text.Json.JsonSerializerOptions
-    content.vb: Public Overrides Sub Write(aWriter As Utf8JsonWriter, aValue As DateOnly, anOptions As JsonSerializerOptions)
+      description: An object that specifies serialization options to use.
+    content.vb: Public Overrides Sub Write(writer As Utf8JsonWriter, value As DateOnly, options As JsonSerializerOptions)
   overridden: System.Text.Json.Serialization.JsonConverter{System.DateOnly}.Write(System.Text.Json.Utf8JsonWriter,System.DateOnly,System.Text.Json.JsonSerializerOptions)
   overload: UltraForce.Library.Core.Converters.UFDateOnlyJsonConverter.Write*
 references:

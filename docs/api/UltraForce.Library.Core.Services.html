@@ -99,7 +99,7 @@ Classes
       <dd><p>An implement of <a class="xref" href="UltraForce.Library.Core.Services.IUFEmailBuilderService.html">IUFEmailBuilderService</a> using Azure's Email Communication Resource.</p>
 <p>
 Subclasses must implement <a class="xref" href="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetConnectionString">GetConnectionString()</a>. Subclasses can also override
-<a class="xref" href="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetFromEmail">GetFromEmail()</a> with an email address set within the communication resource. 
+<a class="xref" href="UltraForce.Library.Core.Services.UFAzureEmailBuilderService.html#UltraForce_Library_Core_Services_UFAzureEmailBuilderService_GetFromEmail">GetFromEmail()</a> with an email address set within the communication resource.
 </p>
 </dd>
     </dl>
@@ -110,6 +110,12 @@ service using a <a class="xref" href="https://learn.microsoft.com/dotnet/api/mic
 <p>
 The class implements a locking mechanism to minimize the
 <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechanges#microsoft-entityframeworkcore-dbcontext-savechanges">SaveChanges()</a> calls.
+</p>
+<p>
+The class defines both a read and write context, to support in-memory copies to read
+from. All protected methods that perform some operation that changes the database
+will use the write context, while all methods that only read data will use the read
+context.
 </p>
 </dd>
     </dl>

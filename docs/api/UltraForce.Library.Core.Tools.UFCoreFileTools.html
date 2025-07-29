@@ -157,28 +157,30 @@ Class UFCoreFileTools  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="UltraForce_Library_Core_Tools_UFCoreFileTools_CheckAlternativeFile_System_String_System_String_System_String_" data-uid="UltraForce.Library.Core.Tools.UFCoreFileTools.CheckAlternativeFile(System.String,System.String,System.String)">
   CheckAlternativeFile(string, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Tools/UFCoreFileTools.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Tools/UFCoreFileTools.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Checks if there is an file using an alternative extension, if there is the method will copy the alternative
-file to missing file.</p>
-<p>This method uses <code>File.Copy</code> but does not handle any of the exceptions it can throw.</p>
+  <div class="markdown level1 summary"><p>Checks if there is a file using an alternative extension, if there is the method will copy
+the alternative file to the missing file.</p>
+<p>
+This method uses <code>File.Copy</code> but does not handle any of the exceptions it can throw.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool CheckAlternativeFile(string aMissingFileName, string aRequiredExtension, string anAlternativeExtension)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool CheckAlternativeFile(string missingFileName, string requiredExtension, string alternativeExtension)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aMissingFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>missingFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Full path and file name</p>
 </dd>
-    <dt><code>aRequiredExtension</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>requiredExtension</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>The extension the missing filename must use (including '.')</p>
 </dd>
-    <dt><code>anAlternativeExtension</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>alternativeExtension</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>The extension of the alternative file (including '.')</p>
 </dd>
   </dl>

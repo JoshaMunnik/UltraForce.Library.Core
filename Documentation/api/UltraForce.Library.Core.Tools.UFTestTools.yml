@@ -67,12 +67,12 @@ items:
   summary: Checks if a list of items has unique values for a certain property.
   example: []
   syntax:
-    content: 'public static void HasUniqueValues<TObject, TValue>(IEnumerable<TObject> aList, Func<TObject, TValue> aGetValue) where TValue : IEquatable<TValue>'
+    content: 'public static void HasUniqueValues<TObject, TValue>(IEnumerable<TObject> list, Func<TObject, TValue> getValue) where TValue : IEquatable<TValue>'
     parameters:
-    - id: aList
+    - id: list
       type: System.Collections.Generic.IEnumerable{{TObject}}
       description: List to check
-    - id: aGetValue
+    - id: getValue
       type: System.Func{{TObject},{TValue}}
       description: A function to get the value
     typeParameters:
@@ -80,7 +80,7 @@ items:
       description: Object to get value from
     - id: TValue
       description: Value type
-    content.vb: Public Shared Sub HasUniqueValues(Of TObject, TValue As IEquatable(Of TValue))(aList As IEnumerable(Of TObject), aGetValue As Func(Of TObject, TValue))
+    content.vb: Public Shared Sub HasUniqueValues(Of TObject, TValue As IEquatable(Of TValue))(list As IEnumerable(Of TObject), getValue As Func(Of TObject, TValue))
   overload: UltraForce.Library.Core.Tools.UFTestTools.HasUniqueValues*
   nameWithType.vb: UFTestTools.HasUniqueValues(Of TObject, TValue)(IEnumerable(Of TObject), Func(Of TObject, TValue))
   fullName.vb: UltraForce.Library.Core.Tools.UFTestTools.HasUniqueValues(Of TObject, TValue)(System.Collections.Generic.IEnumerable(Of TObject), System.Func(Of TObject, TValue))
@@ -110,21 +110,21 @@ items:
   summary: Checks if all properties are the same.
   example: []
   syntax:
-    content: public static void AssertEqualProperties<T>(T anExpected, T anActual, IEnumerable<string>? aNotEqualProperties = null)
+    content: public static void AssertEqualProperties<T>(T expected, T actual, IEnumerable<string>? notEqualProperties = null)
     parameters:
-    - id: anExpected
+    - id: expected
       type: '{T}'
       description: ''
-    - id: anActual
+    - id: actual
       type: '{T}'
       description: ''
-    - id: aNotEqualProperties
+    - id: notEqualProperties
       type: System.Collections.Generic.IEnumerable{System.String}
       description: ''
     typeParameters:
     - id: T
       description: ''
-    content.vb: Public Shared Sub AssertEqualProperties(Of T)(anExpected As T, anActual As T, aNotEqualProperties As IEnumerable(Of String) = Nothing)
+    content.vb: Public Shared Sub AssertEqualProperties(Of T)(expected As T, actual As T, notEqualProperties As IEnumerable(Of String) = Nothing)
   overload: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualProperties*
   nameWithType.vb: UFTestTools.AssertEqualProperties(Of T)(T, T, IEnumerable(Of String))
   fullName.vb: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualProperties(Of T)(T, T, System.Collections.Generic.IEnumerable(Of String))
@@ -147,7 +147,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AssertEqualList
     path: ../UltraForce.Library.Core/Tools/UFTestTools.cs
-    startLine: 91
+    startLine: 93
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Tools
@@ -159,21 +159,21 @@ items:
     the order of the items.
   example: []
   syntax:
-    content: public static void AssertEqualList<T>(IEnumerable<T> anExpectedList, IEnumerable<T> anActualList, IEnumerable<string>? aNotEqualProperties = null)
+    content: public static void AssertEqualList<T>(IEnumerable<T> expectedList, IEnumerable<T> actualList, IEnumerable<string>? notEqualProperties = null)
     parameters:
-    - id: anExpectedList
+    - id: expectedList
       type: System.Collections.Generic.IEnumerable{{T}}
       description: ''
-    - id: anActualList
+    - id: actualList
       type: System.Collections.Generic.IEnumerable{{T}}
       description: ''
-    - id: aNotEqualProperties
+    - id: notEqualProperties
       type: System.Collections.Generic.IEnumerable{System.String}
       description: ''
     typeParameters:
     - id: T
       description: ''
-    content.vb: Public Shared Sub AssertEqualList(Of T)(anExpectedList As IEnumerable(Of T), anActualList As IEnumerable(Of T), aNotEqualProperties As IEnumerable(Of String) = Nothing)
+    content.vb: Public Shared Sub AssertEqualList(Of T)(expectedList As IEnumerable(Of T), actualList As IEnumerable(Of T), notEqualProperties As IEnumerable(Of String) = Nothing)
   overload: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualList*
   exceptions:
   - type: System.Exception
@@ -200,7 +200,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AssertEqualList
     path: ../UltraForce.Library.Core/Tools/UFTestTools.cs
-    startLine: 117
+    startLine: 122
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Tools
@@ -210,15 +210,15 @@ items:
     if the size are equal and all items are found within the list.
   example: []
   syntax:
-    content: public static void AssertEqualList<TFirst, TSecond>(IEnumerable<TFirst> anExpectedList, IEnumerable<TSecond> anActualList, Func<TFirst, TSecond, bool> aComparer)
+    content: public static void AssertEqualList<TFirst, TSecond>(IEnumerable<TFirst> expectedEnumerable, IEnumerable<TSecond> actualEnumerable, Func<TFirst, TSecond, bool> comparer)
     parameters:
-    - id: anExpectedList
+    - id: expectedEnumerable
       type: System.Collections.Generic.IEnumerable{{TFirst}}
       description: ''
-    - id: anActualList
+    - id: actualEnumerable
       type: System.Collections.Generic.IEnumerable{{TSecond}}
       description: ''
-    - id: aComparer
+    - id: comparer
       type: System.Func{{TFirst},{TSecond},System.Boolean}
       description: ''
     typeParameters:
@@ -226,7 +226,7 @@ items:
       description: ''
     - id: TSecond
       description: ''
-    content.vb: Public Shared Sub AssertEqualList(Of TFirst, TSecond)(anExpectedList As IEnumerable(Of TFirst), anActualList As IEnumerable(Of TSecond), aComparer As Func(Of TFirst, TSecond, Boolean))
+    content.vb: Public Shared Sub AssertEqualList(Of TFirst, TSecond)(expectedEnumerable As IEnumerable(Of TFirst), actualEnumerable As IEnumerable(Of TSecond), comparer As Func(Of TFirst, TSecond, Boolean))
   overload: UltraForce.Library.Core.Tools.UFTestTools.AssertEqualList*
   exceptions:
   - type: System.Exception

@@ -95,17 +95,17 @@ items:
   summary: Updates the properties of an entity by copying them from this instance.
   example: []
   syntax:
-    content: public virtual Task CopyToEntityAsync(TEntity anEntity, UFEntityAction anAction)
+    content: public virtual Task CopyToEntityAsync(TEntity entity, UFEntityAction action)
     parameters:
-    - id: anEntity
+    - id: entity
       type: '{TEntity}'
       description: Value to copy properties to
-    - id: anAction
+    - id: action
       type: UltraForce.Library.Core.Types.Enums.UFEntityAction
       description: Action that will be performed with the entity
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Public Overridable Function CopyToEntityAsync(anEntity As TEntity, anAction As UFEntityAction) As Task
+    content.vb: Public Overridable Function CopyToEntityAsync(entity As TEntity, action As UFEntityAction) As Task
   overload: UltraForce.Library.Core.Models.UFDataServiceModel`2.CopyToEntityAsync*
   implements:
   - UltraForce.Library.Core.Models.IUFDataServiceModel{{TEntity}}.CopyToEntityAsync({TEntity},UltraForce.Library.Core.Types.Enums.UFEntityAction)
@@ -129,21 +129,21 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: CopyFromEntityAsync
     path: ../UltraForce.Library.Core/Models/UFDataServiceModel.cs
-    startLine: 99
+    startLine: 102
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Models
   summary: Updates this instance by copying the properties of an entity.
   example: []
   syntax:
-    content: public virtual Task CopyFromEntityAsync(TEntity anEntity)
+    content: public virtual Task CopyFromEntityAsync(TEntity entity)
     parameters:
-    - id: anEntity
+    - id: entity
       type: '{TEntity}'
       description: Value to copy properties from
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Public Overridable Function CopyFromEntityAsync(anEntity As TEntity) As Task
+    content.vb: Public Overridable Function CopyFromEntityAsync(entity As TEntity) As Task
   overload: UltraForce.Library.Core.Models.UFDataServiceModel`2.CopyFromEntityAsync*
   implements:
   - UltraForce.Library.Core.Models.IUFDataServiceModel{{TEntity}}.CopyFromEntityAsync({TEntity})

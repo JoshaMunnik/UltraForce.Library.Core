@@ -165,12 +165,12 @@ Class UFDataServiceTools  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;IEnumerable&lt;TServiceModel&gt;&gt; BuildFromAsync&lt;TServiceModel, TEntity&gt;(IEnumerable&lt;TEntity&gt; anEntities) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;IEnumerable&lt;TServiceModel&gt;&gt; BuildFromAsync&lt;TServiceModel, TEntity&gt;(IEnumerable&lt;TEntity&gt; entities) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anEntities</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TEntity&gt;</dt>
+    <dt><code>entities</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TEntity&gt;</dt>
     <dd><p>Entities to create instance for</p>
 </dd>
   </dl>
@@ -213,12 +213,12 @@ Class UFDataServiceTools  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;TServiceModel&gt; BuildFromAsync&lt;TServiceModel, TEntity&gt;(TEntity anEntity) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;TServiceModel&gt; BuildFromAsync&lt;TServiceModel, TEntity&gt;(TEntity entity) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anEntity</code> <span class="xref">TEntity</span></dt>
+    <dt><code>entity</code> <span class="xref">TEntity</span></dt>
     <dd><p>Entity to create instance for</p>
 </dd>
   </dl>
@@ -261,12 +261,12 @@ Class UFDataServiceTools  <a class="header-action link-secondary" title="View so
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;TServiceModel?&gt; BuildNullableFromAsync&lt;TServiceModel, TEntity&gt;(TEntity? anEntity) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;TServiceModel?&gt; BuildNullableFromAsync&lt;TServiceModel, TEntity&gt;(TEntity? entity) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anEntity</code> <span class="xref">TEntity</span></dt>
+    <dt><code>entity</code> <span class="xref">TEntity</span></dt>
     <dd><p>Entity to create instance for</p>
 </dd>
   </dl>

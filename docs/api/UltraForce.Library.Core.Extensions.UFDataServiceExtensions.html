@@ -166,12 +166,12 @@ model instances.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;IEnumerable&lt;TServiceModel&gt;&gt; AsModelAsync&lt;TServiceModel, TEntity&gt;(this IEnumerable&lt;TEntity&gt; anEntities) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;IEnumerable&lt;TServiceModel&gt;&gt; AsModelAsync&lt;TServiceModel, TEntity&gt;(this IEnumerable&lt;TEntity&gt; entities) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anEntities</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TEntity&gt;</dt>
+    <dt><code>entities</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TEntity&gt;</dt>
     <dd><p>Entities to create data service model instances for</p>
 </dd>
   </dl>
@@ -210,17 +210,17 @@ model instances.</p>
   </h3>
 
   <div class="markdown level1 summary"><p>Uses <a class="xref" href="UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildFromAsync__2___1_">BuildFromAsync&lt;TServiceModel, TEntity&gt;(TEntity)</a> to
-create a data service model from an database entity.</p>
+create a data service model from a database entity.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;TServiceModel&gt; AsModelAsync&lt;TServiceModel, TEntity&gt;(this Task&lt;TEntity&gt; anEntity) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;TServiceModel&gt; AsModelAsync&lt;TServiceModel, TEntity&gt;(this Task&lt;TEntity&gt; entity) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anEntity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TEntity&gt;</dt>
+    <dt><code>entity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TEntity&gt;</dt>
     <dd><p>Entity to create data service model instance from</p>
 </dd>
   </dl>
@@ -259,17 +259,17 @@ create a data service model from an database entity.</p>
   </h3>
 
   <div class="markdown level1 summary"><p>Uses <a class="xref" href="UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildFromAsync__2___1_">BuildFromAsync&lt;TServiceModel, TEntity&gt;(TEntity)</a> to
-create a data service model from an database entity.</p>
+create a data service model from a database entity.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;TServiceModel&gt; AsModelAsync&lt;TServiceModel, TEntity&gt;(this TEntity anEntity) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;TServiceModel&gt; AsModelAsync&lt;TServiceModel, TEntity&gt;(this TEntity entity) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anEntity</code> <span class="xref">TEntity</span></dt>
+    <dt><code>entity</code> <span class="xref">TEntity</span></dt>
     <dd><p>Entity to create data service model instance from</p>
 </dd>
   </dl>
@@ -308,17 +308,17 @@ create a data service model from an database entity.</p>
   </h3>
 
   <div class="markdown level1 summary"><p>Uses <a class="xref" href="UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildNullableFromAsync__2___1_">BuildNullableFromAsync&lt;TServiceModel, TEntity&gt;(TEntity?)</a>
-to create a data service model from an database entity. It supports nullable entities.</p>
+to create a data service model from a database entity. It supports nullable entities.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;TServiceModel?&gt; AsNullableModelAsync&lt;TServiceModel, TEntity&gt;(this Task&lt;TEntity?&gt; anEntity) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;TServiceModel?&gt; AsNullableModelAsync&lt;TServiceModel, TEntity&gt;(this Task&lt;TEntity?&gt; entity) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anEntity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TEntity&gt;</dt>
+    <dt><code>entity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TEntity&gt;</dt>
     <dd><p>Entity to create data service model instance from</p>
 </dd>
   </dl>
@@ -358,17 +358,17 @@ to create a data service model from an database entity. It supports nullable ent
 
   <div class="markdown level1 summary"><p>Uses
 <a class="xref" href="UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildFromAsync__2___1_">BuildFromAsync&lt;TServiceModel, TEntity&gt;(TEntity)</a>
-to create a data service model from an database entity. It supports nullable entities.</p>
+to create a data service model from a database entity. It supports nullable entities.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;TServiceModel?&gt; AsNullableModelAsync&lt;TServiceModel, TEntity&gt;(this ValueTask&lt;TEntity?&gt; anEntity) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;TServiceModel?&gt; AsNullableModelAsync&lt;TServiceModel, TEntity&gt;(this ValueTask&lt;TEntity?&gt; entity) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anEntity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;TEntity&gt;</dt>
+    <dt><code>entity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;TEntity&gt;</dt>
     <dd><p>Entity to create data service model instance from</p>
 </dd>
   </dl>
@@ -407,17 +407,17 @@ to create a data service model from an database entity. It supports nullable ent
   </h3>
 
   <div class="markdown level1 summary"><p>Uses <a class="xref" href="UltraForce.Library.Core.Tools.UFDataServiceTools.html#UltraForce_Library_Core_Tools_UFDataServiceTools_BuildFromAsync__2___1_">BuildFromAsync&lt;TServiceModel, TEntity&gt;(TEntity)</a> to
-create a data service model from an database entity. It supports nullable entities.</p>
+create a data service model from a database entity. It supports nullable entities.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;TServiceModel?&gt; AsNullableModelAsync&lt;TServiceModel, TEntity&gt;(this TEntity? anEntity) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;TServiceModel?&gt; AsNullableModelAsync&lt;TServiceModel, TEntity&gt;(this TEntity? entity) where TServiceModel : class, IUFDataServiceModel&lt;TEntity&gt;, new() where TEntity : class</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anEntity</code> <span class="xref">TEntity</span></dt>
+    <dt><code>entity</code> <span class="xref">TEntity</span></dt>
     <dd><p>Entity to create data service model instance from</p>
 </dd>
   </dl>
