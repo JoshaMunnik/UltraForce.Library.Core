@@ -9,9 +9,9 @@
 // Copyright (C) 2018 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,11 +22,12 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using UltraForce.Library.Core.Models;
@@ -35,9 +36,9 @@ using UltraForce.Library.Core.Services;
 namespace UltraForce.Library.Core.Data;
 
 /// <summary>
-/// <see cref="UFRepository{TContext}" /> is a base class to implement a repository. 
+/// <see cref="UFRepository{TContext}" /> is a base class to implement a repository.
 /// <para>
-/// The class implements a locking mechanism to minimize the 
+/// The class implements a locking mechanism to minimize the
 /// <see cref="DbContext.SaveChanges()"/> calls.
 /// </para>
 /// </summary>
@@ -45,11 +46,13 @@ namespace UltraForce.Library.Core.Data;
 /// Interface definition for the repository should inherit from
 /// <see cref="IUFRepository"/>.
 /// <para>
-/// See <see cref="IUFDataService"/> and <see cref="IUFDataServiceModel{TEntity}"/> for a 
+/// See <see cref="IUFDataService"/> and <see cref="IUFDataServiceModel{TEntity}"/> for a
 /// </para>
 /// </remarks>
 /// <typeparam name="TContext">The database context type</typeparam>
-public class UFRepository<TContext> : IUFRepository where TContext : DbContext {
+[SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
+public class UFRepository<TContext> : IUFRepository where TContext : DbContext
+{
   #region Private methods
 
   /// <summary>
@@ -69,25 +72,30 @@ public class UFRepository<TContext> : IUFRepository where TContext : DbContext {
   /// <summary>
   /// Constructs an instance of <see cref="UFRepository{T}" />.
   /// </summary>
-  /// <param name="aContext">
+  /// <param name="context">
   /// Database context to use
   /// </param>
-  /// <param name="aDisableTracking">
+  /// <param name="disableTracking">
   /// When true tell <see cref="DbContext.ChangeTracker"/> to stop tracking
-  /// and reset the state of any tracked entry to 
-  /// <see cref="EntityState.Detached"/> with the 
+  /// and reset the state of any tracked entry to
+  /// <see cref="EntityState.Detached"/> with the
   /// <see cref="SaveChangesAsync"/> call.
   /// </param>
-  protected UFRepository(TContext aContext, bool aDisableTracking) {
-    this.Context = aContext;
+  protected UFRepository(
+    TContext context,
+    bool disableTracking
+  )
+  {
+    this.Context = context;
     this.Changed = false;
     this.m_lockCount = 0;
-    this.m_disableTracking = aDisableTracking;
-    if (aDisableTracking) {
-      this.Context.ChangeTracker.QueryTrackingBehavior = 
-        QueryTrackingBehavior.NoTracking;
-      this.Context.ChangeTracker.AutoDetectChangesEnabled = false;
+    this.m_disableTracking = disableTracking;
+    if (!disableTracking)
+    {
+      return;
     }
+    this.Context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+    this.Context.ChangeTracker.AutoDetectChangesEnabled = false;
   }
 
   #endregion
@@ -95,20 +103,25 @@ public class UFRepository<TContext> : IUFRepository where TContext : DbContext {
   #region IUFRepository
 
   /// <inheritdoc />
-  public Task LockAsync() {
+  public Task LockAsync()
+  {
     this.m_lockCount++;
     return Task.CompletedTask;
   }
 
   /// <inheritdoc />
-  public async Task UnlockAsync() {
-    if (this.m_lockCount == 0) {
+  public async Task UnlockAsync()
+  {
+    if (this.m_lockCount == 0)
+    {
       throw new Exception("Trying to unlock a non-locked instance");
     }
     this.m_lockCount--;
-    if ((this.m_lockCount == 0) && this.Changed) {
+    if ((this.m_lockCount == 0) && this.Changed)
+    {
       await this.SaveChangesAsync();
-      if (this.m_disableTracking) {
+      if (this.m_disableTracking)
+      {
         this.DetachTrackedEntries();
       }
     }
@@ -137,31 +150,37 @@ public class UFRepository<TContext> : IUFRepository where TContext : DbContext {
   /// Saves the changes when the instance is not locked, else set an internal
   /// flag to indicate data needs to be saved.
   /// <para>
-  /// If tracking was disabled, this method will also call 
+  /// If tracking was disabled, this method will also call
   /// <see cref="DetachTrackedEntries"/>.
   /// </para>
   /// </summary>
-  protected async Task SaveChangesAsync() {
-    if (this.m_lockCount == 0) {
+  protected async Task SaveChangesAsync()
+  {
+    if (this.m_lockCount == 0)
+    {
       this.Changed = false;
-      try {
+      try
+      {
         await this.Context.SaveChangesAsync();
       }
       // ReSharper disable once RedundantCatchClause
-      catch {
+      catch
+      {
         throw;
       }
-      if (this.m_disableTracking) {
+      if (this.m_disableTracking)
+      {
         this.DetachTrackedEntries();
       }
     }
-    else {
+    else
+    {
       this.Changed = true;
     }
   }
 
   /// <summary>
-  /// Sets the changed entries that have <see cref="EntityState.Added"/>, 
+  /// Sets the changed entries that have <see cref="EntityState.Added"/>,
   /// <see cref="EntityState.Modified"/> or <see cref="EntityState.Deleted"/>
   /// to <see cref="EntityState.Detached"/>.
   /// </summary>
@@ -169,16 +188,18 @@ public class UFRepository<TContext> : IUFRepository where TContext : DbContext {
   /// Based on code from:
   /// https://stackoverflow.com/questions/27423059/how-do-i-clear-tracked-entities-in-entity-framework
   /// </remarks>
-  protected void DetachTrackedEntries() {
+  protected void DetachTrackedEntries()
+  {
     List<EntityEntry> changedEntriesCopy = this.Context.ChangeTracker.Entries()
-      .Where(entry => 
+      .Where(entry =>
         entry.State == EntityState.Added ||
         entry.State == EntityState.Modified ||
         entry.State == EntityState.Deleted ||
         entry.State == EntityState.Unchanged
       )
       .ToList();
-    foreach (EntityEntry entity in changedEntriesCopy) {
+    foreach (EntityEntry entity in changedEntriesCopy)
+    {
       this.Context.Entry(entity.Entity).State = EntityState.Detached;
     }
   }

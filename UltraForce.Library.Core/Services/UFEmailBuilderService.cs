@@ -39,18 +39,28 @@ public abstract class UFEmailBuilderService : IUFEmailBuilderService
   public abstract IUFEmailBuilderService Start();
 
   /// <inheritdoc />
-  public abstract IUFEmailBuilderService Subject(string aSubject);
+  public abstract IUFEmailBuilderService Subject(
+    string subject
+  );
 
   /// <inheritdoc />
-  public abstract IUFEmailBuilderService From(string aFromEmail, string? aName = null);
+  public abstract IUFEmailBuilderService From(
+    string fromEmail,
+    string? name = null
+  );
 
   /// <inheritdoc />
-  public abstract IUFEmailBuilderService To(string aToEmail, string? aName = null);
+  public abstract IUFEmailBuilderService To(
+    string toEmail,
+    string? name = null
+  );
 
   /// <inheritdoc />
-  public IUFEmailBuilderService To(IDictionary<string, string?> aEmailWithNames)
+  public IUFEmailBuilderService To(
+    IDictionary<string, string?> emailWithNames
+  )
   {
-    foreach (KeyValuePair<string, string?> emailWithName in aEmailWithNames)
+    foreach (KeyValuePair<string, string?> emailWithName in emailWithNames)
     {
       this.To(emailWithName.Key, emailWithName.Value);
     }
@@ -58,12 +68,17 @@ public abstract class UFEmailBuilderService : IUFEmailBuilderService
   }
 
   /// <inheritdoc />
-  public abstract IUFEmailBuilderService Cc(string aToEmail, string? aName = null);
+  public abstract IUFEmailBuilderService Cc(
+    string toEmail,
+    string? name = null
+  );
 
   /// <inheritdoc />
-  public IUFEmailBuilderService Cc(IDictionary<string, string?> aEmailWithNames)
+  public IUFEmailBuilderService Cc(
+    IDictionary<string, string?> emailWithNames
+  )
   {
-    foreach (KeyValuePair<string, string?> emailWithName in aEmailWithNames)
+    foreach (KeyValuePair<string, string?> emailWithName in emailWithNames)
     {
       this.Cc(emailWithName.Key, emailWithName.Value);
     }
@@ -71,12 +86,17 @@ public abstract class UFEmailBuilderService : IUFEmailBuilderService
   }
 
   /// <inheritdoc />
-  public abstract IUFEmailBuilderService Bcc(string aToEmail, string? aName = null);
+  public abstract IUFEmailBuilderService Bcc(
+    string toEmail,
+    string? name = null
+  );
 
   /// <inheritdoc />
-  public IUFEmailBuilderService Bcc(IDictionary<string, string?> aEmailWithNames)
+  public IUFEmailBuilderService Bcc(
+    IDictionary<string, string?> emailWithNames
+  )
   {
-    foreach (KeyValuePair<string, string?> emailWithName in aEmailWithNames)
+    foreach (KeyValuePair<string, string?> emailWithName in emailWithNames)
     {
       this.Bcc(emailWithName.Key, emailWithName.Value);
     }
@@ -84,29 +104,43 @@ public abstract class UFEmailBuilderService : IUFEmailBuilderService
   }
 
   /// <inheritdoc />
-  public abstract IUFEmailBuilderService ReplyTo(string aReplyToEmail, string? aName = null);
+  public abstract IUFEmailBuilderService ReplyTo(
+    string replyToEmail,
+    string? name = null
+  );
 
   /// <inheritdoc />
-  public abstract IUFEmailBuilderService Html(string aContent);
+  public abstract IUFEmailBuilderService Html(
+    string content
+  );
 
   /// <inheritdoc />
-  public abstract IUFEmailBuilderService Text(string aContent);
+  public abstract IUFEmailBuilderService Text(
+    string content
+  );
 
   /// <inheritdoc />
-  public abstract IUFEmailBuilderService Attachment(string aName, string aContentTYpe, BinaryData aData);
+  public abstract IUFEmailBuilderService Attachment(
+    string name,
+    string contentTYpe,
+    BinaryData data
+  );
 
   /// <inheritdoc />
   public IUFEmailBuilderService Attachments(
-    string aContentType, IDictionary<string, BinaryData> anAttachments
+    string contentType,
+    IDictionary<string, BinaryData> attachments
   )
   {
-    foreach (KeyValuePair<string, BinaryData> attachment in anAttachments)
+    foreach (KeyValuePair<string, BinaryData> attachment in attachments)
     {
-      this.Attachment(attachment.Key, aContentType, attachment.Value);
+      this.Attachment(attachment.Key, contentType, attachment.Value);
     }
     return this;
   }
 
   /// <inheritdoc />
-  public abstract Task<string> SendAsync(bool aWaitForCompletion);
+  public abstract Task<string> SendAsync(
+    bool waitForCompletion
+  );
 }

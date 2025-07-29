@@ -9,9 +9,9 @@
 // Copyright (C) 2024 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -39,64 +39,64 @@ namespace UltraForce.Library.Core.Tools;
 public static class UFDataServiceTools
 {
   /// <summary>
-  /// Creates a service model instance for an entity. 
+  /// Creates a service model instance for an entity.
   /// </summary>
-  /// <param name="anEntity">Entity to create instance for</param>
+  /// <param name="entity">Entity to create instance for</param>
   /// <typeparam name="TServiceModel">
   /// A class implementing <see cref="IUFDataServiceModel{TEntity}"/>
   /// </typeparam>
   /// <typeparam name="TEntity">The database entity class</typeparam>
   /// <returns>service model instance or null if anEntity was null</returns>
   public static async Task<TServiceModel> BuildFromAsync<TServiceModel, TEntity>(
-    TEntity anEntity
+    TEntity entity
   )
     where TEntity : class
     where TServiceModel : class, IUFDataServiceModel<TEntity>, new()
   {
     TServiceModel result = new();
-    await result.CopyFromEntityAsync(anEntity);
+    await result.CopyFromEntityAsync(entity);
     return result;
   }
 
   /// <summary>
-  /// Creates a service model instance for an entity. 
+  /// Creates a service model instance for an entity.
   /// </summary>
-  /// <param name="anEntity">Entity to create instance for</param>
+  /// <param name="entity">Entity to create instance for</param>
   /// <typeparam name="TServiceModel">A class implementing <see cref="IUFDataServiceModel{TEntity}"/></typeparam>
   /// <typeparam name="TEntity">The database entity class</typeparam>
   /// <returns>service model instance or null if anEntity was null</returns>
   public static async Task<TServiceModel?> BuildNullableFromAsync<TServiceModel, TEntity>(
-    TEntity? anEntity
+    TEntity? entity
   )
     where TEntity : class
     where TServiceModel : class, IUFDataServiceModel<TEntity>, new()
   {
-    if (anEntity == null)
+    if (entity == null)
     {
       return null;
     }
-    return await BuildFromAsync<TServiceModel, TEntity>(anEntity);
+    return await BuildFromAsync<TServiceModel, TEntity>(entity);
   }
 
   /// <summary>
-  /// Creates a list of service model instances from a list of entities. 
+  /// Creates a list of service model instances from a list of entities.
   /// </summary>
-  /// <param name="anEntities">Entities to create instance for</param>
+  /// <param name="entities">Entities to create instance for</param>
   /// <typeparam name="TServiceModel">
   /// A class implementing <see cref="IUFDataServiceModel{TEntity}"/>
   /// </typeparam>
   /// <typeparam name="TEntity">The database entity class</typeparam>
   /// <returns>A list of service model instance</returns>
   public static async Task<IEnumerable<TServiceModel>> BuildFromAsync<TServiceModel, TEntity>(
-    IEnumerable<TEntity> anEntities
+    IEnumerable<TEntity> entities
   )
     where TEntity : class
     where TServiceModel : class, IUFDataServiceModel<TEntity>, new()
   {
     Collection<TServiceModel> result = [];
-    // don't use Task.WhenAll here, because it might cause multiple threads to access the 
+    // don't use Task.WhenAll here, because it might cause multiple threads to access the
     // context at the same time.
-    foreach (TEntity entity in anEntities)
+    foreach (TEntity entity in entities)
     {
       result.Add(await BuildFromAsync<TServiceModel, TEntity>(entity));
     }

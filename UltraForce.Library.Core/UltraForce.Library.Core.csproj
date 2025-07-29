@@ -1,38 +1,38 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-        <Title>Ultra Force Library for .NET Core</Title>
-        <Authors>Josha Munnik</Authors>
-        <Copyright>(c) 2024 by Ultra Force Development</Copyright>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Description>A set of general usable classes for .NET Core</Description>
-        <PackageIcon>ufd.png</PackageIcon>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core</RepositoryUrl>
-        <PackageReadmeFile>README.md</PackageReadmeFile>
-        <Version>1.0.13</Version>
-        <PackageReleaseNotes>- updated used packages</PackageReleaseNotes>
-    </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>Ultra Force Library for .NET Core</Title>
+    <Authors>Josha Munnik</Authors>
+    <Copyright>(c) 2024 by Ultra Force Development</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>A set of general usable classes for .NET Core</Description>
+    <PackageIcon>ufd.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Version>1.0.13</Version>
+    <PackageReleaseNotes>- updated used packages</PackageReleaseNotes>
+  </PropertyGroup>
 
-    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-      <DocumentationFile>bin\Release\UltraForce.Library.Core.xml</DocumentationFile>
-    </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DocumentationFile>bin\Release\UltraForce.Library.Core.xml</DocumentationFile>
+  </PropertyGroup>
 
-    <ItemGroup>
-        <None Include="ufd.png" Pack="True" PackagePath="" />
-        <None Include="README.md" Pack="True" PackagePath="" />
-        <None Include="bin\$(Configuration)\$(TargetFramework)\*.xml" Pack="true" PackagePath="\" />      
-    </ItemGroup>
+  <ItemGroup>
+    <None Include="ufd.png" Pack="True" PackagePath=""/>
+    <None Include="README.md" Pack="True" PackagePath=""/>
+    <None Include="bin\$(Configuration)\$(TargetFramework)\*.xml" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
-    <ItemGroup>
-      <PackageReference Include="Azure.Communication.Email" Version="1.0.1" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.7" />
-      <PackageReference Include="UltraForce.Library.NetStandard" Version="1.0.16" />
-      <PackageReference Include="xunit.assert" Version="2.9.3" />
-    </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Azure.Communication.Email" Version="1.0.1"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.7"/>
+    <PackageReference Include="UltraForce.Library.NetStandard" Version="1.0.16"/>
+    <PackageReference Include="xunit.assert" Version="2.9.3"/>
+  </ItemGroup>
 
 </Project>

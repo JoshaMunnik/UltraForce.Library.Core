@@ -9,9 +9,9 @@
 // Copyright (C) 2024 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -39,114 +39,150 @@ public interface IUFEmailBuilderService
   /// </summary>
   /// <returns></returns>
   IUFEmailBuilderService Start();
-  
+
   /// <summary>
   /// Sets the email subject.
   /// </summary>
-  /// <param name="aSubject"></param>
+  /// <param name="subject"></param>
   /// <returns></returns>
-  IUFEmailBuilderService Subject(string aSubject);
-  
+  IUFEmailBuilderService Subject(
+    string subject
+  );
+
   /// <summary>
   /// Sets the email sender.
   /// </summary>
-  /// <param name="aFromEmail"></param>
-  /// <param name="aName"></param>
+  /// <param name="fromEmail"></param>
+  /// <param name="name"></param>
   /// <returns></returns>
-  IUFEmailBuilderService From(string aFromEmail, string? aName = null);
+  IUFEmailBuilderService From(
+    string fromEmail,
+    string? name = null
+  );
 
   /// <summary>
   /// Adds an email recipient.
   /// </summary>
-  /// <param name="aToEmail"></param>
-  /// <param name="aName"></param>
+  /// <param name="toEmail"></param>
+  /// <param name="name"></param>
   /// <returns></returns>
-  IUFEmailBuilderService To(string aToEmail, string? aName = null);
+  IUFEmailBuilderService To(
+    string toEmail,
+    string? name = null
+  );
 
   /// <summary>
   /// Adds multiple email recipients.
   /// </summary>
-  /// <param name="aEmailWithNames"></param>
+  /// <param name="emailWithNames"></param>
   /// <returns></returns>
-  IUFEmailBuilderService To(IDictionary<string, string?> aEmailWithNames);
-  
+  IUFEmailBuilderService To(
+    IDictionary<string, string?> emailWithNames
+  );
+
   /// <summary>
   /// Adds a cc recipient.
   /// </summary>
-  /// <param name="aToEmail"></param>
-  /// <param name="aName"></param>
+  /// <param name="toEmail"></param>
+  /// <param name="name"></param>
   /// <returns></returns>
-  IUFEmailBuilderService Cc(string aToEmail, string? aName = null);
+  IUFEmailBuilderService Cc(
+    string toEmail,
+    string? name = null
+  );
 
   /// <summary>
   /// Adds multiple cc recipients.
   /// </summary>
-  /// <param name="aEmailWithNames"></param>
+  /// <param name="emailWithNames"></param>
   /// <returns></returns>
-  IUFEmailBuilderService Cc(IDictionary<string, string?> aEmailWithNames);
+  IUFEmailBuilderService Cc(
+    IDictionary<string, string?> emailWithNames
+  );
 
   /// <summary>
   /// Adds a bcc recipient.
   /// </summary>
-  /// <param name="aToEmail"></param>
-  /// <param name="aName"></param>
+  /// <param name="toEmail"></param>
+  /// <param name="name"></param>
   /// <returns></returns>
-  IUFEmailBuilderService Bcc(string aToEmail, string? aName = null);
+  IUFEmailBuilderService Bcc(
+    string toEmail,
+    string? name = null
+  );
 
   /// <summary>
   /// Adds multiple bcc recipients.
   /// </summary>
-  /// <param name="aEmailWithNames"></param>
+  /// <param name="emailWithNames"></param>
   /// <returns></returns>
-  IUFEmailBuilderService Bcc(IDictionary<string, string?> aEmailWithNames);
-  
+  IUFEmailBuilderService Bcc(
+    IDictionary<string, string?> emailWithNames
+  );
+
   /// <summary>
   /// Sets the reply to email.
   /// </summary>
-  /// <param name="aReplyToEmail"></param>
-  /// <param name="aName"></param>
+  /// <param name="replyToEmail"></param>
+  /// <param name="name"></param>
   /// <returns></returns>
-  IUFEmailBuilderService ReplyTo(string aReplyToEmail, string? aName = null);
+  IUFEmailBuilderService ReplyTo(
+    string replyToEmail,
+    string? name = null
+  );
 
   /// <summary>
   /// Sets the html content.
   /// </summary>
-  /// <param name="aContent"></param>
+  /// <param name="content"></param>
   /// <returns></returns>
-  IUFEmailBuilderService Html(string aContent);
+  IUFEmailBuilderService Html(
+    string content
+  );
 
   /// <summary>
   /// Sets the text content.
   /// </summary>
-  /// <param name="aContent"></param>
+  /// <param name="content"></param>
   /// <returns></returns>
-  IUFEmailBuilderService Text(string aContent);
+  IUFEmailBuilderService Text(
+    string content
+  );
 
   /// <summary>
   /// Adds an attachment.
   /// </summary>
-  /// <param name="aName"></param>
-  /// <param name="aContentTYpe"></param>
-  /// <param name="aData"></param>
+  /// <param name="name"></param>
+  /// <param name="contentTYpe"></param>
+  /// <param name="data"></param>
   /// <returns></returns>
-  IUFEmailBuilderService Attachment(string aName, string aContentTYpe, BinaryData aData);
+  IUFEmailBuilderService Attachment(
+    string name,
+    string contentTYpe,
+    BinaryData data
+  );
 
   /// <summary>
   /// Adds attachments of the same content type.
   /// </summary>
-  /// <param name="aContentType"></param>
-  /// <param name="anAttachments"></param>
+  /// <param name="contentType"></param>
+  /// <param name="attachments"></param>
   /// <returns></returns>
-  IUFEmailBuilderService Attachments(string aContentType, IDictionary<string, BinaryData> anAttachments);
+  IUFEmailBuilderService Attachments(
+    string contentType,
+    IDictionary<string, BinaryData> attachments
+  );
 
   /// <summary>
   /// Sends the email.
   /// </summary>
-  /// <param name="aWaitForCompletion">
+  /// <param name="waitForCompletion">
   /// True to wait until the email has been sent, false to return after the sending process has
   /// started. When set to false, the result of the send operation is unknown and the method
-  /// will return an empty string if everything else was successful.  
+  /// will return an empty string if everything else was successful.
   /// </param>
   /// <returns>Empty string if email was sent successfully, else an error message.</returns>
-  Task<string> SendAsync(bool aWaitForCompletion);
+  Task<string> SendAsync(
+    bool waitForCompletion
+  );
 }

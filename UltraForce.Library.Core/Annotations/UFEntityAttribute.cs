@@ -9,9 +9,9 @@
 // Copyright (C) 2021 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,10 +22,12 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
+
+using System.Diagnostics.CodeAnalysis;
 
 namespace UltraForce.Library.Core.Annotations;
 
@@ -33,13 +35,14 @@ namespace UltraForce.Library.Core.Annotations;
 /// Indicates that a property maps to a property in an entity
 /// </summary>
 [AttributeUsage(AttributeTargets.Property)]
+[SuppressMessage("ReSharper", "ClassNeverInstantiated.Global")]
 public sealed class UFEntityAttribute : Attribute
 {
   #region Properties
 
   /// <summary>
   /// The name of the other property or empty to use the name of the property this attribute
-  /// is set to. 
+  /// is set to.
   /// </summary>
   /// <value>
   /// The other property name.
@@ -59,30 +62,37 @@ public sealed class UFEntityAttribute : Attribute
   /// <summary>
   /// Creates a new instance of <see cref="UFEntityAttribute"/> using a name.
   /// </summary>
-  /// <param name="aName">Entity name to use</param>
-  public UFEntityAttribute(string aName)
+  /// <param name="name">Entity name to use</param>
+  public UFEntityAttribute(
+    string name
+  )
   {
-    this.Name = aName;
+    this.Name = name;
   }
 
   /// <summary>
   /// Creates a new instance of <see cref="UFEntityAttribute"/> using a name and readonly.
   /// </summary>
-  /// <param name="aName">Entity name to use</param>
-  /// <param name="aReadOnly"><see cref="ReadOnly"/> value</param>
-  public UFEntityAttribute(string aName, bool aReadOnly)
+  /// <param name="name">Entity name to use</param>
+  /// <param name="readOnly"><see cref="ReadOnly"/> value</param>
+  public UFEntityAttribute(
+    string name,
+    bool readOnly
+  )
   {
-    this.Name = aName;
-    this.ReadOnly = aReadOnly;
+    this.Name = name;
+    this.ReadOnly = readOnly;
   }
 
   /// <summary>
   /// Creates a new instance of <see cref="UFEntityAttribute"/> using readonly.
   /// </summary>
-  /// <param name="aReadOnly"><see cref="ReadOnly"/> value</param>
-  public UFEntityAttribute(bool aReadOnly)
+  /// <param name="readOnly"><see cref="ReadOnly"/> value</param>
+  public UFEntityAttribute(
+    bool readOnly
+  )
   {
-    this.ReadOnly = aReadOnly;
+    this.ReadOnly = readOnly;
   }
 
   /// <summary>

@@ -34,7 +34,8 @@ namespace UltraForce.Library.Core.Data;
 /// implementations that will inherit from 
 /// <see cref="UFRepository{TContext}"/>.
 /// </summary>
-public interface IUFRepository {
+public interface IUFRepository
+{
   /// <summary>
   /// Locks the repository, preventing the updating of underlying data 
   /// storage with every change.

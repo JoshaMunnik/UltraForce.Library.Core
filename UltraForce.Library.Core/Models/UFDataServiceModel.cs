@@ -9,9 +9,9 @@
 // Copyright (C) 2024 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -62,13 +62,13 @@ public class UFDataServiceModel<TServiceModel, TEntity> : IUFDataServiceModel<TE
   {
     /// <summary>
     /// Copy properties from the entity to the service. The key is the source, the value the
-    /// target. 
+    /// target.
     /// </summary>
     public Dictionary<PropertyInfo, PropertyInfo> EntityToServiceMap { get; set; }
 
     /// <summary>
     /// Copy properties from the service to entity. The key is the source, the value the
-    /// target. 
+    /// target.
     /// </summary>
     public Dictionary<PropertyInfo, PropertyInfo> ServiceToEntityMap { get; set; }
   }
@@ -90,16 +90,21 @@ public class UFDataServiceModel<TServiceModel, TEntity> : IUFDataServiceModel<TE
   #region IUFDataServiceModel
 
   /// <inheritdoc />
-  public virtual Task CopyToEntityAsync(TEntity anEntity, UFEntityAction anAction)
+  public virtual Task CopyToEntityAsync(
+    TEntity entity,
+    UFEntityAction action
+  )
   {
-    CopyProperties(this, anEntity, false);
+    CopyProperties(this, entity, false);
     return Task.CompletedTask;
   }
 
   /// <inheritdoc />
-  public virtual Task CopyFromEntityAsync(TEntity anEntity)
+  public virtual Task CopyFromEntityAsync(
+    TEntity entity
+  )
   {
-    CopyProperties(anEntity, this, true);
+    CopyProperties(entity, this, true);
     return Task.CompletedTask;
   }
 
@@ -111,12 +116,16 @@ public class UFDataServiceModel<TServiceModel, TEntity> : IUFDataServiceModel<TE
   /// Copies all properties that have a <see cref="UFEntityAttribute"/>. The method caches the
   /// property information, assuming property types do not change while the program runs.
   /// </summary>
-  /// <param name="aSource">Source to copy from</param>
-  /// <param name="aTarget">Target to copy to</param>
-  /// <param name="anEntityIsSource">True if aSource is the entity object</param>
-  private static void CopyProperties(object aSource, object aTarget, bool anEntityIsSource)
+  /// <param name="source">Source to copy from</param>
+  /// <param name="target">Target to copy to</param>
+  /// <param name="entityIsSource">True if aSource is the entity object</param>
+  private static void CopyProperties(
+    object source,
+    object target,
+    bool entityIsSource
+  )
   {
-    Type serviceModelType = anEntityIsSource ? aTarget.GetType() : aSource.GetType();
+    Type serviceModelType = entityIsSource ? target.GetType() : source.GetType();
     PropertyCopyMap map;
     lock (s_propertyMap)
     {
@@ -127,7 +136,7 @@ public class UFDataServiceModel<TServiceModel, TEntity> : IUFDataServiceModel<TE
           ServiceToEntityMap = new Dictionary<PropertyInfo, PropertyInfo>(),
           EntityToServiceMap = new Dictionary<PropertyInfo, PropertyInfo>()
         };
-        Type entityModelType = anEntityIsSource ? aSource.GetType() : aTarget.GetType();
+        Type entityModelType = entityIsSource ? source.GetType() : target.GetType();
         foreach (PropertyInfo serviceProperty in serviceModelType.GetProperties())
         {
           UFEntityAttribute? attribute = serviceProperty.GetCustomAttribute<UFEntityAttribute>();
@@ -158,14 +167,12 @@ public class UFDataServiceModel<TServiceModel, TEntity> : IUFDataServiceModel<TE
         s_propertyMap.Add(serviceModelType, map);
       }
     }
-    Dictionary<PropertyInfo, PropertyInfo> properties = anEntityIsSource
+    Dictionary<PropertyInfo, PropertyInfo> properties = entityIsSource
       ? map.EntityToServiceMap
       : map.ServiceToEntityMap;
     foreach ((PropertyInfo sourceProperty, PropertyInfo targetProperty) in properties)
     {
-      UFReflectionTools.CopyProperty(
-        sourceProperty, targetProperty, aSource, aTarget
-      );
+      UFReflectionTools.CopyProperty(sourceProperty, targetProperty, source, target);
     }
   }
 

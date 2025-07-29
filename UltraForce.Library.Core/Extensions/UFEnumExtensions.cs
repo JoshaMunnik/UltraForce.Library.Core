@@ -9,9 +9,9 @@
 // Copyright (C) 2018 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -41,37 +41,41 @@ public static class UFEnumExtensions
 {
   /// <summary>
   /// Get the description value of an enum. Try to get a value from <see cref="DisplayAttribute"/>,
-  /// <see cref="UFDescriptionAttribute"/> and <see cref="DescriptionAttribute"/>. 
+  /// <see cref="UFDescriptionAttribute"/> and <see cref="DescriptionAttribute"/>.
   /// </summary>
-  /// <param name="anEnumerationValue">Enumeration value.</param>
+  /// <param name="enumerationValue">Enumeration value.</param>
   /// <returns>
   /// The value of a description attribute or enum value converted to string.
   /// </returns>
-  public static string GetDisplayDescription(this Enum anEnumerationValue)
+  public static string GetDisplayDescription(
+    this Enum enumerationValue
+  )
   {
     // try to get attribute for field value
     return
-      anEnumerationValue.GetAttribute<DisplayAttribute>()?.Description ??
-      anEnumerationValue.GetAttribute<UFDescriptionAttribute>()?.Description ??
-      anEnumerationValue.GetAttribute<DescriptionAttribute>()?.Description ??
-      anEnumerationValue.GetDescription();
+      enumerationValue.GetAttribute<DisplayAttribute>()?.Description ??
+      enumerationValue.GetAttribute<UFDescriptionAttribute>()?.Description ??
+      enumerationValue.GetAttribute<DescriptionAttribute>()?.Description ??
+      enumerationValue.GetDescription();
   }
 
   /// <summary>
   /// Get the name value of an enum. Try to get a value from <see cref="DisplayAttribute"/>,
-  /// <see cref="UFDescriptionAttribute"/> and <see cref="DisplayNameAttribute"/>. 
+  /// <see cref="UFDescriptionAttribute"/> and <see cref="DisplayNameAttribute"/>.
   /// </summary>
-  /// <param name="anEnumerationValue">Enumeration value.</param>
+  /// <param name="enumerationValue">Enumeration value.</param>
   /// <returns>
   /// The value of a description attribute or enum value converted to string.
   /// </returns>
-  public static string GetDisplayName(this Enum anEnumerationValue)
+  public static string GetDisplayName(
+    this Enum enumerationValue
+  )
   {
     // try to get attribute for field value
     return
-      anEnumerationValue.GetAttribute<DisplayAttribute>()?.Name ??
-      anEnumerationValue.GetAttribute<DisplayNameAttribute>()?.DisplayName ??
-      anEnumerationValue.GetAttribute<UFDescriptionAttribute>()?.Name ??
-      anEnumerationValue.ToString();
+      enumerationValue.GetAttribute<DisplayAttribute>()?.Name ??
+      enumerationValue.GetAttribute<DisplayNameAttribute>()?.DisplayName ??
+      enumerationValue.GetAttribute<UFDescriptionAttribute>()?.Name ??
+      enumerationValue.ToString();
   }
 }

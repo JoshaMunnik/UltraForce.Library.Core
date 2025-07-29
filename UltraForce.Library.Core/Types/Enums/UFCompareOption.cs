@@ -38,27 +38,27 @@ public enum UFCompareOption
   /// Value must be less than the comparison value.
   /// </summary>
   LessThan,
-  
+
   /// <summary>
   /// Value must be less than or equal to the comparison value.
   /// </summary>
   LessThanOrEqual,
-  
+
   /// <summary>
   /// Value must be equal to the comparison value.
   /// </summary>
   Equal,
-  
+
   /// <summary>
   /// Value must not be equal to the comparison value.
   /// </summary>
   NotEqual,
-  
+
   /// <summary>
   /// Value must greater than or equal to the comparison value.
   /// </summary>
   GreaterThanOrEqual,
-  
+
   /// <summary>
   /// Value must be greater than the comparison value.
   /// </summary>

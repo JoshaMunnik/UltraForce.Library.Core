@@ -9,9 +9,9 @@
 // Copyright (C) 2024 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -36,7 +36,7 @@ namespace UltraForce.Library.Core.Services;
 /// An implement of <see cref="IUFEmailBuilderService"/> using Azure's Email Communication Resource.
 /// <para>
 /// Subclasses must implement <see cref="GetConnectionString"/>. Subclasses can also override
-/// <see cref="GetFromEmail"/> with an email address set within the communication resource. 
+/// <see cref="GetFromEmail"/> with an email address set within the communication resource.
 /// </para>
 /// </summary>
 public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
@@ -94,7 +94,7 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
   private static EmailClient? s_emailClient = null;
 
   /// <summary>
-  /// Used when creating the email client 
+  /// Used when creating the email client
   /// </summary>
   private static readonly object s_emailClientLock = new object();
 
@@ -119,10 +119,10 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
 
   /// <inheritdoc />
   public override IUFEmailBuilderService Subject(
-    string aSubject
+    string subject
   )
   {
-    this.m_content = new EmailContent(aSubject);
+    this.m_content = new EmailContent(subject);
     if (this.m_html != null)
     {
       this.m_content.Html = this.m_html;
@@ -136,100 +136,100 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
 
   /// <inheritdoc />
   public override IUFEmailBuilderService From(
-    string aFromEmail,
-    string? aName = null
+    string fromEmail,
+    string? name = null
   )
   {
-    this.m_from = CreateEmailAddress(aFromEmail, aName);
+    this.m_from = CreateEmailAddress(fromEmail, name);
     return this;
   }
 
   /// <inheritdoc />
   public override IUFEmailBuilderService To(
-    string aToEmail,
-    string? aName = null
+    string toEmail,
+    string? name = null
   )
   {
-    this.m_to.Add(CreateEmailAddress(aToEmail, aName));
+    this.m_to.Add(CreateEmailAddress(toEmail, name));
     return this;
   }
 
   /// <inheritdoc />
   public override IUFEmailBuilderService Cc(
-    string aToEmail,
-    string? aName = null
+    string toEmail,
+    string? name = null
   )
   {
-    this.m_cc.Add(CreateEmailAddress(aToEmail, aName));
+    this.m_cc.Add(CreateEmailAddress(toEmail, name));
     return this;
   }
 
   /// <inheritdoc />
   public override IUFEmailBuilderService Bcc(
-    string aToEmail,
-    string? aName = null
+    string toEmail,
+    string? name = null
   )
   {
-    this.m_bcc.Add(CreateEmailAddress(aToEmail, aName));
+    this.m_bcc.Add(CreateEmailAddress(toEmail, name));
     return this;
   }
 
   /// <inheritdoc />
   public override IUFEmailBuilderService ReplyTo(
-    string aReplyToEmail,
-    string? aName = null
+    string replyToEmail,
+    string? name = null
   )
   {
-    this.m_replyTo = CreateEmailAddress(aReplyToEmail, aName);
+    this.m_replyTo = CreateEmailAddress(replyToEmail, name);
     return this;
   }
 
   /// <inheritdoc />
   public override IUFEmailBuilderService Html(
-    string aContent
+    string content
   )
   {
     if (this.m_content != null)
     {
-      this.m_content.Html = aContent;
+      this.m_content.Html = content;
     }
     else
     {
-      this.m_html = aContent;
+      this.m_html = content;
     }
     return this;
   }
 
   /// <inheritdoc />
   public override IUFEmailBuilderService Text(
-    string aContent
+    string content
   )
   {
     if (this.m_content != null)
     {
-      this.m_content.PlainText = aContent;
+      this.m_content.PlainText = content;
     }
     else
     {
-      this.m_text = aContent;
+      this.m_text = content;
     }
     return this;
   }
 
   /// <inheritdoc />
   public override IUFEmailBuilderService Attachment(
-    string aName,
-    string aContentTYpe,
-    BinaryData aData
+    string name,
+    string contentTYpe,
+    BinaryData data
   )
   {
-    this.m_attachments.Add(new EmailAttachment(aName, aContentTYpe, aData));
+    this.m_attachments.Add(new EmailAttachment(name, contentTYpe, data));
     return this;
   }
 
   /// <inheritdoc />
   public override async Task<string> SendAsync(
-    bool aWaitForCompletion
+    bool waitForCompletion
   )
   {
     string fromEmail = this.m_from?.Address ?? this.GetFromEmail();
@@ -263,9 +263,9 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
     {
       EmailClient emailClient = GetEmailClient(this.GetConnectionString());
       EmailSendOperation sendOperation = await emailClient.SendAsync(
-        aWaitForCompletion ? WaitUntil.Completed : WaitUntil.Started, message
+        waitForCompletion ? WaitUntil.Completed : WaitUntil.Started, message
       );
-      if (aWaitForCompletion)
+      if (waitForCompletion)
       {
         // get the OperationId so that it can be used for tracking the message for troubleshooting
         string operationId = sendOperation.Id;
@@ -310,17 +310,17 @@ public abstract class UFAzureEmailBuilderService : UFEmailBuilderService
   /// <summary>
   /// Creates an email address with optional name (if any).
   /// </summary>
-  /// <param name="aEmail"></param>
-  /// <param name="aName"></param>
+  /// <param name="email"></param>
+  /// <param name="name"></param>
   /// <returns></returns>
   private static EmailAddress CreateEmailAddress(
-    string aEmail,
-    string? aName
+    string email,
+    string? name
   )
   {
-    return (aName == null)
-      ? new EmailAddress(aEmail)
-      : new EmailAddress(aEmail, aName);
+    return (name == null)
+      ? new EmailAddress(email)
+      : new EmailAddress(email, name);
   }
 
   /// <summary>

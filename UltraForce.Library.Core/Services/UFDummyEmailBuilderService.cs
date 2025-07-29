@@ -41,61 +41,88 @@ public class UFDummyEmailBuilderService : UFEmailBuilderService
   }
 
   /// <inheritdoc />
-  public override IUFEmailBuilderService Subject(string aSubject)
+  public override IUFEmailBuilderService Subject(
+    string subject
+  )
   {
     return this;
   }
 
   /// <inheritdoc />
-  public override IUFEmailBuilderService From(string aFromEmail, string? aName = null)
+  public override IUFEmailBuilderService From(
+    string fromEmail,
+    string? name = null
+  )
   {
     return this;
   }
 
   /// <inheritdoc />
-  public override IUFEmailBuilderService To(string aToEmail, string? aName = null)
+  public override IUFEmailBuilderService To(
+    string toEmail,
+    string? name = null
+  )
   {
     return this;
   }
 
   /// <inheritdoc />
-  public override IUFEmailBuilderService Cc(string aToEmail, string? aName = null)
+  public override IUFEmailBuilderService Cc(
+    string toEmail,
+    string? name = null
+  )
   {
     return this;
   }
 
   /// <inheritdoc />
-  public override IUFEmailBuilderService Bcc(string aToEmail, string? aName = null)
+  public override IUFEmailBuilderService Bcc(
+    string toEmail,
+    string? name = null
+  )
   {
     return this;
   }
 
   /// <inheritdoc />
-  public override IUFEmailBuilderService ReplyTo(string aReplyToEmail, string? aName = null)
+  public override IUFEmailBuilderService ReplyTo(
+    string replyToEmail,
+    string? name = null
+  )
   {
     return this;
   }
 
   /// <inheritdoc />
-  public override IUFEmailBuilderService Html(string aContent)
+  public override IUFEmailBuilderService Html(
+    string content
+  )
   {
     return this;
   }
 
   /// <inheritdoc />
-  public override IUFEmailBuilderService Text(string aContent)
+  public override IUFEmailBuilderService Text(
+    string content
+  )
   {
     return this;
   }
 
   /// <inheritdoc />
-  public override IUFEmailBuilderService Attachment(string aName, string aContentTYpe, BinaryData aData)
+  public override IUFEmailBuilderService Attachment(
+    string name,
+    string contentTYpe,
+    BinaryData data
+  )
   {
     return this;
   }
 
   /// <inheritdoc />
-  public override Task<string> SendAsync(bool aWaitForCompletion)
+  public override Task<string> SendAsync(
+    bool waitForCompletion
+  )
   {
     return Task.FromResult(string.Empty);
   }

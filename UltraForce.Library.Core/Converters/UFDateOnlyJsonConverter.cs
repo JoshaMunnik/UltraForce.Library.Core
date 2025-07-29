@@ -9,9 +9,9 @@
 // Copyright (C) 2024 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -34,7 +34,7 @@ using System.Text.Json.Serialization;
 namespace UltraForce.Library.Core.Converters;
 
 /// <summary>
-/// Converts a DateOnly to text and vice versa. The format is yyyy-MM-dd. 
+/// Converts a DateOnly to text and vice versa. The format is yyyy-MM-dd.
 /// </summary>
 public class UFDateOnlyJsonConverter : JsonConverter<DateOnly>
 {
@@ -42,13 +42,15 @@ public class UFDateOnlyJsonConverter : JsonConverter<DateOnly>
   /// Format to use for the date
   /// </summary>
   private const string Format = "yyyy-MM-dd";
-  
+
   /// <inheritdoc />
   public override DateOnly Read(
-    ref Utf8JsonReader aReader, Type aTypeToConvert, JsonSerializerOptions anOptions
+    ref Utf8JsonReader reader,
+    Type typeToConvert,
+    JsonSerializerOptions options
   )
   {
-    string? dateText = aReader.GetString();
+    string? dateText = reader.GetString();
     if (dateText == null)
     {
       throw new JsonException("Expected string");
@@ -57,8 +59,12 @@ public class UFDateOnlyJsonConverter : JsonConverter<DateOnly>
   }
 
   /// <inheritdoc />
-  public override void Write(Utf8JsonWriter aWriter, DateOnly aValue, JsonSerializerOptions anOptions)
+  public override void Write(
+    Utf8JsonWriter writer,
+    DateOnly value,
+    JsonSerializerOptions options
+  )
   {
-    aWriter.WriteStringValue(aValue.ToString(Format, CultureInfo.InvariantCulture));    
+    writer.WriteStringValue(value.ToString(Format, CultureInfo.InvariantCulture));
   }
 }

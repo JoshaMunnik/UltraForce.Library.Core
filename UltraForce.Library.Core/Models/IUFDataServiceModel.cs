@@ -9,9 +9,9 @@
 // Copyright (C) 2024 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -42,15 +42,20 @@ public interface IUFDataServiceModel<in TEntity> where TEntity : class
   /// <summary>
   /// Updates the properties of an entity by copying them from this instance.
   /// </summary>
-  /// <param name="anEntity">Value to copy properties to</param>
-  /// <param name="anAction">Action that will be performed with the entity</param>
-  Task CopyToEntityAsync(TEntity anEntity, UFEntityAction anAction);
+  /// <param name="entity">Value to copy properties to</param>
+  /// <param name="action">Action that will be performed with the entity</param>
+  Task CopyToEntityAsync(
+    TEntity entity,
+    UFEntityAction action
+  );
 
   /// <summary>
   /// Updates this instance by copying the properties of an entity.
   /// </summary>
-  /// <param name="anEntity">Value to copy properties from</param>
-  Task CopyFromEntityAsync(TEntity anEntity);
+  /// <param name="entity">Value to copy properties from</param>
+  Task CopyFromEntityAsync(
+    TEntity entity
+  );
 
   #endregion
 }

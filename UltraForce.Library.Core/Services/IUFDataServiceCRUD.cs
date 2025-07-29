@@ -47,7 +47,9 @@ public interface IUFDataServiceCRUD<TServiceModel, in TKey, TEntity> : IUFDataSe
   /// </summary>
   /// <param name="id">Id to find record for</param>
   /// <returns>instance or null when not found</returns>
-  public Task<TServiceModel?> FindForIdAsync(TKey id);
+  public Task<TServiceModel?> FindForIdAsync(
+    TKey id
+  );
 
   /// <summary>
   /// Gets all records.
@@ -64,7 +66,9 @@ public interface IUFDataServiceCRUD<TServiceModel, in TKey, TEntity> : IUFDataSe
   /// <returns>
   /// The record that has been added, this value might be a different instance then data.
   /// </returns>
-  public Task<TServiceModel> AddAsync(TServiceModel data);
+  public Task<TServiceModel> AddAsync(
+    TServiceModel data
+  );
 
   /// <summary>
   /// Updates the data with an existing record.
@@ -73,11 +77,15 @@ public interface IUFDataServiceCRUD<TServiceModel, in TKey, TEntity> : IUFDataSe
   /// Record to update with. Properties within in this value might get updated.
   /// </param>
   /// <returns>The updated record, this value might be a different instance then data.</returns>
-  public Task<TServiceModel> UpdateAsync(TServiceModel data);
+  public Task<TServiceModel> UpdateAsync(
+    TServiceModel data
+  );
 
   /// <summary>
   /// Removes a record from the data.
   /// </summary>
   /// <param name="data">Record to remove</param>
-  public Task RemoveAsync(TServiceModel data);
+  public Task RemoveAsync(
+    TServiceModel data
+  );
 }

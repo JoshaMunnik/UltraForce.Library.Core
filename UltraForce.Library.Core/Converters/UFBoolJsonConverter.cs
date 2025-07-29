@@ -9,9 +9,9 @@
 // Copyright (C) 2024 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -42,15 +42,21 @@ public class UFBoolJsonConverter : JsonConverter<bool>
 {
   /// <inheritdoc />
   public override bool Read(
-    ref Utf8JsonReader aReader, Type aTypeToConvert, JsonSerializerOptions anOptions
+    ref Utf8JsonReader reader,
+    Type typeToConvert,
+    JsonSerializerOptions options
   )
   {
-    return aReader.TryGetInt32(out int value) && value == 1;
+    return reader.TryGetInt32(out int value) && value == 1;
   }
 
   /// <inheritdoc />
-  public override void Write(Utf8JsonWriter aWriter, bool aValue, JsonSerializerOptions anOptions)
+  public override void Write(
+    Utf8JsonWriter writer,
+    bool value,
+    JsonSerializerOptions options
+  )
   {
-    aWriter.WriteNumberValue(aValue == true ? 1 : 0);
+    writer.WriteNumberValue(value == true ? 1 : 0);
   }
 }
