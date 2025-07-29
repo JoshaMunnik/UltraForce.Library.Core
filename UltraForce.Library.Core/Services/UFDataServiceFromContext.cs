@@ -9,9 +9,9 @@
 // Copyright (C) 2023 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -41,16 +41,23 @@ namespace UltraForce.Library.Core.Services;
 
 /// <summary>
 /// <see cref="UFDataServiceFromContext{TContext}" /> is a base class to implement a data
-/// service using a <see cref="DbContext"/> to manage underlying entities. 
+/// service using a <see cref="DbContext"/> to manage underlying entities.
 /// <para>
 /// The class implements a locking mechanism to minimize the
 /// <see cref="DbContext.SaveChanges()"/> calls.
+/// </para>
+/// <para>
+/// The class defines both a read and write context, to support in-memory copies to read
+/// from. All protected methods that perform some operation that changes the database
+/// will use the write context, while all methods that only read data will use the read
+/// context.
 /// </para>
 /// </summary>
 /// <remarks>
 /// Interface definition for the data service should inherit from <see cref="IUFDataService"/>.
 /// </remarks>
 /// <typeparam name="TContext">The database context type</typeparam>
+[SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
 public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, IAsyncDisposable
   where TContext : DbContext
 {
@@ -72,49 +79,103 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   // ReSharper disable once StaticMemberInGenericType
   private static readonly Dictionary<Type, PropertyInfo> s_primaryKeys = new();
 
+  /// <summary>
+  /// Context to perform read database operations with.
+  /// </summary>
+  private TContext? m_readContext;
+
+  /// <summary>
+  /// Context to perform write database operations with.
+  /// </summary>
+  private TContext? m_writeContext;
+
   #endregion
 
-  #region constructors & IDisposable
+  #region constructors
 
   /// <summary>
   /// Constructs an instance of <see cref="UFDataServiceFromContext{TContext}" />.
   /// </summary>
-  /// <param name="aContext">
-  /// Database context to use
+  /// <param name="context">
+  /// Database context to use for both read and write operations.
   /// </param>
-  /// <param name="aDisableTracking">
+  /// <param name="disableTracking">
   /// When true tell <see cref="DbContext.ChangeTracker"/> to stop tracking and reset the state
   /// of any tracked entry to <see cref="EntityState.Detached"/> with
   /// the <see cref="SaveChangesAsync"/> call.
   /// <para>
-  /// To disable tracking everywhere, use
+  /// To disable the tracking everywhere, the method assigns:
   /// <code>{context}.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;</code>
+  /// And disables auto-detect changes with:
+  /// <code>{context}.ChangeTracker.AutoDetectChangesEnabled = false;</code>
   /// </para>
-  /// 
   /// </param>
-  protected UFDataServiceFromContext(TContext aContext, bool aDisableTracking = false)
+  protected UFDataServiceFromContext(
+    TContext context,
+    bool disableTracking = false
+  ) : this(context, context, disableTracking)
   {
-    this.Context = aContext;
-    this.Changed = false;
-    this.m_lockCount = 0;
-    this.m_disableTracking = aDisableTracking;
-    if (aDisableTracking)
-    {
-      this.Context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
-      this.Context.ChangeTracker.AutoDetectChangesEnabled = false;
-    }
   }
 
-  /// <inheritdoc />
-  public async void Dispose()
+  /// <summary>
+  /// Constructs an instance of <see cref="UFDataServiceFromContext{TContext}" />.
+  /// </summary>
+  /// <param name="readContext">
+  /// Database context to use for read operations.
+  /// </param>
+  /// <param name="writeContext">
+  /// Database context to use for write operations.
+  /// </param>
+  /// <param name="disableTracking">
+  /// When true tell <see cref="DbContext.ChangeTracker"/> to stop tracking and reset the state
+  /// of any tracked entry to <see cref="EntityState.Detached"/> with
+  /// the <see cref="SaveChangesAsync"/> call.
+  /// <para>
+  /// To disable the tracking everywhere, the method assigns:
+  /// <code>{context}.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;</code>
+  /// And disables auto-detect changes with:
+  /// <code>{context}.ChangeTracker.AutoDetectChangesEnabled = false;</code>
+  /// </para>
+  /// </param>
+  protected UFDataServiceFromContext(
+    TContext readContext,
+    TContext writeContext,
+    bool disableTracking = false
+  )
   {
-    await this.DisposeAsync();
+    this.m_readContext = readContext;
+    this.m_writeContext = writeContext;
+    this.Changed = false;
+    this.m_lockCount = 0;
+    this.m_disableTracking = disableTracking;
+    if (!disableTracking)
+    {
+      return;
+    }
+    readContext.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+    readContext.ChangeTracker.AutoDetectChangesEnabled = false;
+    writeContext.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+    writeContext.ChangeTracker.AutoDetectChangesEnabled = false;
+  }
+
+  #endregion
+
+  #region IDisposable & IAsyncDisposable
+
+  /// <inheritdoc />
+  public virtual void Dispose()
+  {
+    this.m_readContext = null;
+    this.m_writeContext = null;
+    GC.SuppressFinalize(this);
   }
 
   /// <inheritdoc />
   public virtual ValueTask DisposeAsync()
   {
-    this.Context = null;
+    this.m_readContext = null;
+    this.m_writeContext = null;
+    GC.SuppressFinalize(this);
     return ValueTask.CompletedTask;
   }
 
@@ -152,9 +213,36 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   #region protected properties
 
   /// <summary>
-  /// The context or null if the service has been disposed.
+  /// The context to read data. If the instance is disposed, this property will throw an
+  /// exception.
   /// </summary>
-  protected TContext? Context { get; private set; }
+  protected TContext ReadContext
+  {
+    get
+    {
+      if (this.m_readContext == null)
+      {
+        throw new Exception("Trying to use a disposed instance");
+      }
+      return this.m_readContext;
+    }
+  }
+
+  /// <summary>
+  /// The context to perform operation with that changes the database. If the instance is
+  /// disposed, this property will throw an exception.
+  /// </summary>
+  protected TContext WriteContext
+  {
+    get
+    {
+      if (this.m_writeContext == null)
+      {
+        throw new Exception("Trying to use a disposed instance");
+      }
+      return this.m_writeContext;
+    }
+  }
 
   /// <summary>
   /// This property is true when the data service is locked and there is at least one change
@@ -169,29 +257,32 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// <summary>
   /// Stops an entity from being tracked by the entity framework.
   /// </summary>
-  /// <param name="anEntity"></param>
-  protected void DetachEntity(object anEntity)
+  /// <param name="entity"></param>
+  protected void DetachEntity(
+    object entity
+  )
   {
-    this.Context!.Entry(anEntity).State = EntityState.Detached;
+    this.ReadContext.Entry(entity).State = EntityState.Detached;
   }
 
   /// <summary>
   /// Finds a entity for a certain id and convert it to a service model.
   /// </summary>
-  /// <param name="anId">Id to find entity for</param>
+  /// <param name="id">Id to find entity for</param>
   /// <typeparam name="TServiceModel">Service model to convert to</typeparam>
   /// <typeparam name="TEntity">Type of entity</typeparam>
   /// <typeparam name="TKey">Type of id</typeparam>
   /// <returns>Service model instance or null if no entity could be found</returns>
-  protected async Task<TServiceModel?> FindForIdAsync<TServiceModel, TEntity, TKey>(TKey anId)
+  protected async Task<TServiceModel?> FindForIdAsync<TServiceModel, TEntity, TKey>(
+    TKey id
+  )
     where TEntity : class, new()
     where TServiceModel : class, IUFDataServiceModel<TEntity>, new()
   {
-    this.CheckContext();
     return await this
-      .Context!
+      .ReadContext
       .Set<TEntity>()
-      .FindAsync(anId)
+      .FindAsync(id)
       .AsNullableModelAsync<TServiceModel, TEntity>();
   }
 
@@ -205,17 +296,16 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
     where TEntity : class, new()
     where TServiceModel : class, IUFDataServiceModel<TEntity>, new()
   {
-    this.CheckContext();
     if (this.m_disableTracking)
     {
-      return await this.Context!
+      return await this.ReadContext
         .Set<TEntity>()
         .AsNoTracking()
         .AsModelAsync<TServiceModel, TEntity>();
     }
     else
     {
-      return await this.Context!
+      return await this.ReadContext
         .Set<TEntity>()
         .AsModelAsync<TServiceModel, TEntity>();
     }
@@ -226,18 +316,19 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// after adding the entity a new service model instance is created from the added entity that
   /// might include updated fields (like the id of the entity).
   /// </summary>
-  /// <param name="aData">Service model instance to add</param>
+  /// <param name="data">Service model instance to add</param>
   /// <typeparam name="TServiceModel">Type of service model</typeparam>
   /// <typeparam name="TEntity">Entity to add</typeparam>
   /// <returns>The service model build from the added entity; this is a new instance</returns>
-  protected async Task<TServiceModel> AddAsync<TServiceModel, TEntity>(TServiceModel aData)
+  protected async Task<TServiceModel> AddAsync<TServiceModel, TEntity>(
+    TServiceModel data
+  )
     where TEntity : class, new()
     where TServiceModel : class, IUFDataServiceModel<TEntity>, new()
   {
-    this.CheckContext();
     TEntity entity = new();
-    await aData.CopyToEntityAsync(entity, UFEntityAction.Add);
-    await this.Context!.Set<TEntity>().AddAsync(entity);
+    await data.CopyToEntityAsync(entity, UFEntityAction.Add);
+    await this.WriteContext.Set<TEntity>().AddAsync(entity);
     await this.SaveChangesAsync();
     TServiceModel result = new();
     await result.CopyFromEntityAsync(entity);
@@ -248,27 +339,28 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// Updates an entity in the database with the data from a service model instance. Since
   /// aData might be immutable, a new service model instance is created after updating the
   /// entity in the database. The new service model might include updated fields (like a modified
-  /// date/time field). 
+  /// date/time field).
   /// </summary>
-  /// <param name="aData">Data to update entity with</param>
+  /// <param name="data">Data to update entity with</param>
   /// <typeparam name="TServiceModel">Service model type</typeparam>
   /// <typeparam name="TEntity">Entity type</typeparam>
   /// <returns>The service model build from the updated entity; this is a new instance</returns>
-  protected async Task<TServiceModel> UpdateAsync<TServiceModel, TEntity>(TServiceModel aData)
+  protected async Task<TServiceModel> UpdateAsync<TServiceModel, TEntity>(
+    TServiceModel data
+  )
     where TEntity : class, new()
     where TServiceModel : class, IUFDataServiceModel<TEntity>, new()
   {
-    this.CheckContext();
-    TEntity? entity = await this.Context!.Set<TEntity>()
+    TEntity? entity = await this.WriteContext.Set<TEntity>()
       .FindAsync(
-        this.GetPrimaryKeyFromServiceModel<TServiceModel, TEntity, object>(aData)
+        this.GetPrimaryKeyFromServiceModel<TServiceModel, TEntity, object>(data)
       );
     if (entity == null)
     {
       throw new Exception("Trying to update a non-existing entity");
     }
-    await aData.CopyToEntityAsync(entity, UFEntityAction.Update);
-    this.Context.Set<TEntity>().Update(entity);
+    await data.CopyToEntityAsync(entity, UFEntityAction.Update);
+    this.ReadContext.Set<TEntity>().Update(entity);
     await this.SaveChangesAsync();
     TServiceModel result = new();
     await result.CopyFromEntityAsync(entity);
@@ -278,23 +370,24 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// <summary>
   /// Removes an entity represented by a service model instance.
   /// </summary>
-  /// <param name="aData">Data that represents an entity</param>
+  /// <param name="data">Data that represents an entity</param>
   /// <typeparam name="TServiceModel">Service model type</typeparam>
   /// <typeparam name="TEntity">Entity type</typeparam>
-  protected async Task RemoveAsync<TServiceModel, TEntity>(TServiceModel aData)
+  protected async Task RemoveAsync<TServiceModel, TEntity>(
+    TServiceModel data
+  )
     where TEntity : class, new()
     where TServiceModel : class, IUFDataServiceModel<TEntity>, new()
   {
-    this.CheckContext();
-    TEntity? entity = await this.Context!.Set<TEntity>()
+    TEntity? entity = await this.WriteContext.Set<TEntity>()
       .FindAsync(
-        this.GetPrimaryKeyFromServiceModel<TServiceModel, TEntity, object>(aData)
+        this.GetPrimaryKeyFromServiceModel<TServiceModel, TEntity, object>(data)
       );
     if (entity == null)
     {
       throw new Exception("Trying to remove a non-existing entity");
     }
-    this.Context.Set<TEntity>().Remove(entity);
+    this.ReadContext.Set<TEntity>().Remove(entity);
     await this.SaveChangesAsync();
     this.DetachEntity(entity);
   }
@@ -303,17 +396,16 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// Saves the changes when the instance is not locked, else set an internal
   /// flag to indicate data needs to be saved.
   /// <para>
-  /// If tracking was disabled, this method will also call 
+  /// If tracking was disabled, this method will also call
   /// <see cref="DetachTrackedEntries"/>.
   /// </para>
   /// </summary>
   protected async Task SaveChangesAsync()
   {
-    this.CheckContext();
     if (this.m_lockCount == 0)
     {
       this.Changed = false;
-      await this.Context!.SaveChangesAsync();
+      await this.WriteContext.SaveChangesAsync();
       if (this.m_disableTracking)
       {
         this.DetachTrackedEntries();
@@ -336,8 +428,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// </remarks>
   protected void DetachTrackedEntries()
   {
-    this.CheckContext();
-    IEnumerable<EntityEntry> changedEntriesCopy = this.Context!.ChangeTracker
+    IEnumerable<EntityEntry> changedEntriesCopy = this.WriteContext.ChangeTracker
       .Entries()
       .Where(entry =>
         entry.State is EntityState.Added or EntityState.Modified or EntityState.Deleted
@@ -346,7 +437,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
       .AsEnumerable();
     foreach (EntityEntry entity in changedEntriesCopy)
     {
-      this.Context.Entry(entity.Entity).State = EntityState.Detached;
+      this.WriteContext.Entry(entity.Entity).State = EntityState.Detached;
     }
   }
 
@@ -355,23 +446,24 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// just gets executed without using a transaction assuming the commit or rollback is handled
   /// by other code.
   /// </summary>
-  /// <param name="anAction">Action to execute</param>
+  /// <param name="action">Action to execute</param>
   /// <exception>
   /// Any exception thrown by anAction will rollback the transaction and gets rethrown
   /// </exception>
-  protected async Task TransactionAsync(Func<Task> anAction)
+  protected async Task TransactionAsync(
+    Func<Task> action
+  )
   {
-    this.CheckContext();
-    if (this.Context!.Database.CurrentTransaction != null)
+    if (this.WriteContext.Database.CurrentTransaction != null)
     {
-      await anAction();
+      await action();
       return;
     }
     await using IDbContextTransaction transaction =
-      await this.Context.Database.BeginTransactionAsync();
+      await this.WriteContext.Database.BeginTransactionAsync();
     try
     {
-      await anAction();
+      await action();
       await transaction.CommitAsync();
     }
     catch (Exception)
@@ -386,23 +478,24 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// gets executed without using a transaction assuming the commit or rollback is handled by
   /// other code.
   /// </summary>
-  /// <param name="anAction">Action to execute</param>
+  /// <param name="action">Action to execute</param>
   /// <returns>The result of the action</returns>
   /// <exception>
   /// Any exception thrown by anAction will rollback the transaction and gets rethrown
   /// </exception>
-  protected async Task<T> TransactionAsync<T>(Func<Task<T>> anAction)
+  protected async Task<T> TransactionAsync<T>(
+    Func<Task<T>> action
+  )
   {
-    this.CheckContext();
-    if (this.Context!.Database.CurrentTransaction != null)
+    if (this.WriteContext.Database.CurrentTransaction != null)
     {
-      return await anAction();
+      return await action();
     }
     await using IDbContextTransaction transaction =
-      await this.Context.Database.BeginTransactionAsync();
+      await this.WriteContext.Database.BeginTransactionAsync();
     try
     {
-      T result = await anAction();
+      T result = await action();
       await transaction.CommitAsync();
       return result;
     }
@@ -415,7 +508,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
 
   /// <summary>
   /// Swaps values of two records in a table using a single update statement (so that any unique
-  /// index constraint does not generate an error). 
+  /// index constraint does not generate an error).
   /// <para>
   /// Code based on: https://stackoverflow.com/a/8109360/968451
   /// </para>
@@ -424,97 +517,101 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// MSSQL.
   /// </para>
   /// </summary>
-  /// <param name="aTableName">Name of table</param>
-  /// <param name="aColumnName">Name of column</param>
-  /// <param name="aFirstId">First id to swap value of</param>
-  /// <param name="aSecondId">Second id to swap value of</param>
-  /// <param name="aModifiedName">When non null, assign DateTime.Now to this column</param>
+  /// <param name="tableName">Name of table</param>
+  /// <param name="columnName">Name of column</param>
+  /// <param name="firstId">First id to swap value of</param>
+  /// <param name="secondId">Second id to swap value of</param>
+  /// <param name="modifiedName">When not null, assign <c>modifiedDate</c> to this column</param>
+  /// <param name="modifiedDate">When null, use <c>DateTime.UtcNow();</c></param>
   /// <typeparam name="TEntity">Type of the entity record</typeparam>
   /// <typeparam name="TKey">Type of the id values</typeparam>
   [SuppressMessage("Security", "EF1002:Risk of vulnerability to SQL injection.")]
   protected virtual async Task SwapAsync<TEntity, TKey>(
-    string aTableName,
-    string aColumnName,
-    TKey aFirstId,
-    TKey aSecondId,
-    string? aModifiedName = null
-  ) where TEntity : class 
+    string tableName,
+    string columnName,
+    TKey firstId,
+    TKey secondId,
+    string? modifiedName = null,
+    DateTime? modifiedDate = null
+  ) where TEntity : class
     where TKey : notnull
   {
-    this.CheckContext();
     string primaryKey = this.GetPrimaryKeyNameFromEntity<TEntity>();
-    if (aModifiedName == null)
+    if (modifiedName == null)
     {
-      await this.Context!.Database.ExecuteSqlRawAsync(
+      await this.WriteContext.Database.ExecuteSqlRawAsync(
         $@"
-            UPDATE [{aTableName}]
+            UPDATE [{tableName}]
             SET 
-              [{aColumnName}] = CASE [{primaryKey}]
-                WHEN {{0}} THEN (SELECT [{aColumnName}] FROM [{aTableName}] WHERE [{primaryKey}] = {{1}})
-                WHEN {{1}} THEN (SELECT [{aColumnName}] FROM [{aTableName}] WHERE [{primaryKey}] = {{0}})
+              [{columnName}] = CASE [{primaryKey}]
+                WHEN {{0}} THEN (SELECT [{columnName}] FROM [{tableName}] WHERE [{primaryKey}] = {{1}})
+                WHEN {{1}} THEN (SELECT [{columnName}] FROM [{tableName}] WHERE [{primaryKey}] = {{0}})
               END
             WHERE [{primaryKey}] IN ({{0}}, {{1}})
           ",
-        aFirstId,
-        aSecondId
+        firstId,
+        secondId
       );
     }
     else
     {
-      await this.Context!.Database.ExecuteSqlRawAsync(
+      await this.WriteContext.Database.ExecuteSqlRawAsync(
         $@"
-            UPDATE [{aTableName}]
+            UPDATE [{tableName}]
             SET 
-              [{aModifiedName}] = {{2}}, 
-              [{aColumnName}] = CASE [{primaryKey}]
-                WHEN {{0}} THEN (SELECT [{aColumnName}] FROM [{aTableName}] WHERE [{primaryKey}] = {{1}})
-                WHEN {{1}} THEN (SELECT [{aColumnName}] FROM [{aTableName}] WHERE [{primaryKey}] = {{0}})
+              [{modifiedName}] = {{2}}, 
+              [{columnName}] = CASE [{primaryKey}]
+                WHEN {{0}} THEN (SELECT [{columnName}] FROM [{tableName}] WHERE [{primaryKey}] = {{1}})
+                WHEN {{1}} THEN (SELECT [{columnName}] FROM [{tableName}] WHERE [{primaryKey}] = {{0}})
               END
             WHERE [{primaryKey}] IN ({{0}}, {{1}})
           ",
-        aFirstId,
-        aSecondId,
-        DateTime.Now
+        firstId,
+        secondId,
+        modifiedDate ?? DateTime.UtcNow
       );
     }
   }
 
   /// <summary>
-  /// Determine primary key and swap two entities calling <see cref="SwapAsync{TEntity,TKey}"/>. 
+  /// Determine primary key and swap two entities calling <see cref="SwapAsync{TEntity,TKey}"/>.
   /// <para>
   /// After swapping the method will call <see cref="EntityEntry.ReloadAsync"/> to reload
   /// both entities from the database.
   /// </para>
   /// </summary>
-  /// <param name="aTableName">Name of table</param>
-  /// <param name="aColumnName">Name of column</param>
-  /// <param name="aFirst">First entity to swap value of</param>
-  /// <param name="aSecond">Second entity to swap value of</param>
-  /// <param name="aModifiedName">When non null, assign DateTime.Now to this column</param>
+  /// <param name="tableName">Name of table</param>
+  /// <param name="columnName">Name of column</param>
+  /// <param name="first">First entity to swap value of</param>
+  /// <param name="second">Second entity to swap value of</param>
+  /// <param name="modifiedName">When not null, assign <c>modifiedDate</c> to this column</param>
+  /// <param name="modifiedDate">When null, use <c>DateTime.UtcNow();</c></param>
   /// <typeparam name="T"></typeparam>
   protected virtual async Task SwapAsync<T>(
-    string aTableName,
-    string aColumnName,
-    T aFirst,
-    T aSecond,
-    string? aModifiedName = null
+    string tableName,
+    string columnName,
+    T first,
+    T second,
+    string? modifiedName = null,
+    DateTime? modifiedDate = null
   ) where T : class
   {
-    this.CheckContext();
     string primaryKey = this.GetPrimaryKeyNameFromEntity<T>();
     PropertyInfo? primaryProperty = (typeof(T)).GetProperty(primaryKey);
     if (primaryProperty == null)
     {
       throw new Exception(@"Can not find primary key property for {primaryKey}");
     }
-    await this.SwapAsync<T, object>(aTableName,
-      aColumnName,
-      primaryProperty.GetValue(aFirst, null)!,
-      primaryProperty.GetValue(aSecond, null)!,
-      aModifiedName
+    await this.SwapAsync<T, object>(
+      tableName,
+      columnName,
+      primaryProperty.GetValue(first, null)!,
+      primaryProperty.GetValue(second, null)!,
+      modifiedName,
+      modifiedDate
     );
-    await this.Context!.Entry(aFirst).ReloadAsync();
-    await this.Context!.Entry(aSecond).ReloadAsync();
+    await this.WriteContext.Entry(first).ReloadAsync();
+    await this.WriteContext.Entry(second).ReloadAsync();
   }
 
   /// <summary>
@@ -531,8 +628,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// <exception>If no primary key could be determined</exception>
   protected virtual string GetPrimaryKeyNameFromEntity<TEntity>() where TEntity : class
   {
-    this.CheckContext();
-    string? primaryName = this.Context!
+    string? primaryName = this.ReadContext
       .Model
       .FindEntityType(typeof(TEntity))?
       .FindPrimaryKey()?
@@ -556,24 +652,24 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// With the first call the default implementation determines the primary key property in
   /// aServiceData using the result from
   /// <see cref="GetPrimaryKeyNameFromEntity{TEntity}"/> and caches
-  /// it for future calls. 
+  /// it for future calls.
   /// </para>
   /// <remarks>
   /// Subclasses can override this method to return the key directly for better performance.
   /// </remarks>
   /// </summary>
-  /// <param name="aServiceData"></param>
+  /// <param name="serviceData"></param>
   /// <returns></returns>
   /// <exception cref="MissingPrimaryKeyException"></exception>
   protected virtual TKey GetPrimaryKeyFromServiceModel<TServiceModel, TEntity, TKey>(
-    TServiceModel aServiceData
+    TServiceModel serviceData
   )
     where TEntity : class
   {
     Type serviceModelType = typeof(TServiceModel);
     if (s_primaryKeys.TryGetValue(serviceModelType, out PropertyInfo? primaryInfo))
     {
-      return (TKey)primaryInfo.GetValue(aServiceData)!;
+      return (TKey)primaryInfo.GetValue(serviceData)!;
     }
     string primaryName = this.GetPrimaryKeyNameFromEntity<TEntity>();
     primaryInfo = serviceModelType.GetProperty(primaryName);
@@ -584,20 +680,8 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
       );
     }
     s_primaryKeys.Add(serviceModelType, primaryInfo);
-    return (TKey)primaryInfo.GetValue(aServiceData)!;
+    return (TKey)primaryInfo.GetValue(serviceData)!;
   }
 
-  /// <summary>
-  /// Checks if the context is not null, throws an exception if it is.
-  /// </summary>
-  /// <exception cref="Exception"></exception>
-  protected void CheckContext()
-  {
-    if (this.Context == null)
-    {
-      throw new Exception("Trying to use a disposed instance");
-    }
-  }
-  
   #endregion
 }
