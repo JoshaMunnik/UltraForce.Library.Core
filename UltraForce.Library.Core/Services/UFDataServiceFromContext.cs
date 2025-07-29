@@ -230,7 +230,8 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
 
   /// <summary>
   /// The context to perform operation with that changes the database. If the instance is
-  /// disposed, this property will throw an exception.
+  /// disposed, this property will throw an exception. This context should also be used to
+  /// retrieve entities that are about to be changed or removed.
   /// </summary>
   protected TContext WriteContext
   {
@@ -256,13 +257,16 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
 
   /// <summary>
   /// Stops an entity from being tracked by the entity framework.
+  /// <para>
+  /// This method only detaches the object from  the <see cref="WriteContext"/>.
+  /// </para>
   /// </summary>
   /// <param name="entity"></param>
   protected void DetachEntity(
     object entity
   )
   {
-    this.ReadContext.Entry(entity).State = EntityState.Detached;
+    this.WriteContext.Entry(entity).State = EntityState.Detached;
   }
 
   /// <summary>
@@ -312,9 +316,9 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   }
 
   /// <summary>
-  /// Creates and adds an entity from a service model. Since aData might be an immutable instance,
-  /// after adding the entity a new service model instance is created from the added entity that
-  /// might include updated fields (like the id of the entity).
+  /// Creates and adds an entity from a service model. Since <c>data</c> might be an immutable
+  /// instance, after adding the entity a new service model instance is created from the added
+  /// entity that might include updated fields (like the id of the entity).
   /// </summary>
   /// <param name="data">Service model instance to add</param>
   /// <typeparam name="TServiceModel">Type of service model</typeparam>
@@ -337,7 +341,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
 
   /// <summary>
   /// Updates an entity in the database with the data from a service model instance. Since
-  /// aData might be immutable, a new service model instance is created after updating the
+  /// <c>data</c> might be immutable, a new service model instance is created after updating the
   /// entity in the database. The new service model might include updated fields (like a modified
   /// date/time field).
   /// </summary>
@@ -421,6 +425,9 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// Sets the changed entries that have <see cref="EntityState.Added"/>,
   /// <see cref="EntityState.Modified"/> or <see cref="EntityState.Deleted"/> to
   /// <see cref="EntityState.Detached"/>.
+  /// <para>
+  /// This method only detaches the object from the <see cref="WriteContext"/>.
+  /// </para>
   /// </summary>
   /// <remarks>
   /// Based on code from:
@@ -446,6 +453,10 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// just gets executed without using a transaction assuming the commit or rollback is handled
   /// by other code.
   /// </summary>
+  /// <para>
+  /// This method assumes there will be changes and uses <see cref="WriteContext"/> to create the
+  /// transaction with.
+  /// </para>
   /// <param name="action">Action to execute</param>
   /// <exception>
   /// Any exception thrown by anAction will rollback the transaction and gets rethrown
@@ -477,6 +488,10 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// Executes an action within a transaction. If a transaction is already active, the action just
   /// gets executed without using a transaction assuming the commit or rollback is handled by
   /// other code.
+  /// <para>
+  /// This method assumes there will be changes and uses <see cref="WriteContext"/> to create the
+  /// transaction with.
+  /// </para>
   /// </summary>
   /// <param name="action">Action to execute</param>
   /// <returns>The result of the action</returns>

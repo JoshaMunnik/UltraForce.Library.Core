@@ -412,14 +412,16 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: WriteContext
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 234
+    startLine: 235
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: >-
     The context to perform operation with that changes the database. If the instance is
 
-    disposed, this property will throw an exception.
+    disposed, this property will throw an exception. This context should also be used to
+
+    retrieve entities that are about to be changed or removed.
   example: []
   syntax:
     content: protected TContext WriteContext { get; }
@@ -448,7 +450,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: Changed
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 250
+    startLine: 251
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -484,11 +486,18 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: DetachEntity
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 260
+    startLine: 264
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
-  summary: Stops an entity from being tracked by the entity framework.
+  summary: >-
+    Stops an entity from being tracked by the entity framework.
+
+    <p>
+
+    This method only detaches the object from  the <xref href="UltraForce.Library.Core.Services.UFDataServiceFromContext%601.WriteContext" data-throw-if-not-resolved="false"></xref>.
+
+    </p>
   example: []
   syntax:
     content: protected void DetachEntity(object entity)
@@ -519,7 +528,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: FindForIdAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 275
+    startLine: 279
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -564,7 +573,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: FindAllAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 294
+    startLine: 298
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -603,16 +612,16 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: AddAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 322
+    startLine: 326
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: >-
-    Creates and adds an entity from a service model. Since aData might be an immutable instance,
+    Creates and adds an entity from a service model. Since <code>data</code> might be an immutable
 
-    after adding the entity a new service model instance is created from the added entity that
+    instance, after adding the entity a new service model instance is created from the added
 
-    might include updated fields (like the id of the entity).
+    entity that might include updated fields (like the id of the entity).
   example: []
   syntax:
     content: 'protected Task<TServiceModel> AddAsync<TServiceModel, TEntity>(TServiceModel data) where TServiceModel : class, IUFDataServiceModel<TEntity>, new() where TEntity : class, new()'
@@ -651,14 +660,14 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: UpdateAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 347
+    startLine: 351
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
   summary: >-
     Updates an entity in the database with the data from a service model instance. Since
 
-    aData might be immutable, a new service model instance is created after updating the
+    <code>data</code> might be immutable, a new service model instance is created after updating the
 
     entity in the database. The new service model might include updated fields (like a modified
 
@@ -701,7 +710,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: RemoveAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 375
+    startLine: 379
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -743,7 +752,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SaveChangesAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 402
+    startLine: 406
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -786,7 +795,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: DetachTrackedEntries
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 428
+    startLine: 435
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -796,6 +805,12 @@ items:
     <xref href="Microsoft.EntityFrameworkCore.EntityState.Modified" data-throw-if-not-resolved="false"></xref> or <xref href="Microsoft.EntityFrameworkCore.EntityState.Deleted" data-throw-if-not-resolved="false"></xref> to
 
     <xref href="Microsoft.EntityFrameworkCore.EntityState.Detached" data-throw-if-not-resolved="false"></xref>.
+
+    <p>
+
+    This method only detaches the object from the <xref href="UltraForce.Library.Core.Services.UFDataServiceFromContext%601.WriteContext" data-throw-if-not-resolved="false"></xref>.
+
+    </p>
   remarks: >-
     Based on code from:
 
@@ -825,7 +840,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: TransactionAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 452
+    startLine: 463
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -867,7 +882,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: TransactionAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 485
+    startLine: 500
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -877,6 +892,14 @@ items:
     gets executed without using a transaction assuming the commit or rollback is handled by
 
     other code.
+
+    <p>
+
+    This method assumes there will be changes and uses <xref href="UltraForce.Library.Core.Services.UFDataServiceFromContext%601.WriteContext" data-throw-if-not-resolved="false"></xref> to create the
+
+    transaction with.
+
+    </p>
   example: []
   syntax:
     content: protected Task<T> TransactionAsync<T>(Func<Task<T>> action)
@@ -912,7 +935,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SwapAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 527
+    startLine: 542
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -986,7 +1009,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: SwapAsync
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 589
+    startLine: 604
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -1050,7 +1073,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: GetPrimaryKeyNameFromEntity
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 628
+    startLine: 643
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -1100,7 +1123,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.git
     id: GetPrimaryKeyFromServiceModel
     path: ../UltraForce.Library.Core/Services/UFDataServiceFromContext.cs
-    startLine: 663
+    startLine: 678
   assemblies:
   - UltraForce.Library.Core
   namespace: UltraForce.Library.Core.Services
@@ -2003,6 +2026,14 @@ references:
   fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.Changed
   nameWithType.vb: UFDataServiceFromContext(Of TContext).Changed
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).Changed
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.WriteContext
+  commentId: P:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.WriteContext
+  href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_WriteContext
+  name: WriteContext
+  nameWithType: UFDataServiceFromContext<TContext>.WriteContext
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.WriteContext
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).WriteContext
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).WriteContext
 - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachEntity*
   commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachEntity
   href: UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_DetachEntity_System_Object_

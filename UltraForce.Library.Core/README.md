@@ -3,6 +3,9 @@
 https://joshamunnik.github.io/UltraForce.Library.Core/index.html
 
 ## Version history
+1.0.15
+- `UFDataServiceFromContext.DetachEntity` now uses `WriteContext`
+- updated some comments
 
 1.0.14
 - [BREAKING CHANGE] Updated UFDataServiceFromContext: replaced `Context` with `ReadContext`
