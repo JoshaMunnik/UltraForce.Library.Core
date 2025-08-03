@@ -112,10 +112,10 @@ The class implements a locking mechanism to minimize the
 <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechanges#microsoft-entityframeworkcore-dbcontext-savechanges">SaveChanges()</a> calls.
 </p>
 <p>
-The class defines both a read and write context, to support in-memory copies to read
-from. All protected methods that perform some operation that changes the database
-will use the write context, while all methods that only read data will use the read
-context.
+The class defines both a <a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_MainContext">MainContext</a> and a <a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_CachedContext">CachedContext</a>, to support
+in-memory copies to read from. All protected methods that perform some operation that changes
+the database will use the main context, while all methods that only read data will use the
+cached context.
 </p>
 </dd>
     </dl>

@@ -1332,6 +1332,23 @@ references:
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).AddAsync(Of TServiceModel, TEntity)(TServiceModel)
   nameWithType: UFDataServiceFromContext<TContext>.AddAsync<TServiceModel, TEntity>(TServiceModel)
   nameWithType.vb: UFDataServiceFromContext(Of TContext).AddAsync(Of TServiceModel, TEntity)(TServiceModel)
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CachedContext
+  name: CachedContext
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_CachedContext
+  commentId: P:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CachedContext
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.CachedContext
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).CachedContext
+  nameWithType: UFDataServiceFromContext<TContext>.CachedContext
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).CachedContext
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CachedContext*
+  name: CachedContext
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_CachedContext_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CachedContext
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.CachedContext
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).CachedContext
+  nameWithType: UFDataServiceFromContext<TContext>.CachedContext
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).CachedContext
 - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Changed
   name: Changed
   href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_Changed
@@ -1507,23 +1524,23 @@ references:
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).LockAsync
   nameWithType: UFDataServiceFromContext<TContext>.LockAsync
   nameWithType.vb: UFDataServiceFromContext(Of TContext).LockAsync
-- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.ReadContext
-  name: ReadContext
-  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_ReadContext
-  commentId: P:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.ReadContext
-  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.ReadContext
-  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).ReadContext
-  nameWithType: UFDataServiceFromContext<TContext>.ReadContext
-  nameWithType.vb: UFDataServiceFromContext(Of TContext).ReadContext
-- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.ReadContext*
-  name: ReadContext
-  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_ReadContext_
-  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.ReadContext
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.MainContext
+  name: MainContext
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_MainContext
+  commentId: P:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.MainContext
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.MainContext
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).MainContext
+  nameWithType: UFDataServiceFromContext<TContext>.MainContext
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).MainContext
+- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.MainContext*
+  name: MainContext
+  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_MainContext_
+  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.MainContext
   isSpec: "True"
-  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.ReadContext
-  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).ReadContext
-  nameWithType: UFDataServiceFromContext<TContext>.ReadContext
-  nameWithType.vb: UFDataServiceFromContext(Of TContext).ReadContext
+  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.MainContext
+  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).MainContext
+  nameWithType: UFDataServiceFromContext<TContext>.MainContext
+  nameWithType.vb: UFDataServiceFromContext(Of TContext).MainContext
 - uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.RemoveAsync*
   name: RemoveAsync
   href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_RemoveAsync_
@@ -1648,23 +1665,6 @@ references:
   fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).UpdateAsync(Of TServiceModel, TEntity)(TServiceModel)
   nameWithType: UFDataServiceFromContext<TContext>.UpdateAsync<TServiceModel, TEntity>(TServiceModel)
   nameWithType.vb: UFDataServiceFromContext(Of TContext).UpdateAsync(Of TServiceModel, TEntity)(TServiceModel)
-- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.WriteContext
-  name: WriteContext
-  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_WriteContext
-  commentId: P:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.WriteContext
-  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.WriteContext
-  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).WriteContext
-  nameWithType: UFDataServiceFromContext<TContext>.WriteContext
-  nameWithType.vb: UFDataServiceFromContext(Of TContext).WriteContext
-- uid: UltraForce.Library.Core.Services.UFDataServiceFromContext`1.WriteContext*
-  name: WriteContext
-  href: api/UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_WriteContext_
-  commentId: Overload:UltraForce.Library.Core.Services.UFDataServiceFromContext`1.WriteContext
-  isSpec: "True"
-  fullName: UltraForce.Library.Core.Services.UFDataServiceFromContext<TContext>.WriteContext
-  fullName.vb: UltraForce.Library.Core.Services.UFDataServiceFromContext(Of TContext).WriteContext
-  nameWithType: UFDataServiceFromContext<TContext>.WriteContext
-  nameWithType.vb: UFDataServiceFromContext(Of TContext).WriteContext
 - uid: UltraForce.Library.Core.Services.UFDummyEmailBuilderService
   name: UFDummyEmailBuilderService
   href: api/UltraForce.Library.Core.Services.UFDummyEmailBuilderService.html

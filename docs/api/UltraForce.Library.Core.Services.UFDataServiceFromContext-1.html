@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFDataServiceFromContext&lt;TContext&gt; | UltraForce.Library.Core ">
       
-      <meta name="description" content="is a base class to implement a data service using a  to manage underlying entities.  The class implements a locking mechanism to minimize the  calls.   The class defines both a read and write context, to support in-memory copies to read from. All protected methods that perform some operation that changes the database will use the write context, while all methods that only read data will use the read context.">
+      <meta name="description" content="is a base class to implement a data service using a  to manage underlying entities.  The class implements a locking mechanism to minimize the  calls.   The class defines both a  and a , to support in-memory copies to read from. All protected methods that perform some operation that changes the database will use the main context, while all methods that only read data will use the cached context.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -104,10 +104,10 @@ The class implements a locking mechanism to minimize the
 <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechanges#microsoft-entityframeworkcore-dbcontext-savechanges">SaveChanges()</a> calls.
 </p>
 <p>
-The class defines both a read and write context, to support in-memory copies to read
-from. All protected methods that perform some operation that changes the database
-will use the write context, while all methods that only read data will use the read
-context.
+The class defines both a <a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_MainContext">MainContext</a> and a <a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_CachedContext">CachedContext</a>, to support
+in-memory copies to read from. All protected methods that perform some operation that changes
+the database will use the main context, while all methods that only read data will use the
+cached context.
 </p>
 </div>
   <div class="markdown conceptual"></div>
@@ -209,7 +209,7 @@ context.
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>context</code> <span class="xref">TContext</span></dt>
-    <dd><p>Database context to use for both read and write operations.</p>
+    <dd><p>Database context to use for both cached and main operations.</p>
 </dd>
     <dt><code>disableTracking</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd><p>When true tell <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.changetracker">ChangeTracker</a> to stop tracking and reset the state
@@ -247,16 +247,16 @@ And disables auto-detect changes with:
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected UFDataServiceFromContext(TContext readContext, TContext writeContext, bool disableTracking = false)</code></pre>
+    <pre><code class="lang-csharp hljs">protected UFDataServiceFromContext(TContext cachedContext, TContext mainContext, bool disableTracking = false)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>readContext</code> <span class="xref">TContext</span></dt>
+    <dt><code>cachedContext</code> <span class="xref">TContext</span></dt>
     <dd><p>Database context to use for read operations.</p>
 </dd>
-    <dt><code>writeContext</code> <span class="xref">TContext</span></dt>
-    <dd><p>Database context to use for write operations.</p>
+    <dt><code>mainContext</code> <span class="xref">TContext</span></dt>
+    <dd><p>Database context to use for read and write operations.</p>
 </dd>
     <dt><code>disableTracking</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd><p>When true tell <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.changetracker">ChangeTracker</a> to stop tracking and reset the state
@@ -284,6 +284,39 @@ And disables auto-detect changes with:
 
   <h2 class="section" id="properties">Properties
 </h2>
+
+
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_CachedContext_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CachedContext*"></a>
+
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_CachedContext" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.CachedContext">
+  CachedContext
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The context to read cached data. If the instance is disposed, this property will throw an
+exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TContext CachedContext { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TContext</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
 
 
   <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_Changed_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.Changed*"></a>
@@ -319,43 +352,10 @@ pending.</p>
 
 
 
-  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_ReadContext_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.ReadContext*"></a>
+  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_MainContext_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.MainContext*"></a>
 
-  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_ReadContext" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.ReadContext">
-  ReadContext
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L219"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>The context to read data. If the instance is disposed, this property will throw an
-exception.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected TContext ReadContext { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">TContext</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_WriteContext_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.WriteContext*"></a>
-
-  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_WriteContext" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.WriteContext">
-  WriteContext
+  <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_MainContext" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.MainContext">
+  MainContext
   <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L236"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -366,7 +366,7 @@ retrieve entities that are about to be changed or removed.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected TContext WriteContext { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected TContext MainContext { get; }</code></pre>
   </div>
 
 
@@ -394,7 +394,7 @@ retrieve entities that are about to be changed or removed.</p>
 
   <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_AddAsync__2___0_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.AddAsync``2(``0)">
   AddAsync&lt;TServiceModel, TEntity&gt;(TServiceModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L336"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates and adds an entity from a service model. Since <code>data</code> might be an immutable
@@ -449,7 +449,7 @@ entity that might include updated fields (like the id of the entity).</p>
 
   <div class="markdown level1 summary"><p>Stops an entity from being tracked by the entity framework.</p>
 <p>
-This method only detaches the object from  the <a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_WriteContext">WriteContext</a>.
+This method only detaches the object from  the <a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_MainContext">MainContext</a>.
 </p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -479,14 +479,14 @@ This method only detaches the object from  the <a class="xref" href="UltraForce.
 
   <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_DetachTrackedEntries" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.DetachTrackedEntries">
   DetachTrackedEntries()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L436"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L451"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the changed entries that have <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.entitystate#microsoft-entityframeworkcore-entitystate-added">Added</a>,
 <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.entitystate#microsoft-entityframeworkcore-entitystate-modified">Modified</a> or <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.entitystate#microsoft-entityframeworkcore-entitystate-deleted">Deleted</a> to
 <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.entitystate#microsoft-entityframeworkcore-entitystate-detached">Detached</a>.</p>
 <p>
-This method only detaches the object from the <a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_WriteContext">WriteContext</a>.
+This method only detaches the object from the <a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_MainContext">MainContext</a>.
 </p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -575,7 +575,7 @@ This method only detaches the object from the <a class="xref" href="UltraForce.L
 
   <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_FindAllAsync__2" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.FindAllAsync``2">
   FindAllAsync&lt;TServiceModel, TEntity&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L305"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Finds all entities and convert them to a service model.</p>
@@ -617,10 +617,13 @@ This method only detaches the object from the <a class="xref" href="UltraForce.L
 
   <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_FindForIdAsync__3___2_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.FindForIdAsync``3(``2)">
   FindForIdAsync&lt;TServiceModel, TEntity, TKey&gt;(TKey)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L283"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Finds a entity for a certain id and convert it to a service model.</p>
+  <div class="markdown level1 summary"><p>Finds an entity for a certain id and convert it to a service model.</p>
+<p>
+This method will use the <a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_CachedContext">CachedContext</a> to find the entity and convert it.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -668,7 +671,7 @@ This method only detaches the object from the <a class="xref" href="UltraForce.L
 
   <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_GetPrimaryKeyFromServiceModel__3___0_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyFromServiceModel``3(``0)">
   GetPrimaryKeyFromServiceModel&lt;TServiceModel, TEntity, TKey&gt;(TServiceModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L679"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L697"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the primary key value from a service model instance. The method assumes the service
@@ -676,13 +679,10 @@ model instance contains a property with the same name as the primary key propert
 entity.</p>
 <p>
 With the first call the default implementation determines the primary key property in
-aServiceData using the result from
+<code>serviceData</code>. using the result from
 <a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_GetPrimaryKeyNameFromEntity__1">GetPrimaryKeyNameFromEntity&lt;TEntity&gt;()</a> and caches
 it for future calls.
 </p>
-<remarks>
-Subclasses can override this method to return the key directly for better performance.
-</remarks>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -717,6 +717,9 @@ Subclasses can override this method to return the key directly for better perfor
 
 
 
+  <h4 class="section" id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_GetPrimaryKeyFromServiceModel__3___0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Subclasses can override this method to return the key directly for better performance.</p>
+</div>
 
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
@@ -730,16 +733,16 @@ Subclasses can override this method to return the key directly for better perfor
 
   <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_GetPrimaryKeyNameFromEntity__1" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.GetPrimaryKeyNameFromEntity``1">
   GetPrimaryKeyNameFromEntity&lt;TEntity&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L644"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L662"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the primary key of an entity</p>
 <p>
 Code based on: https://stackoverflow.com/a/34993637/968451
 </p>
-<remarks>
-Subclasses can override this method to return the key directly for better performance.
-</remarks>
+<p>
+This method will use the <a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_CachedContext">CachedContext</a> to get the information.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -767,6 +770,9 @@ Subclasses can override this method to return the key directly for better perfor
 
 
 
+  <h4 class="section" id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_GetPrimaryKeyNameFromEntity__1_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Subclasses can override this method to return the key directly for better performance.</p>
+</div>
 
 
 
@@ -813,10 +819,13 @@ saved again.</p>
 
   <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_RemoveAsync__2___0_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.RemoveAsync``2(``0)">
   RemoveAsync&lt;TServiceModel, TEntity&gt;(TServiceModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L395"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes an entity represented by a service model instance.</p>
+<p>
+This method will use the <a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_MainContext">MainContext</a> to get and remove the entity.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -860,7 +869,7 @@ saved again.</p>
 
   <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SaveChangesAsync" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SaveChangesAsync">
   SaveChangesAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L407"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L422"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Saves the changes when the instance is not locked, else set an internal
@@ -897,7 +906,7 @@ If tracking was disabled, this method will also call
 
   <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__1_System_String_System_String___0___0_System_String_System_Nullable_System_DateTime__" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``1(System.String,System.String,``0,``0,System.String,System.Nullable{System.DateTime})">
   SwapAsync&lt;T&gt;(string, string, T, T, string?, DateTime?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L605"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L620"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determine primary key and swap two entities calling <a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__2_System_String_System_String___1___1_System_String_System_Nullable_System_DateTime__">SwapAsync&lt;TEntity, TKey&gt;(string, string, TKey, TKey, string?, DateTime?)</a>.</p>
@@ -959,7 +968,7 @@ both entities from the database.
 
   <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_SwapAsync__2_System_String_System_String___1___1_System_String_System_Nullable_System_DateTime__" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.SwapAsync``2(System.String,System.String,``1,``1,System.String,System.Nullable{System.DateTime})">
   SwapAsync&lt;TEntity, TKey&gt;(string, string, TKey, TKey, string?, DateTime?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L543"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L558"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Swaps values of two records in a table using a single update statement (so that any unique
@@ -1029,7 +1038,7 @@ MSSQL.
 
   <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_TransactionAsync_System_Func_System_Threading_Tasks_Task__" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.TransactionAsync(System.Func{System.Threading.Tasks.Task})">
   TransactionAsync(Func&lt;Task&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L464"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L479"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Executes an action within a transaction. If a transaction is already active, the action
@@ -1069,14 +1078,14 @@ by other code.</p>
 
   <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_TransactionAsync__1_System_Func_System_Threading_Tasks_Task___0___" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.TransactionAsync``1(System.Func{System.Threading.Tasks.Task{``0}})">
   TransactionAsync&lt;T&gt;(Func&lt;Task&lt;T&gt;&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L516"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Executes an action within a transaction. If a transaction is already active, the action just
 gets executed without using a transaction assuming the commit or rollback is handled by
 other code.</p>
 <p>
-This method assumes there will be changes and uses <a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_WriteContext">WriteContext</a> to create the
+This method assumes there will be changes and uses <a class="xref" href="UltraForce.Library.Core.Services.UFDataServiceFromContext-1.html#UltraForce_Library_Core_Services_UFDataServiceFromContext_1_MainContext">MainContext</a> to create the
 transaction with.
 </p>
 </div>
@@ -1152,7 +1161,7 @@ any pending changes are saved.</p>
 
   <h3 id="UltraForce_Library_Core_Services_UFDataServiceFromContext_1_UpdateAsync__2___0_" data-uid="UltraForce.Library.Core.Services.UFDataServiceFromContext`1.UpdateAsync``2(``0)">
   UpdateAsync&lt;TServiceModel, TEntity&gt;(TServiceModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L352"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core/blob/master/UltraForce.Library.Core/Services/UFDataServiceFromContext.cs/#L364"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Updates an entity in the database with the data from a service model instance. Since

@@ -47,10 +47,10 @@ namespace UltraForce.Library.Core.Services;
 /// <see cref="DbContext.SaveChanges()"/> calls.
 /// </para>
 /// <para>
-/// The class defines both a read and write context, to support in-memory copies to read
-/// from. All protected methods that perform some operation that changes the database
-/// will use the write context, while all methods that only read data will use the read
-/// context.
+/// The class defines both a <see cref="MainContext"/> and a <see cref="CachedContext"/>, to support
+/// in-memory copies to read from. All protected methods that perform some operation that changes
+/// the database will use the main context, while all methods that only read data will use the
+/// cached context.
 /// </para>
 /// </summary>
 /// <remarks>
@@ -82,12 +82,12 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// <summary>
   /// Context to perform read database operations with.
   /// </summary>
-  private TContext? m_readContext;
+  private TContext? m_cachedContext;
 
   /// <summary>
-  /// Context to perform write database operations with.
+  /// Context to perform read/write database operations with.
   /// </summary>
-  private TContext? m_writeContext;
+  private TContext? m_mainContext;
 
   #endregion
 
@@ -97,7 +97,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// Constructs an instance of <see cref="UFDataServiceFromContext{TContext}" />.
   /// </summary>
   /// <param name="context">
-  /// Database context to use for both read and write operations.
+  /// Database context to use for both cached and main operations.
   /// </param>
   /// <param name="disableTracking">
   /// When true tell <see cref="DbContext.ChangeTracker"/> to stop tracking and reset the state
@@ -120,11 +120,11 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// <summary>
   /// Constructs an instance of <see cref="UFDataServiceFromContext{TContext}" />.
   /// </summary>
-  /// <param name="readContext">
+  /// <param name="cachedContext">
   /// Database context to use for read operations.
   /// </param>
-  /// <param name="writeContext">
-  /// Database context to use for write operations.
+  /// <param name="mainContext">
+  /// Database context to use for read and write operations.
   /// </param>
   /// <param name="disableTracking">
   /// When true tell <see cref="DbContext.ChangeTracker"/> to stop tracking and reset the state
@@ -138,13 +138,13 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// </para>
   /// </param>
   protected UFDataServiceFromContext(
-    TContext readContext,
-    TContext writeContext,
+    TContext cachedContext,
+    TContext mainContext,
     bool disableTracking = false
   )
   {
-    this.m_readContext = readContext;
-    this.m_writeContext = writeContext;
+    this.m_cachedContext = cachedContext;
+    this.m_mainContext = mainContext;
     this.Changed = false;
     this.m_lockCount = 0;
     this.m_disableTracking = disableTracking;
@@ -152,10 +152,10 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
     {
       return;
     }
-    readContext.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
-    readContext.ChangeTracker.AutoDetectChangesEnabled = false;
-    writeContext.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
-    writeContext.ChangeTracker.AutoDetectChangesEnabled = false;
+    cachedContext.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+    cachedContext.ChangeTracker.AutoDetectChangesEnabled = false;
+    mainContext.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+    mainContext.ChangeTracker.AutoDetectChangesEnabled = false;
   }
 
   #endregion
@@ -165,16 +165,16 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// <inheritdoc />
   public virtual void Dispose()
   {
-    this.m_readContext = null;
-    this.m_writeContext = null;
+    this.m_cachedContext = null;
+    this.m_mainContext = null;
     GC.SuppressFinalize(this);
   }
 
   /// <inheritdoc />
   public virtual ValueTask DisposeAsync()
   {
-    this.m_readContext = null;
-    this.m_writeContext = null;
+    this.m_cachedContext = null;
+    this.m_mainContext = null;
     GC.SuppressFinalize(this);
     return ValueTask.CompletedTask;
   }
@@ -213,18 +213,18 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   #region protected properties
 
   /// <summary>
-  /// The context to read data. If the instance is disposed, this property will throw an
+  /// The context to read cached data. If the instance is disposed, this property will throw an
   /// exception.
   /// </summary>
-  protected TContext ReadContext
+  protected TContext CachedContext
   {
     get
     {
-      if (this.m_readContext == null)
+      if (this.m_cachedContext == null)
       {
         throw new Exception("Trying to use a disposed instance");
       }
-      return this.m_readContext;
+      return this.m_cachedContext;
     }
   }
 
@@ -233,15 +233,15 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// disposed, this property will throw an exception. This context should also be used to
   /// retrieve entities that are about to be changed or removed.
   /// </summary>
-  protected TContext WriteContext
+  protected TContext MainContext
   {
     get
     {
-      if (this.m_writeContext == null)
+      if (this.m_mainContext == null)
       {
         throw new Exception("Trying to use a disposed instance");
       }
-      return this.m_writeContext;
+      return this.m_mainContext;
     }
   }
 
@@ -258,7 +258,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// <summary>
   /// Stops an entity from being tracked by the entity framework.
   /// <para>
-  /// This method only detaches the object from  the <see cref="WriteContext"/>.
+  /// This method only detaches the object from  the <see cref="MainContext"/>.
   /// </para>
   /// </summary>
   /// <param name="entity"></param>
@@ -266,11 +266,14 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
     object entity
   )
   {
-    this.WriteContext.Entry(entity).State = EntityState.Detached;
+    this.MainContext.Entry(entity).State = EntityState.Detached;
   }
 
   /// <summary>
-  /// Finds a entity for a certain id and convert it to a service model.
+  /// Finds an entity for a certain id and convert it to a service model.
+  /// <para>
+  /// This method will use the <see cref="CachedContext"/> to find the entity and convert it.
+  /// </para>
   /// </summary>
   /// <param name="id">Id to find entity for</param>
   /// <typeparam name="TServiceModel">Service model to convert to</typeparam>
@@ -284,7 +287,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
     where TServiceModel : class, IUFDataServiceModel<TEntity>, new()
   {
     return await this
-      .ReadContext
+      .CachedContext
       .Set<TEntity>()
       .FindAsync(id)
       .AsNullableModelAsync<TServiceModel, TEntity>();
@@ -293,6 +296,9 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// <summary>
   /// Finds all entities and convert them to a service model.
   /// </summary>
+  /// <para>
+  /// This method will use the <see cref="CachedContext"/> to find the entity and convert it.
+  /// </para>
   /// <typeparam name="TServiceModel">Service model to convert to</typeparam>
   /// <typeparam name="TEntity">Entity type</typeparam>
   /// <returns>List of service model instances</returns>
@@ -302,14 +308,14 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   {
     if (this.m_disableTracking)
     {
-      return await this.ReadContext
+      return await this.CachedContext
         .Set<TEntity>()
         .AsNoTracking()
         .AsModelAsync<TServiceModel, TEntity>();
     }
     else
     {
-      return await this.ReadContext
+      return await this.CachedContext
         .Set<TEntity>()
         .AsModelAsync<TServiceModel, TEntity>();
     }
@@ -320,6 +326,9 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// instance, after adding the entity a new service model instance is created from the added
   /// entity that might include updated fields (like the id of the entity).
   /// </summary>
+  /// <para>
+  /// This method will use the <see cref="MainContext"/> to add the entity.
+  /// </para>
   /// <param name="data">Service model instance to add</param>
   /// <typeparam name="TServiceModel">Type of service model</typeparam>
   /// <typeparam name="TEntity">Entity to add</typeparam>
@@ -332,7 +341,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   {
     TEntity entity = new();
     await data.CopyToEntityAsync(entity, UFEntityAction.Add);
-    await this.WriteContext.Set<TEntity>().AddAsync(entity);
+    await this.MainContext.Set<TEntity>().AddAsync(entity);
     await this.SaveChangesAsync();
     TServiceModel result = new();
     await result.CopyFromEntityAsync(entity);
@@ -345,6 +354,9 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// entity in the database. The new service model might include updated fields (like a modified
   /// date/time field).
   /// </summary>
+  /// <para>
+  /// This method will use the <see cref="MainContext"/> to get and update the entity.
+  /// </para>
   /// <param name="data">Data to update entity with</param>
   /// <typeparam name="TServiceModel">Service model type</typeparam>
   /// <typeparam name="TEntity">Entity type</typeparam>
@@ -355,7 +367,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
     where TEntity : class, new()
     where TServiceModel : class, IUFDataServiceModel<TEntity>, new()
   {
-    TEntity? entity = await this.WriteContext.Set<TEntity>()
+    TEntity? entity = await this.MainContext.Set<TEntity>()
       .FindAsync(
         this.GetPrimaryKeyFromServiceModel<TServiceModel, TEntity, object>(data)
       );
@@ -364,7 +376,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
       throw new Exception("Trying to update a non-existing entity");
     }
     await data.CopyToEntityAsync(entity, UFEntityAction.Update);
-    this.ReadContext.Set<TEntity>().Update(entity);
+    this.MainContext.Set<TEntity>().Update(entity);
     await this.SaveChangesAsync();
     TServiceModel result = new();
     await result.CopyFromEntityAsync(entity);
@@ -373,6 +385,9 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
 
   /// <summary>
   /// Removes an entity represented by a service model instance.
+  /// <para>
+  /// This method will use the <see cref="MainContext"/> to get and remove the entity.
+  /// </para>
   /// </summary>
   /// <param name="data">Data that represents an entity</param>
   /// <typeparam name="TServiceModel">Service model type</typeparam>
@@ -383,7 +398,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
     where TEntity : class, new()
     where TServiceModel : class, IUFDataServiceModel<TEntity>, new()
   {
-    TEntity? entity = await this.WriteContext.Set<TEntity>()
+    TEntity? entity = await this.MainContext.Set<TEntity>()
       .FindAsync(
         this.GetPrimaryKeyFromServiceModel<TServiceModel, TEntity, object>(data)
       );
@@ -391,7 +406,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
     {
       throw new Exception("Trying to remove a non-existing entity");
     }
-    this.ReadContext.Set<TEntity>().Remove(entity);
+    this.MainContext.Set<TEntity>().Remove(entity);
     await this.SaveChangesAsync();
     this.DetachEntity(entity);
   }
@@ -409,7 +424,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
     if (this.m_lockCount == 0)
     {
       this.Changed = false;
-      await this.WriteContext.SaveChangesAsync();
+      await this.MainContext.SaveChangesAsync();
       if (this.m_disableTracking)
       {
         this.DetachTrackedEntries();
@@ -426,7 +441,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// <see cref="EntityState.Modified"/> or <see cref="EntityState.Deleted"/> to
   /// <see cref="EntityState.Detached"/>.
   /// <para>
-  /// This method only detaches the object from the <see cref="WriteContext"/>.
+  /// This method only detaches the object from the <see cref="MainContext"/>.
   /// </para>
   /// </summary>
   /// <remarks>
@@ -435,7 +450,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// </remarks>
   protected void DetachTrackedEntries()
   {
-    IEnumerable<EntityEntry> changedEntriesCopy = this.WriteContext.ChangeTracker
+    IEnumerable<EntityEntry> changedEntriesCopy = this.MainContext.ChangeTracker
       .Entries()
       .Where(entry =>
         entry.State is EntityState.Added or EntityState.Modified or EntityState.Deleted
@@ -444,7 +459,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
       .AsEnumerable();
     foreach (EntityEntry entity in changedEntriesCopy)
     {
-      this.WriteContext.Entry(entity.Entity).State = EntityState.Detached;
+      this.MainContext.Entry(entity.Entity).State = EntityState.Detached;
     }
   }
 
@@ -454,7 +469,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// by other code.
   /// </summary>
   /// <para>
-  /// This method assumes there will be changes and uses <see cref="WriteContext"/> to create the
+  /// This method assumes there will be changes and uses <see cref="MainContext"/> to create the
   /// transaction with.
   /// </para>
   /// <param name="action">Action to execute</param>
@@ -465,13 +480,13 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
     Func<Task> action
   )
   {
-    if (this.WriteContext.Database.CurrentTransaction != null)
+    if (this.MainContext.Database.CurrentTransaction != null)
     {
       await action();
       return;
     }
     await using IDbContextTransaction transaction =
-      await this.WriteContext.Database.BeginTransactionAsync();
+      await this.MainContext.Database.BeginTransactionAsync();
     try
     {
       await action();
@@ -489,7 +504,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// gets executed without using a transaction assuming the commit or rollback is handled by
   /// other code.
   /// <para>
-  /// This method assumes there will be changes and uses <see cref="WriteContext"/> to create the
+  /// This method assumes there will be changes and uses <see cref="MainContext"/> to create the
   /// transaction with.
   /// </para>
   /// </summary>
@@ -502,12 +517,12 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
     Func<Task<T>> action
   )
   {
-    if (this.WriteContext.Database.CurrentTransaction != null)
+    if (this.MainContext.Database.CurrentTransaction != null)
     {
       return await action();
     }
     await using IDbContextTransaction transaction =
-      await this.WriteContext.Database.BeginTransactionAsync();
+      await this.MainContext.Database.BeginTransactionAsync();
     try
     {
       T result = await action();
@@ -554,7 +569,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
     string primaryKey = this.GetPrimaryKeyNameFromEntity<TEntity>();
     if (modifiedName == null)
     {
-      await this.WriteContext.Database.ExecuteSqlRawAsync(
+      await this.MainContext.Database.ExecuteSqlRawAsync(
         $@"
             UPDATE [{tableName}]
             SET 
@@ -570,7 +585,7 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
     }
     else
     {
-      await this.WriteContext.Database.ExecuteSqlRawAsync(
+      await this.MainContext.Database.ExecuteSqlRawAsync(
         $@"
             UPDATE [{tableName}]
             SET 
@@ -625,8 +640,8 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
       modifiedName,
       modifiedDate
     );
-    await this.WriteContext.Entry(first).ReloadAsync();
-    await this.WriteContext.Entry(second).ReloadAsync();
+    await this.MainContext.Entry(first).ReloadAsync();
+    await this.MainContext.Entry(second).ReloadAsync();
   }
 
   /// <summary>
@@ -634,16 +649,19 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// <para>
   /// Code based on: https://stackoverflow.com/a/34993637/968451
   /// </para>
+  /// <para>
+  /// This method will use the <see cref="CachedContext"/> to get the information.
+  /// </para>
+  /// </summary>
   /// <remarks>
   /// Subclasses can override this method to return the key directly for better performance.
   /// </remarks>
-  /// </summary>
   /// <typeparam name="TEntity">Type of the entity</typeparam>
   /// <returns>primary key name</returns>
   /// <exception>If no primary key could be determined</exception>
   protected virtual string GetPrimaryKeyNameFromEntity<TEntity>() where TEntity : class
   {
-    string? primaryName = this.ReadContext
+    string? primaryName = this.CachedContext
       .Model
       .FindEntityType(typeof(TEntity))?
       .FindPrimaryKey()?
@@ -665,14 +683,14 @@ public class UFDataServiceFromContext<TContext> : IUFDataService, IDisposable, I
   /// entity.
   /// <para>
   /// With the first call the default implementation determines the primary key property in
-  /// aServiceData using the result from
+  /// <c>serviceData</c>. using the result from
   /// <see cref="GetPrimaryKeyNameFromEntity{TEntity}"/> and caches
   /// it for future calls.
   /// </para>
+  /// </summary>
   /// <remarks>
   /// Subclasses can override this method to return the key directly for better performance.
   /// </remarks>
-  /// </summary>
   /// <param name="serviceData"></param>
   /// <returns></returns>
   /// <exception cref="MissingPrimaryKeyException"></exception>
